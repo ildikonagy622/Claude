@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Frame 1 — f1 · span 0.000–4.389s · beat_cut · asset bg_under_text (01-typing) -->
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter Display"; font-weight: 500; src: url("assets/fonts/InterDisplay-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 600; src: url("assets/fonts/InterDisplay-SemiBold.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 700; src: url("assets/fonts/InterDisplay-Bold.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/Inter-Regular.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
+
+        #stage {
+          position: relative;
+          width: 1080px;
+          height: 1920px;
+          overflow: hidden;
+          background: #0C0C0E;
+          color: #FFFFFF;
+        }
+
+        #g1_clip {
+          position: absolute;
+          inset: 0;
+          width: 1080px;
+          height: 1920px;
+          object-fit: cover;
+          transform-origin: 50% 45%;
+        }
+
+        /* black cover: footage opens from black on the 0.511 hit */
+        #g1_black {
+          position: absolute;
+          inset: 0;
+          background: #0C0C0E;
+        }
+
+        /* frame.md footage-scrim, extended a little for the tall headline block */
+        #g1_scrim {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top,
+            rgba(12,12,14,0.94) 0%,
+            rgba(12,12,14,0.80) 30%,
+            rgba(12,12,14,0.45) 52%,
+            rgba(12,12,14,0) 72%);
+        }
+
+        #g1 {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          /* social-safe: 220 top / 300 bottom, 90 sides */
+          padding: 220px 90px 300px 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          visibility: hidden;
+        }
+
+        #g1_glow {
+          position: absolute;
+          left: -120px;
+          bottom: 180px;
+          width: 1000px;
+          height: 820px;
+          background: radial-gradient(closest-side, rgba(139,92,246,0.45), rgba(139,92,246,0) 70%);
+          opacity: 0;
+        }
+
+        #g1_text {
+          position: relative;
+          max-width: 900px;
+        }
+
+        #g1_eyebrow {
+          display: block;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 34px;
+          line-height: 1.2;
+          color: #B9A4FB;
+          margin-bottom: 34px;
+          white-space: nowrap;
+        }
+
+        .g1_line {
+          display: block;
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 146px;
+          line-height: 0.98;
+          letter-spacing: -0.035em;
+          white-space: nowrap;
+          /* room for descenders (g) under the mask */
+          padding-bottom: 0.08em;
+          margin-bottom: -0.08em;
+          clip-path: inset(0 -40px 0 -40px);
+        }
+
+        .g1_inner {
+          display: inline-block;
+        }
+
+        .g1_grad {
+          background-image: linear-gradient(90deg, #B9A4FB 0%, #DEFD86 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+        }
+      </style>
+
+      <div id="stage" data-composition-id="01-f1" data-width="1080" data-height="1920" data-duration="4.389">
+        <video
+          id="g1_clip"
+          src="assets/clips/01-typing.mp4"
+          muted
+          playsinline
+          data-start="0"
+          data-duration="4.389"
+          data-track-index="0"
+        ></video>
+
+        <div id="g1_black"></div>
+        <div id="g1_scrim"></div>
+
+        <div id="g1">
+          <div id="g1_glow"></div>
+          <div id="g1_text">
+            <span id="g1_eyebrow">✦ Az Amazing AI online workshopja</span>
+            <div class="g1_line" id="g1_l1"><span class="g1_inner">AI az</span></div>
+            <div class="g1_line" id="g1_l2"><span class="g1_inner g1_grad">online</span></div>
+            <div class="g1_line" id="g1_l3"><span class="g1_inner g1_grad">marketingben</span></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var FRAME_START = 0.0;
+          var DUR = 4.389;
+          // audiomap beats (track s) -> frame-local
+          var A = [0.511, 0.998, 1.486, 1.974].map(function (t) { return +(t - FRAME_START).toFixed(3); });
+          var EASE = "power3.out";
+
+          var tl = gsap.timeline({ paused: true });
+
+          // group visibility across its span
+          tl.set("#g1", { autoAlpha: 1 }, 0);
+
+          // footage: from black, opens on the 0.511 hit, slow push 1.00 -> 1.06 across the frame
+          tl.fromTo("#g1_clip", { scale: 1.0 }, { scale: 1.06, duration: DUR - 0.02, ease: "none" }, 0);
+          tl.fromTo("#g1_black", { opacity: 1 }, { opacity: 0, duration: 0.6, ease: "power2.out" }, A[0]);
+          tl.fromTo("#g1_scrim", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, A[0]);
+          tl.fromTo("#g1_glow", { opacity: 0 }, { opacity: 0.55, duration: 1.2, ease: "power2.out" }, A[0]);
+
+          // eyebrow on 0.511
+          tl.fromTo("#g1_eyebrow", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: EASE }, A[0]);
+
+          // one word-line per beat: mask reveal + short fade + slight rise, no bounce
+          ["#g1_l1", "#g1_l2", "#g1_l3"].forEach(function (sel, i) {
+            var t = A[i + 1];
+            tl.fromTo(sel + " .g1_inner",
+              { opacity: 0, y: 30, yPercent: 35 },
+              { opacity: 1, y: 0, yPercent: 0, duration: 0.45, ease: EASE }, t);
+          });
+
+          // full headline readable from ~2.42s to the hard cut at 4.389
+          window.__timelines["01-f1"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

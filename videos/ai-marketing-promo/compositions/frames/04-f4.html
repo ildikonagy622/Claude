@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Frame 4 — f4 · span 13.0–16.231 (3.231s) · beat_cut · bg_under_text on 07-canva-deck -->
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter Display"; font-weight: 500; src: url("assets/fonts/InterDisplay-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 600; src: url("assets/fonts/InterDisplay-SemiBold.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 700; src: url("assets/fonts/InterDisplay-Bold.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/Inter-Regular.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
+
+        #stage {
+          position: relative;
+          width: 1080px;
+          height: 1920px;
+          overflow: hidden;
+          background: #0C0C0E;
+          color: #FFFFFF;
+        }
+        #g1_clip {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 1080px;
+          height: 1920px;
+          object-fit: cover;
+          transform-origin: 50% 32%;
+        }
+        #g1_scrim {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(12,12,14,0.92) 0%, rgba(12,12,14,0.55) 45%, rgba(12,12,14,0) 75%);
+          pointer-events: none;
+        }
+        #g1 {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+          padding: 0 90px 320px 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-start;
+        }
+        #g1_head {
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 104px;
+          line-height: 1.04;
+          letter-spacing: -0.035em;
+          max-width: 900px;
+        }
+        .g1_line {
+          display: block;
+          white-space: nowrap;
+          padding-bottom: 0.06em;
+          will-change: transform, opacity;
+        }
+        #g1_l2 {
+          display: inline-block;
+          background: linear-gradient(90deg, #B9A4FB 0%, #DEFD86 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+        }
+        #g1_pill {
+          display: inline-block;
+          margin-top: 44px;
+          padding: 22px 44px 24px;
+          border-radius: 100px;
+          background: #DEFD86;
+          color: #0C0C0E;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 1;
+          letter-spacing: -0.01em;
+          white-space: nowrap;
+          transform-origin: 0% 50%;
+          will-change: transform, opacity;
+        }
+      </style>
+
+      <div id="stage" data-composition-id="04-f4" data-width="1080" data-height="1920" data-duration="3.231">
+        <video
+          id="g1_clip"
+          src="assets/clips/07-canva-deck.mp4"
+          muted
+          playsinline
+          data-start="0"
+          data-duration="3.231"
+          data-track-index="0"
+        ></video>
+
+        <div id="g1_scrim"></div>
+
+        <div id="g1">
+          <div id="g1_head">
+            <span id="g1_l1" class="g1_line">Komplett kampány</span>
+            <span id="g1_l2" class="g1_line">a nulláról</span>
+          </div>
+          <div id="g1_pill">4 óra alatt</div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          // Frame-local anchors (track − 13.0): 13.282 → 0.282, 13.769 → 0.769, 14.257 (surge) → 1.257
+          var DUR = 3.231;
+          var A1 = 0.282, A2 = 0.769, A3 = 1.257;
+          var tl = gsap.timeline({ paused: true });
+
+          // Group visibility across its full span (single group)
+          tl.set("#g1", { autoAlpha: 1 }, 0);
+
+          // Slow push on the footage across the whole frame
+          tl.fromTo("#g1_clip", { scale: 1.0 }, { scale: 1.06, duration: DUR - 0.02, ease: "sine.inOut" }, 0);
+
+          // Line 1 — "Komplett kampány" lands on 13.282
+          tl.fromTo("#g1_l1", { opacity: 0, y: 46 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, A1);
+
+          // Line 2 — gradient "a nulláról" lands on 13.769
+          tl.fromTo("#g1_l2", { opacity: 0, y: 46 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, A2);
+
+          // Lime pill snaps in on the 14.257 surge — quick scale 0.9→1 + fade, no overshoot
+          tl.fromTo("#g1_pill", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, A3);
+
+          window.__timelines["04-f4"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

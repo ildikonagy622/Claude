@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Display";
+          src: url("assets/fonts/InterDisplay-Medium.otf") format("opentype");
+          font-weight: 500;
+        }
+        @font-face {
+          font-family: "Inter Display";
+          src: url("assets/fonts/InterDisplay-SemiBold.otf") format("opentype");
+          font-weight: 600;
+        }
+        @font-face {
+          font-family: "Inter Display";
+          src: url("assets/fonts/InterDisplay-Bold.otf") format("opentype");
+          font-weight: 700;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Regular.otf") format("opentype");
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-Medium.otf") format("opentype");
+          font-weight: 500;
+        }
+        @font-face {
+          font-family: "Inter";
+          src: url("assets/fonts/Inter-SemiBold.otf") format("opentype");
+          font-weight: 600;
+        }
+
+        #stage {
+          position: relative;
+          width: 1080px;
+          height: 1920px;
+          overflow: hidden;
+          background: #0c0c0e;
+          color: #ffffff;
+        }
+
+        #g1_clip {
+          width: 1080px;
+          height: 1920px;
+          object-fit: cover;
+          z-index: 1;
+        }
+
+        /* top-down dark scrim — keeps the mid-frame logos bright */
+        #g1_scrim {
+          position: absolute;
+          inset: 0;
+          z-index: 2;
+          pointer-events: none;
+          background: linear-gradient(
+            to bottom,
+            rgba(12, 12, 14, 0.92) 0%,
+            rgba(12, 12, 14, 0.78) 22%,
+            rgba(12, 12, 14, 0.4) 34%,
+            rgba(12, 12, 14, 0) 46%
+          );
+        }
+
+        #g1_copy {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          z-index: 3;
+          box-sizing: border-box;
+          padding: 250px 90px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+
+        .g1_line {
+          display: block;
+          max-width: 900px;
+          margin: 0;
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 104px;
+          line-height: 1.02;
+          letter-spacing: -0.03em;
+          text-wrap: balance;
+          color: #ffffff;
+          will-change: transform, opacity;
+        }
+
+        .g1_accent {
+          color: #b9a4fb;
+        }
+      </style>
+
+      <div id="stage" data-composition-id="02-f2" data-width="1080" data-height="1920" data-duration="3.692">
+        <video
+          id="g1_clip"
+          src="assets/clips/02-logo.mp4"
+          muted
+          playsinline
+          data-start="0"
+          data-duration="3.692"
+          data-media-start="0"
+          data-track-index="0"
+        ></video>
+
+        <div id="g1_scrim"></div>
+
+        <div id="g1_copy">
+          <p id="g1_l1" class="g1_line">Ma már egyedül is lehetsz</p>
+          <p id="g1_l2" class="g1_line">egy <span class="g1_accent">teljes ügynökség</span></p>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          // frame-local anchors (track_t − 4.389)
+          var L1 = 4.923 - 4.389; // 0.534 — line 1
+          var L2 = 5.898 - 4.389; // 1.509 — line 2
+          var END = 3.692;
+
+          var tl = gsap.timeline({ paused: true });
+
+          // initial state (t=0 renders the clip + scrim, text hidden)
+          tl.set(["#g1_l1", "#g1_l2"], { opacity: 0, y: 28 }, 0);
+          tl.fromTo("#g1_scrim", { opacity: 0.85 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0);
+
+          // line 1 — short fade + slight rise
+          tl.fromTo(
+            "#g1_l1",
+            { opacity: 0, y: 28 },
+            { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" },
+            L1 - 0.06
+          );
+
+          // line 2 — same gesture on the next anchor
+          tl.fromTo(
+            "#g1_l2",
+            { opacity: 0, y: 28 },
+            { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" },
+            L2 - 0.06
+          );
+
+          // quiet hold drift into the cut (clip's push-in + blur carry the energy)
+          tl.fromTo(
+            "#g1_copy",
+            { y: 0 },
+            { y: -10, duration: END - 0.05 - L1, ease: "none" },
+            L1
+          );
+
+          window.__timelines["02-f2"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>
