@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
-    <!-- Frame 4 — f4 · span 13.0–16.231 (3.231s) · beat_cut · bg_under_text on 07-canva-deck -->
+    <!-- Frame 4 — f4: digital B-roll (track 13.0–16.231s, local 0–3.231s). Runtime only reads <template>. -->
   </head>
   <body>
     <template>
@@ -14,127 +14,284 @@
         @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
         @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
 
-        #stage {
+        #f4_stage {
           position: relative;
           width: 1080px;
           height: 1920px;
           overflow: hidden;
           background: #0C0C0E;
           color: #FFFFFF;
+          font-family: "Inter", sans-serif;
         }
-        #f4_clip {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 1080px;
-          height: 1920px;
-          object-fit: cover;
-          transform-origin: 50% 32%;
-        }
-        #f4_scrim {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to top, rgba(12,12,14,0.92) 0%, rgba(12,12,14,0.55) 45%, rgba(12,12,14,0) 75%);
-          pointer-events: none;
-        }
-        #g1 {
+        #f4_g1 {
           position: absolute;
           inset: 0;
           width: 100%;
           height: 100%;
           box-sizing: border-box;
-          padding: 0 90px 320px 90px;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-items: flex-start;
         }
-        #f4_head {
-          font-family: "Inter Display", "Inter", sans-serif;
-          font-weight: 500;
-          font-size: 104px;
-          line-height: 1.04;
-          letter-spacing: -0.035em;
-          max-width: 900px;
+        #f4_grid {
+          position: absolute;
+          inset: 0;
+          background-image:
+            linear-gradient(to right, rgba(185,164,251,0.07) 1.5px, transparent 1.5px),
+            linear-gradient(to bottom, rgba(185,164,251,0.07) 1.5px, transparent 1.5px);
+          background-size: 90px 90px;
+          background-position: 0 0;
+          -webkit-mask-image: radial-gradient(closest-side at 50% 48%, #000 35%, transparent 100%);
+          mask-image: radial-gradient(closest-side at 50% 48%, #000 35%, transparent 100%);
         }
-        .f4_line {
-          display: block;
-          white-space: nowrap;
-          padding-bottom: 0.06em;
+        #f4_glow {
+          position: absolute;
+          left: 50%;
+          top: 900px;
+          width: 1500px;
+          height: 1500px;
+          margin-left: -750px;
+          margin-top: -750px;
+          border-radius: 50%;
+          background: radial-gradient(closest-side, rgba(139,92,246,0.45), rgba(139,92,246,0) 70%);
           will-change: transform, opacity;
         }
-        #f4_l2 {
-          display: inline-block;
-          background: linear-gradient(90deg, #B9A4FB 0%, #DEFD86 100%);
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          color: transparent;
+
+        /* ---- Cards (upper-middle band) ---- */
+        #f4_cards {
+          position: absolute;
+          left: 130px;
+          width: 820px;
+          top: 470px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+        .f4_card {
+          position: relative;
+          box-sizing: border-box;
+          width: 820px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          gap: 34px;
+          padding: 0 30px 0 26px;
+          background: #1B162A;
+          border: 1.5px solid rgba(139,92,246,0.28);
+          border-radius: 18px;
+          will-change: transform, opacity;
+        }
+        .f4_thumb {
+          position: relative;
+          flex: 0 0 auto;
+          width: 112px;
+          height: 104px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .f4_label {
+          flex: 1 1 auto;
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 56px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          white-space: nowrap;
+        }
+        .f4_check {
+          flex: 0 0 auto;
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          background: #DEFD86;
+          color: #0C0C0E;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 1;
+          will-change: transform, opacity;
+        }
+
+        /* Thumb 1: square social post */
+        .f4_post {
+          position: relative;
+          width: 96px;
+          height: 96px;
+          border-radius: 12px;
+          background: #2A2142;
+          border: 1.5px solid rgba(185,164,251,0.35);
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+        .f4_post_avatar { position: absolute; left: 9px; top: 9px; width: 14px; height: 14px; border-radius: 50%; background: #B9A4FB; }
+        .f4_post_name { position: absolute; left: 28px; top: 13px; width: 36px; height: 6px; border-radius: 3px; background: rgba(185,164,251,0.55); }
+        .f4_post_img { position: absolute; left: 9px; right: 9px; top: 30px; height: 36px; border-radius: 6px; background: linear-gradient(135deg, #8B5CF6 0%, #B9A4FB 100%); }
+        .f4_post_head { position: absolute; left: 9px; top: 73px; width: 60px; height: 7px; border-radius: 4px; background: #FFFFFF; opacity: 0.9; }
+        .f4_post_sub { position: absolute; left: 9px; top: 84px; width: 40px; height: 5px; border-radius: 3px; background: rgba(185,164,251,0.5); }
+
+        /* Thumb 2: image frame with mountain + sun */
+        .f4_img {
+          position: relative;
+          width: 104px;
+          height: 84px;
+          border-radius: 10px;
+          background: linear-gradient(180deg, #3B2A66 0%, #2A2142 100%);
+          border: 1.5px solid rgba(185,164,251,0.35);
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+        .f4_img_sun { position: absolute; right: 16px; top: 12px; width: 18px; height: 18px; border-radius: 50%; background: #DEFD86; opacity: 0.9; }
+        .f4_img_m1 { position: absolute; left: -6px; bottom: 0; width: 76px; height: 46px; background: #8B5CF6; clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+        .f4_img_m2 { position: absolute; left: 40px; bottom: 0; width: 72px; height: 34px; background: #B9A4FB; clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+
+        /* Thumb 3: 16:9 slide with title bars */
+        .f4_slide {
+          position: relative;
+          width: 112px;
+          height: 63px;
+          border-radius: 8px;
+          background: #2A2142;
+          border: 1.5px solid rgba(185,164,251,0.35);
+          box-sizing: border-box;
+          overflow: hidden;
+        }
+        .f4_slide_t { position: absolute; left: 10px; top: 11px; width: 54px; height: 8px; border-radius: 4px; background: #FFFFFF; opacity: 0.9; }
+        .f4_slide_b1 { position: absolute; left: 10px; top: 27px; width: 42px; height: 5px; border-radius: 3px; background: rgba(185,164,251,0.6); }
+        .f4_slide_b2 { position: absolute; left: 10px; top: 37px; width: 34px; height: 5px; border-radius: 3px; background: rgba(185,164,251,0.6); }
+        .f4_slide_b3 { position: absolute; left: 10px; top: 47px; width: 38px; height: 5px; border-radius: 3px; background: rgba(185,164,251,0.6); }
+        .f4_slide_c { position: absolute; right: 10px; top: 22px; width: 34px; height: 30px; border-radius: 5px; background: linear-gradient(135deg, #8B5CF6 0%, #B9A4FB 100%); }
+
+        /* ---- Headline + pill (lower-middle band, bottom ≤ 1620px) ---- */
+        #f4_lower {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          top: 1110px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        #f4_head {
+          display: block;
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 130px;
+          line-height: 1;
+          letter-spacing: -0.035em;
+          color: #FFFFFF;
+          white-space: nowrap;
+          margin-bottom: 44px;
+          will-change: transform, opacity;
         }
         #f4_pill {
           display: inline-block;
-          margin-top: 44px;
-          padding: 22px 44px 24px;
-          border-radius: 100px;
           background: #DEFD86;
           color: #0C0C0E;
+          border-radius: 100px;
+          padding: 26px 56px;
           font-family: "Inter", sans-serif;
           font-weight: 600;
-          font-size: 48px;
-          line-height: 1;
+          font-size: 56px;
+          line-height: 1.1;
           letter-spacing: -0.01em;
           white-space: nowrap;
-          transform-origin: 0% 50%;
+          transform-origin: 50% 50%;
           will-change: transform, opacity;
         }
       </style>
 
-      <div id="stage" data-composition-id="04-f4" data-width="1080" data-height="1920" data-duration="3.231">
-        <video
-          id="f4_clip"
-          src="assets/clips/07-canva-deck.mp4"
-          muted
-          playsinline
-          data-start="0"
-          data-duration="3.231"
-          data-track-index="0"
-        ></video>
+      <div id="f4_stage" data-composition-id="04-f4" data-width="1080" data-height="1920" data-duration="3.231">
+        <div id="f4_g1">
+          <div id="f4_glow"></div>
+          <div id="f4_grid"></div>
 
-        <div id="f4_scrim"></div>
-
-        <div id="g1">
-          <div id="f4_head">
-            <span id="f4_l1" class="f4_line">Komplett kampány</span>
-            <span id="f4_l2" class="f4_line">a nulláról</span>
+          <div id="f4_cards">
+            <div id="f4_card1" class="f4_card">
+              <div class="f4_thumb">
+                <div class="f4_post">
+                  <div class="f4_post_avatar"></div><div class="f4_post_name"></div>
+                  <div class="f4_post_img"></div>
+                  <div class="f4_post_head"></div><div class="f4_post_sub"></div>
+                </div>
+              </div>
+              <div class="f4_label">Poszt</div>
+              <div id="f4_check1" class="f4_check">✓</div>
+            </div>
+            <div id="f4_card2" class="f4_card">
+              <div class="f4_thumb">
+                <div class="f4_img">
+                  <div class="f4_img_sun"></div><div class="f4_img_m1"></div><div class="f4_img_m2"></div>
+                </div>
+              </div>
+              <div class="f4_label">AI-kép</div>
+              <div id="f4_check2" class="f4_check">✓</div>
+            </div>
+            <div id="f4_card3" class="f4_card">
+              <div class="f4_thumb">
+                <div class="f4_slide">
+                  <div class="f4_slide_t"></div><div class="f4_slide_b1"></div><div class="f4_slide_b2"></div><div class="f4_slide_b3"></div>
+                  <div class="f4_slide_c"></div>
+                </div>
+              </div>
+              <div class="f4_label">Prezentáció</div>
+              <div id="f4_check3" class="f4_check">✓</div>
+            </div>
           </div>
-          <div id="f4_pill">4 óra alatt</div>
+
+          <div id="f4_lower">
+            <div id="f4_head">Mindez</div>
+            <div id="f4_pill">4 óra alatt</div>
+          </div>
         </div>
       </div>
 
       <script>
         (function () {
-          // Frame-local anchors (track − 13.0): 13.282 → 0.282, 13.769 → 0.769, 14.257 (surge) → 1.257
-          var DUR = 3.231;
-          var A1 = 0.282, A2 = 0.769, A3 = 1.257;
-          var tl = gsap.timeline({ paused: true });
+          const SPAN = 3.231;
+          // Anchors, local = track − 13.0
+          const A = [0.282, 0.769, 1.257, 1.768];
 
-          // Group visibility across its full span (single group)
-          tl.set("#g1", { autoAlpha: 1 }, 0);
+          const cards = ["#f4_card1", "#f4_card2", "#f4_card3"];
+          const checks = ["#f4_check1", "#f4_check2", "#f4_check3"];
 
-          // Slow push on the footage across the whole frame
-          tl.fromTo("#f4_clip", { scale: 1.0 }, { scale: 1.06, duration: DUR - 0.02, ease: "sine.inOut" }, 0);
+          // Initial states before building the timeline (stable baselines).
+          gsap.set(cards, { opacity: 0, y: 40 });
+          gsap.set(checks, { opacity: 0, scale: 0.6 });
+          gsap.set("#f4_head", { opacity: 0, y: 34 });
+          gsap.set("#f4_pill", { opacity: 0, scale: 0.9 });
+          gsap.set("#f4_glow", { opacity: 0.75, scale: 0.92 });
 
-          // Line 1 — "Komplett kampány" lands on 13.282
-          tl.fromTo("#f4_l1", { opacity: 0, y: 46 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, A1);
+          const tl = gsap.timeline({ paused: true });
 
-          // Line 2 — gradient "a nulláról" lands on 13.769
-          tl.fromTo("#f4_l2", { opacity: 0, y: 46 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, A2);
+          // Glow: brief dip, then swells into the 1.257 surge, settles.
+          tl.fromTo("#f4_glow", { opacity: 0.75, scale: 0.92 },
+            { opacity: 1, scale: 1.08, duration: 1.2, ease: "sine.inOut" }, 0.06);
+          tl.to("#f4_glow", { opacity: 0.9, scale: 1.0, duration: 1.4, ease: "sine.inOut" }, 1.26);
 
-          // Lime pill snaps in on the 14.257 surge — quick scale 0.9→1 + fade, no overshoot
-          tl.fromTo("#f4_pill", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, A3);
+          // Cards: one per anchor, short rise + fade (reactive, fires on the hit).
+          cards.forEach(function (c, i) {
+            tl.fromTo(c, { opacity: 0, y: 40 },
+              { opacity: 1, y: 0, duration: 0.38, ease: "power3.out" }, A[i]);
+            // Lime check pops ~0.15s after its card; no overshoot.
+            tl.fromTo(checks[i], { opacity: 0, scale: 0.6 },
+              { opacity: 1, scale: 1, duration: 0.22, ease: "power2.out" }, A[i] + 0.15);
+          });
 
-          window.__timelines["04-f4"] = tl;
+          // Surge (1.257): headline lands below the cards.
+          tl.fromTo("#f4_head", { opacity: 0, y: 34 },
+            { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, A[2]);
+
+          // 1.768: lime pill snaps in (scale 0.9→1 + fade, no overshoot).
+          tl.fromTo("#f4_pill", { opacity: 0, scale: 0.9 },
+            { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, A[3]);
+
+          // Everything holds still from ~2.66s to SPAN.
+
           tl.seek(0);
+          window.__timelines["04-f4"] = tl;
         })();
       </script>
     </template>

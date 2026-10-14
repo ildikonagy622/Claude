@@ -24,7 +24,7 @@
         }
 
         /* full-bleed step clips */
-        #f3_v1, #f3_v2, #f3_v4 {
+        #f3_v2, #f3_v4 {
           position: absolute;
           left: 0; top: 0;
           width: 1080px;
@@ -60,6 +60,100 @@
           box-sizing: border-box;
           z-index: 2;
           transform-origin: 50% 50%;
+        }
+
+        /* step 01: digital B-roll (HTML only) */
+        #f3_broll {
+          z-index: 1;
+          width: 1080px;
+          height: 1920px;
+          background: #0C0C0E;
+          overflow: hidden;
+        }
+        #f3_bgrid {
+          position: absolute;
+          inset: 0;
+          background-image:
+            linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px);
+          background-size: 90px 90px;
+          background-position: 0 0;
+        }
+        #f3_bglow {
+          position: absolute;
+          left: 40px; top: 190px;
+          width: 1000px; height: 1000px;
+          background: radial-gradient(closest-side, rgba(139,92,246,0.45), rgba(139,92,246,0) 70%);
+        }
+        #f3_bstage {
+          position: absolute;
+          left: 0; top: 0;
+          width: 1080px;
+          height: 1920px;
+        }
+        .f3_tile {
+          position: absolute;
+          top: 560px;
+          width: 260px;
+          height: 260px;
+          box-sizing: border-box;
+          background: #1B162A;
+          border: 1.5px solid #8B5CF6;
+          border-radius: 36px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          box-shadow: 0 0 60px rgba(139,92,246,0.25);
+        }
+        #f3_tileA { left: 170px; }
+        #f3_tileB { left: 650px; }
+        .f3_glyph {
+          font-family: "Inter", sans-serif;
+          font-size: 64px;
+          line-height: 1;
+          color: #B9A4FB;
+        }
+        .f3_tlabel {
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 44px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+        }
+        #f3_link {
+          position: absolute;
+          left: 430px;
+          top: 689px;
+          width: 220px;
+          height: 3px;
+          border-radius: 100px;
+          background: #8B5CF6;
+          box-shadow: 0 0 18px rgba(139,92,246,0.7);
+          transform-origin: 50% 50%;
+          transform: scaleX(0);
+        }
+        #f3_chip {
+          position: absolute;
+          left: 0; right: 0;
+          top: 900px;
+          display: flex;
+          justify-content: center;
+        }
+        #f3_pill {
+          display: inline-block;
+          padding: 22px 44px;
+          border-radius: 100px;
+          background: #DEFD86;
+          color: #0C0C0E;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 1;
+          white-space: nowrap;
+          opacity: 0;
         }
 
         /* legibility scrim under the lower third */
@@ -150,16 +244,34 @@
 
       <div id="root" data-composition-id="03-f3" data-width="1080" data-height="1920" data-duration="4.919">
         <!-- step clips: hard cuts at local 0 / 1.253 / 2.252 / 3.715 -->
-        <video id="f3_v1" src="assets/clips/03-chatgpt-prompt.mp4" muted playsinline
-               data-start="0" data-duration="1.253" data-media-start="0" data-track-index="1"></video>
-        <video id="f3_v2" src="assets/clips/04-chatgpt-plan.mp4" muted playsinline
+        <!-- slot 1: digital B-roll (HTML/CSS, no video) -->
+        <div id="f3_broll" class="clip" data-start="0" data-duration="1.253" data-track-index="2">
+          <div id="f3_bgrid"></div>
+          <div id="f3_bglow"></div>
+          <div id="f3_bstage">
+            <div id="f3_link"></div>
+            <div class="f3_tile" id="f3_tileA">
+              <div class="f3_glyph">✦</div>
+              <div class="f3_tlabel">ChatGPT</div>
+            </div>
+            <div class="f3_tile" id="f3_tileB">
+              <div class="f3_glyph">✦</div>
+              <div class="f3_tlabel">Canva</div>
+            </div>
+            <div id="f3_chip"><div id="f3_pill">Összekapcsolva ✓</div></div>
+          </div>
+        </div>
+        <!-- slot 2: AI image, full-bleed -->
+        <video id="f3_v2" src="assets/clips/06-ai-image.mp4" muted playsinline
                data-start="1.253" data-duration="0.999" data-media-start="0" data-track-index="1"></video>
+        <!-- slot 3: Canva post as floating card on violet-glow ground -->
         <div id="f3_ground" class="clip" data-start="2.252" data-duration="1.463" data-track-index="2">
           <div id="f3_glow"></div>
         </div>
         <video id="f3_v3" src="assets/clips/05-canva-post.mp4" muted playsinline
                data-start="2.252" data-duration="1.463" data-media-start="0" data-track-index="3"></video>
-        <video id="f3_v4" src="assets/clips/06-ai-image.mp4" muted playsinline
+        <!-- slot 4: Canva deck, full-bleed -->
+        <video id="f3_v4" src="assets/clips/07-canva-deck.mp4" muted playsinline
                data-start="3.715" data-duration="1.204" data-media-start="0" data-track-index="1"></video>
 
         <div id="f3_scrim"></div>
@@ -174,19 +286,19 @@
           <div id="f3_card">
             <div class="f3_step" id="f3_s1">
               <div class="f3_num">01 <span>/ 04</span></div>
-              <div class="f3_title">Stratégia és csalitermék</div>
+              <div class="f3_title">ChatGPT + Canva összekötése</div>
             </div>
             <div class="f3_step" id="f3_s2">
               <div class="f3_num">02 <span>/ 04</span></div>
-              <div class="f3_title">Tartalomnaptár percek alatt</div>
+              <div class="f3_title">Kép egyetlen promptból</div>
             </div>
             <div class="f3_step" id="f3_s3">
               <div class="f3_num">03 <span>/ 04</span></div>
-              <div class="f3_title">Hírlevelek és posztok</div>
+              <div class="f3_title">Kész poszt a Canvában</div>
             </div>
             <div class="f3_step" id="f3_s4">
               <div class="f3_num">04 <span>/ 04</span></div>
-              <div class="f3_title">Látványos kreatívok Canvával</div>
+              <div class="f3_title">Prezentáció percek alatt</div>
             </div>
           </div>
         </div>
@@ -197,32 +309,50 @@
           var DUR = 4.919;
           var cuts = [0, 1.253, 2.252, 3.715];
           var ends = [1.253, 2.252, 3.715, DUR];
+
+          // initial states (stable baselines) — set before the timeline is built
+          gsap.set("#f3_lt", { opacity: 0, y: 24 });
+          gsap.set(".f3_step", { opacity: 0, y: 18 });
+          gsap.set(".f3_fill", { scaleX: 0 });
+          gsap.set("#f3_tileA", { x: -150, opacity: 0 });
+          gsap.set("#f3_tileB", { x: 150, opacity: 0 });
+          gsap.set("#f3_link", { scaleX: 0 });
+          gsap.set("#f3_pill", { opacity: 0, scale: 0.86, y: 10 });
+          gsap.set("#f3_bglow", { opacity: 0.75, scale: 0.94 });
+          gsap.set(["#f3_v2", "#f3_v4"], { scale: 1.0 });
+          gsap.set("#f3_v3", { scale: 0.97, y: 16 });
+          gsap.set("#f3_glow", { opacity: 0.7, scale: 0.94 });
+
           var tl = gsap.timeline({ paused: true });
 
           // lower-third card enters once, persists across cuts
-          tl.fromTo("#f3_lt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+          tl.to("#f3_lt", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+
+          // slot 1: digital B-roll — tiles converge, connector draws, chip snaps in (done by ~1.0s)
+          tl.to("#f3_tileA", { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.0);
+          tl.to("#f3_tileB", { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.0);
+          tl.to("#f3_link", { scaleX: 1, duration: 0.28, ease: "power2.out" }, 0.42);
+          tl.to("#f3_pill", { opacity: 1, scale: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.72);
+          tl.to("#f3_bglow", { opacity: 1, scale: 1.04, duration: ends[0], ease: "sine.inOut" }, 0);
 
           // gentle push on each full-bleed clip (scale 1.0 -> 1.04 over its window)
-          [["#f3_v1", 0], ["#f3_v2", 1], ["#f3_v4", 3]].forEach(function (p) {
-            var i = p[1];
-            tl.fromTo(p[0], { scale: 1.0 }, { scale: 1.04, duration: ends[i] - cuts[i], ease: "none" }, cuts[i]);
-          });
+          tl.to("#f3_v2", { scale: 1.04, duration: ends[1] - cuts[1], ease: "none" }, cuts[1]);
+          tl.to("#f3_v4", { scale: 1.04, duration: ends[3] - cuts[3], ease: "none" }, cuts[3]);
 
-          // step 03: floating card settles in, then drifts
-          tl.fromTo("#f3_v3", { scale: 0.97, y: 16 }, { scale: 1.0, y: 0, duration: 0.35, ease: "power3.out" }, cuts[2]);
+          // slot 3: floating card settles in, then drifts
+          tl.to("#f3_v3", { scale: 1.0, y: 0, duration: 0.35, ease: "power3.out" }, cuts[2]);
           tl.to("#f3_v3", { scale: 1.02, duration: ends[2] - cuts[2] - 0.35, ease: "none" }, cuts[2] + 0.35);
-          tl.fromTo("#f3_glow", { opacity: 0.7, scale: 0.94 }, { opacity: 1, scale: 1.04, duration: ends[2] - cuts[2], ease: "sine.inOut" }, cuts[2]);
+          tl.to("#f3_glow", { opacity: 1, scale: 1.04, duration: ends[2] - cuts[2], ease: "sine.inOut" }, cuts[2]);
 
           // step text swap + rail fill on each cut
           for (var i = 0; i < 4; i++) {
             var s = "#f3_s" + (i + 1);
             var t = cuts[i];
             if (i > 0) {
-              var prev = "#f3_s" + i;
-              tl.to(prev, { opacity: 0, y: -10, duration: 0.12, ease: "power2.in" }, t - 0.12);
+              tl.to("#f3_s" + i, { opacity: 0, y: -10, duration: 0.12, ease: "power2.in" }, t - 0.12);
             }
-            tl.fromTo(s, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t);
-            tl.fromTo("#f3_f" + (i + 1), { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.out" }, t);
+            tl.to(s, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t);
+            tl.to("#f3_f" + (i + 1), { scaleX: 1, duration: 0.3, ease: "power2.out" }, t);
           }
 
           window.__timelines["03-f3"] = tl;
