@@ -132,7 +132,97 @@
           border-radius: 100px;
           background: #8B5CF6;
           box-shadow: 0 0 18px rgba(139,92,246,0.7);
-          transform-origin: 50% 50%;
+          transform-origin: 0% 50%;
+        }
+        .f3_halo {
+          position: absolute;
+          inset: -2px;
+          border-radius: 37px;
+          border: 2px solid #B9A4FB;
+          box-shadow: 0 0 46px rgba(139,92,246,0.85), inset 0 0 26px rgba(139,92,246,0.35);
+          opacity: 0;
+          pointer-events: none;
+        }
+        .f3_badge {
+          position: absolute;
+          top: -18px;
+          right: -18px;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: #DEFD86;
+          color: #0C0C0E;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 56px;
+          text-align: center;
+          box-shadow: 0 0 22px rgba(222,253,134,0.45);
+          opacity: 0;
+        }
+        #f3_pchip {
+          position: absolute;
+          left: 384px;
+          top: 670px;
+          width: 92px;
+          height: 42px;
+          box-sizing: border-box;
+          border-radius: 100px;
+          background: #B9A4FB;
+          box-shadow: 0 0 24px rgba(185,164,251,0.65);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          opacity: 0;
+        }
+        .f3_pbar {
+          display: block;
+          height: 6px;
+          border-radius: 100px;
+          background: #1B162A;
+        }
+        #f3_dcard {
+          position: absolute;
+          left: 622px;
+          top: 662px;
+          width: 58px;
+          height: 58px;
+          box-sizing: border-box;
+          border-radius: 12px;
+          background: #DEFD86;
+          box-shadow: 0 0 24px rgba(222,253,134,0.5);
+          overflow: hidden;
+          opacity: 0;
+        }
+        #f3_dsun {
+          position: absolute;
+          right: 11px;
+          top: 11px;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background: #1B162A;
+        }
+        #f3_dmtn {
+          position: absolute;
+          left: 8px;
+          right: 8px;
+          bottom: 9px;
+          height: 24px;
+          background: #1B162A;
+          clip-path: polygon(0 100%, 34% 18%, 56% 62%, 72% 40%, 100% 100%);
+        }
+        .f3_dot {
+          position: absolute;
+          left: 425px;
+          top: 685px;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background: #EFE8FF;
+          box-shadow: 0 0 12px 3px rgba(185,164,251,0.9);
+          opacity: 0;
         }
         #f3_chip {
           position: absolute;
@@ -240,37 +330,51 @@
         }
       </style>
 
-      <div id="root" data-composition-id="03-f3" data-width="1080" data-height="1920" data-duration="4.919">
-        <!-- step clips: hard cuts at local 0 / 1.253 / 2.252 / 3.715 -->
+      <div id="root" data-composition-id="03-f3" data-width="1080" data-height="1920" data-duration="5.941">
+        <!-- step clips: hard cuts at local 0 / 2.275 / 3.274 / 4.737 -->
         <!-- slot 1: digital B-roll (HTML/CSS, no video) -->
-        <div id="f3_broll" class="clip" data-start="0" data-duration="1.253" data-track-index="2">
+        <div id="f3_broll" class="clip" data-start="0" data-duration="2.275" data-track-index="2">
           <div id="f3_bgrid"></div>
           <div id="f3_bglow"></div>
           <div id="f3_bstage">
             <div id="f3_link"></div>
             <div class="f3_tile" id="f3_tileA">
+              <div class="f3_halo" id="f3_haloA"></div>
               <div class="f3_glyph">✦</div>
               <div class="f3_tlabel">ChatGPT</div>
+              <div class="f3_badge" id="f3_badgeA">✓</div>
             </div>
             <div class="f3_tile" id="f3_tileB">
+              <div class="f3_halo" id="f3_haloB"></div>
               <div class="f3_glyph">✦</div>
               <div class="f3_tlabel">Canva</div>
+              <div class="f3_badge" id="f3_badgeB">✓</div>
             </div>
+            <div class="f3_dot" id="f3_dot0"></div>
+            <div class="f3_dot" id="f3_dot1"></div>
+            <div class="f3_dot" id="f3_dot2"></div>
+            <div class="f3_dot" id="f3_dot3"></div>
+            <div id="f3_pchip">
+              <i class="f3_pbar" style="width:16px"></i>
+              <i class="f3_pbar" style="width:22px"></i>
+              <i class="f3_pbar" style="width:12px"></i>
+            </div>
+            <div id="f3_dcard"><div id="f3_dsun"></div><div id="f3_dmtn"></div></div>
             <div id="f3_chip"><div id="f3_pill">Összekapcsolva ✓</div></div>
           </div>
         </div>
         <!-- slot 2: AI image, full-bleed -->
         <video id="f3_v2" src="assets/clips/06-ai-image.mp4" muted playsinline
-               data-start="1.253" data-duration="0.999" data-media-start="0" data-track-index="1"></video>
+               data-start="2.275" data-duration="0.999" data-media-start="0" data-track-index="1"></video>
         <!-- slot 3: Canva post as floating card on violet-glow ground -->
-        <div id="f3_ground" class="clip" data-start="2.252" data-duration="1.463" data-track-index="2">
+        <div id="f3_ground" class="clip" data-start="3.274" data-duration="1.463" data-track-index="2">
           <div id="f3_glow"></div>
         </div>
         <video id="f3_v3" src="assets/clips/05-canva-post.mp4" muted playsinline
-               data-start="2.252" data-duration="1.463" data-media-start="0" data-track-index="3"></video>
+               data-start="3.274" data-duration="1.463" data-media-start="0" data-track-index="3"></video>
         <!-- slot 4: Canva deck, full-bleed -->
         <video id="f3_v4" src="assets/clips/07-canva-deck.mp4" muted playsinline
-               data-start="3.715" data-duration="1.204" data-media-start="0" data-track-index="1"></video>
+               data-start="4.737" data-duration="1.204" data-media-start="0" data-track-index="1"></video>
 
         <div id="f3_scrim"></div>
 
@@ -304,19 +408,31 @@
 
       <script>
         (function () {
-          var DUR = 4.919;
-          var cuts = [0, 1.253, 2.252, 3.715];
-          var ends = [1.253, 2.252, 3.715, DUR];
+          var DUR = 5.941;
+          var cuts = [0, 2.275, 3.274, 4.737];
+          var ends = [2.275, 3.274, 4.737, DUR];
+          // slot-1 beat anchors (frame-local)
+          var B1 = 0.325, B2 = 0.813, B3 = 1.300, B4 = 1.788;
+          var LINK_W = 220;
 
           // initial states (stable baselines) — set before the timeline is built
           gsap.set("#f3_lt", { opacity: 0, y: 24 });
           gsap.set(".f3_step", { opacity: 0, y: 18 });
           gsap.set(".f3_fill", { scaleX: 0 });
-          gsap.set("#f3_tileA", { x: -150, opacity: 0 });
-          gsap.set("#f3_tileB", { x: 150, opacity: 0 });
-          gsap.set("#f3_link", { scaleX: 0 });
-          gsap.set("#f3_pill", { opacity: 0, scale: 0.86, y: 10 });
-          gsap.set("#f3_bglow", { opacity: 0.75, scale: 0.94 });
+          gsap.set("#f3_tileA", { x: -170, scale: 0.85, opacity: 0 });
+          gsap.set("#f3_tileB", { x: 170, scale: 0.85, opacity: 0 });
+          gsap.set(".f3_halo", { opacity: 0 });
+          gsap.set(".f3_badge", { opacity: 0, scale: 0.6 });
+          gsap.set("#f3_link", { scaleX: 0, transformOrigin: "0% 50%" });
+          gsap.set("#f3_pchip", { x: 0, opacity: 0, scale: 0.8 });
+          gsap.set("#f3_dcard", { x: 0, opacity: 0, scale: 0.8 });
+          var dotDir = [1, 1, -1, -1];
+          for (var d = 0; d < 4; d++) {
+            gsap.set("#f3_dot" + d, { x: dotDir[d] > 0 ? 0 : LINK_W, opacity: 0 });
+          }
+          gsap.set("#f3_pill", { opacity: 0, scale: 0.9, y: 8 });
+          gsap.set("#f3_bglow", { opacity: 0.7, scale: 0.94 });
+          gsap.set("#f3_bstage", { scale: 1, transformOrigin: "540px 700px" });
           gsap.set(["#f3_v2", "#f3_v4"], { scale: 1.0 });
           gsap.set("#f3_v3", { scale: 0.97, y: 16 });
           gsap.set("#f3_glow", { opacity: 0.7, scale: 0.94 });
@@ -326,12 +442,50 @@
           // lower-third card enters once, persists across cuts
           tl.to("#f3_lt", { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
 
-          // slot 1: digital B-roll — tiles converge, connector draws, chip snaps in (done by ~1.0s)
-          tl.to("#f3_tileA", { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.0);
-          tl.to("#f3_tileB", { x: 0, opacity: 1, duration: 0.45, ease: "power3.out" }, 0.0);
-          tl.to("#f3_link", { scaleX: 1, duration: 0.28, ease: "power2.out" }, 0.42);
-          tl.to("#f3_pill", { opacity: 1, scale: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.72);
-          tl.to("#f3_bglow", { opacity: 1, scale: 1.04, duration: ends[0], ease: "sine.inOut" }, 0);
+          // ---- slot 1: digital B-roll (0 -> 2.275) ----
+          // 0 -> B1: tiles fly in from opposite sides, scale 0.85 -> 1, land on B1
+          tl.to("#f3_tileA", { x: 0, scale: 1, duration: B1, ease: "power3.out" }, 0);
+          tl.to("#f3_tileB", { x: 0, scale: 1, duration: B1, ease: "power3.out" }, 0);
+          tl.to(["#f3_tileA", "#f3_tileB"], { opacity: 1, duration: B1 * 0.8, ease: "power1.out" }, 0);
+
+          // B1 -> B2: connector draws from the ChatGPT tile; violet border pulse on B2
+          tl.to("#f3_link", { scaleX: 1, duration: 0.36, ease: "power2.inOut" }, B1 + 0.04);
+          tl.to(".f3_halo", { opacity: 1, duration: 0.1, ease: "power2.out" }, B2);
+          tl.to(".f3_halo", { opacity: 0.3, duration: 0.5, ease: "sine.inOut" }, B2 + 0.1);
+
+          // B2 -> B3: prompt chip travels ChatGPT -> Canva
+          tl.to("#f3_pchip", { opacity: 1, scale: 1, duration: 0.1, ease: "power2.out" }, B2);
+          tl.to("#f3_pchip", { x: LINK_W, duration: B3 - B2 - 0.03, ease: "power2.inOut" }, B2);
+          tl.to("#f3_pchip", { opacity: 0, scale: 0.85, duration: 0.09, ease: "power2.in" }, B3 - 0.12);
+
+          // B3 -> B4: design card returns Canva -> ChatGPT
+          tl.to("#f3_dcard", { opacity: 1, scale: 1, duration: 0.1, ease: "power2.out" }, B3);
+          tl.to("#f3_dcard", { x: -LINK_W, duration: B4 - B3 - 0.03, ease: "power2.inOut" }, B3);
+          tl.to("#f3_dcard", { opacity: 0, scale: 0.85, duration: 0.09, ease: "power2.in" }, B4 - 0.12);
+
+          // glowing dots streaming along the line (2 outbound, 2 return; staggered by index)
+          for (var k = 0; k < 4; k++) {
+            var dsel = "#f3_dot" + k;
+            var base = k < 2 ? B2 : B3;
+            var st = base + 0.06 + (k % 2) * 0.17;
+            var travel = 0.3;
+            tl.to(dsel, { opacity: 1, duration: 0.05, ease: "none" }, st);
+            tl.to(dsel, { x: dotDir[k] > 0 ? LINK_W : 0, duration: travel, ease: "none" }, st);
+            tl.to(dsel, { opacity: 0, duration: 0.06, ease: "none" }, st + travel - 0.06);
+          }
+
+          // background glow: slow breathe, swell on the B3 downbeat
+          tl.to("#f3_bglow", { opacity: 0.88, scale: 1.0, duration: B3, ease: "sine.inOut" }, 0);
+          tl.to("#f3_bglow", { opacity: 1, scale: 1.08, duration: 0.16, ease: "power2.out" }, B3);
+          tl.to("#f3_bglow", { opacity: 0.9, scale: 1.05, duration: 0.6, ease: "sine.inOut" }, B3 + 0.16);
+
+          // B4: connected — pill snaps in, check badges land on both tiles
+          tl.to("#f3_pill", { opacity: 1, scale: 1, y: 0, duration: 0.2, ease: "power2.out" }, B4);
+          tl.to(".f3_badge", { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, B4);
+          tl.to(".f3_halo", { opacity: 0.55, duration: 0.2, ease: "power2.out" }, B4);
+
+          // hold with a very slow push to the cut
+          tl.to("#f3_bstage", { scale: 1.03, duration: ends[0] - B4, ease: "sine.out" }, B4);
 
           // gentle push on each full-bleed clip (scale 1.0 -> 1.04 over its window)
           tl.to("#f3_v2", { scale: 1.04, duration: ends[1] - cuts[1], ease: "none" }, cuts[1]);
