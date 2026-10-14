@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- Frame 1 — f1 · span 0.000–4.389s · beat_cut · asset bg_under_text (01-typing) -->
+    <!-- Frame 1 — f1 · span 0.000–4.389s · beat_cut · asset bg_under_text (01-snitt) -->
   </head>
   <body>
     <template>
@@ -14,7 +14,7 @@
         @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
         @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
 
-        #stage {
+        #f1_stage {
           position: relative;
           width: 1080px;
           height: 1920px;
@@ -50,7 +50,7 @@
             rgba(12,12,14,0) 72%);
         }
 
-        #g1 {
+        #f1_g1 {
           position: absolute;
           inset: 0;
           width: 100%;
@@ -117,10 +117,10 @@
         }
       </style>
 
-      <div id="stage" data-composition-id="01-f1" data-width="1080" data-height="1920" data-duration="4.389">
+      <div id="f1_stage" data-composition-id="01-f1" data-width="1080" data-height="1920" data-duration="4.389">
         <video
           id="f1_clip"
-          src="assets/clips/01-typing.mp4"
+          src="assets/clips/01-snitt.mp4"
           muted
           playsinline
           data-start="0"
@@ -131,7 +131,7 @@
         <div id="f1_black"></div>
         <div id="f1_scrim"></div>
 
-        <div id="g1">
+        <div id="f1_g1">
           <div id="f1_glow"></div>
           <div id="f1_text">
             <span id="f1_eyebrow">✦ Az Amazing AI online workshopja</span>
@@ -153,7 +153,7 @@
           var tl = gsap.timeline({ paused: true });
 
           // group visibility across its span
-          tl.set("#g1", { autoAlpha: 1 }, 0);
+          tl.set("#f1_g1", { autoAlpha: 1 }, 0);
 
           // footage: from black, opens on the 0.511 hit, slow push 1.00 -> 1.06 across the frame
           tl.fromTo("#f1_clip", { scale: 1.0 }, { scale: 1.06, duration: DUR - 0.02, ease: "none" }, 0);

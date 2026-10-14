@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "182972d0-b588-4555-86ac-b0a15e6b8fc1",
-  "currentRevision": "9b2d3210-a3c7-494b-873e-f7177b612221",
+  "currentRevision": "cfa26a49-f0ee-49a9-9ed4-802971d12ecd",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -17,8 +17,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
     },
     "STORYBOARD.md": {
-      "hash": "73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/73/73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf"
+      "hash": "1786a1597865d1f556193093f5cb064604877e0a0696b874fff881b159416122",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/17/1786a1597865d1f556193093f5cb064604877e0a0696b874fff881b159416122"
     },
     "assets/bgm.mp3": {
       "hash": "4ac4054ae88cf6cb9feb23bb926336996366c198166b2a091d48d672879eb7e3",
@@ -57,12 +57,12 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a9/a93a219ccbaeec37feff04fe9bb8d9df0de32913210f2b67b2c0974a4daa9834"
     },
     "compositions/frames/01-f1.html": {
-      "hash": "c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c1/c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6"
+      "hash": "f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f6/f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06"
     },
     "compositions/frames/02-f2.html": {
-      "hash": "ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/ec/ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b"
+      "hash": "03fde142f7dff7fb3882fb4e3e69e571e0e33d0005e40f1354e94abbc74d3b58",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/03/03fde142f7dff7fb3882fb4e3e69e571e0e33d0005e40f1354e94abbc74d3b58"
     },
     "compositions/frames/03-f3.html": {
       "hash": "b11d5ec066ab8f2d6b2bf56aabdc086f46bb2752a0825dd8943a36499c175c50",
@@ -73,8 +73,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/56/56fd391006bdf7daa4b7affada6a648bb812ce0aa780b70b6d65a0a82a02cc5d"
     },
     "compositions/frames/05-f5.html": {
-      "hash": "c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c0/c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff"
+      "hash": "93d27dde39f516ed82fb50b1fc17d041bdbb6f8a5e9d9424aabe575c64a4cbf3",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/93/93d27dde39f516ed82fb50b1fc17d041bdbb6f8a5e9d9424aabe575c64a4cbf3"
     },
     "frame.md": {
       "hash": "cf4f872f82b537f0994c7190e8b13090e7c5618190959608bc3b0b3915585ed4",
@@ -144,13 +144,21 @@
       "hash": "7c35d47026b8ef5eba6a0d73bd08a78b2e3baa3579837748125170ee010eddd5",
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/7c/7c35d47026b8ef5eba6a0d73bd08a78b2e3baa3579837748125170ee010eddd5"
     },
-    "boards/stills/frame-06-at-15.6s.png": {
-      "hash": "26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/26/26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66"
-    },
     "boards/stills/frame-07-at-19.2s.png": {
       "hash": "a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5",
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a5/a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5"
+    },
+    "assets/amazing-ai-logo.png": {
+      "hash": "633348181caa06ae55a318b979326299ae362c963297eeb5fbfe3dd0940fed46",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/63/633348181caa06ae55a318b979326299ae362c963297eeb5fbfe3dd0940fed46"
+    },
+    "assets/clips/01-snitt.mp4": {
+      "hash": "c6ed6531c25151d0c60e306ca0fcf91f09d1f679c8c9f95231c9afb3d4354da0",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c6/c6ed6531c25151d0c60e306ca0fcf91f09d1f679c8c9f95231c9afb3d4354da0"
+    },
+    "boards/stills/frame-06-at-15.9s.png": {
+      "hash": "6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/6b/6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944"
     }
   },
   "revisions": {
@@ -415,12 +423,55 @@
           "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/56/56fd391006bdf7daa4b7affada6a648bb812ce0aa780b70b6d65a0a82a02cc5d"
         }
       }
+    },
+    "cfa26a49-f0ee-49a9-9ed4-802971d12ecd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792003213304,
+      "endedAt": 1792003213356,
+      "files": {
+        "assets/amazing-ai-logo.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/63/633348181caa06ae55a318b979326299ae362c963297eeb5fbfe3dd0940fed46"
+        },
+        "assets/clips/01-snitt.mp4": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c6/c6ed6531c25151d0c60e306ca0fcf91f09d1f679c8c9f95231c9afb3d4354da0"
+        },
+        "boards/stills/frame-06-at-15.6s.png": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/26/26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66",
+          "after": null
+        },
+        "boards/stills/frame-06-at-15.9s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/6b/6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944"
+        },
+        "compositions/frames/01-f1.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c1/c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f6/f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06"
+        },
+        "compositions/frames/02-f2.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/ec/ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/03/03fde142f7dff7fb3882fb4e3e69e571e0e33d0005e40f1354e94abbc74d3b58"
+        },
+        "compositions/frames/05-f5.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c0/c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/93/93d27dde39f516ed82fb50b1fc17d041bdbb6f8a5e9d9424aabe575c64a4cbf3"
+        },
+        "STORYBOARD.md": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/73/73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/17/1786a1597865d1f556193093f5cb064604877e0a0696b874fff881b159416122"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "9b2d3210-a3c7-494b-873e-f7177b612221",
-      "id": "6a7c7223-3815-45f8-9cb9-bc205a1bf6c7"
+      "revision": "cfa26a49-f0ee-49a9-9ed4-802971d12ecd",
+      "id": "bd6eae77-45f4-4df0-98ce-b5e4d20053c0"
     },
     "revisions": {
       "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab": [
@@ -596,6 +647,35 @@
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
+      ],
+      "cfa26a49-f0ee-49a9-9ed4-802971d12ecd": [
+        {
+          "id": "bd6eae77-45f4-4df0-98ce-b5e4d20053c0",
+          "scope": "project",
+          "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/bd6eae77-45f4-4df0-98ce-b5e4d20053c0.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792003247837,
+          "contentHash": "e2ad88a8097941c9426940af2a62dee9fbad56ae9d01b118dcc74f29b6ef1d69",
+          "revision": "cfa26a49-f0ee-49a9-9ed4-802971d12ecd",
+          "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
       ]
     },
     "unversioned": [
@@ -631,7 +711,7 @@
   "snapshots": {
     "latest": {
       "revision": null,
-      "id": "d23d1fae-26f1-4925-ad02-e5169e3b0f1e-0"
+      "id": "8f446ebb-2a82-4396-a920-717ca506e223-4"
     },
     "revisions": {},
     "unversioned": [
@@ -842,26 +922,6 @@
       },
       {
         "scope": "full",
-        "id": "ede06a06-b81e-489f-83a7-9c09d94a83fa-6",
-        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-06-at-15.6s.png",
-        "time": 15.6,
-        "metadata": {
-          "width": 1080,
-          "height": 1920,
-          "zoomScale": 1,
-          "browserGpuMode": "auto",
-          "warnings": [],
-          "partial": false
-        },
-        "createdAt": 1792002581359,
-        "contentHash": "d98242452f3f35cb248d8e626eae228df3c20136159c31ee94c0f590d45afd91",
-        "revision": null,
-        "inputFingerprint": "d570fc453ac377912dea09c360d33f2adc5d4b664f5bc5b69c725c5145b6501a",
-        "inputScope": "local-project-files",
-        "attribution": "inputs-changed"
-      },
-      {
-        "scope": "full",
         "id": "ede06a06-b81e-489f-83a7-9c09d94a83fa-7",
         "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-07-at-19.2s.png",
         "time": 19.2,
@@ -882,9 +942,9 @@
       },
       {
         "scope": "full",
-        "id": "d23d1fae-26f1-4925-ad02-e5169e3b0f1e-0",
-        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-00-at-15.9s.png",
-        "time": 15.9,
+        "id": "8f446ebb-2a82-4396-a920-717ca506e223-0",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-00-at-0.3s.png",
+        "time": 0.3,
         "metadata": {
           "width": 1080,
           "height": 1920,
@@ -893,10 +953,90 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1792002940656,
-        "contentHash": "6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944",
+        "createdAt": 1792003259473,
+        "contentHash": "052dec79d287b0c0f53e3c3b22061ac98555180f80fde2913caa99d858fae1de",
         "revision": null,
-        "inputFingerprint": "8473055beb6a6fc90e750332f563c6dbb5676d0dffa604417113f1f9d150d728",
+        "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8f446ebb-2a82-4396-a920-717ca506e223-1",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-01-at-1.2s.png",
+        "time": 1.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792003259473,
+        "contentHash": "0df72b3d9532821333a96f11e21e490a8de05a3446d97e18b1d0bb5e7a0a48ef",
+        "revision": null,
+        "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8f446ebb-2a82-4396-a920-717ca506e223-2",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-02-at-2.8s.png",
+        "time": 2.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792003259473,
+        "contentHash": "ad5bfddc97805c42c199ff33eadf79fbe8ef1c7d77e134d6704cbfeecd0a09e6",
+        "revision": null,
+        "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8f446ebb-2a82-4396-a920-717ca506e223-3",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-03-at-4.2s.png",
+        "time": 4.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792003259473,
+        "contentHash": "9188b10a710997178936439af24f6db0df36d68b95a925e050e2b39f286aeaa8",
+        "revision": null,
+        "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8f446ebb-2a82-4396-a920-717ca506e223-4",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-04-at-19.2s.png",
+        "time": 19.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792003259473,
+        "contentHash": "65291a50f66ca95e64c7d1dc2c8eaeaf90d2d766b1dc6161241c51a373474f51",
+        "revision": null,
+        "inputFingerprint": "b9d01457597d52f6decccac6812b99211e415511603b91d05834ab84f2cedc62",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       }

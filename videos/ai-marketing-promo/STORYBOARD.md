@@ -27,7 +27,7 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 
 - **g1** — asset
   - span_sec: [0.0, 4.389]
-  - asset: { treatment: bg_under_text, clips: [assets/clips/01-typing.mp4], anchors: [0.511, 0.998, 1.486, 1.974], overlay_copy: ["✦ Az Amazing AI online workshopja", "AI az", "online", "marketingben"] }
+  - asset: { treatment: bg_under_text, clips: [assets/clips/01-snitt.mp4], anchors: [0.511, 0.998, 1.486, 1.974], overlay_copy: ["✦ Az Amazing AI online workshopja", "AI az", "online", "marketingben"] }
   - copy: "✦ Az Amazing AI online workshopja / AI az / online / marketingben" — headline in the lower third on a dark scrim; 'online marketingben' wears the lavender→lime gradient; eyebrow on 0.511, then one word-line per beat; footage opens from black on 0.511 with a slow push.
 
 ## Frame 2 — f2
@@ -94,4 +94,4 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
   - span_sec: [16.231, 20.0]
   - free_design: { dominant_system: "branded end card on the landing page's dark ground with a breathing violet glow", primitives: ["staggered line reveal", "button press pulse"], density_topology: "accumulate then hold" }
   - anchors: [16.231, 16.718, 17.206, 17.717, 18.204, 18.692]
-  - copy: ["✦ Online workshop", "2026. 10. 21.", "9:00–13:00 · Online, 100% élőben", "Jelentkezz most →", "go.amazingai.hu", "Amazing AI"] — accumulate one line per beat from 16.231; the violet CTA button lands on 17.717 and pulses softly on 18.204 / 18.692; everything holds still through the fade-out.
+  - copy: ["✦ Online workshop", "2026. 10. 21.", "9:00–13:00 · Online, 100% élőben", "Jelentkezz most →", "Amazing AI logo"] — accumulate one line per beat from 16.231; the violet CTA button lands on 17.717 and pulses softly on 18.204 / 18.692; everything holds still through the fade-out.
