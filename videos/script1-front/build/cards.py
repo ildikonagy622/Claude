@@ -40,3 +40,32 @@ CARDS = [
 CUTS = [0.00, 2.46, 4.02, 6.58, 8.68, 17.38, 23.64, 26.14, 29.20, 32.46, 35.22, 38.52,
         42.12, 51.58, 57.74, 58.90, 64.56, 70.16]
 DURATION = 74.64
+
+# Thin-line icons (Lucide, ISC — assets/icons). card index -> (line index the icon sits beside, icon name).
+# The icon arrives with that line, beside it on the right; if the line is too wide it sits above the card.
+ICONS = {
+    0: (1, "smartphone"),
+    1: (1, "sliders-horizontal"),
+    4: (1, "refresh-cw"),
+    6: (1, "sparkles"),
+    7: (1, "graduation-cap"),
+    9: (1, "wrench"),
+    12: (2, "trending-up"),
+    13: (1, "message-circle"),
+    15: (2, "circle-help"),
+    16: (1, "brain"),
+    17: (1, "hourglass"),
+    18: (1, "handshake"),
+    19: (2, "route"),
+    20: (2, "triangle-alert"),
+    21: (2, "circle-check"),
+    22: (2, "languages"),
+    23: (2, "video"),
+    24: (1, "mouse-pointer-click"),
+    25: (1, "lightbulb"),
+    26: (2, "eye"),
+    27: (1, "target"),
+    29: (1, "zap"),
+    30: (1, "calendar"),
+    31: (0, "pointer"),
+}

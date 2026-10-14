@@ -10,7 +10,17 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-from cards import CARDS, CUTS, DURATION  # noqa: E402
+from cards import CARDS, CUTS, DURATION, ICONS  # noqa: E402
+import re  # noqa: E402
+
+
+def icon_svg(name):
+    raw = open(os.path.join(ROOT, "assets", "icons", f"{name}.svg"), encoding="utf-8").read()
+    raw = re.sub(r"<!--.*?-->", "", raw, flags=re.S).strip()
+    head, rest = raw.split(">", 1)  # strip sizing from the root <svg> only, never from <rect>
+    raw = re.sub(r'\s(class|width|height)="[^"]*"', "", head) + ">" + rest
+    raw = raw.replace('stroke-width="2"', 'stroke-width="1.3"')
+    return re.sub(r"\s+", " ", raw)
 
 LEAD = 0.06  # a card appears this much before its first spoken word
 MAX_HOLD = 2.2  # a card never lingers longer than this after its last line lands
@@ -43,6 +53,8 @@ for i, c in enumerate(cards):
     for j, (kind, text, _t) in enumerate(c["lines"]):
         cls = "ln-m" if kind == "m" else "ln-e"
         rows.append(f'          <div class="ln {cls}" id="cap-c{i}l{j}"><span>{html.escape(text)}</span></div>')
+    if i in ICONS:
+        rows.append(f'          <div class="ico" id="cap-c{i}ico">{icon_svg(ICONS[i][1])}</div>')
     card_html.append(
         f'        <div class="cap-inner clip" id="cap-c{i}" data-start="{c["start"]}" '
         f'data-duration="{round(c["end"] - c["start"], 2)}" data-track-index="0">\n'
@@ -56,6 +68,7 @@ timing = [
         "start": c["start"],
         "end": c["end"],
         "lines": [{"id": f"cap-c{i}l{j}", "kind": k, "t": t} for j, (k, _x, t) in enumerate(c["lines"])],
+        "icon": ({"id": f"cap-c{i}ico", "line": ICONS[i][0]} if i in ICONS else None),
     }
     for i, c in enumerate(cards)
 ]
@@ -95,6 +108,20 @@ captions = f"""<!doctype html>
         .ln > span {{
           display: inline-block;
         }}
+        .ico {{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 108px;
+          height: 108px;
+          color: #fffdf8;
+          filter: drop-shadow(0 2px 14px rgba(12, 8, 20, 0.3));
+        }}
+        .ico svg {{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }}
         .ln-m {{
           font-family: "Inter Tight", sans-serif;
           font-weight: 800;
@@ -133,8 +160,31 @@ captions = f"""<!doctype html>
             }});
           }}
 
+          // Park each icon beside its line (right side, vertically centred on the glyphs);
+          // when the line leaves no room, centre it above the card instead.
+          function placeIcons() {{
+            CARDS.forEach((c) => {{
+              if (!c.icon) return;
+              const card = document.getElementById(c.id);
+              const ico = document.getElementById(c.icon.id);
+              const span = document.querySelector("#" + c.lines[c.icon.line].id + " > span");
+              const cr = card.getBoundingClientRect();
+              const sr = span.getBoundingClientRect();
+              const S = 108, GAP = 22, EDGE = 1080 - 40;
+              let x = sr.right - cr.left + GAP;
+              let y = sr.top - cr.top + (sr.height - S) / 2 - 6;
+              if (cr.left + x + S > EDGE) {{
+                x = (cr.width - S) / 2;
+                y = -S - 18;
+              }}
+              ico.style.left = x + "px";
+              ico.style.top = y + "px";
+            }});
+          }}
+
           function build() {{
             fitLines();
+            placeIcons();
             const tl = gsap.timeline({{ paused: true }});
             CARDS.forEach((c) => {{
               c.lines.forEach((l) => {{
@@ -156,13 +206,25 @@ captions = f"""<!doctype html>
                   );
                 }}
               }});
+              let iconEnd = 0;
+              if (c.icon) {{
+                const at = Math.max(c.start, c.lines[c.icon.line].t + 0.08);
+                tl.fromTo(
+                  "#" + c.icon.id,
+                  {{ opacity: 0, scale: 0.82, rotation: -10 }},
+                  {{ opacity: 1, scale: 1, rotation: 0, duration: 0.55, ease: "power3.out" }},
+                  at
+                );
+                iconEnd = at + 0.55;
+              }}
               // Exit: fade every line of the card together just before the next card.
               tl.to(
-                c.lines.map((l) => "#" + l.id),
+                c.lines.map((l) => "#" + l.id).concat(c.icon ? ["#" + c.icon.id] : []),
                 {{ opacity: 0, duration: 0.16, ease: "power1.in" }},
                 Math.max(
                   c.start + 0.3,
                   c.end - 0.16,
+                  iconEnd,
                   ...c.lines.map((l) => Math.max(c.start, l.t - 0.04) + (l.kind === "e" ? 0.5 : 0.32))
                 )
               );
