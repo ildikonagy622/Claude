@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "182972d0-b588-4555-86ac-b0a15e6b8fc1",
-  "currentRevision": "e8eb9b0b-1fa5-45d6-824b-8014efa9bbce",
+  "currentRevision": "3a7c3f1e-0e32-43f0-80c9-a97db8177ddd",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -57,8 +57,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a9/a93a219ccbaeec37feff04fe9bb8d9df0de32913210f2b67b2c0974a4daa9834"
     },
     "compositions/frames/01-f1.html": {
-      "hash": "f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f6/f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06"
+      "hash": "3dd69033111bde34ebe732e1c786d9f6f19b3df1e3a296ea9c1c38c5573e3e4d",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/3d/3dd69033111bde34ebe732e1c786d9f6f19b3df1e3a296ea9c1c38c5573e3e4d"
     },
     "compositions/frames/02-f2.html": {
       "hash": "fa6be3db2065a7c90a72c96cff0aa510bf4aaea80626bfd183887842658c2f91",
@@ -157,8 +157,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/6b/6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944"
     },
     "ai-marketing-promo-20s.mp4": {
-      "hash": "d169313db8f0c6a8fa08b7d88143d6321906a79162b6b74eb1fa1a39c6223b97",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d1/d169313db8f0c6a8fa08b7d88143d6321906a79162b6b74eb1fa1a39c6223b97"
+      "hash": "d1ec72eadd68efa215f226c33df9c9e35766cb5d3872e9a588cd06857ddfeb0f",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d1/d1ec72eadd68efa215f226c33df9c9e35766cb5d3872e9a588cd06857ddfeb0f"
     }
   },
   "revisions": {
@@ -581,6 +581,25 @@
           "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a5/a558b87b78a0690f4315c714d2550dc21368243943e9f2c96613ab11dc37b59b"
         }
       }
+    },
+    "3a7c3f1e-0e32-43f0-80c9-a97db8177ddd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792004705079,
+      "endedAt": 1792004705091,
+      "files": {
+        "ai-marketing-promo-20s.mp4": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d1/d169313db8f0c6a8fa08b7d88143d6321906a79162b6b74eb1fa1a39c6223b97",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d1/d1ec72eadd68efa215f226c33df9c9e35766cb5d3872e9a588cd06857ddfeb0f"
+        },
+        "compositions/frames/01-f1.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f6/f6866c01a7cd6ec64fae860bf0d94109abe7808e4526e1425cc9ca0dd5fe5e06",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/3d/3dd69033111bde34ebe732e1c786d9f6f19b3df1e3a296ea9c1c38c5573e3e4d"
+        }
+      }
     }
   },
   "checks": {
@@ -861,8 +880,8 @@
   },
   "snapshots": {
     "latest": {
-      "revision": "e8eb9b0b-1fa5-45d6-824b-8014efa9bbce",
-      "id": "318755b9-acb1-402d-981d-a925165691f1-7"
+      "revision": "3a7c3f1e-0e32-43f0-80c9-a97db8177ddd",
+      "id": "4b7dd53e-5c87-4dbc-adfa-a46819d10e42-0"
     },
     "revisions": {
       "e8eb9b0b-1fa5-45d6-824b-8014efa9bbce": [
@@ -1023,6 +1042,28 @@
           "contentHash": "12abb2e075afdf69c84d5cd03d06834eef2425924dd789656f57dc3aa61005f2",
           "revision": "e8eb9b0b-1fa5-45d6-824b-8014efa9bbce",
           "inputFingerprint": "ac61985db085f12f2511b676edaa66ac11bda0773e689163803a4617292384da",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "3a7c3f1e-0e32-43f0-80c9-a97db8177ddd": [
+        {
+          "scope": "full",
+          "id": "4b7dd53e-5c87-4dbc-adfa-a46819d10e42-0",
+          "image": "/tmp/claude-0/-home-user-Claude/1ad0e354-9534-5fe8-b9cb-152a87855328/scratchpad/g/frame-00-at-3.5s.png",
+          "time": 3.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792004714353,
+          "contentHash": "21c7ad28ff1ab8fb9d531c2d67746b705c6e205955b4189b1d97b411c5173b70",
+          "revision": "3a7c3f1e-0e32-43f0-80c9-a97db8177ddd",
+          "inputFingerprint": "e3a6dad3eec89656d587161bb73ddc55c048a60f8f494550067ee9ec46c7e3d8",
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }

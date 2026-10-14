@@ -1,6 +1,6 @@
 ---
 compositionId: ai-marketing-promo
-duration_s: 20.0 # == audiomap.audio.duration_sec
+duration_s: 22.0 # == audiomap.audio.duration_sec
 canvas: {"w": 1080, "h": 1920, "fps": 30}
 style:
   font: "Inter Display / Inter"
@@ -46,11 +46,27 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
   - asset: { treatment: bg_under_text, clips: [assets/clips/02-logo.mp4], anchors: [4.435, 4.923, 5.898], overlay_copy: ["Ma már egyedül is lehetsz", "egy teljes ügynökség"] }
   - copy: "Ma már egyedül is lehetsz / egy teljes ügynökség" — top third over a top-down scrim (the ChatGPT + Canva logos stay visible mid-frame); line 1 on 4.923, line 2 on 5.898 with 'teljes ügynökség' in lavender; the clip's own push-in and blur ending carry into the cut.
 
-## Frame 3 — f3
+## Frame 3 — fc
+
+- src: compositions/frames/02b-fc.html
+- duration: 1.951s
+- span_sec: [7.059, 9.01]
+- pacing: beat_cut
+- mood: [elegant]
+- feel: surge into the downbeat at 8.36, dense hi-hat bed
+
+### Groups
+
+- **g1** — asset
+  - span_sec: [7.059, 9.01]
+  - asset: { treatment: beat_cut, clips: [assets/clips/08a-connect-dialog.mp4, assets/clips/08b-connect-allow.mp4, assets/clips/08c-connect-success.mp4], anchors: [7.059, 7.872, 8.359], overlay_copy: ["01 · ChatGPT + Canva összekötése"] }
+  - copy: the real screen recording of connecting Canva inside ChatGPT, three square crops (Connect Canva dialog → permission page → Authorization Successful) hard-cut on the beats as a floating rounded card on the dark violet-glow ground, with the same lower-third step card "01 / 04 · ChatGPT + Canva összekötése" and rail as frame f3 (continuity into the B-roll).
+
+## Frame 4 — f3
 
 - src: compositions/frames/03-f3.html
 - duration: 5.941s
-- span_sec: [7.059, 13.0]
+- span_sec: [9.01, 14.951]
 - pacing: beat_cut
 - mood: [elegant, hype]
 - feel: two sustained hi-hat fills back to back, densest stretch, ending on a hard stop at 13
@@ -58,15 +74,15 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ### Groups
 
 - **g1** — asset
-  - span_sec: [7.059, 13.0]
-  - asset: { treatment: beat_cut, clips: [DIGITAL B-ROLL (built in HTML, no file), assets/clips/06-ai-image.mp4, assets/clips/05-canva-post.mp4, assets/clips/07-canva-deck.mp4], anchors: [7.059, 9.334, 10.333, 11.796], overlay_copy: ["01 · ChatGPT + Canva összekötése", "02 · Kép egyetlen promptból", "03 · Kész poszt a Canvában", "04 · Prezentáció percek alatt"] }
+  - span_sec: [9.01, 14.951]
+  - asset: { treatment: beat_cut, clips: [DIGITAL B-ROLL (built in HTML, no file), assets/clips/06-ai-image.mp4, assets/clips/05-canva-post.mp4, assets/clips/07-canva-deck.mp4], anchors: [9.01, 11.285, 12.284, 13.747], overlay_copy: ["01 · ChatGPT + Canva összekötése", "02 · Kép egyetlen promptból", "03 · Kész poszt a Canvában", "04 · Prezentáció percek alatt"] }
   - copy: one step label per cut, in a lower-third card (step number in lavender, title in white); a thin progress rail with 4 ticks fills one tick per cut. Slot 1 (7.059–9.334, ~2.3s) is an animated digital B-roll on the beat (7.384, 7.872, 8.359, 8.847): the ChatGPT and Canva app tiles fly in, a violet connector draws between them, data pulses travel along it (a prompt bubble from ChatGPT, a design card back from Canva), the glow pulses on the beats, and a lime "Összekapcsolva ✓" chip lands. Clip 05 (landscape crop) floats as a rounded card on the dark violet-glow ground; 06 and 07 are full-bleed.
 
-## Frame 4 — f4
+## Frame 5 — f4
 
 - src: compositions/frames/04-f4.html
 - duration: 3.231s
-- span_sec: [13.0, 16.231]
+- span_sec: [14.951, 18.182]
 - pacing: beat_cut
 - mood: [elegant, hype]
 - feel: brief dip at 13 then the strongest surge of the cut at 14, dense into the next downbeat
@@ -74,16 +90,16 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ### Groups
 
 - **g1** — free_design
-  - span_sec: [13.0, 16.231]
+  - span_sec: [14.951, 18.182]
   - free_design: { dominant_system: "digital B-roll: the day's three outputs assemble as UI cards on the dark violet-glow ground, then the 4-hour promise lands", primitives: ["staggered card reveal", "check tick", "pill snap"], density_topology: "accumulate then hold" }
-  - anchors: [13.282, 13.526, 13.769, 14.013, 14.257, 14.768, 15.256]
+  - anchors: [15.233, 15.477, 15.72, 15.964, 16.208, 16.719, 17.207]
   - copy: ["Kampánytervezés ✓", "Tartalomnaptár ✓", "Posztok és hírlevelek ✓", "Kreatívok Canvával ✓", "Prezentáció ✓", "Tanuld meg a folyamatot", "4 óra alatt"] — three small UI cards (mini thumbnails drawn in CSS: a square social post, an image frame, a 16:9 slide) stack in on 13.282 / 13.769 / 14.257 each with a lime check; on the 14.257 surge the headline "Tanuld meg a folyamatot" + lime pill "4 óra alatt" lands below them; hold.
 
-## Frame 5 — f5
+## Frame 6 — f5
 
 - src: compositions/frames/05-f5.html
-- duration: 3.769s
-- span_sec: [16.231, 20.0]
+- duration: 3.818s
+- span_sec: [18.182, 22.0]
 - pacing: beat_cut
 - mood: [elegant, warm]
 - feel: final two bars, steady groove fading out from 18.6 to silence at 20
@@ -91,7 +107,7 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ### Groups
 
 - **g1** — free_design
-  - span_sec: [16.231, 20.0]
+  - span_sec: [18.182, 22.0]
   - free_design: { dominant_system: "branded end card on the landing page's dark ground with a breathing violet glow", primitives: ["staggered line reveal", "button press pulse"], density_topology: "accumulate then hold" }
-  - anchors: [16.231, 16.718, 17.206, 17.717, 18.204, 18.692]
+  - anchors: [18.182, 18.669, 19.157, 19.668, 20.155, 20.643]
   - copy: ["✦ Online workshop", "2026. 10. 21.", "9:00–13:00 · Online, 100% élőben", "Jelentkezz most →", "Amazing AI logo"] — accumulate one line per beat from 16.231; the violet CTA button lands on 17.717 and pulses softly on 18.204 / 18.692; everything holds still through the fade-out.
