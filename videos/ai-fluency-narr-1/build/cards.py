@@ -13,7 +13,7 @@ CARDS = [
     [("m", "úgy, hogy közben", 13.14), ("e", "megmaradjon", 13.98), ("m", "az eredeti stílusa.", 14.64)],
     [("m", "Az", 16.00), ("e", "AI Fluency", 16.15), ("m", "képzésen megtudod,", 16.84)],
     [("m", "hogy a", 18.14), ("e", "ChatGPT,", 18.53), ("m", "a Gemini, a Claude,", 19.14)],
-    [("m", "a Perplexity és a", 20.29), ("e", "NotebookLM", 21.36)],
+    [("m", "a Perplexity és a", 20.29), ("e", "Gemini Notebook", 21.36)],
     [("m", "eszközöket milyen", 22.43), ("e", "feladatokra", 23.54)],
     [("m", "érdemes használnod", 24.18), ("m", "a munkád során,", 25.09)],
     [("m", "gyakorolhatod", 26.04), ("m", "a pontos", 26.81), ("e", "feladatkiadási", 27.22), ("m", "folyamatokat,", 28.05)],

@@ -172,16 +172,16 @@ def page(cid, css, body, js, last=False):
 SCENES = {}
 
 # ---------------------------------------------------------------- shared tool / task board
-TOOLS = ["ChatGPT", "Gemini", "Claude", "Perplexity", "NotebookLM"]
+TOOLS = ["ChatGPT", "Gemini", "Claude", "Perplexity", "Gemini Notebook"]
 TASKS = ["ötletek", "kampány", "szöveg", "kutatás", "összefoglaló"]
 ROW_Y = [300, 450, 600, 750, 900]  # row centres
-CHIP_L, CHIP_R, DOT_X = 80, 420, 676
+CHIP_L, CHIP_R, DOT_X = 80, 470, 676
 
 BOARD_CSS = """
         %S .chip {
           position: absolute;
           left: 80px;
-          width: 340px;
+          width: 390px;
           height: 96px;
           margin-top: -48px;
           border: 2px solid rgba(255, 253, 248, 0.9);
@@ -190,7 +190,7 @@ BOARD_CSS = """
           align-items: center;
           justify-content: center;
           font-weight: 800;
-          font-size: 46px;
+          font-size: 44px;
           letter-spacing: -0.035em;
           white-space: nowrap;
         }
@@ -231,7 +231,7 @@ def board_body(cid, wires):
     for n, (i, j) in enumerate(wires):
         y1, y2 = ROW_Y[i], ROW_Y[j]
         paths.append(
-            f'            <path class="draw w{n}" d="M{CHIP_R + 4},{y1} C{CHIP_R + 140},{y1} {DOT_X - 140},{y2} {DOT_X - 2},{y2}" />'
+            f'            <path class="draw w{n}" d="M{CHIP_R + 4},{y1} C{CHIP_R + 110},{y1} {DOT_X - 110},{y2} {DOT_X - 2},{y2}" />'
         )
     return (
         '          <div class="lbl" style="left: 84px; top: 170px">Eszköz</div>\n'

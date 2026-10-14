@@ -26,4 +26,4 @@ User ask (verbatim, abridged): „szeretném hogy a hangfilehoz csinálj egy tel
 
 - B-roll visual language reuses script1-front's inserts: violet radial gradient, faint grid, thin off-white line art, Inter Tight + Bodoni Moda labels. Content lives in the upper ~2/3 (y 200–1100) so captions own the lower third.
 - Audio edit: the narration repeats one sentence ("Kipróbálhatsz különböző ellenőrzési … technikákat is"); the first take (34.76–39.10 s) is cut. Voice loudness-normalised to -16 LUFS; music bed from script1-front ~20 dB under.
-- Spoken "Cloud" captioned as "Claude"; "Gemini Notebook" captioned as "NotebookLM".
+- Spoken "Cloud" captioned as "Claude"; "Gemini Notebook" kept as spoken (user request).
