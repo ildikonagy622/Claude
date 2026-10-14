@@ -1,0 +1,151 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": true,
+  "lint": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"f3_v2\"> has data-start=\"1.253\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#f3_v2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"1.253\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"f3_v3\"> has data-start=\"2.252\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#f3_v3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"2.252\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"f3_v4\"> has data-start=\"3.715\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#f3_v4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"3.715\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "gsap_css_transform_conflict",
+        "severity": "error",
+        "message": "\".f3_fill\" has CSS `transform: scaleX(0)` and a GSAP tween animates scaleX. GSAP will overwrite the full CSS transform, discarding any translateX(-50%) centering or CSS scale value.",
+        "selector": ".f3_fill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the transform from CSS and use tl.fromTo('.f3_fill', { xPercent: -50, x: -1000 }, { xPercent: -50, x: 0 }) so GSAP owns the full transform state. tl.fromTo is exempt from this rule."
+      },
+      {
+        "code": "gsap_css_transform_conflict",
+        "severity": "error",
+        "message": "\"#f3_link\" has CSS `transform: scaleX(0)` and a GSAP tween animates scaleX. GSAP will overwrite the full CSS transform, discarding any translateX(-50%) centering or CSS scale value.",
+        "selector": "#f3_link",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the transform from CSS and use tl.fromTo('#f3_link', { xPercent: -50, x: -1000 }, { xPercent: -50, x: 0 }) so GSAP owns the full transform state. tl.fromTo is exempt from this rule."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 0,
+    "samples": [],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [],
+    "checked": 0,
+    "passed": 0
+  },
+  "hdr": {
+    "autoPromotion": {
+      "triggeringAsset": "assets/clips/01-typing.mp4",
+      "output": {
+        "colorSpace": "BT.2020",
+        "codec": "HEVC Main10"
+      }
+    },
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
