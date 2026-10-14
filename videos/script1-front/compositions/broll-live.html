@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-live {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-live .bl-bg {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 85% 55% at 50% 34%, #2a1d52 0%, #150f2a 55%, #0b0a10 100%);
+        }
+        #broll-live .bl-win {
+          position: absolute;
+          left: 90px;
+          top: 250px;
+          width: 900px;
+          height: 820px;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 36px;
+          background: rgba(255, 253, 248, 0.03);
+        }
+        #broll-live .bl-bar {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 96px;
+          border-bottom: 2px solid rgba(255, 253, 248, 0.25);
+          display: flex;
+          align-items: center;
+          padding: 0 36px;
+          gap: 16px;
+        }
+        #broll-live .bl-dot3 {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 253, 248, 0.6);
+        }
+        #broll-live .bl-live {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          height: 56px;
+          padding: 0 26px;
+          border: 2px solid #fffdf8;
+          border-radius: 28px;
+          font-weight: 800;
+          font-size: 30px;
+          letter-spacing: 0.18em;
+        }
+        #broll-live .bl-rec {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #fffdf8;
+        }
+        #broll-live .bl-title {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 150px;
+          text-align: center;
+        }
+        #broll-live .bl-t1 {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+          font-size: 132px;
+          line-height: 0.9;
+          letter-spacing: -0.02em;
+        }
+        #broll-live .bl-t2 {
+          margin-top: 34px;
+          font-weight: 700;
+          font-size: 34px;
+          letter-spacing: 0.3em;
+          text-transform: uppercase;
+          opacity: 0.7;
+        }
+        #broll-live .bl-tiles {
+          position: absolute;
+          left: 60px;
+          right: 60px;
+          top: 420px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 22px;
+        }
+        #broll-live .bl-tile {
+          height: 160px;
+          border: 2px solid rgba(255, 253, 248, 0.45);
+          border-radius: 22px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        #broll-live .bl-tile svg {
+          width: 64px;
+          height: 64px;
+          opacity: 0.75;
+        }
+      </style>
+
+      <div id="broll-live" data-composition-id="broll-live" data-width="1080" data-height="1920">
+        <div class="bl-bg"></div>
+        <div class="bl-win" id="bl-win">
+          <div class="bl-bar">
+            <div class="bl-dot3"></div>
+            <div class="bl-dot3"></div>
+            <div class="bl-dot3"></div>
+            <div class="bl-live" id="bl-live"><div class="bl-rec" id="bl-rec"></div>ÉLŐ</div>
+          </div>
+          <div class="bl-title">
+            <div class="bl-t1" id="bl-t1">AI fluency</div>
+            <div class="bl-t2" id="bl-t2">Online workshop</div>
+          </div>
+          <div class="bl-tiles" id="bl-tiles"></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          // Local times (s) — this clip starts at 48.75 on the root timeline.
+          // "egy élő online" 50.01, "workshopot" 51.01.
+          const T = { live: 1.26, ws: 2.26, end: 2.85 };
+          const USER = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>';
+          const tiles = document.getElementById("bl-tiles");
+          for (let i = 0; i < 6; i++) {
+            const d = document.createElement("div");
+            d.className = "bl-tile";
+            d.id = "bl-tile" + i;
+            d.innerHTML = USER;
+            tiles.appendChild(d);
+          }
+
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#broll-live .bl-bg", { opacity: 0 }, { opacity: 1, duration: 0.22, ease: "power1.out" }, 0);
+          tl.fromTo("#bl-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0.02);
+          tl.fromTo("#bl-t1", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.25);
+          for (let i = 0; i < 6; i++) {
+            tl.fromTo("#bl-tile" + i, { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 0.45 + i * 0.12);
+          }
+          tl.fromTo("#bl-live", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, T.live - 0.05);
+          // Live dot pulses (finite repeat, seek-safe).
+          tl.fromTo("#bl-rec", { opacity: 1 }, { opacity: 0.25, duration: 0.35, ease: "sine.inOut", yoyo: true, repeat: 3 }, T.live + 0.3);
+          tl.fromTo("#bl-t2", { opacity: 0, y: 12 }, { opacity: 0.7, y: 0, duration: 0.5, ease: "power3.out" }, T.ws - 0.05);
+          tl.to("#broll-live", { opacity: 0, duration: 0.2, ease: "power1.in" }, T.end - 0.2);
+          window.__timelines["broll-live"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

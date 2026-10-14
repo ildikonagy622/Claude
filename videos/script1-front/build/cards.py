@@ -44,6 +44,7 @@ DURATION = 74.64
 
 # Thin-line icons (Lucide, ISC — assets/icons). card index -> (line index the icon sits beside, icon name).
 # The icon arrives with that line, beside it on the right; if the line is too wide it sits above the card.
+# Cards 13, 15, 19, 20 and 23 play over a B-roll insert, which carries the visual — no icon there.
 ICONS = {
     0: (1, "smartphone"),
     1: (1, "sliders-horizontal"),
@@ -52,16 +53,11 @@ ICONS = {
     7: (1, "graduation-cap"),
     9: (1, "wrench"),
     12: (2, "trending-up"),
-    13: (1, "message-circle"),
-    15: (2, "circle-help"),
     16: (1, "brain"),
     17: (1, "hourglass"),
     18: (1, "handshake"),
-    19: (2, "route"),
-    20: (2, "triangle-alert"),
     21: (2, "circle-check"),
     22: (2, "languages"),
-    23: (2, "video"),
     24: (1, "mouse-pointer-click"),
     25: (1, "lightbulb"),
     26: (2, "eye"),
@@ -70,3 +66,11 @@ ICONS = {
     30: (1, "calendar"),
     31: (0, "pointer"),
 }
+
+# Digital B-roll inserts (sub-compositions) over the speaker; captions stay on top.
+# (composition id, file, root start, root end) — edges sit on the spoken phrase.
+BROLL = [
+    ("broll-tools", "compositions/broll-tools.html", 23.70, 29.25),  # Ma ChatGPT, holnap Claude, aztán valami…
+    ("broll-path", "compositions/broll-path.html", 35.25, 42.10),  # összetett feladat … vezet téged félre
+    ("broll-live", "compositions/broll-live.html", 48.75, 51.60),  # élő online workshop
+]

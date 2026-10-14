@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        #broll-path {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+        }
+        #broll-path .bp-bg {
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse 85% 55% at 50% 36%, #2a1d52 0%, #150f2a 55%, #0b0a10 100%);
+        }
+        #broll-path .bp-grid {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(rgba(255, 253, 248, 0.12) 1.5px, transparent 1.6px);
+          background-size: 60px 60px;
+          background-position: 30px 20px;
+        }
+        #broll-path svg.bp-svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1920px;
+          overflow: visible;
+        }
+        #broll-path .bp-label {
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 700;
+          font-size: 26px;
+          letter-spacing: 0.2em;
+          fill: #fffdf8;
+          opacity: 0.6;
+        }
+      </style>
+
+      <div id="broll-path" data-composition-id="broll-path" data-width="1080" data-height="1920">
+        <div class="bp-bg"></div>
+        <div class="bp-grid"></div>
+        <svg class="bp-svg" viewBox="0 0 1080 1920" fill="none">
+          <defs>
+            <radialGradient id="bp-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#fffdf8" stop-opacity="0.55" />
+              <stop offset="100%" stop-color="#fffdf8" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <!-- The task: four steps on one route. -->
+          <path id="bp-route" d="M 210 360 C 520 360, 820 380, 800 540 C 780 700, 300 640, 300 790 C 300 940, 640 980, 870 990"
+                stroke="#fffdf8" stroke-width="3" stroke-linecap="round" opacity="0.9" />
+          <!-- Where a confident wrong answer takes you. -->
+          <path id="bp-branch" d="M 300 790 C 290 860, 220 900, 150 1020"
+                stroke="#fffdf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 16" />
+
+          <g id="bp-n1"><circle cx="210" cy="360" r="20" fill="#150f2a" stroke="#fffdf8" stroke-width="3" /><text class="bp-label" x="250" y="320">01</text></g>
+          <g id="bp-n2"><circle cx="800" cy="540" r="20" fill="#150f2a" stroke="#fffdf8" stroke-width="3" /><text class="bp-label" x="842" y="530">02</text></g>
+          <g id="bp-n3"><circle cx="300" cy="790" r="20" fill="#150f2a" stroke="#fffdf8" stroke-width="3" /><text class="bp-label" x="340" y="770">03</text></g>
+          <g id="bp-n4">
+            <circle cx="870" cy="990" r="26" fill="#150f2a" stroke="#fffdf8" stroke-width="3" />
+            <circle cx="870" cy="990" r="9" fill="#fffdf8" />
+            <text class="bp-label" x="760" y="1060">CÉL</text>
+          </g>
+
+          <g id="bp-warn" transform="translate(250 1000)">
+            <g transform="translate(-46 -96) scale(3.8)" stroke="#fffdf8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+              <path d="M12 9v4" />
+              <path d="M12 17h.01" />
+            </g>
+          </g>
+
+          <g id="bp-agent">
+            <circle r="46" fill="url(#bp-glow)" />
+            <circle r="14" fill="#fffdf8" />
+          </g>
+        </svg>
+      </div>
+
+      <script>
+        (function () {
+          // Local times (s) — this clip starts at 35.25 on the root timeline.
+          // "Tudod-e vezetni" 35.31, "összetett" 36.57, "feladaton" 37.33, "keresztül" 37.81,
+          // "Észreveszed-e" 38.63, "magabiztosan" 40.23, "vezet téged félre" 40.95.
+          const T = { draw0: 0.06, draw1: 2.56, go: 3.38, veer: 5.70, end: 6.85 };
+          const route = document.getElementById("bp-route");
+          const branch = document.getElementById("bp-branch");
+          const agent = document.getElementById("bp-agent");
+          const L = route.getTotalLength();
+          const LB = branch.getTotalLength();
+          // Fraction of the route at which node 3 (the fork) sits.
+          let fork = 0;
+          for (let s = 0; s <= L; s += 2) {
+            const p = route.getPointAtLength(s);
+            if (Math.hypot(p.x - 300, p.y - 790) < 3) { fork = s; break; }
+          }
+
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#broll-path .bp-bg, #broll-path .bp-grid", { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power1.out" }, 0);
+
+          route.style.strokeDasharray = L + " " + L;
+          tl.fromTo(route, { strokeDashoffset: L }, { strokeDashoffset: 0, duration: T.draw1 - T.draw0, ease: "power1.inOut" }, T.draw0);
+          [["#bp-n1", 0.0], ["#bp-n2", 0.33], ["#bp-n3", 0.66], ["#bp-n4", 1.0]].forEach(([n, f]) => {
+            tl.fromTo(n, { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, T.draw0 + f * (T.draw1 - T.draw0) - 0.1);
+          });
+
+          // The agent walks the route to the fork, then confidently takes the wrong turn.
+          const place = (p) => agent.setAttribute("transform", "translate(" + p.x + " " + p.y + ")");
+          tl.fromTo(agent, { opacity: 0 }, { opacity: 1, duration: 0.3 }, T.go - 0.1);
+          tl.fromTo("#bp-branch", { opacity: 0 }, { opacity: 0.85, duration: 0.3 }, T.veer - 0.1);
+          tl.fromTo("#bp-warn", { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, T.veer + 0.55);
+          tl.to("#bp-route", { opacity: 0.3, duration: 0.5 }, T.veer + 0.1);
+          tl.to("#bp-n4", { opacity: 0.35, duration: 0.5 }, T.veer + 0.1);
+          tl.to({}, {
+            duration: T.end,
+            ease: "none",
+            onUpdate() {
+              const t = this.time();
+              if (t < T.veer) {
+                const k = Math.max(0, Math.min(1, (t - T.go) / (T.veer - T.go)));
+                const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+                place(route.getPointAtLength(e * fork));
+              } else {
+                const k = Math.max(0, Math.min(1, (t - T.veer) / 0.7));
+                place(branch.getPointAtLength((1 - Math.pow(1 - k, 3)) * LB));
+              }
+            },
+          }, 0);
+
+          tl.to("#broll-path", { opacity: 0, duration: 0.22, ease: "power1.in" }, T.end - 0.22);
+          window.__timelines["broll-path"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

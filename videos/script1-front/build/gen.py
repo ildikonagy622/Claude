@@ -10,7 +10,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-from cards import CARDS, CUTS, DURATION, ICONS  # noqa: E402
+from cards import BROLL, CARDS, CUTS, DURATION, ICONS  # noqa: E402
 import re  # noqa: E402
 
 
@@ -246,6 +246,12 @@ captions = f"""<!doctype html>
 """
 
 FADE_AT = round(DURATION - 2.5, 2)
+BROLL_HTML = "\n".join(
+    f'      <div id="{cid}" data-composition-id="{cid}" data-composition-src="{src}" '
+    f'data-start="{a}" data-duration="{round(b - a, 2)}" data-track-index="3" '
+    f'data-width="1080" data-height="1920"></div>'
+    for cid, src, a, b in BROLL
+)
 # The bed's markup lives in build/music_bed.html because the voiceover carve
 # (hyperframes-audio/scripts/carve.mjs) writes its EQ chain and duck lanes onto it.
 # Re-run the carve after changing the voice or the bed level.
@@ -330,6 +336,7 @@ index = f"""<!doctype html>
       </div>
 {MUSIC_BED}
       <div id="shade"></div>
+{BROLL_HTML}
       <div
         id="captions"
         data-composition-id="captions"
