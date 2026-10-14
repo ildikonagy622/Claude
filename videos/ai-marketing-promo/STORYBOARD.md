@@ -33,8 +33,8 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ## Frame 2 — f2
 
 - src: compositions/frames/02-f2.html
-- duration: 3.692s
-- span_sec: [4.389, 8.081]
+- duration: 2.67s
+- span_sec: [4.389, 7.059]
 - pacing: beat_cut
 - mood: [elegant]
 - feel: dense hi-hat fill and accel-roll into a short dip at 7s, then a surge at 8
@@ -42,15 +42,15 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ### Groups
 
 - **g1** — asset
-  - span_sec: [4.389, 8.081]
-  - asset: { treatment: bg_under_text, clips: [assets/clips/02-logo.mp4], anchors: [4.435, 4.923, 5.898, 7.059], overlay_copy: ["Ma már egyedül is lehetsz", "egy teljes ügynökség"] }
+  - span_sec: [4.389, 7.059]
+  - asset: { treatment: bg_under_text, clips: [assets/clips/02-logo.mp4], anchors: [4.435, 4.923, 5.898], overlay_copy: ["Ma már egyedül is lehetsz", "egy teljes ügynökség"] }
   - copy: "Ma már egyedül is lehetsz / egy teljes ügynökség" — top third over a top-down scrim (the ChatGPT + Canva logos stay visible mid-frame); line 1 on 4.923, line 2 on 5.898 with 'teljes ügynökség' in lavender; the clip's own push-in and blur ending carry into the cut.
 
 ## Frame 3 — f3
 
 - src: compositions/frames/03-f3.html
-- duration: 4.919s
-- span_sec: [8.081, 13.0]
+- duration: 5.941s
+- span_sec: [7.059, 13.0]
 - pacing: beat_cut
 - mood: [elegant, hype]
 - feel: two sustained hi-hat fills back to back, densest stretch, ending on a hard stop at 13
@@ -58,9 +58,9 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 ### Groups
 
 - **g1** — asset
-  - span_sec: [8.081, 13.0]
-  - asset: { treatment: beat_cut, clips: [DIGITAL B-ROLL (built in HTML, no file), assets/clips/06-ai-image.mp4, assets/clips/05-canva-post.mp4, assets/clips/07-canva-deck.mp4], anchors: [8.081, 9.334, 10.333, 11.796], overlay_copy: ["01 · ChatGPT + Canva összekötése", "02 · Kép egyetlen promptból", "03 · Kész poszt a Canvában", "04 · Prezentáció percek alatt"] }
-  - copy: one step label per cut, in a lower-third card (step number in lavender, title in white); a thin progress rail with 4 ticks fills one tick per cut. Slot 1 is a digital B-roll: the ChatGPT and Canva app tiles on the dark violet-glow ground slide toward each other, a violet connector line draws between them and a lime "Összekapcsolva ✓" chip lands. Clip 05 (landscape crop) floats as a rounded card on the dark violet-glow ground; 06 and 07 are full-bleed.
+  - span_sec: [7.059, 13.0]
+  - asset: { treatment: beat_cut, clips: [DIGITAL B-ROLL (built in HTML, no file), assets/clips/06-ai-image.mp4, assets/clips/05-canva-post.mp4, assets/clips/07-canva-deck.mp4], anchors: [7.059, 9.334, 10.333, 11.796], overlay_copy: ["01 · ChatGPT + Canva összekötése", "02 · Kép egyetlen promptból", "03 · Kész poszt a Canvában", "04 · Prezentáció percek alatt"] }
+  - copy: one step label per cut, in a lower-third card (step number in lavender, title in white); a thin progress rail with 4 ticks fills one tick per cut. Slot 1 (7.059–9.334, ~2.3s) is an animated digital B-roll on the beat (7.384, 7.872, 8.359, 8.847): the ChatGPT and Canva app tiles fly in, a violet connector draws between them, data pulses travel along it (a prompt bubble from ChatGPT, a design card back from Canva), the glow pulses on the beats, and a lime "Összekapcsolva ✓" chip lands. Clip 05 (landscape crop) floats as a rounded card on the dark violet-glow ground; 06 and 07 are full-bleed.
 
 ## Frame 4 — f4
 
