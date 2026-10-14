@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "182972d0-b588-4555-86ac-b0a15e6b8fc1",
-  "currentRevision": "07270f6d-161c-418a-92c4-3e3798a5e263",
+  "currentRevision": "3e862dfc-5e5e-474d-81aa-41620d4cae2f",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -17,8 +17,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
     },
     "STORYBOARD.md": {
-      "hash": "891d6ee2b324f49729abfd70627ed31850096bad77ecd68ff3c8d2a4f6c92ea6",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/89/891d6ee2b324f49729abfd70627ed31850096bad77ecd68ff3c8d2a4f6c92ea6"
+      "hash": "73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/73/73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf"
     },
     "assets/bgm.mp3": {
       "hash": "4ac4054ae88cf6cb9feb23bb926336996366c198166b2a091d48d672879eb7e3",
@@ -69,8 +69,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b1/b11d5ec066ab8f2d6b2bf56aabdc086f46bb2752a0825dd8943a36499c175c50"
     },
     "compositions/frames/04-f4.html": {
-      "hash": "34fb1314c76e17ad1ccec68796a61c8038a483cd1b590f2257a64f0101ca99dd",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/34/34fb1314c76e17ad1ccec68796a61c8038a483cd1b590f2257a64f0101ca99dd"
+      "hash": "00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/00/00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e"
     },
     "compositions/frames/05-f5.html": {
       "hash": "c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff",
@@ -377,12 +377,31 @@
           "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b1/b11d5ec066ab8f2d6b2bf56aabdc086f46bb2752a0825dd8943a36499c175c50"
         }
       }
+    },
+    "3e862dfc-5e5e-474d-81aa-41620d4cae2f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792002771135,
+      "endedAt": 1792002771146,
+      "files": {
+        "compositions/frames/04-f4.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/34/34fb1314c76e17ad1ccec68796a61c8038a483cd1b590f2257a64f0101ca99dd",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/00/00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e"
+        },
+        "STORYBOARD.md": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/89/891d6ee2b324f49729abfd70627ed31850096bad77ecd68ff3c8d2a4f6c92ea6",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/73/73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "07270f6d-161c-418a-92c4-3e3798a5e263",
-      "id": "d46c7593-d77b-4af0-a8de-f3ded1ed3d82"
+      "revision": "3e862dfc-5e5e-474d-81aa-41620d4cae2f",
+      "id": "af85eb3e-811d-4e04-b292-05ee34502976"
     },
     "revisions": {
       "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab": [
@@ -500,6 +519,35 @@
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
+      ],
+      "3e862dfc-5e5e-474d-81aa-41620d4cae2f": [
+        {
+          "id": "af85eb3e-811d-4e04-b292-05ee34502976",
+          "scope": "project",
+          "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/af85eb3e-811d-4e04-b292-05ee34502976.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792002803568,
+          "contentHash": "da0c5fe3a6de01eb8969ce7d228da1865810df0ceb52fc145ae3aa1be9db7a98",
+          "revision": "3e862dfc-5e5e-474d-81aa-41620d4cae2f",
+          "inputFingerprint": "0ee9ff420f31203f055231c217fc73b29891b241f9a32938d788b3dd5e78607f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
       ]
     },
     "unversioned": [
@@ -535,7 +583,7 @@
   "snapshots": {
     "latest": {
       "revision": null,
-      "id": "ede06a06-b81e-489f-83a7-9c09d94a83fa-7"
+      "id": "7b2a43fb-331e-412c-9392-266b2e123cd9-0"
     },
     "revisions": {},
     "unversioned": [
@@ -781,6 +829,26 @@
         "contentHash": "a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5",
         "revision": null,
         "inputFingerprint": "d570fc453ac377912dea09c360d33f2adc5d4b664f5bc5b69c725c5145b6501a",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "7b2a43fb-331e-412c-9392-266b2e123cd9-0",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-00-at-15.6s.png",
+        "time": 15.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002809697,
+        "contentHash": "26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66",
+        "revision": null,
+        "inputFingerprint": "0ee9ff420f31203f055231c217fc73b29891b241f9a32938d788b3dd5e78607f",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       }
