@@ -46,7 +46,7 @@
           color: #ffffff;
         }
 
-        #g1_clip {
+        #f2_clip {
           width: 1080px;
           height: 1920px;
           object-fit: cover;
@@ -54,7 +54,7 @@
         }
 
         /* top-down dark scrim — keeps the mid-frame logos bright */
-        #g1_scrim {
+        #f2_scrim {
           position: absolute;
           inset: 0;
           z-index: 2;
@@ -68,7 +68,7 @@
           );
         }
 
-        #g1_copy {
+        #f2_copy {
           position: absolute;
           left: 0;
           right: 0;
@@ -81,7 +81,7 @@
           gap: 6px;
         }
 
-        .g1_line {
+        .f2_line {
           display: block;
           max-width: 900px;
           margin: 0;
@@ -95,14 +95,14 @@
           will-change: transform, opacity;
         }
 
-        .g1_accent {
+        .f2_accent {
           color: #b9a4fb;
         }
       </style>
 
       <div id="stage" data-composition-id="02-f2" data-width="1080" data-height="1920" data-duration="3.692">
         <video
-          id="g1_clip"
+          id="f2_clip"
           src="assets/clips/02-logo.mp4"
           muted
           playsinline
@@ -112,11 +112,11 @@
           data-track-index="0"
         ></video>
 
-        <div id="g1_scrim"></div>
+        <div id="f2_scrim"></div>
 
-        <div id="g1_copy">
-          <p id="g1_l1" class="g1_line">Ma már egyedül is lehetsz</p>
-          <p id="g1_l2" class="g1_line">egy <span class="g1_accent">teljes ügynökség</span></p>
+        <div id="f2_copy">
+          <p id="f2_l1" class="f2_line">Ma már egyedül is lehetsz</p>
+          <p id="f2_l2" class="f2_line">egy <span class="f2_accent">teljes ügynökség</span></p>
         </div>
       </div>
 
@@ -130,12 +130,12 @@
           var tl = gsap.timeline({ paused: true });
 
           // initial state (t=0 renders the clip + scrim, text hidden)
-          tl.set(["#g1_l1", "#g1_l2"], { opacity: 0, y: 28 }, 0);
-          tl.fromTo("#g1_scrim", { opacity: 0.85 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0);
+          gsap.set(["#f2_l1", "#f2_l2"], { opacity: 0, y: 28 });
+          tl.fromTo("#f2_scrim", { opacity: 0.85 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 0);
 
           // line 1 — short fade + slight rise
           tl.fromTo(
-            "#g1_l1",
+            "#f2_l1",
             { opacity: 0, y: 28 },
             { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" },
             L1 - 0.06
@@ -143,7 +143,7 @@
 
           // line 2 — same gesture on the next anchor
           tl.fromTo(
-            "#g1_l2",
+            "#f2_l2",
             { opacity: 0, y: 28 },
             { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" },
             L2 - 0.06
@@ -151,7 +151,7 @@
 
           // quiet hold drift into the cut (clip's push-in + blur carry the energy)
           tl.fromTo(
-            "#g1_copy",
+            "#f2_copy",
             { y: 0 },
             { y: -10, duration: END - 0.05 - L1, ease: "none" },
             L1

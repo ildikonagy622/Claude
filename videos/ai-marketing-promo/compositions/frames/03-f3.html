@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter Display"; font-weight: 500; src: url("assets/fonts/InterDisplay-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 600; src: url("assets/fonts/InterDisplay-SemiBold.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 700; src: url("assets/fonts/InterDisplay-Bold.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/Inter-Regular.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
+
+        #root {
+          position: relative;
+          width: 1080px;
+          height: 1920px;
+          overflow: hidden;
+          background: #0C0C0E;
+          color: #FFFFFF;
+          font-family: "Inter", sans-serif;
+        }
+
+        /* full-bleed step clips */
+        #f3_v1, #f3_v2, #f3_v4 {
+          position: absolute;
+          left: 0; top: 0;
+          width: 1080px;
+          height: 1920px;
+          object-fit: cover;
+          z-index: 1;
+          transform-origin: 50% 45%;
+        }
+
+        /* step 03: dark violet-glow ground + floating card clip */
+        #f3_ground {
+          z-index: 1;
+          width: 1080px;
+          height: 1920px;
+          background: #0C0C0E;
+          overflow: hidden;
+        }
+        #f3_glow {
+          position: absolute;
+          left: 40px; top: 260px;
+          width: 1000px; height: 1000px;
+          background: radial-gradient(closest-side, rgba(139,92,246,0.45), rgba(139,92,246,0) 70%);
+        }
+        #f3_v3 {
+          position: absolute;
+          left: 90px;
+          top: 340px;
+          width: 900px;
+          height: 830px;
+          object-fit: cover;
+          border-radius: 18px;
+          border: 1.5px solid rgba(139,92,246,0.28);
+          box-sizing: border-box;
+          z-index: 2;
+          transform-origin: 50% 50%;
+        }
+
+        /* legibility scrim under the lower third */
+        #f3_scrim {
+          position: absolute;
+          left: 0; right: 0; bottom: 0;
+          height: 1100px;
+          z-index: 3;
+          background: linear-gradient(to top, rgba(12,12,14,0.92) 0%, rgba(12,12,14,0.55) 45%, rgba(12,12,14,0) 75%);
+          pointer-events: none;
+        }
+
+        /* lower-third */
+        #f3_lt {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          bottom: 320px;
+          z-index: 4;
+          display: flex;
+          flex-direction: column;
+          gap: 26px;
+        }
+        #f3_rail {
+          display: flex;
+          gap: 12px;
+          width: 100%;
+          height: 6px;
+        }
+        .f3_seg {
+          position: relative;
+          flex: 1 1 0;
+          height: 6px;
+          border-radius: 100px;
+          background: rgba(255,255,255,0.18);
+          overflow: hidden;
+        }
+        .f3_fill {
+          display: block;
+          position: absolute;
+          left: 0; top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 100px;
+          background: #8B5CF6;
+          transform-origin: 0% 50%;
+          transform: scaleX(0);
+        }
+        #f3_card {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 40px 48px 46px;
+          background: rgba(27,22,42,0.88);
+          border: 1.5px solid #8B5CF6;
+          border-radius: 18px;
+          display: grid;
+        }
+        .f3_step {
+          grid-area: 1 / 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 18px;
+          opacity: 0;
+        }
+        .f3_num {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 30px;
+          letter-spacing: 0.12em;
+          color: #B9A4FB;
+          line-height: 1;
+        }
+        .f3_num span {
+          color: rgba(255,255,255,0.42);
+        }
+        .f3_title {
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 1.05;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          max-width: 800px;
+          min-height: 151px; /* reserve 2 lines so the card never resizes */
+        }
+      </style>
+
+      <div id="root" data-composition-id="03-f3" data-width="1080" data-height="1920" data-duration="4.919">
+        <!-- step clips: hard cuts at local 0 / 1.253 / 2.252 / 3.715 -->
+        <video id="f3_v1" src="assets/clips/03-chatgpt-prompt.mp4" muted playsinline
+               data-start="0" data-duration="1.253" data-media-start="0" data-track-index="1"></video>
+        <video id="f3_v2" src="assets/clips/04-chatgpt-plan.mp4" muted playsinline
+               data-start="1.253" data-duration="0.999" data-media-start="0" data-track-index="1"></video>
+        <div id="f3_ground" class="clip" data-start="2.252" data-duration="1.463" data-track-index="2">
+          <div id="f3_glow"></div>
+        </div>
+        <video id="f3_v3" src="assets/clips/05-canva-post.mp4" muted playsinline
+               data-start="2.252" data-duration="1.463" data-media-start="0" data-track-index="3"></video>
+        <video id="f3_v4" src="assets/clips/06-ai-image.mp4" muted playsinline
+               data-start="3.715" data-duration="1.204" data-media-start="0" data-track-index="1"></video>
+
+        <div id="f3_scrim"></div>
+
+        <div id="f3_lt" data-layout-allow-caption-zone>
+          <div id="f3_rail">
+            <div class="f3_seg"><i class="f3_fill" id="f3_f1"></i></div>
+            <div class="f3_seg"><i class="f3_fill" id="f3_f2"></i></div>
+            <div class="f3_seg"><i class="f3_fill" id="f3_f3"></i></div>
+            <div class="f3_seg"><i class="f3_fill" id="f3_f4"></i></div>
+          </div>
+          <div id="f3_card">
+            <div class="f3_step" id="f3_s1">
+              <div class="f3_num">01 <span>/ 04</span></div>
+              <div class="f3_title">Stratégia és csalitermék</div>
+            </div>
+            <div class="f3_step" id="f3_s2">
+              <div class="f3_num">02 <span>/ 04</span></div>
+              <div class="f3_title">Tartalomnaptár percek alatt</div>
+            </div>
+            <div class="f3_step" id="f3_s3">
+              <div class="f3_num">03 <span>/ 04</span></div>
+              <div class="f3_title">Hírlevelek és posztok</div>
+            </div>
+            <div class="f3_step" id="f3_s4">
+              <div class="f3_num">04 <span>/ 04</span></div>
+              <div class="f3_title">Látványos kreatívok Canvával</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var DUR = 4.919;
+          var cuts = [0, 1.253, 2.252, 3.715];
+          var ends = [1.253, 2.252, 3.715, DUR];
+          var tl = gsap.timeline({ paused: true });
+
+          // lower-third card enters once, persists across cuts
+          tl.fromTo("#f3_lt", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+
+          // gentle push on each full-bleed clip (scale 1.0 -> 1.04 over its window)
+          [["#f3_v1", 0], ["#f3_v2", 1], ["#f3_v4", 3]].forEach(function (p) {
+            var i = p[1];
+            tl.fromTo(p[0], { scale: 1.0 }, { scale: 1.04, duration: ends[i] - cuts[i], ease: "none" }, cuts[i]);
+          });
+
+          // step 03: floating card settles in, then drifts
+          tl.fromTo("#f3_v3", { scale: 0.97, y: 16 }, { scale: 1.0, y: 0, duration: 0.35, ease: "power3.out" }, cuts[2]);
+          tl.to("#f3_v3", { scale: 1.02, duration: ends[2] - cuts[2] - 0.35, ease: "none" }, cuts[2] + 0.35);
+          tl.fromTo("#f3_glow", { opacity: 0.7, scale: 0.94 }, { opacity: 1, scale: 1.04, duration: ends[2] - cuts[2], ease: "sine.inOut" }, cuts[2]);
+
+          // step text swap + rail fill on each cut
+          for (var i = 0; i < 4; i++) {
+            var s = "#f3_s" + (i + 1);
+            var t = cuts[i];
+            if (i > 0) {
+              var prev = "#f3_s" + i;
+              tl.to(prev, { opacity: 0, y: -10, duration: 0.12, ease: "power2.in" }, t - 0.12);
+            }
+            tl.fromTo(s, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, t);
+            tl.fromTo("#f3_f" + (i + 1), { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.out" }, t);
+          }
+
+          window.__timelines["03-f3"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

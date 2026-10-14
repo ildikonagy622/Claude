@@ -1,0 +1,625 @@
+{
+  "version": 1,
+  "historyId": "182972d0-b588-4555-86ac-b0a15e6b8fc1",
+  "currentRevision": "9d44a84b-f00f-42b3-b897-25c678988b71",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "BRIEF.md": {
+      "hash": "0d4c21531f0a2c351f4d4d1dc672d87c3395bac0a44138aa69f08ccd6fe2193a",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/0d/0d4c21531f0a2c351f4d4d1dc672d87c3395bac0a44138aa69f08ccd6fe2193a"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "STORYBOARD.md": {
+      "hash": "480920ad7fbd8546a7c9c3d6b3d9134d20144c84eb2112478462e5c1e3e66baa",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/48/480920ad7fbd8546a7c9c3d6b3d9134d20144c84eb2112478462e5c1e3e66baa"
+    },
+    "assets/bgm.mp3": {
+      "hash": "4ac4054ae88cf6cb9feb23bb926336996366c198166b2a091d48d672879eb7e3",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/4a/4ac4054ae88cf6cb9feb23bb926336996366c198166b2a091d48d672879eb7e3"
+    },
+    "assets/clips/03-chatgpt-prompt.mp4": {
+      "hash": "6e60bcf6f112bb1e27be89eb041d94e9e114cbccb98eeb673cfff440acce83dd",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/6e/6e60bcf6f112bb1e27be89eb041d94e9e114cbccb98eeb673cfff440acce83dd"
+    },
+    "assets/clips/04-chatgpt-plan.mp4": {
+      "hash": "809b87241fc5a87394f01be4463ce31989f75c82bf104f5b9eb826b569835f03",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/80/809b87241fc5a87394f01be4463ce31989f75c82bf104f5b9eb826b569835f03"
+    },
+    "assets/clips/05-canva-post.mp4": {
+      "hash": "beaece2836b079be9a170eddc07792f6f186d51b25f3df213492fc7c4de1ddb2",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/be/beaece2836b079be9a170eddc07792f6f186d51b25f3df213492fc7c4de1ddb2"
+    },
+    "assets/fonts/Inter-Medium.otf": {
+      "hash": "1e65171fccd6f445b7742728454620ec2867356c849af78e71bf2c4f0e3d97ba",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1e/1e65171fccd6f445b7742728454620ec2867356c849af78e71bf2c4f0e3d97ba"
+    },
+    "assets/fonts/Inter-Regular.otf": {
+      "hash": "be6d709dcb730ddaf050cbdae6fe89bd56d5d14dc66885639bbf6f06bd03521b",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/be/be6d709dcb730ddaf050cbdae6fe89bd56d5d14dc66885639bbf6f06bd03521b"
+    },
+    "assets/fonts/Inter-SemiBold.otf": {
+      "hash": "bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/bd/bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e"
+    },
+    "assets/fonts/InterDisplay-Bold.otf": {
+      "hash": "4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/42/4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970"
+    },
+    "assets/fonts/InterDisplay-Medium.otf": {
+      "hash": "cf438d4cd4979fda59150c773af3381d5b18627826672234846722bb6d06b86c",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/cf/cf438d4cd4979fda59150c773af3381d5b18627826672234846722bb6d06b86c"
+    },
+    "assets/fonts/InterDisplay-SemiBold.otf": {
+      "hash": "12aec2b9f93d2c7a977dad5dac3427516b15e7041b578052b0aba9f9a9b0774f",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/12/12aec2b9f93d2c7a977dad5dac3427516b15e7041b578052b0aba9f9a9b0774f"
+    },
+    "audiomap.json": {
+      "hash": "a93a219ccbaeec37feff04fe9bb8d9df0de32913210f2b67b2c0974a4daa9834",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a9/a93a219ccbaeec37feff04fe9bb8d9df0de32913210f2b67b2c0974a4daa9834"
+    },
+    "compositions/frames/01-f1.html": {
+      "hash": "c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c1/c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6"
+    },
+    "compositions/frames/02-f2.html": {
+      "hash": "ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/ec/ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b"
+    },
+    "compositions/frames/03-f3.html": {
+      "hash": "8b5eafce5c14da1e9cd50f105a30ddb463a8a53bc78399383012ce54bc1f7597",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/8b/8b5eafce5c14da1e9cd50f105a30ddb463a8a53bc78399383012ce54bc1f7597"
+    },
+    "compositions/frames/04-f4.html": {
+      "hash": "b3613cc53bfa49452a402b87c6f402974285933689f248838a5544bcb505034c",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b3/b3613cc53bfa49452a402b87c6f402974285933689f248838a5544bcb505034c"
+    },
+    "compositions/frames/05-f5.html": {
+      "hash": "c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c0/c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff"
+    },
+    "frame.md": {
+      "hash": "cf4f872f82b537f0994c7190e8b13090e7c5618190959608bc3b0b3915585ed4",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/cf/cf4f872f82b537f0994c7190e8b13090e7c5618190959608bc3b0b3915585ed4"
+    },
+    "hyperframes.json": {
+      "hash": "d4aca0771e1b3b6be0e4a35c383adef396253f7fa81f59b39c261efc51a4bfea",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d4/d4aca0771e1b3b6be0e4a35c383adef396253f7fa81f59b39c261efc51a4bfea"
+    },
+    "index.html": {
+      "hash": "1490534e8e73fa81e4da0d370cd16dc550a4785c8ab8d1fa705b4515a8c5c083",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/14/1490534e8e73fa81e4da0d370cd16dc550a4785c8ab8d1fa705b4515a8c5c083"
+    },
+    "meta.json": {
+      "hash": "ca4a3c0cd466e4a7fc47f1b831c0430266defafb348e3f576365c1d1fb9fa182",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/ca/ca4a3c0cd466e4a7fc47f1b831c0430266defafb348e3f576365c1d1fb9fa182"
+    },
+    "package.json": {
+      "hash": "9e63c071c03cf559ebb067142c89ffe2435cddd7959c998f96ebc696b11aa891",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/9e/9e63c071c03cf559ebb067142c89ffe2435cddd7959c998f96ebc696b11aa891"
+    },
+    "assets/clips/01-typing.mp4": {
+      "hash": "936f7186e5702db4b7c73ecc58c53a3480e4d25db34b4dae48e3586751488a89",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/93/936f7186e5702db4b7c73ecc58c53a3480e4d25db34b4dae48e3586751488a89"
+    },
+    "assets/clips/02-logo.mp4": {
+      "hash": "f36b158e6e1b73ecd4bd06cc93d734695378553be3fd3cd0f3c89b8859e93d3d",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f3/f36b158e6e1b73ecd4bd06cc93d734695378553be3fd3cd0f3c89b8859e93d3d"
+    },
+    "assets/clips/06-ai-image.mp4": {
+      "hash": "b46abb1967997aa1742fdd76cbecdbe05af1b4c951c77f7ce158914a45dbb089",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b4/b46abb1967997aa1742fdd76cbecdbe05af1b4c951c77f7ce158914a45dbb089"
+    },
+    "assets/clips/07-canva-deck.mp4": {
+      "hash": "fa24ba630369d5d67b707fc32d92d4d483df0003f3b1d47ad460ce3059e81f4d",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/fa/fa24ba630369d5d67b707fc32d92d4d483df0003f3b1d47ad460ce3059e81f4d"
+    },
+    "boards/stills/contact-sheet.jpg": {
+      "hash": "cc4ceea54c5f489b658fb4b56fedc21c7c2c1f78561537e139354f05fefb9a8a",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/cc/cc4ceea54c5f489b658fb4b56fedc21c7c2c1f78561537e139354f05fefb9a8a"
+    },
+    "boards/stills/frame-00-at-0.3s.png": {
+      "hash": "052dec79d287b0c0f53e3c3b22061ac98555180f80fde2913caa99d858fae1de",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/05/052dec79d287b0c0f53e3c3b22061ac98555180f80fde2913caa99d858fae1de"
+    },
+    "boards/stills/frame-01-at-2.8s.png": {
+      "hash": "a75f237a06e4e5895959b2fbdd430c3ff0c634e30db9e364a5583563f23c1c79",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a7/a75f237a06e4e5895959b2fbdd430c3ff0c634e30db9e364a5583563f23c1c79"
+    },
+    "boards/stills/frame-02-at-6.5s.png": {
+      "hash": "61058d9cce11b91d59f67dca3f2a16ebeac9067654783c03fbc83e6633f703c8",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/61/61058d9cce11b91d59f67dca3f2a16ebeac9067654783c03fbc83e6633f703c8"
+    },
+    "boards/stills/frame-03-at-8.7s.png": {
+      "hash": "3121f6e4e98075c81bc028f4f02e253ccf7c15c884a3c30e6741c115b8b7653e",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/31/3121f6e4e98075c81bc028f4f02e253ccf7c15c884a3c30e6741c115b8b7653e"
+    },
+    "boards/stills/frame-04-at-9.8s.png": {
+      "hash": "d02c9061d9068e70b2c1ed9bf47e68a2bdf46e21afef8c8595cde95dca22f03a",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d0/d02c9061d9068e70b2c1ed9bf47e68a2bdf46e21afef8c8595cde95dca22f03a"
+    },
+    "boards/stills/frame-05-at-11s.png": {
+      "hash": "1bc4a06aaa18d59c11c1fd40192154bc3650cc355fc4a95751531e1e52caf72b",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1b/1bc4a06aaa18d59c11c1fd40192154bc3650cc355fc4a95751531e1e52caf72b"
+    },
+    "boards/stills/frame-06-at-12.6s.png": {
+      "hash": "01687a11617077b0e331599e1ffbf4de528ac7551af5d41111a8ae47716dcdf4",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/01/01687a11617077b0e331599e1ffbf4de528ac7551af5d41111a8ae47716dcdf4"
+    },
+    "boards/stills/frame-07-at-15.4s.png": {
+      "hash": "b29f95fe61cb903f6181ce2d94451a6641e2176451de1847f7796947c6f09840",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b2/b29f95fe61cb903f6181ce2d94451a6641e2176451de1847f7796947c6f09840"
+    },
+    "boards/stills/frame-08-at-19.2s.png": {
+      "hash": "a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a5/a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5"
+    }
+  },
+  "revisions": {
+    "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792001939616,
+      "endedAt": 1792001939625,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/09/09864bd7d8df5fa9216d45e7bf9858706bd3dac33d473bc0c2e9687add6c503d",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/14/1490534e8e73fa81e4da0d370cd16dc550a4785c8ab8d1fa705b4515a8c5c083"
+        },
+        "STORYBOARD.md": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a6/a6be9f342389fec2cde65da58fbb38cb4c4fe33f8d76d819ced5982d40dfbbf0",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/48/480920ad7fbd8546a7c9c3d6b3d9134d20144c84eb2112478462e5c1e3e66baa"
+        }
+      }
+    },
+    "9d44a84b-f00f-42b3-b897-25c678988b71": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792002023074,
+      "endedAt": 1792002023129,
+      "files": {
+        "boards/stills/contact-sheet.jpg": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/cc/cc4ceea54c5f489b658fb4b56fedc21c7c2c1f78561537e139354f05fefb9a8a"
+        },
+        "boards/stills/frame-00-at-0.3s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/05/052dec79d287b0c0f53e3c3b22061ac98555180f80fde2913caa99d858fae1de"
+        },
+        "boards/stills/frame-01-at-2.8s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a7/a75f237a06e4e5895959b2fbdd430c3ff0c634e30db9e364a5583563f23c1c79"
+        },
+        "boards/stills/frame-02-at-6.5s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/61/61058d9cce11b91d59f67dca3f2a16ebeac9067654783c03fbc83e6633f703c8"
+        },
+        "boards/stills/frame-03-at-8.7s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/31/3121f6e4e98075c81bc028f4f02e253ccf7c15c884a3c30e6741c115b8b7653e"
+        },
+        "boards/stills/frame-04-at-9.8s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d0/d02c9061d9068e70b2c1ed9bf47e68a2bdf46e21afef8c8595cde95dca22f03a"
+        },
+        "boards/stills/frame-05-at-11s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1b/1bc4a06aaa18d59c11c1fd40192154bc3650cc355fc4a95751531e1e52caf72b"
+        },
+        "boards/stills/frame-06-at-12.6s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/01/01687a11617077b0e331599e1ffbf4de528ac7551af5d41111a8ae47716dcdf4"
+        },
+        "boards/stills/frame-07-at-15.4s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b2/b29f95fe61cb903f6181ce2d94451a6641e2176451de1847f7796947c6f09840"
+        },
+        "boards/stills/frame-08-at-19.2s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/a5/a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5"
+        },
+        "compositions/frames/01-f1.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/1e/1e24ec9617be78ac83fedacd77d282ccc4df38b23487fba4c60892abeff95f0a",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c1/c1d37b7a9d9ab11664b2af3c29c7ec603ca142e52e8d1850a1228fea5e49a1b6"
+        },
+        "compositions/frames/02-f2.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/e3/e3ce0ce1fa3ff2b8486f0ab61b454e516585941b2e2d3b58e99177ed28f3c53a",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/ec/ec0633c42a483c3cfaa2bb664e99d192ce1b08c07c67940e971f854aabba538b"
+        },
+        "compositions/frames/03-f3.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/f5/f54fa0e10dc067791909f804a28e374cb3cfa703ed9bc60bb2e6a776708ca6a8",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/8b/8b5eafce5c14da1e9cd50f105a30ddb463a8a53bc78399383012ce54bc1f7597"
+        },
+        "compositions/frames/04-f4.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/9c/9c86250a2fb332c9982054950e130866703d016dd606499a00b34afccede164f",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b3/b3613cc53bfa49452a402b87c6f402974285933689f248838a5544bcb505034c"
+        },
+        "compositions/frames/05-f5.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/90/90579c71131a125a33416c3c7b2c8c54a72fd5feb64dbb363293e6244d337f82",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/c0/c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "9d44a84b-f00f-42b3-b897-25c678988b71",
+      "id": "741c7da7-0f8f-4ae4-a7de-67a767f1c310"
+    },
+    "revisions": {
+      "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab": [
+        {
+          "id": "054bea81-cf8e-4509-9c28-192e3b7191f1",
+          "scope": "project",
+          "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/054bea81-cf8e-4509-9c28-192e3b7191f1.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792001979318,
+          "contentHash": "30ff946d424ae18fc09f9922b0453fab6e33ed40f93d5e3d81d8a2aee61288cc",
+          "revision": "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab",
+          "inputFingerprint": "aa339ebd02cf853e02f3a528ff8b898c23767774f0baf92171fe55ae281330c9",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9d44a84b-f00f-42b3-b897-25c678988b71": [
+        {
+          "id": "741c7da7-0f8f-4ae4-a7de-67a767f1c310",
+          "scope": "project",
+          "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/741c7da7-0f8f-4ae4-a7de-67a767f1c310.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792002060414,
+          "contentHash": "7241a94508f74b5de859153b1c8d789b2fe5918fad6842fc09a82c9f95b732bf",
+          "revision": "9d44a84b-f00f-42b3-b897-25c678988b71",
+          "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+        "scope": "project",
+        "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/1c6af0c5-dc95-49fa-845b-ec09a9e81059.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": true,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792001929877,
+        "contentHash": "6c63c3aff4d3e7b7420fc730565f88b76155fe28ddae204b92fc1392b094c90e",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-8"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059-0",
+        "scope": "full",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/snapshots/6f0be0b9-0704-406c-9692-564160ad6998/frame-00-at-1.1s.png",
+        "time": 1.111,
+        "metadata": {
+          "checkId": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+          "width": 1920,
+          "height": 1080
+        },
+        "createdAt": 1792001929877,
+        "contentHash": "c97b44d513748af84972377ec0f81a181fdc6c9618b3d3bbcbd3e64e3ab4bfa0",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059-1",
+        "scope": "full",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/snapshots/6f0be0b9-0704-406c-9692-564160ad6998/frame-01-at-5.6s.png",
+        "time": 5.556,
+        "metadata": {
+          "checkId": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+          "width": 1920,
+          "height": 1080
+        },
+        "createdAt": 1792001929878,
+        "contentHash": "e2aa42c8dde52b45dbb4f83d48af955a8a01960b6963cd475a5ac3c3563b7ff3",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059-2",
+        "scope": "full",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/snapshots/6f0be0b9-0704-406c-9692-564160ad6998/frame-02-at-10.0s.png",
+        "time": 10,
+        "metadata": {
+          "checkId": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+          "width": 1920,
+          "height": 1080
+        },
+        "createdAt": 1792001929878,
+        "contentHash": "1df13c24a10d15e6b59e554a017ca7be1268172b0504277d8cd8c0ba8edffc19",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059-3",
+        "scope": "full",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/snapshots/6f0be0b9-0704-406c-9692-564160ad6998/frame-03-at-14.4s.png",
+        "time": 14.444,
+        "metadata": {
+          "checkId": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+          "width": 1920,
+          "height": 1080
+        },
+        "createdAt": 1792001929878,
+        "contentHash": "cc2d1f46a400d6b8cb0ec6a27b9cd6c0c7eeb08d618d34761fe9061c559430c8",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "1c6af0c5-dc95-49fa-845b-ec09a9e81059-4",
+        "scope": "full",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/snapshots/6f0be0b9-0704-406c-9692-564160ad6998/frame-04-at-18.9s.png",
+        "time": 18.889,
+        "metadata": {
+          "checkId": "1c6af0c5-dc95-49fa-845b-ec09a9e81059",
+          "width": 1920,
+          "height": 1080
+        },
+        "createdAt": 1792001929878,
+        "contentHash": "02d1227bdca6072592bed925058db7cb3526c6059bcf8e4c0ddafa44e37e29b8",
+        "revision": null,
+        "inputFingerprint": "2319c62c2a0a42ddbce7dc4078fd241fc9dfd9172098a03d0909573e7bb4488c",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-0",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-00-at-0.3s.png",
+        "time": 0.3,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "052dec79d287b0c0f53e3c3b22061ac98555180f80fde2913caa99d858fae1de",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-1",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-01-at-2.8s.png",
+        "time": 2.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "a75f237a06e4e5895959b2fbdd430c3ff0c634e30db9e364a5583563f23c1c79",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-2",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-02-at-6.5s.png",
+        "time": 6.5,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "0dcf7deb9ec10d67078b1945b41846e71fb1eed6f7f74cb781ac2126d52ea3cd",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-3",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-03-at-8.7s.png",
+        "time": 8.7,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "3121f6e4e98075c81bc028f4f02e253ccf7c15c884a3c30e6741c115b8b7653e",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-4",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-04-at-9.8s.png",
+        "time": 9.8,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "d02c9061d9068e70b2c1ed9bf47e68a2bdf46e21afef8c8595cde95dca22f03a",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-5",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-05-at-11s.png",
+        "time": 11,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "1bc4a06aaa18d59c11c1fd40192154bc3650cc355fc4a95751531e1e52caf72b",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-6",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-06-at-12.6s.png",
+        "time": 12.6,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "01687a11617077b0e331599e1ffbf4de528ac7551af5d41111a8ae47716dcdf4",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-7",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-07-at-15.4s.png",
+        "time": 15.4,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "345c50eb5239b0fe7ab81a941f87c07ee5a50c12896a9042f35128fd50611a57",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "8ea3c7cd-f1a6-4699-8668-33c9e9c14953-8",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/frame-08-at-19.2s.png",
+        "time": 19.2,
+        "metadata": {
+          "width": 1080,
+          "height": 1920,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792002079923,
+        "contentHash": "a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5",
+        "revision": null,
+        "inputFingerprint": "d6c74b76d5323ccf357bad642522afbfb1ffc3fcda83b11c93bef6790dae823b",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
+  }
+}

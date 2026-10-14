@@ -1,7 +1,7 @@
 ---
 compositionId: ai-marketing-promo
 duration_s: 20.0 # == audiomap.audio.duration_sec
-canvas: { w: 1080, h: 1920, fps: 30 }
+canvas: {"w": 1080, "h": 1920, "fps": 30}
 style:
   font: "Inter Display / Inter"
   palette: ["#0C0C0E", "#1B162A", "#8B5CF6", "#B9A4FB", "#DEFD86", "#FFFFFF"]
