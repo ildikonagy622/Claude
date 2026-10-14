@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Inter Tight";
+        src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Bodoni Moda";
+        src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #0b0a10;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #0b0a10;
+      }
+      /* One continuous stage behind every B-roll scene: the script1-front insert backdrop. */
+      #stage {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      #glow {
+        position: absolute;
+        left: -20%;
+        top: -10%;
+        width: 140%;
+        height: 100%;
+        background: radial-gradient(ellipse 58% 48% at 50% 38%, #2a1d52 0%, #150f2a 55%, rgba(11, 10, 16, 0) 100%);
+      }
+      #grid {
+        position: absolute;
+        left: -90px;
+        top: -90px;
+        width: 1260px;
+        height: 2100px;
+        background-image:
+          linear-gradient(rgba(255, 253, 248, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 253, 248, 0.05) 1px, transparent 1px);
+        background-size: 90px 90px;
+        background-position: 45px 30px;
+      }
+      /* Soft low-frame shade under the captions. Not a caption box. */
+      #shade {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          rgba(10, 8, 16, 0) 52%,
+          rgba(10, 8, 16, 0.32) 66%,
+          rgba(10, 8, 16, 0.4) 80%,
+          rgba(10, 8, 16, 0.2) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="43.9"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="stage">
+        <div id="glow"></div>
+        <div id="grid"></div>
+      </div>
+      <audio
+        id="voice"
+        src="assets/audio/voice.m4a"
+        data-start="0"
+        data-duration="43.9"
+        data-track-index="0"
+        data-volume="1"
+      ></audio>
+      <audio
+        id="music"
+        src="assets/audio/music.mp3"
+        data-start="0"
+        data-duration="43.9"
+        data-track-index="1"
+        data-volume="1"
+        data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0, "v": 0}, {"t": 1.2, "v": 0.053}, {"t": 41.4, "v": 0.053}, {"t": 43.9, "v": 0}]}]}'
+      ></audio>
+      <div id="broll-match" data-composition-id="broll-match" data-composition-src="compositions/broll-match.html" data-start="0.0" data-duration="4.62" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-doc" data-composition-id="broll-doc" data-composition-src="compositions/broll-doc.html" data-start="4.62" data-duration="3.26" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-campaign" data-composition-id="broll-campaign" data-composition-src="compositions/broll-campaign.html" data-start="7.88" data-duration="3.08" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-rewrite" data-composition-id="broll-rewrite" data-composition-src="compositions/broll-rewrite.html" data-start="10.96" data-duration="4.96" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-brand" data-composition-id="broll-brand" data-composition-src="compositions/broll-brand.html" data-start="15.92" data-duration="2.14" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-tools" data-composition-id="broll-tools" data-composition-src="compositions/broll-tools.html" data-start="18.06" data-duration="7.92" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-flow" data-composition-id="broll-flow" data-composition-src="compositions/broll-flow.html" data-start="25.98" data-duration="4.54" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-split" data-composition-id="broll-split" data-composition-src="compositions/broll-split.html" data-start="30.52" data-duration="4.22" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-verify" data-composition-id="broll-verify" data-composition-src="compositions/broll-verify.html" data-start="34.74" data-duration="4.24" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-sessions" data-composition-id="broll-sessions" data-composition-src="compositions/broll-sessions.html" data-start="38.98" data-duration="4.92" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="shade"></div>
+      <div
+        id="captions"
+        data-composition-id="captions"
+        data-composition-src="compositions/captions.html"
+        data-track-kind="captions"
+        data-start="0"
+        data-duration="43.9"
+        data-track-index="2"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+    </div>
+    <script>
+      const DURATION = 43.9;
+      const tl = gsap.timeline({ paused: true });
+      // The stage never cuts: the glow breathes and the grid drifts one cell over the whole film.
+      tl.fromTo("#stage", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+      tl.fromTo("#grid", { x: 0, y: 0 }, { x: -45, y: -90, duration: DURATION, ease: "none" }, 0);
+      tl.fromTo("#glow", { xPercent: -4, scale: 1 }, { xPercent: 4, scale: 1.08, duration: DURATION / 2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+      tl.to("#stage", { opacity: 0, duration: 0.6, ease: "power1.in" }, DURATION - 0.6);
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

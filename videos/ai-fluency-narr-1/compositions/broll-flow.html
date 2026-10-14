@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-flow {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-flow .sc {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          transform-origin: 50% 45%;
+        }
+        #broll-flow .lbl {
+          position: absolute;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          opacity: 0.6;
+          white-space: nowrap;
+        }
+        #broll-flow .serif {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+        }
+        #broll-flow .box {
+          position: absolute;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 22px;
+        }
+        #broll-flow .bar {
+          position: absolute;
+          height: 12px;
+          border-radius: 6px;
+          background: rgba(255, 253, 248, 0.34);
+          transform-origin: 0% 50%;
+        }
+        #broll-flow .ic svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        #broll-flow svg.wires {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          overflow: visible;
+        }
+        #broll-flow svg.wires path,
+        #broll-flow svg.wires line {
+          fill: none;
+          stroke: #fffdf8;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+
+        #broll-flow .node {
+          position: absolute;
+          left: 250px;
+          height: 140px;
+          margin-top: -70px;
+          display: flex;
+          align-items: center;
+          gap: 44px;
+        }
+        #broll-flow .ring {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 253, 248, 0.9);
+          background: #150f2a;
+          padding: 34px;
+          flex: none;
+        }
+        #broll-flow .nl {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+        }
+        #broll-flow .nl b {
+          font-weight: 700;
+          font-size: 26px;
+          letter-spacing: 0.22em;
+          opacity: 0.55;
+        }
+        #broll-flow .nl span {
+          font-size: 84px;
+          line-height: 0.9;
+          white-space: nowrap;
+        }
+        #broll-flow .pulse {
+          position: absolute;
+          left: 308px;
+          top: 262px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: #fffdf8;
+          box-shadow: 0 0 22px 6px rgba(255, 253, 248, 0.45);
+          opacity: 0;
+        }
+      </style>
+
+      <div id="broll-flow" data-composition-id="broll-flow" data-width="1080" data-height="1920">
+        <div class="sc">
+          <svg class="wires" viewBox="0 0 1080 1160">
+            <path class="draw rail" d="M320,270 L320,900" style="opacity: 0.45" />
+          </svg>
+          <div class="pulse" id="broll-flow-pulse"></div>
+          <div class="node" id="broll-flow-n0" style="top: 270px"><div class="ring ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" > <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /> </svg></div><div class="nl"><b>01</b><span class="serif">feladat</span></div></div>
+          <div class="node" id="broll-flow-n1" style="top: 480px"><div class="ring ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></div><div class="nl"><b>02</b><span class="serif">AI</span></div></div>
+          <div class="node" id="broll-flow-n2" style="top: 690px"><div class="ring ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg></div><div class="nl"><b>03</b><span class="serif">eredmény</span></div></div>
+          <div class="node" id="broll-flow-n3" style="top: 900px"><div class="ring ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <path d="m9 12 2 2 4-4" /> </svg></div><div class="nl"><b>04</b><span class="serif">ellenőrzés</span></div></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const ROOT = "#broll-flow ";
+          const $ = (s) => document.querySelector(ROOT + s);
+          const $$ = (s) => Array.from(document.querySelectorAll(ROOT + s));
+          // Prime every drawable stroke so a 0 -> 1 "draw" is a dashoffset tween.
+          $$("svg.wires .draw").forEach((p) => {
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = len + " " + len;
+            p.style.strokeDashoffset = len;
+          });
+          const draw = (sel, at, dur, ease) =>
+            tl.to(ROOT + sel, { strokeDashoffset: 0, duration: dur, ease: ease || "power2.inOut" }, at);
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(ROOT + ".sc", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, ease: "power2.out" }, 0);
+          tl.fromTo(ROOT + ".sc", { scale: 1 }, { scale: 1.03, duration: 4.54, ease: "none" }, 0);
+          const T = {"gyak": 0.06, "pontos": 0.83, "kiadas": 1.24, "folyamat": 2.07, "eredmeny": 2.84, "ellenor": 3.55, "end": 4.54};
+          const AT = [T.gyak + 0.1, T.kiadas, T.eredmeny, T.ellenor];
+          draw("svg.wires .rail", 0.1, T.ellenor - 0.2, "none");
+          AT.forEach((at, k) => {
+            tl.fromTo("#broll-flow-n" + k + " .ring", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, at - 0.05);
+            tl.fromTo("#broll-flow-n" + k + " .nl", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, at);
+          });
+          tl.fromTo("#broll-flow-pulse", { opacity: 0 }, { opacity: 1, duration: 0.2 }, T.kiadas - 0.4);
+          tl.to("#broll-flow-pulse", { y: 210, duration: T.kiadas - (T.kiadas - 0.4), ease: "power2.inOut" }, T.kiadas - 0.4);
+          tl.to("#broll-flow-pulse", { y: 420, duration: T.eredmeny - T.folyamat, ease: "power2.inOut" }, T.folyamat);
+          tl.to("#broll-flow-pulse", { y: 630, duration: T.ellenor - T.eredmeny, ease: "power2.inOut" }, T.eredmeny);
+          tl.to("#broll-flow-pulse", { opacity: 0, duration: 0.2 }, T.ellenor);
+          tl.to("#broll-flow-n3 .ring", { backgroundColor: "rgba(255, 253, 248, 0.16)", duration: 0.4 }, T.ellenor + 0.2);
+          tl.to("#broll-flow .sc", { opacity: 0, y: -14, duration: 0.24, ease: "power1.in" }, 4.3);
+          window.__timelines["broll-flow"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,562 @@
+[
+{
+"text": "Gyakran",
+"start": 0.14,
+"end": 0.564
+},
+{
+"text": "nem",
+"start": 0.564,
+"end": 0.746
+},
+{
+"text": "tudják",
+"start": 0.746,
+"end": 1.109
+},
+{
+"text": "a",
+"start": 1.109,
+"end": 1.17
+},
+{
+"text": "felhasználók,",
+"start": 1.17,
+"end": 1.957
+},
+{
+"text": "hogy",
+"start": 1.957,
+"end": 2.199
+},
+{
+"text": "melyik",
+"start": 2.199,
+"end": 2.563
+},
+{
+"text": "AI",
+"start": 2.563,
+"end": 2.684
+},
+{
+"text": "eszközt",
+"start": 2.684,
+"end": 3.108
+},
+{
+"text": "mire",
+"start": 3.108,
+"end": 3.35
+},
+{
+"text": "érdemes",
+"start": 3.35,
+"end": 3.774
+},
+{
+"text": "használni.",
+"start": 3.774,
+"end": 4.38
+},
+{
+"text": "Például,",
+"start": 4.74,
+"end": 5.15
+},
+{
+"text": "hogy",
+"start": 5.15,
+"end": 5.355
+},
+{
+"text": "mivel",
+"start": 5.355,
+"end": 5.611
+},
+{
+"text": "készítsünk",
+"start": 5.611,
+"end": 6.123
+},
+{
+"text": "egy",
+"start": 6.123,
+"end": 6.277
+},
+{
+"text": "dokumentumból",
+"start": 6.277,
+"end": 6.943
+},
+{
+"text": "összefoglalót,",
+"start": 6.943,
+"end": 7.66
+},
+{
+"text": "hogyan",
+"start": 7.98,
+"end": 8.315
+},
+{
+"text": "használjuk",
+"start": 8.315,
+"end": 8.873
+},
+{
+"text": "az",
+"start": 8.873,
+"end": 8.985
+},
+{
+"text": "AI-t",
+"start": 8.985,
+"end": 9.208
+},
+{
+"text": "egy",
+"start": 9.208,
+"end": 9.376
+},
+{
+"text": "kampány",
+"start": 9.376,
+"end": 9.767
+},
+{
+"text": "megtervezéséhez,",
+"start": 9.767,
+"end": 10.66
+},
+{
+"text": "vagy",
+"start": 11.04,
+"end": 11.28
+},
+{
+"text": "mivel",
+"start": 11.28,
+"end": 11.58
+},
+{
+"text": "dolgoztassunk",
+"start": 11.58,
+"end": 12.36
+},
+{
+"text": "át",
+"start": 12.36,
+"end": 12.48
+},
+{
+"text": "egy",
+"start": 12.48,
+"end": 12.66
+},
+{
+"text": "szöveget",
+"start": 12.66,
+"end": 13.14
+},
+{
+"text": "úgy,",
+"start": 13.14,
+"end": 13.38
+},
+{
+"text": "hogy",
+"start": 13.38,
+"end": 13.62
+},
+{
+"text": "közben",
+"start": 13.62,
+"end": 13.98
+},
+{
+"text": "megmaradjon",
+"start": 13.98,
+"end": 14.64
+},
+{
+"text": "az",
+"start": 14.64,
+"end": 14.76
+},
+{
+"text": "eredeti",
+"start": 14.76,
+"end": 15.18
+},
+{
+"text": "stílusa.",
+"start": 15.18,
+"end": 15.66
+},
+{
+"text": "Az",
+"start": 16,
+"end": 16.153
+},
+{
+"text": "AI",
+"start": 16.153,
+"end": 16.306
+},
+{
+"text": "Fluency",
+"start": 16.306,
+"end": 16.843
+},
+{
+"text": "képzésen",
+"start": 16.843,
+"end": 17.455
+},
+{
+"text": "megtudod,",
+"start": 17.455,
+"end": 18.145
+},
+{
+"text": "hogy",
+"start": 18.145,
+"end": 18.451
+},
+{
+"text": "a",
+"start": 18.451,
+"end": 18.528
+},
+{
+"text": "ChatGPT,",
+"start": 18.528,
+"end": 19.14
+},
+{
+"text": "a",
+"start": 19.14,
+"end": 19.217
+},
+{
+"text": "Gemini,",
+"start": 19.217,
+"end": 19.753
+},
+{
+"text": "a",
+"start": 19.753,
+"end": 19.83
+},
+{
+"text": "Cloud,",
+"start": 19.83,
+"end": 20.289
+},
+{
+"text": "a",
+"start": 20.289,
+"end": 20.366
+},
+{
+"text": "Perplexity",
+"start": 20.366,
+"end": 21.132
+},
+{
+"text": "és",
+"start": 21.132,
+"end": 21.285
+},
+{
+"text": "a",
+"start": 21.285,
+"end": 21.362
+},
+{
+"text": "Gemini",
+"start": 21.362,
+"end": 21.821
+},
+{
+"text": "Notebook",
+"start": 21.821,
+"end": 22.434
+},
+{
+"text": "eszközöket",
+"start": 22.434,
+"end": 23.2
+},
+{
+"text": "milyen",
+"start": 23.2,
+"end": 23.544
+},
+{
+"text": "feladatokra",
+"start": 23.544,
+"end": 24.176
+},
+{
+"text": "érdemes",
+"start": 24.176,
+"end": 24.577
+},
+{
+"text": "használod",
+"start": 24.577,
+"end": 25.094
+},
+{
+"text": "a",
+"start": 25.094,
+"end": 25.151
+},
+{
+"text": "munkád",
+"start": 25.151,
+"end": 25.496
+},
+{
+"text": "során,",
+"start": 25.496,
+"end": 25.84
+},
+{
+"text": "gyakorolhatod",
+"start": 26.04,
+"end": 26.809
+},
+{
+"text": "a",
+"start": 26.809,
+"end": 26.868
+},
+{
+"text": "pontos",
+"start": 26.868,
+"end": 27.223
+},
+{
+"text": "feladatkiadási",
+"start": 27.223,
+"end": 28.052
+},
+{
+"text": "folyamatokat,",
+"start": 28.052,
+"end": 28.821
+},
+{
+"text": "az",
+"start": 28.821,
+"end": 28.939
+},
+{
+"text": "eredmények",
+"start": 28.939,
+"end": 29.531
+},
+{
+"text": "ellenőrzését,",
+"start": 29.531,
+"end": 30.3
+},
+{
+"text": "és",
+"start": 30.58,
+"end": 30.717
+},
+{
+"text": "hogy",
+"start": 30.717,
+"end": 30.991
+},
+{
+"text": "mit",
+"start": 30.991,
+"end": 31.196
+},
+{
+"text": "érdemes",
+"start": 31.196,
+"end": 31.676
+},
+{
+"text": "kiadni",
+"start": 31.676,
+"end": 32.086
+},
+{
+"text": "az",
+"start": 32.086,
+"end": 32.223
+},
+{
+"text": "AI-nak,",
+"start": 32.223,
+"end": 32.703
+},
+{
+"text": "és",
+"start": 32.703,
+"end": 32.84
+},
+{
+"text": "mi",
+"start": 32.84,
+"end": 32.977
+},
+{
+"text": "az,",
+"start": 32.977,
+"end": 33.182
+},
+{
+"text": "ami",
+"start": 33.182,
+"end": 33.387
+},
+{
+"text": "jobb,",
+"start": 33.387,
+"end": 33.73
+},
+{
+"text": "ha",
+"start": 33.73,
+"end": 33.867
+},
+{
+"text": "nálad",
+"start": 33.867,
+"end": 34.209
+},
+{
+"text": "marad.",
+"start": 34.209,
+"end": 34.62
+},
+{
+"text": "Kipróbálhatsz",
+"start": 34.88,
+"end": 35.683
+},
+{
+"text": "különböző",
+"start": 35.683,
+"end": 36.239
+},
+{
+"text": "ellenőrzési",
+"start": 36.239,
+"end": 36.918
+},
+{
+"text": "technikákat",
+"start": 36.918,
+"end": 37.598
+},
+{
+"text": "és",
+"start": 37.598,
+"end": 37.721
+},
+{
+"text": "kutatási",
+"start": 37.721,
+"end": 38.215
+},
+{
+"text": "technikákat",
+"start": 38.215,
+"end": 38.895
+},
+{
+"text": "is.",
+"start": 38.895,
+"end": 39.08
+},
+{
+"text": "Kipróbálhatsz",
+"start": 39.44,
+"end": 40.247
+},
+{
+"text": "különböző",
+"start": 40.247,
+"end": 40.806
+},
+{
+"text": "ellenőrzési",
+"start": 40.806,
+"end": 41.489
+},
+{
+"text": "és",
+"start": 41.489,
+"end": 41.614
+},
+{
+"text": "kutatási",
+"start": 41.614,
+"end": 42.111
+},
+{
+"text": "technikákat",
+"start": 42.111,
+"end": 42.794
+},
+{
+"text": "is.",
+"start": 42.794,
+"end": 42.98
+},
+{
+"text": "A",
+"start": 43.38,
+"end": 43.454
+},
+{
+"text": "képzés",
+"start": 43.454,
+"end": 43.895
+},
+{
+"text": "három",
+"start": 43.895,
+"end": 44.263
+},
+{
+"text": "élő",
+"start": 44.263,
+"end": 44.484
+},
+{
+"text": "alkalomból",
+"start": 44.484,
+"end": 45.22
+},
+{
+"text": "áll,",
+"start": 45.22,
+"end": 45.515
+},
+{
+"text": "összesen",
+"start": 45.515,
+"end": 46.104
+},
+{
+"text": "hat",
+"start": 46.104,
+"end": 46.325
+},
+{
+"text": "órában.",
+"start": 46.325,
+"end": 46.84
+}
+]

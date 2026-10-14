@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-doc {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-doc .sc {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          transform-origin: 50% 45%;
+        }
+        #broll-doc .lbl {
+          position: absolute;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          opacity: 0.6;
+          white-space: nowrap;
+        }
+        #broll-doc .serif {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+        }
+        #broll-doc .box {
+          position: absolute;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 22px;
+        }
+        #broll-doc .bar {
+          position: absolute;
+          height: 12px;
+          border-radius: 6px;
+          background: rgba(255, 253, 248, 0.34);
+          transform-origin: 0% 50%;
+        }
+        #broll-doc .ic svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        #broll-doc svg.wires {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          overflow: visible;
+        }
+        #broll-doc svg.wires path,
+        #broll-doc svg.wires line {
+          fill: none;
+          stroke: #fffdf8;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+
+        #broll-doc .doc {
+          left: 110px;
+          top: 300px;
+          width: 420px;
+          height: 600px;
+          overflow: hidden;
+        }
+        #broll-doc .scan {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 3px;
+          background: #fffdf8;
+          box-shadow: 0 0 24px 6px rgba(255, 253, 248, 0.35);
+          opacity: 0;
+        }
+        #broll-doc .sum {
+          left: 670px;
+          top: 440px;
+          width: 300px;
+          height: 330px;
+          transform-origin: 0% 50%;
+        }
+        #broll-doc .srow {
+          position: absolute;
+          left: 36px;
+          display: flex;
+          align-items: center;
+          gap: 18px;
+        }
+        #broll-doc .srow i {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: #fffdf8;
+          flex: none;
+        }
+        #broll-doc .doc .ic {
+          position: absolute;
+          left: 40px;
+          top: 30px;
+          width: 44px;
+          height: 44px;
+          opacity: 0.8;
+        }
+      </style>
+
+      <div id="broll-doc" data-composition-id="broll-doc" data-width="1080" data-height="1920">
+        <div class="sc">
+          <div class="lbl" style="left: 114px; top: 246px">Dokumentum</div>
+          <div class="box doc" id="broll-doc-page">
+            <div class="ic"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg></div>
+            <div class="bar dl" style="left: 44px; top: 92px; width: 300px"></div>
+            <div class="bar dl" style="left: 44px; top: 126px; width: 330px"></div>
+            <div class="bar dl" style="left: 44px; top: 160px; width: 270px"></div>
+            <div class="bar dl" style="left: 44px; top: 194px; width: 320px"></div>
+            <div class="bar dl" style="left: 44px; top: 228px; width: 210px"></div>
+            <div class="bar dl" style="left: 44px; top: 262px; width: 330px"></div>
+            <div class="bar dl" style="left: 44px; top: 296px; width: 300px"></div>
+            <div class="bar dl" style="left: 44px; top: 330px; width: 250px"></div>
+            <div class="bar dl" style="left: 44px; top: 364px; width: 320px"></div>
+            <div class="bar dl" style="left: 44px; top: 398px; width: 290px"></div>
+            <div class="bar dl" style="left: 44px; top: 432px; width: 160px"></div>
+            <div class="bar dl" style="left: 44px; top: 466px; width: 310px"></div>
+            <div class="bar dl" style="left: 44px; top: 500px; width: 280px"></div>
+            <div class="bar dl" style="left: 44px; top: 534px; width: 200px"></div>
+            <div class="scan" id="broll-doc-scan"></div>
+          </div>
+          <svg class="wires" viewBox="0 0 1080 1160">
+            <path class="draw arrow" d="M560,605 L640,605" />
+            <path class="draw arrow" d="M622,587 L642,605 L622,623" />
+          </svg>
+          <div class="lbl" id="broll-doc-sl" style="left: 674px; top: 386px">Összefoglaló</div>
+          <div class="box sum" id="broll-doc-sum">
+            <div class="srow" style="top: 96px"><i></i><div class="bar" style="position: relative; width: 190px; background: rgba(255, 253, 248, 0.85)"></div></div>
+            <div class="srow" style="top: 170px"><i></i><div class="bar" style="position: relative; width: 150px; background: rgba(255, 253, 248, 0.85)"></div></div>
+            <div class="srow" style="top: 244px"><i></i><div class="bar" style="position: relative; width: 175px; background: rgba(255, 253, 248, 0.85)"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const ROOT = "#broll-doc ";
+          const $ = (s) => document.querySelector(ROOT + s);
+          const $$ = (s) => Array.from(document.querySelectorAll(ROOT + s));
+          // Prime every drawable stroke so a 0 -> 1 "draw" is a dashoffset tween.
+          $$("svg.wires .draw").forEach((p) => {
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = len + " " + len;
+            p.style.strokeDashoffset = len;
+          });
+          const draw = (sel, at, dur, ease) =>
+            tl.to(ROOT + sel, { strokeDashoffset: 0, duration: dur, ease: ease || "power2.inOut" }, at);
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(ROOT + ".sc", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, ease: "power2.out" }, 0);
+          tl.fromTo(ROOT + ".sc", { scale: 1 }, { scale: 1.03, duration: 3.26, ease: "none" }, 0);
+          const T = {"keszit": 0.99, "doc": 1.66, "sum": 2.32, "end": 3.26};
+          tl.fromTo("#broll-doc-page", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.05);
+          tl.fromTo(ROOT + ".dl", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out", stagger: 0.05 }, 0.3);
+          tl.fromTo("#broll-doc-scan", { opacity: 0, y: 0 }, { opacity: 1, duration: 0.1 }, T.doc);
+          tl.to("#broll-doc-scan", { y: 596, duration: 0.65, ease: "power1.inOut" }, T.doc);
+          tl.to("#broll-doc-scan", { opacity: 0, duration: 0.15 }, T.doc + 0.6);
+          tl.to(ROOT + ".dl", { opacity: 0.45, duration: 0.4 }, T.sum);
+          draw("svg.wires .arrow", T.sum - 0.1, 0.35);
+          tl.fromTo("#broll-doc-sum", { opacity: 0, scale: 0.9, x: -20 }, { opacity: 1, scale: 1, x: 0, duration: 0.5, ease: "power3.out" }, T.sum);
+          tl.fromTo("#broll-doc-sl", { opacity: 0 }, { opacity: 0.6, duration: 0.4 }, T.sum + 0.05);
+          tl.fromTo(ROOT + ".srow", { opacity: 0, x: -14 }, { opacity: 1, x: 0, duration: 0.35, ease: "power2.out", stagger: 0.1 }, T.sum + 0.08);
+          tl.to("#broll-doc .sc", { opacity: 0, y: -14, duration: 0.24, ease: "power1.in" }, 3.0199999999999996);
+          window.__timelines["broll-doc"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

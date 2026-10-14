@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-tools {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-tools .sc {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          transform-origin: 50% 45%;
+        }
+        #broll-tools .lbl {
+          position: absolute;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          opacity: 0.6;
+          white-space: nowrap;
+        }
+        #broll-tools .serif {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+        }
+        #broll-tools .box {
+          position: absolute;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 22px;
+        }
+        #broll-tools .bar {
+          position: absolute;
+          height: 12px;
+          border-radius: 6px;
+          background: rgba(255, 253, 248, 0.34);
+          transform-origin: 0% 50%;
+        }
+        #broll-tools .ic svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        #broll-tools svg.wires {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          overflow: visible;
+        }
+        #broll-tools svg.wires path,
+        #broll-tools svg.wires line {
+          fill: none;
+          stroke: #fffdf8;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+
+        #broll-tools .chip {
+          position: absolute;
+          left: 80px;
+          width: 340px;
+          height: 96px;
+          margin-top: -48px;
+          border: 2px solid rgba(255, 253, 248, 0.9);
+          border-radius: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          font-size: 46px;
+          letter-spacing: -0.035em;
+          white-space: nowrap;
+        }
+        #broll-tools .task {
+          position: absolute;
+          left: 664px;
+          height: 80px;
+          margin-top: -40px;
+          display: flex;
+          align-items: center;
+          gap: 26px;
+          white-space: nowrap;
+        }
+        #broll-tools .task i {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 2px solid #fffdf8;
+          background: #150f2a;
+          flex: none;
+        }
+        #broll-tools .task span {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-size: 58px;
+          line-height: 1;
+          margin-top: -6px;
+        }
+
+        #broll-tools .task.on i {
+          background: #fffdf8;
+        }
+      </style>
+
+      <div id="broll-tools" data-composition-id="broll-tools" data-width="1080" data-height="1920">
+        <div class="sc">
+          <div class="lbl" style="left: 84px; top: 170px">Eszköz</div>
+          <div class="lbl" style="left: 668px; top: 170px">Feladat</div>
+          <svg class="wires" viewBox="0 0 1080 1160">
+            <path class="draw w0" d="M424,300 C560,300 536,300 674,300" />
+            <path class="draw w1" d="M424,450 C560,450 536,450 674,450" />
+            <path class="draw w2" d="M424,600 C560,600 536,600 674,600" />
+            <path class="draw w3" d="M424,750 C560,750 536,750 674,750" />
+            <path class="draw w4" d="M424,900 C560,900 536,900 674,900" />
+          </svg>
+          <div class="chip" id="broll-tools-t0" style="top: 300px">ChatGPT</div>
+          <div class="task" id="broll-tools-k0" style="top: 300px"><i></i><span>ötletek</span></div>
+          <div class="chip" id="broll-tools-t1" style="top: 450px">Gemini</div>
+          <div class="task" id="broll-tools-k1" style="top: 450px"><i></i><span>kampány</span></div>
+          <div class="chip" id="broll-tools-t2" style="top: 600px">Claude</div>
+          <div class="task" id="broll-tools-k2" style="top: 600px"><i></i><span>szöveg</span></div>
+          <div class="chip" id="broll-tools-t3" style="top: 750px">Perplexity</div>
+          <div class="task" id="broll-tools-k3" style="top: 750px"><i></i><span>kutatás</span></div>
+          <div class="chip" id="broll-tools-t4" style="top: 900px">NotebookLM</div>
+          <div class="task" id="broll-tools-k4" style="top: 900px"><i></i><span>összefoglaló</span></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const ROOT = "#broll-tools ";
+          const $ = (s) => document.querySelector(ROOT + s);
+          const $$ = (s) => Array.from(document.querySelectorAll(ROOT + s));
+          // Prime every drawable stroke so a 0 -> 1 "draw" is a dashoffset tween.
+          $$("svg.wires .draw").forEach((p) => {
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = len + " " + len;
+            p.style.strokeDashoffset = len;
+          });
+          const draw = (sel, at, dur, ease) =>
+            tl.to(ROOT + sel, { strokeDashoffset: 0, duration: dur, ease: ease || "power2.inOut" }, at);
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(ROOT + ".sc", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, ease: "power2.out" }, 0);
+          tl.fromTo(ROOT + ".sc", { scale: 1 }, { scale: 1.03, duration: 7.92, ease: "none" }, 0);
+          const T = {"chat": 0.47, "gemini": 1.16, "claude": 1.77, "perplexity": 2.31, "notebook": 3.3, "tasks": 5.48, "use": 6.12, "work": 7.03, "end": 7.92};
+          const AT = [T.chat, T.gemini, T.claude, T.perplexity, T.notebook];
+          tl.fromTo(ROOT + ".lbl", { opacity: 0 }, { opacity: 0.6, duration: 0.4 }, 0.1);
+          AT.forEach((at, i) => {
+            tl.fromTo("#broll-tools-t" + i, { opacity: 0, x: -36, scale: 0.96 }, { opacity: 1, x: 0, scale: 1, duration: 0.5, ease: "power3.out" }, at - 0.04);
+          });
+          for (let i = 0; i < 5; i++) {
+            tl.fromTo("#broll-tools-k" + i, { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, T.tasks - 0.05 + i * 0.1);
+            draw("svg.wires .w" + i, T.use - 0.1 + i * 0.16, 0.6);
+            tl.fromTo("#broll-tools-k" + i + " i", { backgroundColor: "#150f2a" }, { backgroundColor: "#fffdf8", duration: 0.25 }, T.use + 0.45 + i * 0.16);
+          }
+          tl.to("#broll-tools .sc", { opacity: 0, y: -14, duration: 0.24, ease: "power1.in" }, 7.68);
+          window.__timelines["broll-tools"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-sessions {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-sessions .sc {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          transform-origin: 50% 45%;
+        }
+        #broll-sessions .lbl {
+          position: absolute;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          opacity: 0.6;
+          white-space: nowrap;
+        }
+        #broll-sessions .serif {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+        }
+        #broll-sessions .box {
+          position: absolute;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 22px;
+        }
+        #broll-sessions .bar {
+          position: absolute;
+          height: 12px;
+          border-radius: 6px;
+          background: rgba(255, 253, 248, 0.34);
+          transform-origin: 0% 50%;
+        }
+        #broll-sessions .ic svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        #broll-sessions svg.wires {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          overflow: visible;
+        }
+        #broll-sessions svg.wires path,
+        #broll-sessions svg.wires line {
+          fill: none;
+          stroke: #fffdf8;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+
+        #broll-sessions .tile {
+          top: 290px;
+          width: 260px;
+          height: 330px;
+        }
+        #broll-sessions .live {
+          position: absolute;
+          left: 28px;
+          top: 26px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 700;
+          font-size: 22px;
+          letter-spacing: 0.2em;
+          opacity: 0.75;
+        }
+        #broll-sessions .live b {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #fffdf8;
+        }
+        #broll-sessions .num {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 90px;
+          text-align: center;
+          font-size: 150px;
+          line-height: 1;
+        }
+        #broll-sessions .hr {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 30px;
+          text-align: center;
+          font-weight: 800;
+          font-size: 36px;
+          letter-spacing: -0.02em;
+          opacity: 0.85;
+        }
+        #broll-sessions .seg {
+          position: absolute;
+          top: 700px;
+          width: 280px;
+          height: 16px;
+          border-radius: 8px;
+          border: 2px solid rgba(255, 253, 248, 0.6);
+          overflow: hidden;
+        }
+        #broll-sessions .fill {
+          position: absolute;
+          inset: 0;
+          background: #fffdf8;
+          transform-origin: 0% 50%;
+          transform: scaleX(0);
+        }
+        #broll-sessions .total {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 780px;
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          gap: 26px;
+        }
+        #broll-sessions .total .big {
+          font-size: 260px;
+          line-height: 0.8;
+        }
+        #broll-sessions .total .unit {
+          font-weight: 800;
+          font-size: 92px;
+          letter-spacing: -0.045em;
+        }
+      </style>
+
+      <div id="broll-sessions" data-composition-id="broll-sessions" data-width="1080" data-height="1920">
+        <div class="sc">
+          <div class="box tile" id="broll-sessions-t0" style="left: 110px"><div class="live"><b></b>ÉLŐ</div><div class="num serif">01</div><div class="hr">2 óra</div></div>
+          <div class="box tile" id="broll-sessions-t1" style="left: 410px"><div class="live"><b></b>ÉLŐ</div><div class="num serif">02</div><div class="hr">2 óra</div></div>
+          <div class="box tile" id="broll-sessions-t2" style="left: 710px"><div class="live"><b></b>ÉLŐ</div><div class="num serif">03</div><div class="hr">2 óra</div></div>
+          <div class="seg" style="left: 110px"><div class="fill" id="broll-sessions-f0"></div></div>
+          <div class="seg" style="left: 400px"><div class="fill" id="broll-sessions-f1"></div></div>
+          <div class="seg" style="left: 690px"><div class="fill" id="broll-sessions-f2"></div></div>
+          <div class="total" id="broll-sessions-total"><span class="big serif" id="broll-sessions-n">0</span><span class="unit">óra</span></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const ROOT = "#broll-sessions ";
+          const $ = (s) => document.querySelector(ROOT + s);
+          const $$ = (s) => Array.from(document.querySelectorAll(ROOT + s));
+          // Prime every drawable stroke so a 0 -> 1 "draw" is a dashoffset tween.
+          $$("svg.wires .draw").forEach((p) => {
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = len + " " + len;
+            p.style.strokeDashoffset = len;
+          });
+          const draw = (sel, at, dur, ease) =>
+            tl.to(ROOT + sel, { strokeDashoffset: 0, duration: dur, ease: ease || "power2.inOut" }, at);
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(ROOT + ".sc", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, ease: "power2.out" }, 0);
+          tl.fromTo(ROOT + ".sc", { scale: 1 }, { scale: 1.03, duration: 4.92, ease: "none" }, 0);
+          const T = {"kepzes": 0.13, "harom": 0.58, "elo": 0.94, "alkalom": 1.16, "osszesen": 2.2, "hat": 2.78, "ora": 3.01, "end": 4.92};
+          [T.harom, T.harom + 0.18, T.elo].forEach((at, k) => {
+            tl.fromTo("#broll-sessions-t" + k, { opacity: 0, y: 30, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, at - 0.05);
+          });
+          tl.fromTo(ROOT + ".seg", { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.08 }, T.alkalom);
+          tl.fromTo("#broll-sessions-total", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, T.osszesen);
+          // Hours count 0 -> 6 as the three bars fill; driven by timeline time so any seek is exact.
+          const n = document.getElementById("broll-sessions-n");
+          const counter = { v: 0 };
+          tl.fromTo(counter, { v: 0 }, { v: 6, duration: T.hat - T.osszesen + 0.25, ease: "power1.inOut", onUpdate() { n.textContent = String(Math.round(counter.v)); } }, T.osszesen);
+          for (let k = 0; k < 3; k++) {
+            tl.fromTo("#broll-sessions-f" + k, { scaleX: 0 }, { scaleX: 1, duration: (T.hat - T.osszesen + 0.25) / 3, ease: "none" }, T.osszesen + k * (T.hat - T.osszesen + 0.25) / 3);
+          }
+          tl.fromTo("#broll-sessions-n", { scale: 1.08 }, { scale: 1, duration: 0.4, ease: "power3.out" }, T.hat + 0.25);
+          tl.to("#broll-sessions .sc", { opacity: 0, duration: 0.5, ease: "power1.in" }, 4.42);
+          window.__timelines["broll-sessions"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

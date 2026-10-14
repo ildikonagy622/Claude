@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-800.ttf") format("truetype");
+          font-weight: 800;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Inter Tight";
+          src: url("assets/fonts/InterTight-700.ttf") format("truetype");
+          font-weight: 700;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Bodoni Moda";
+          src: url("assets/fonts/BodoniModa-Italic-400.ttf") format("truetype");
+          font-weight: 400;
+          font-style: italic;
+        }
+        #broll-match {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          color: #fffdf8;
+          font-family: "Inter Tight", sans-serif;
+        }
+        #broll-match .sc {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          transform-origin: 50% 45%;
+        }
+        #broll-match .lbl {
+          position: absolute;
+          font-weight: 700;
+          font-size: 30px;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          opacity: 0.6;
+          white-space: nowrap;
+        }
+        #broll-match .serif {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-weight: 400;
+        }
+        #broll-match .box {
+          position: absolute;
+          border: 2px solid rgba(255, 253, 248, 0.85);
+          border-radius: 22px;
+        }
+        #broll-match .bar {
+          position: absolute;
+          height: 12px;
+          border-radius: 6px;
+          background: rgba(255, 253, 248, 0.34);
+          transform-origin: 0% 50%;
+        }
+        #broll-match .ic svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        #broll-match svg.wires {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1080px;
+          height: 1160px;
+          overflow: visible;
+        }
+        #broll-match svg.wires path,
+        #broll-match svg.wires line {
+          fill: none;
+          stroke: #fffdf8;
+          stroke-width: 2;
+          stroke-linecap: round;
+        }
+
+        #broll-match .chip {
+          position: absolute;
+          left: 80px;
+          width: 340px;
+          height: 96px;
+          margin-top: -48px;
+          border: 2px solid rgba(255, 253, 248, 0.9);
+          border-radius: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 800;
+          font-size: 46px;
+          letter-spacing: -0.035em;
+          white-space: nowrap;
+        }
+        #broll-match .task {
+          position: absolute;
+          left: 664px;
+          height: 80px;
+          margin-top: -40px;
+          display: flex;
+          align-items: center;
+          gap: 26px;
+          white-space: nowrap;
+        }
+        #broll-match .task i {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 2px solid #fffdf8;
+          background: #150f2a;
+          flex: none;
+        }
+        #broll-match .task span {
+          font-family: "Bodoni Moda", serif;
+          font-style: italic;
+          font-size: 58px;
+          line-height: 1;
+          margin-top: -6px;
+        }
+
+        #broll-match svg.wires path {
+          stroke-width: 1.6;
+          opacity: 0.4;
+        }
+        #broll-match .q {
+          position: absolute;
+          left: 0;
+          width: 1080px;
+          top: 360px;
+          text-align: center;
+          font-size: 400px;
+          line-height: 1;
+          text-shadow: 0 0 60px rgba(11, 10, 16, 0.9), 0 0 120px rgba(21, 15, 42, 0.9);
+        }
+      </style>
+
+      <div id="broll-match" data-composition-id="broll-match" data-width="1080" data-height="1920">
+        <div class="sc">
+          <div class="lbl" style="left: 84px; top: 170px">Eszköz</div>
+          <div class="lbl" style="left: 668px; top: 170px">Feladat</div>
+          <svg class="wires" viewBox="0 0 1080 1160">
+            <path class="draw w0" d="M424,300 C560,300 536,600 674,600" />
+            <path class="draw w1" d="M424,300 C560,300 536,900 674,900" />
+            <path class="draw w2" d="M424,450 C560,450 536,300 674,300" />
+            <path class="draw w3" d="M424,450 C560,450 536,750 674,750" />
+            <path class="draw w4" d="M424,600 C560,600 536,900 674,900" />
+            <path class="draw w5" d="M424,600 C560,600 536,450 674,450" />
+            <path class="draw w6" d="M424,750 C560,750 536,300 674,300" />
+            <path class="draw w7" d="M424,750 C560,750 536,600 674,600" />
+            <path class="draw w8" d="M424,900 C560,900 536,450 674,450" />
+            <path class="draw w9" d="M424,900 C560,900 536,750 674,750" />
+            <path class="draw w10" d="M424,300 C560,300 536,750 674,750" />
+            <path class="draw w11" d="M424,600 C560,600 536,300 674,300" />
+          </svg>
+          <div class="chip" id="broll-match-t0" style="top: 300px">ChatGPT</div>
+          <div class="task" id="broll-match-k0" style="top: 300px"><i></i><span>ötletek</span></div>
+          <div class="chip" id="broll-match-t1" style="top: 450px">Gemini</div>
+          <div class="task" id="broll-match-k1" style="top: 450px"><i></i><span>kampány</span></div>
+          <div class="chip" id="broll-match-t2" style="top: 600px">Claude</div>
+          <div class="task" id="broll-match-k2" style="top: 600px"><i></i><span>szöveg</span></div>
+          <div class="chip" id="broll-match-t3" style="top: 750px">Perplexity</div>
+          <div class="task" id="broll-match-k3" style="top: 750px"><i></i><span>kutatás</span></div>
+          <div class="chip" id="broll-match-t4" style="top: 900px">NotebookLM</div>
+          <div class="task" id="broll-match-k4" style="top: 900px"><i></i><span>összefoglaló</span></div>
+          <div class="q serif" id="broll-match-q">?</div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const ROOT = "#broll-match ";
+          const $ = (s) => document.querySelector(ROOT + s);
+          const $$ = (s) => Array.from(document.querySelectorAll(ROOT + s));
+          // Prime every drawable stroke so a 0 -> 1 "draw" is a dashoffset tween.
+          $$("svg.wires .draw").forEach((p) => {
+            const len = p.getTotalLength();
+            p.style.strokeDasharray = len + " " + len;
+            p.style.strokeDashoffset = len;
+          });
+          const draw = (sel, at, dur, ease) =>
+            tl.to(ROOT + sel, { strokeDashoffset: 0, duration: dur, ease: ease || "power2.inOut" }, at);
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo(ROOT + ".sc", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.38, ease: "power2.out" }, 0);
+          tl.fromTo(ROOT + ".sc", { scale: 1 }, { scale: 1.03, duration: 4.62, ease: "none" }, 0);
+          const T = {"users": 1.11, "melyik": 1.96, "ai": 2.56, "mire": 3.11, "end": 4.62};
+          for (let i = 0; i < 5; i++) {
+            tl.fromTo("#broll-match-t" + i, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 0.1 + i * 0.12);
+            tl.fromTo("#broll-match-k" + i, { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.45, ease: "power3.out" }, 0.5 + i * 0.12);
+          }
+          for (let n = 0; n < 12; n++) draw("svg.wires .w" + n, 1.0 + n * 0.11, 0.7);
+          // "melyik AI-eszközt": the chips flicker through, nobody knows which one.
+          for (let i = 0; i < 5; i++) {
+            tl.to("#broll-match-t" + i, { opacity: 0.35, duration: 0.12, yoyo: true, repeat: 1, ease: "none" }, T.melyik + i * 0.16);
+          }
+          tl.to(ROOT + ".chip, " + ROOT + ".task, " + ROOT + "svg.wires", { opacity: 0.32, duration: 0.4, ease: "power1.out" }, T.mire - 0.05);
+          tl.fromTo("#broll-match-q", { opacity: 0, scale: 1.12, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, T.mire);
+          tl.to("#broll-match .sc", { opacity: 0, y: -14, duration: 0.24, ease: "power1.in" }, 4.38);
+          window.__timelines["broll-match"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

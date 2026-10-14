@@ -1,0 +1,5 @@
+assets/video/
+.hyperframes/
+node_modules/
+__pycache__/
+renders/
