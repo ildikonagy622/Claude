@@ -59,8 +59,8 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 
 - **g1** — asset
   - span_sec: [8.081, 13.0]
-  - asset: { treatment: beat_cut, clips: [assets/clips/03-chatgpt-prompt.mp4, assets/clips/04-chatgpt-plan.mp4, assets/clips/05-canva-post.mp4, assets/clips/06-ai-image.mp4], anchors: [8.081, 9.334, 10.333, 11.796], overlay_copy: ["01 · Stratégia és csalitermék", "02 · Tartalomnaptár percek alatt", "03 · Hírlevelek és posztok", "04 · Látványos kreatívok Canvával"] }
-  - copy: one step label per cut, in a lower-third card (step number in lavender, title in white); a thin progress rail with 4 ticks fills one tick per cut; clip 05 (landscape crop) floats as a rounded card on the dark violet-glow ground.
+  - asset: { treatment: beat_cut, clips: [DIGITAL B-ROLL (built in HTML, no file), assets/clips/06-ai-image.mp4, assets/clips/05-canva-post.mp4, assets/clips/07-canva-deck.mp4], anchors: [8.081, 9.334, 10.333, 11.796], overlay_copy: ["01 · ChatGPT + Canva összekötése", "02 · Kép egyetlen promptból", "03 · Kész poszt a Canvában", "04 · Prezentáció percek alatt"] }
+  - copy: one step label per cut, in a lower-third card (step number in lavender, title in white); a thin progress rail with 4 ticks fills one tick per cut. Slot 1 is a digital B-roll: the ChatGPT and Canva app tiles on the dark violet-glow ground slide toward each other, a violet connector line draws between them and a lime "Összekapcsolva ✓" chip lands. Clip 05 (landscape crop) floats as a rounded card on the dark violet-glow ground; 06 and 07 are full-bleed.
 
 ## Frame 4 — f4
 
@@ -73,10 +73,11 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 
 ### Groups
 
-- **g1** — asset
+- **g1** — free_design
   - span_sec: [13.0, 16.231]
-  - asset: { treatment: bg_under_text, clips: [assets/clips/07-canva-deck.mp4], anchors: [13.282, 13.769, 14.257], overlay_copy: ["Komplett kampány", "a nulláról", "4 óra alatt"] }
-  - copy: "Komplett kampány / a nulláról" (gradient on 'a nulláról') lands on 13.282 / 13.769; a lime pill "4 óra alatt" snaps in on the 14.257 surge; slow push on the Canva deck footage.
+  - free_design: { dominant_system: "digital B-roll: the day's three outputs assemble as UI cards on the dark violet-glow ground, then the 4-hour promise lands", primitives: ["staggered card reveal", "check tick", "pill snap"], density_topology: "accumulate then hold" }
+  - anchors: [13.282, 13.769, 14.257, 14.768]
+  - copy: ["Poszt ✓", "AI-kép ✓", "Prezentáció ✓", "Mindez", "4 óra alatt"] — three small UI cards (mini thumbnails drawn in CSS: a square social post, an image frame, a 16:9 slide) stack in on 13.282 / 13.769 / 14.257 each with a lime check; on the 14.257 surge the headline "Mindez" + lime pill "4 óra alatt" lands below them; hold.
 
 ## Frame 5 — f5
 
