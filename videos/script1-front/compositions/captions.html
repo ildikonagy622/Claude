@@ -258,7 +258,11 @@
               tl.to(
                 c.lines.map((l) => "#" + l.id),
                 { opacity: 0, duration: 0.16, ease: "power1.in" },
-                Math.max(c.start + 0.3, c.end - 0.16)
+                Math.max(
+                  c.start + 0.3,
+                  c.end - 0.16,
+                  ...c.lines.map((l) => Math.max(c.start, l.t - 0.04) + (l.kind === "e" ? 0.5 : 0.32))
+                )
               );
             });
             window.__timelines["captions"] = tl;
