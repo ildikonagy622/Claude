@@ -22,7 +22,7 @@ def icon_svg(name):
     raw = raw.replace('stroke-width="2"', 'stroke-width="1.3"')
     return re.sub(r"\s+", " ", raw)
 
-MUSIC = 0.042  # linear gain: music file is -10.5 LUFS, voice -16 LUFS -> bed ~ -38 LUFS
+MUSIC = 0.024  # linear gain on the bed lane (see build/music_bed.html): ~21 dB under the voice
 LEAD = 0.06  # a card appears this much before its first spoken word
 MAX_HOLD = 2.2  # a card never lingers longer than this after its last line lands
 
