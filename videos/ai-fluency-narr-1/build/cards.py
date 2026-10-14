@@ -26,7 +26,9 @@ CARDS = [
     [("m", "összesen", 41.18), ("e", "hat órában.", 41.76)],
 ]
 
-DURATION = 43.90
+VOICE_END = 43.90  # narration (and the captions) end here
+CTA = 3.0  # closing call-to-action card, its own page after the voice
+DURATION = round(VOICE_END + CTA, 2)
 
 # card index -> (line index the icon sits beside, Lucide icon name in assets/icons/)
 ICONS = {
@@ -54,4 +56,5 @@ BROLL = [
     ("broll-split", 30.52, 34.74),    # AI-nak kiadni vs. nálad marad
     ("broll-verify", 34.74, 38.98),   # ellenőrzési és kutatási technikák
     ("broll-sessions", 38.98, 43.90), # 3 élő alkalom, 6 óra
+    ("broll-cta", 43.90, 46.90),      # Kattints és nézd meg a részleteket!
 ]

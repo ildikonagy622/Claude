@@ -10,7 +10,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-from cards import BROLL, CARDS, DURATION, ICONS  # noqa: E402
+from cards import BROLL, CARDS, DURATION, ICONS, VOICE_END  # noqa: E402
 import re  # noqa: E402
 
 
@@ -45,7 +45,7 @@ for i, lines in enumerate(CARDS):
     if i + 1 < len(CARDS):
         end = min(CARDS[i + 1][0][2] - LEAD, lines[-1][2] + MAX_HOLD)
     else:
-        end = DURATION
+        end = VOICE_END
     cards.append({"start": round(start, 2), "end": round(end, 2), "lines": lines})
 
 card_html = []
@@ -342,7 +342,7 @@ index = f"""<!doctype html>
         id="voice"
         src="assets/audio/voice.m4a"
         data-start="0"
-        data-duration="{DURATION}"
+        data-duration="{VOICE_END}"
         data-track-index="0"
         data-volume="1"
       ></audio>
@@ -363,7 +363,7 @@ index = f"""<!doctype html>
         data-composition-src="compositions/captions.html"
         data-track-kind="captions"
         data-start="0"
-        data-duration="{DURATION}"
+        data-duration="{VOICE_END}"
         data-track-index="2"
         data-width="1080"
         data-height="1920"

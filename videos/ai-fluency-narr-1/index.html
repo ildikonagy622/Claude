@@ -83,7 +83,7 @@
       id="root"
       data-composition-id="main"
       data-start="0"
-      data-duration="43.9"
+      data-duration="46.9"
       data-width="1080"
       data-height="1920"
     >
@@ -103,10 +103,10 @@
         id="music"
         src="assets/audio/music.mp3"
         data-start="0"
-        data-duration="43.9"
+        data-duration="46.9"
         data-track-index="1"
         data-volume="1"
-        data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0, "v": 0}, {"t": 1.2, "v": 0.053}, {"t": 41.4, "v": 0.053}, {"t": 43.9, "v": 0}]}]}'
+        data-automation='{"version": 1, "lanes": [{"target": "volume", "points": [{"t": 0, "v": 0}, {"t": 1.2, "v": 0.053}, {"t": 44.4, "v": 0.053}, {"t": 46.9, "v": 0}]}]}'
       ></audio>
       <div id="broll-match" data-composition-id="broll-match" data-composition-src="compositions/broll-match.html" data-start="0.0" data-duration="4.62" data-track-index="3" data-width="1080" data-height="1920"></div>
       <div id="broll-doc" data-composition-id="broll-doc" data-composition-src="compositions/broll-doc.html" data-start="4.62" data-duration="3.26" data-track-index="3" data-width="1080" data-height="1920"></div>
@@ -118,6 +118,7 @@
       <div id="broll-split" data-composition-id="broll-split" data-composition-src="compositions/broll-split.html" data-start="30.52" data-duration="4.22" data-track-index="3" data-width="1080" data-height="1920"></div>
       <div id="broll-verify" data-composition-id="broll-verify" data-composition-src="compositions/broll-verify.html" data-start="34.74" data-duration="4.24" data-track-index="3" data-width="1080" data-height="1920"></div>
       <div id="broll-sessions" data-composition-id="broll-sessions" data-composition-src="compositions/broll-sessions.html" data-start="38.98" data-duration="4.92" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="broll-cta" data-composition-id="broll-cta" data-composition-src="compositions/broll-cta.html" data-start="43.9" data-duration="3.0" data-track-index="3" data-width="1080" data-height="1920"></div>
       <div id="shade"></div>
       <div
         id="captions"
@@ -132,7 +133,7 @@
       ></div>
     </div>
     <script>
-      const DURATION = 43.9;
+      const DURATION = 46.9;
       const tl = gsap.timeline({ paused: true });
       // The stage never cuts: the glow breathes and the grid drifts one cell over the whole film.
       tl.fromTo("#stage", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);

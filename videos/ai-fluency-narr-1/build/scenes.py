@@ -1007,6 +1007,65 @@ SCENES[cid] = page(
             tl.fromTo("#broll-sessions-f" + k, {{ scaleX: 0 }}, {{ scaleX: 1, duration: (T.hat - T.osszesen + 0.25) / 3, ease: "none" }}, T.osszesen + k * (T.hat - T.osszesen + 0.25) / 3);
           }}
           tl.fromTo("#broll-sessions-n", {{ scale: 1.08 }}, {{ scale: 1, duration: 0.4, ease: "power3.out" }}, T.hat + 0.25);""",
+)
+
+# 11. broll-cta — closing card on its own page, set in the caption typography.
+cid = "broll-cta"
+SCENES[cid] = page(
+    cid,
+    """
+        %S .cta {
+          position: absolute;
+          left: 60px;
+          right: 60px;
+          top: 700px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          text-shadow: 0 2px 22px rgba(12, 8, 20, 0.28);
+        }
+        %S .cta .ic {
+          width: 108px;
+          height: 108px;
+          margin-bottom: 44px;
+          filter: drop-shadow(0 2px 14px rgba(12, 8, 20, 0.3));
+        }
+        %S .cm {
+          font-weight: 800;
+          font-size: 94px;
+          line-height: 0.9;
+          letter-spacing: -0.045em;
+          white-space: nowrap;
+        }
+        %S .ce {
+          font-size: 136px;
+          line-height: 0.82;
+          letter-spacing: -0.025em;
+          margin: -0.06em 0 -0.02em;
+          white-space: nowrap;
+        }
+        %S .ul {
+          width: 520px;
+          margin-top: 54px;
+          border-top: 2px solid rgba(255, 253, 248, 0.7);
+          transform-origin: 50% 50%;
+        }
+""",
+    f"""          <div class="cta">
+            <div class="ic" id="broll-cta-ico">{icon("mouse-pointer-click", 1.3)}</div>
+            <div class="cm" id="broll-cta-m1">Kattints és</div>
+            <div class="cm" id="broll-cta-m2">nézd meg</div>
+            <div class="ce serif" id="broll-cta-e">a részleteket!</div>
+            <div class="ul" id="broll-cta-ul"></div>
+          </div>""",
+    """          tl.fromTo("#broll-cta-m1", { opacity: 0, scale: 0.97, y: 8 }, { opacity: 1, scale: 1, y: 0, duration: 0.32, ease: "power2.out" }, 0.12);
+          tl.fromTo("#broll-cta-m2", { opacity: 0, scale: 0.97, y: 8 }, { opacity: 1, scale: 1, y: 0, duration: 0.32, ease: "power2.out" }, 0.3);
+          tl.fromTo("#broll-cta-e", { opacity: 0, scale: 1.06, y: 10, filter: "blur(6px)" }, { opacity: 1, scale: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0.55);
+          tl.fromTo("#broll-cta-ico", { opacity: 0, scale: 0.82, rotation: -10 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.55, ease: "power3.out" }, 0.85);
+          tl.fromTo("#broll-cta-ul", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 1.0);
+          // A soft "click" pulse on the pointer once everything has landed.
+          tl.to("#broll-cta-ico", { scale: 0.9, duration: 0.12, ease: "power1.in", yoyo: true, repeat: 1 }, 1.7);""",
     last=True,
 )
 
