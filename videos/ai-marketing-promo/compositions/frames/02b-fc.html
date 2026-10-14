@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Inter Display"; font-weight: 500; src: url("assets/fonts/InterDisplay-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 600; src: url("assets/fonts/InterDisplay-SemiBold.otf") format("opentype"); }
+        @font-face { font-family: "Inter Display"; font-weight: 700; src: url("assets/fonts/InterDisplay-Bold.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/Inter-Regular.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/Inter-Medium.otf") format("opentype"); }
+        @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/Inter-SemiBold.otf") format("opentype"); }
+
+        #fc_stage {
+          position: relative;
+          width: 1080px;
+          height: 1920px;
+          overflow: hidden;
+          background: #0C0C0E;
+          color: #FFFFFF;
+          font-family: "Inter", sans-serif;
+        }
+
+        /* dark ground + faint grid + violet radial glow (matches 03-f3) */
+        #fc_ground {
+          z-index: 1;
+          width: 1080px;
+          height: 1920px;
+          background: #0C0C0E;
+          overflow: hidden;
+        }
+        #fc_bgwrap {
+          position: absolute;
+          left: 0; top: 0;
+          width: 1080px;
+          height: 1920px;
+          transform-origin: 540px 740px;
+        }
+        #fc_grid {
+          position: absolute;
+          inset: 0;
+          background-image:
+            linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px);
+          background-size: 90px 90px;
+          background-position: 0 0;
+        }
+        #fc_glow {
+          position: absolute;
+          left: 40px; top: 240px;
+          width: 1000px; height: 1000px;
+          background: radial-gradient(closest-side, rgba(139,92,246,0.45), rgba(139,92,246,0) 70%);
+        }
+
+        /* floating rounded-card clips (same treatment as clip 05 in 03-f3) */
+        .fc_vid {
+          position: absolute;
+          left: 90px;
+          top: 290px;
+          width: 900px;
+          height: 900px;
+          object-fit: cover;
+          border-radius: 18px;
+          border: 1.5px solid rgba(139,92,246,0.28);
+          box-sizing: border-box;
+          z-index: 2;
+          transform-origin: 50% 50%;
+        }
+
+        /* legibility scrim under the lower third */
+        #fc_scrim {
+          position: absolute;
+          left: 0; right: 0; bottom: 0;
+          height: 1100px;
+          z-index: 3;
+          background: linear-gradient(to top, rgba(12,12,14,0.92) 0%, rgba(12,12,14,0.55) 45%, rgba(12,12,14,0) 75%);
+          pointer-events: none;
+        }
+
+        /* lower-third (identical geometry to 03-f3) */
+        #fc_lt {
+          position: absolute;
+          left: 90px;
+          right: 90px;
+          bottom: 320px;
+          z-index: 4;
+          display: flex;
+          flex-direction: column;
+          gap: 26px;
+        }
+        #fc_rail {
+          display: flex;
+          gap: 12px;
+          width: 100%;
+          height: 6px;
+        }
+        .fc_seg {
+          position: relative;
+          flex: 1 1 0;
+          height: 6px;
+          border-radius: 100px;
+          background: rgba(255,255,255,0.18);
+          overflow: hidden;
+        }
+        .fc_fill {
+          display: block;
+          position: absolute;
+          left: 0; top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 100px;
+          background: #8B5CF6;
+          transform-origin: 0% 50%;
+        }
+        #fc_card {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 40px 48px 46px;
+          background: rgba(27,22,42,0.88);
+          border: 1.5px solid #8B5CF6;
+          border-radius: 18px;
+          display: grid;
+        }
+        .fc_step {
+          grid-area: 1 / 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 18px;
+        }
+        .fc_num {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 30px;
+          letter-spacing: 0.12em;
+          color: #B9A4FB;
+          line-height: 1;
+        }
+        .fc_num span {
+          color: rgba(255,255,255,0.42);
+        }
+        .fc_title {
+          font-family: "Inter Display", "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 1.05;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+          max-width: 800px;
+          min-height: 151px;
+        }
+      </style>
+
+      <div id="fc_stage" data-composition-id="02b-fc" data-width="1080" data-height="1920" data-duration="1.951">
+        <!-- ground: persists across the whole frame -->
+        <div id="fc_ground" class="clip" data-start="0" data-duration="1.951" data-track-index="1">
+          <div id="fc_bgwrap">
+            <div id="fc_grid"></div>
+            <div id="fc_glow"></div>
+          </div>
+        </div>
+
+        <!-- beat-cut clips: hard cuts at local 0 / 0.813 / 1.300 (track 7.059 / 7.872 / 8.359) -->
+        <video id="fc_v1" class="fc_vid" src="assets/clips/08a-connect-dialog.mp4" muted playsinline
+               data-start="0" data-duration="0.813" data-media-start="0" data-track-index="2"></video>
+        <video id="fc_v2" class="fc_vid" src="assets/clips/08b-connect-allow.mp4" muted playsinline
+               data-start="0.813" data-duration="0.487" data-media-start="0" data-track-index="2"></video>
+        <video id="fc_v3" class="fc_vid" src="assets/clips/08c-connect-success.mp4" muted playsinline
+               data-start="1.300" data-duration="0.651" data-media-start="0" data-track-index="2"></video>
+
+        <div id="fc_scrim"></div>
+
+        <div id="fc_lt" data-layout-allow-caption-zone>
+          <div id="fc_rail">
+            <div class="fc_seg"><i class="fc_fill" id="fc_f1"></i></div>
+            <div class="fc_seg"><i class="fc_fill" id="fc_f2"></i></div>
+            <div class="fc_seg"><i class="fc_fill" id="fc_f3"></i></div>
+            <div class="fc_seg"><i class="fc_fill" id="fc_f4"></i></div>
+          </div>
+          <div id="fc_card">
+            <div class="fc_step" id="fc_s1">
+              <div class="fc_num">01 <span>/ 04</span></div>
+              <div class="fc_title">ChatGPT + Canva összekötése</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          var DUR = 1.951;
+          var cuts = [0, 0.813, 1.300];
+          var ends = [0.813, 1.300, DUR];
+          var vids = ["#fc_v1", "#fc_v2", "#fc_v3"];
+          var startScale = [0.96, 0.98, 0.98];
+          var SETTLE = 0.3;
+          var PUSH = 0.03;
+          // slow linear push 1 -> 1.03 across the frame; folded into each card's scale
+          function push(t) { return 1 + PUSH * (t / DUR); }
+
+          // initial states (stable baselines) — set before the timeline is built
+          gsap.set("#fc_lt", { opacity: 0, y: 24 });
+          gsap.set("#fc_f1", { scaleX: 1 });
+          gsap.set(["#fc_f2", "#fc_f3", "#fc_f4"], { scaleX: 0 });
+          gsap.set("#fc_bgwrap", { scale: 1 });
+          gsap.set("#fc_glow", { opacity: 0.8, scale: 0.96 });
+          for (var i = 0; i < 3; i++) {
+            gsap.set(vids[i], {
+              scale: startScale[i] * push(cuts[i]),
+              opacity: i === 0 ? 0 : 1
+            });
+          }
+
+          var tl = gsap.timeline({ paused: true });
+
+          // lower-third: quick fade/rise at t=0, then static (01 / 04, first segment filled)
+          tl.to("#fc_lt", { opacity: 1, y: 0, duration: 0.25, ease: "power3.out" }, 0);
+
+          // ground: slow push + gentle glow breathe across the whole frame
+          tl.to("#fc_bgwrap", { scale: 1 + PUSH, duration: DUR, ease: "none" }, 0);
+          tl.to("#fc_glow", { opacity: 1, scale: 1.04, duration: cuts[2], ease: "sine.inOut" }, 0);
+          tl.to("#fc_glow", { opacity: 1, scale: 1.08, duration: 0.16, ease: "power2.out" }, cuts[2]);
+
+          // cards: pop-in on the first cut, tiny settle on later cuts, slow push throughout
+          tl.to(vids[0], { opacity: 1, duration: SETTLE, ease: "power3.out" }, cuts[0]);
+          for (var k = 0; k < 3; k++) {
+            var c = cuts[k];
+            tl.to(vids[k], { scale: push(c + SETTLE), duration: SETTLE, ease: "power3.out" }, c);
+            tl.to(vids[k], { scale: push(ends[k]), duration: ends[k] - c - SETTLE, ease: "none" }, c + SETTLE);
+          }
+
+          window.__timelines["02b-fc"] = tl;
+          tl.seek(0);
+        })();
+      </script>
+    </template>
+  </body>
+</html>

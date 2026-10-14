@@ -5,9 +5,41 @@
   "lint": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 3,
+    "warningCount": 5,
     "infoCount": 0,
     "findings": [
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"fc_v2\"> has data-start=\"0.813\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#fc_v2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/02b-fc.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"0.813\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
+      {
+        "code": "nested_media_start_basis_ambiguous",
+        "severity": "warning",
+        "message": "<video id=\"fc_v3\"> has data-start=\"1.300\" inside a sub-composition. Nested media timing is local to its composition by default; a nonzero value can be confused with a legacy root-global timestamp.",
+        "selector": "#fc_v3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/Claude/videos/ai-marketing-promo/compositions/frames/02b-fc.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Keep data-start=\"1.300\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
+      },
       {
         "code": "nested_media_start_basis_ambiguous",
         "severity": "warning",
@@ -57,7 +89,7 @@
         "fixHint": "Keep data-start=\"4.737\" if it is composition-local. If this is a legacy root-global timestamp, add data-hf-media-start-basis=\"global\"; otherwise convert it to local time by subtracting the host start."
       }
     ],
-    "filesScanned": 6
+    "filesScanned": 7
   },
   "runtime": {
     "ok": true,
@@ -70,21 +102,21 @@
     "ok": true,
     "errorCount": 0,
     "warningCount": 0,
-    "infoCount": 7,
+    "infoCount": 6,
     "findings": [
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 1.111,
+        "time": 1.222,
         "selector": "#f1_clip",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -8.15,
-          "top": -13.05,
-          "right": 1088.15,
-          "bottom": 1935.95,
-          "width": 1096.31,
-          "height": 1948.99
+          "left": -8.91,
+          "top": -14.26,
+          "right": 1088.91,
+          "bottom": 1937.42,
+          "width": 1097.82,
+          "height": 1951.68
         },
         "containerSelector": "#el-01-f1 > div:nth-of-type(1)",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -97,10 +129,10 @@
           "height": 1920
         },
         "overflow": {
-          "left": 8.15,
-          "right": 8.15,
-          "top": 13.05,
-          "bottom": 15.95
+          "left": 8.91,
+          "right": 8.91,
+          "top": 14.26,
+          "bottom": 17.42
         },
         "dataAttributes": {
           "data-start": "0",
@@ -110,31 +142,31 @@
         },
         "sourceFile": "compositions/frames/01-f1.html",
         "bbox": {
-          "x": -8.15,
-          "y": -13.05,
-          "width": 1096.31,
-          "height": 1948.99
+          "x": -8.91,
+          "y": -14.26,
+          "width": 1097.82,
+          "height": 1951.68
         },
-        "firstSeen": 1.111,
-        "lastSeen": 3.333,
+        "firstSeen": 1.222,
+        "lastSeen": 3.667,
         "occurrences": 2,
         "heldMs": 0,
         "times": [
-          1.111,
-          3.333
+          1.222,
+          3.667
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 5.556,
+        "time": 6.111,
         "selector": "#f2_copy",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
           "left": 0,
-          "top": -2.93,
+          "top": -5.64,
           "right": 1080,
-          "bottom": 677.39,
+          "bottom": 674.67,
           "width": 1080,
           "height": 680.31
         },
@@ -149,39 +181,39 @@
           "height": 1920
         },
         "overflow": {
-          "top": 2.93
+          "top": 5.64
         },
         "dataAttributes": {},
         "sourceFile": "compositions/frames/02-f2.html",
         "bbox": {
           "x": 0,
-          "y": -2.93,
+          "y": -5.64,
           "width": 1080,
           "height": 680.31
         },
-        "firstSeen": 5.556,
-        "lastSeen": 5.556,
+        "firstSeen": 6.111,
+        "lastSeen": 6.111,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          5.556
+          6.111
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 10,
-        "selector": "#f3_v2",
+        "time": 8.556,
+        "selector": "#fc_bgwrap",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -14.42,
-          "top": -23.07,
-          "right": 1094.42,
-          "bottom": 1948.2,
-          "width": 1108.84,
-          "height": 1971.26
+          "left": -12.26,
+          "top": -16.8,
+          "right": 1092.26,
+          "bottom": 1946.79,
+          "width": 1104.52,
+          "height": 1963.58
         },
-        "containerSelector": "#el-03-f3 > div:nth-of-type(1)",
+        "containerSelector": "#fc_ground",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
@@ -192,48 +224,76 @@
           "height": 1920
         },
         "overflow": {
-          "left": 14.42,
-          "right": 14.42,
-          "top": 23.07,
-          "bottom": 28.2
+          "left": 12.26,
+          "right": 12.26,
+          "top": 16.8,
+          "bottom": 26.79
         },
-        "dataAttributes": {
-          "data-start": "2.275",
-          "data-duration": "0.999",
-          "data-media-start": "0",
-          "data-track-index": "1",
-          "data-hf-authored-opacity": ""
-        },
-        "sourceFile": "compositions/frames/03-f3.html",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02b-fc.html",
         "bbox": {
-          "x": -14.42,
-          "y": -23.07,
-          "width": 1108.84,
-          "height": 1971.26
+          "x": -12.26,
+          "y": -16.8,
+          "width": 1104.52,
+          "height": 1963.58
         },
-        "firstSeen": 10,
-        "lastSeen": 10,
+        "firstSeen": 8.556,
+        "lastSeen": 8.556,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          10
+          8.556
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 11,
+        "selector": "#f3_pill",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 364.49,
+          "top": 921.97,
+          "right": 715.51,
+          "bottom": 968.8,
+          "width": 351.02,
+          "height": 46.84
+        },
+        "containerSelector": "#f3_scrim",
+        "text": "Összekapcsolva ✓",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-f3.html",
+        "bbox": {
+          "x": 364.49,
+          "y": 921.97,
+          "width": 351.02,
+          "height": 46.84
+        },
+        "firstSeen": 11,
+        "lastSeen": 11,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 12.222,
-        "selector": "#f3_v4",
+        "time": 11,
+        "selector": "#f3_bstage",
         "message": "Element extends outside a clipping layout container.",
         "rect": {
-          "left": -7.24,
-          "top": -11.58,
-          "right": 1087.24,
-          "bottom": 1934.15,
-          "width": 1094.47,
-          "height": 1945.73
+          "left": -9.83,
+          "top": -12.74,
+          "right": 1089.83,
+          "bottom": 1942.2,
+          "width": 1099.66,
+          "height": 1954.94
         },
-        "containerSelector": "#el-03-f3 > div:nth-of-type(1)",
+        "containerSelector": "#f3_broll",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
         "containerRect": {
           "left": 0,
@@ -244,132 +304,40 @@
           "height": 1920
         },
         "overflow": {
-          "left": 7.24,
-          "right": 7.24,
-          "top": 11.58,
-          "bottom": 14.15
+          "left": 9.83,
+          "right": 9.83,
+          "top": 12.74,
+          "bottom": 22.2
         },
-        "dataAttributes": {
-          "data-start": "4.737",
-          "data-duration": "1.204",
-          "data-media-start": "0",
-          "data-track-index": "1",
-          "data-hf-authored-opacity": ""
-        },
+        "dataAttributes": {},
         "sourceFile": "compositions/frames/03-f3.html",
         "bbox": {
-          "x": -7.24,
-          "y": -11.58,
-          "width": 1094.47,
-          "height": 1945.73
+          "x": -9.83,
+          "y": -12.74,
+          "width": 1099.66,
+          "height": 1954.94
         },
-        "firstSeen": 12.222,
-        "lastSeen": 12.222,
+        "firstSeen": 11,
+        "lastSeen": 11,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          12.222
+          11
         ]
       },
       {
         "code": "container_overflow",
         "severity": "info",
-        "time": 14.444,
-        "selector": "div.f4_img_m1",
-        "message": "Element extends outside a clipping layout container.",
-        "rect": {
-          "left": 166.26,
-          "top": 833.9,
-          "right": 228.58,
-          "bottom": 871.62,
-          "width": 62.32,
-          "height": 37.72
-        },
-        "containerSelector": "div.f4_img",
-        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
-        "containerRect": {
-          "left": 170.36,
-          "top": 803.56,
-          "right": 255.64,
-          "bottom": 872.44,
-          "width": 85.28,
-          "height": 68.88
-        },
-        "overflow": {
-          "left": 4.1
-        },
-        "dataAttributes": {},
-        "sourceFile": "compositions/frames/04-f4.html",
-        "bbox": {
-          "x": 166.26,
-          "y": 833.9,
-          "width": 62.32,
-          "height": 37.72
-        },
-        "firstSeen": 14.444,
-        "lastSeen": 14.444,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          14.444
-        ]
-      },
-      {
-        "code": "container_overflow",
-        "severity": "info",
-        "time": 14.444,
-        "selector": "div.f4_img_m2",
-        "message": "Element extends outside a clipping layout container.",
-        "rect": {
-          "left": 203.98,
-          "top": 843.74,
-          "right": 263.02,
-          "bottom": 871.62,
-          "width": 59.04,
-          "height": 27.88
-        },
-        "containerSelector": "div.f4_img",
-        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
-        "containerRect": {
-          "left": 170.36,
-          "top": 803.56,
-          "right": 255.64,
-          "bottom": 872.44,
-          "width": 85.28,
-          "height": 68.88
-        },
-        "overflow": {
-          "right": 7.38
-        },
-        "dataAttributes": {},
-        "sourceFile": "compositions/frames/04-f4.html",
-        "bbox": {
-          "x": 203.98,
-          "y": 843.74,
-          "width": 59.04,
-          "height": 27.88
-        },
-        "firstSeen": 14.444,
-        "lastSeen": 14.444,
-        "occurrences": 1,
-        "heldMs": 0,
-        "times": [
-          14.444
-        ]
-      },
-      {
-        "code": "container_overflow",
-        "severity": "info",
-        "time": 18.889,
+        "time": 20.778,
         "selector": "#f5_cta",
         "message": "Nowrap text is wider than its container.",
         "rect": {
-          "left": 263.48,
-          "top": 955.31,
-          "right": 816.52,
-          "bottom": 1092.56,
-          "width": 553.04,
-          "height": 137.25
+          "left": 263.56,
+          "top": 955.33,
+          "right": 816.44,
+          "bottom": 1092.54,
+          "width": 552.88,
+          "height": 137.21
         },
         "containerSelector": "#f5_ctawrap",
         "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
@@ -382,42 +350,42 @@
           "height": 132
         },
         "overflow": {
-          "left": 10.58,
-          "right": 10.58
+          "left": 10.5,
+          "right": 10.5
         },
         "dataAttributes": {},
         "sourceFile": "compositions/frames/05-f5.html",
         "bbox": {
-          "x": 263.48,
-          "y": 955.31,
-          "width": 553.04,
-          "height": 137.25
+          "x": 263.56,
+          "y": 955.33,
+          "width": 552.88,
+          "height": 137.21
         },
-        "firstSeen": 18.889,
-        "lastSeen": 18.889,
+        "firstSeen": 20.778,
+        "lastSeen": 20.778,
         "occurrences": 1,
         "heldMs": 0,
         "times": [
-          18.889
+          20.778
         ]
       }
     ],
-    "duration": 20,
+    "duration": 22,
     "samples": [
-      1.111,
-      3.333,
-      5.556,
-      7.778,
-      10,
-      12.222,
-      14.444,
-      16.667,
-      18.889
+      1.222,
+      3.667,
+      6.111,
+      8.556,
+      11,
+      13.444,
+      15.889,
+      18.333,
+      20.778
     ],
     "transitionSamples": [],
     "transitionSamplesDropped": 0,
     "tolerance": 2,
-    "totalIssueCount": 7,
+    "totalIssueCount": 6,
     "truncated": false
   },
   "motion": {
@@ -432,19 +400,45 @@
   "contrast": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 0,
+    "warningCount": 1,
     "infoCount": 0,
-    "findings": [],
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.87:1; WCAG AA requires 3:1.",
+        "text": "teljes ügynökség",
+        "fg": "rgb(185,164,251)",
+        "bg": "rgb(98,97,96)",
+        "ratio": 2.87,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(189,169,251)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(2) > p:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-f2.html",
+        "bbox": {
+          "x": 90,
+          "y": 454.61895751953125,
+          "width": 482.84375,
+          "height": 232.078125
+        },
+        "time": 6.111,
+        "times": [
+          6.111
+        ]
+      }
+    ],
     "enabled": true,
     "samples": [
-      1.111,
-      5.556,
-      10,
-      14.444,
-      18.889
+      1.222,
+      6.111,
+      11,
+      15.889,
+      20.778
     ],
-    "checked": 21,
-    "passed": 21
+    "checked": 25,
+    "passed": 24
   },
   "hdr": {
     "autoPromotion": null,
