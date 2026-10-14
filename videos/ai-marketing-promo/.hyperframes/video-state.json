@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "182972d0-b588-4555-86ac-b0a15e6b8fc1",
-  "currentRevision": "3e862dfc-5e5e-474d-81aa-41620d4cae2f",
+  "currentRevision": "9b2d3210-a3c7-494b-873e-f7177b612221",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -69,8 +69,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/b1/b11d5ec066ab8f2d6b2bf56aabdc086f46bb2752a0825dd8943a36499c175c50"
     },
     "compositions/frames/04-f4.html": {
-      "hash": "00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/00/00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e"
+      "hash": "56fd391006bdf7daa4b7affada6a648bb812ce0aa780b70b6d65a0a82a02cc5d",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/56/56fd391006bdf7daa4b7affada6a648bb812ce0aa780b70b6d65a0a82a02cc5d"
     },
     "compositions/frames/05-f5.html": {
       "hash": "c0fb49a9c9ceaa15db169fe4893d62d618dbfdcbd17772668d43485e34b3e1ff",
@@ -145,8 +145,8 @@
       "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/7c/7c35d47026b8ef5eba6a0d73bd08a78b2e3baa3579837748125170ee010eddd5"
     },
     "boards/stills/frame-06-at-15.6s.png": {
-      "hash": "d98242452f3f35cb248d8e626eae228df3c20136159c31ee94c0f590d45afd91",
-      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d9/d98242452f3f35cb248d8e626eae228df3c20136159c31ee94c0f590d45afd91"
+      "hash": "26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66",
+      "content": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/26/26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66"
     },
     "boards/stills/frame-07-at-19.2s.png": {
       "hash": "a5dfd538c5832652511394b1162a812a98522593aeb838d2692fc8b5572013e5",
@@ -396,12 +396,31 @@
           "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/73/73253f248ac3b701ecd9995c4e9142a92659e5d28d62263ae759cddf16e80ebf"
         }
       }
+    },
+    "9b2d3210-a3c7-494b-873e-f7177b612221": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792002903587,
+      "endedAt": 1792002903597,
+      "files": {
+        "boards/stills/frame-06-at-15.6s.png": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/d9/d98242452f3f35cb248d8e626eae228df3c20136159c31ee94c0f590d45afd91",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/26/26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66"
+        },
+        "compositions/frames/04-f4.html": {
+          "before": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/00/00cc80618215bab1e423cb41a7cfcd233d66c23366988739cf7aac0738e9fb1e",
+          "after": "/root/.cache/hyperframes/history/182972d0-b588-4555-86ac-b0a15e6b8fc1/blobs/56/56fd391006bdf7daa4b7affada6a648bb812ce0aa780b70b6d65a0a82a02cc5d"
+        }
+      }
     }
   },
   "checks": {
     "latest": {
-      "revision": "3e862dfc-5e5e-474d-81aa-41620d4cae2f",
-      "id": "af85eb3e-811d-4e04-b292-05ee34502976"
+      "revision": "9b2d3210-a3c7-494b-873e-f7177b612221",
+      "id": "6a7c7223-3815-45f8-9cb9-bc205a1bf6c7"
     },
     "revisions": {
       "4f49bce4-cbe8-4112-ba0d-5bd0a60028ab": [
@@ -548,6 +567,35 @@
           "inputScope": "local-project-files",
           "attribution": "recorded-revision"
         }
+      ],
+      "9b2d3210-a3c7-494b-873e-f7177b612221": [
+        {
+          "id": "6a7c7223-3815-45f8-9cb9-bc205a1bf6c7",
+          "scope": "project",
+          "report": "/home/user/Claude/videos/ai-marketing-promo/.hyperframes/artifacts/checks/6a7c7223-3815-45f8-9cb9-bc205a1bf6c7.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792002934447,
+          "contentHash": "6be465b5f281c7764bb4b95f8f0cf767d5435946bb81e17848c66b2a10ca6198",
+          "revision": "9b2d3210-a3c7-494b-873e-f7177b612221",
+          "inputFingerprint": "8473055beb6a6fc90e750332f563c6dbb5676d0dffa604417113f1f9d150d728",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
       ]
     },
     "unversioned": [
@@ -583,7 +631,7 @@
   "snapshots": {
     "latest": {
       "revision": null,
-      "id": "7b2a43fb-331e-412c-9392-266b2e123cd9-0"
+      "id": "d23d1fae-26f1-4925-ad02-e5169e3b0f1e-0"
     },
     "revisions": {},
     "unversioned": [
@@ -834,9 +882,9 @@
       },
       {
         "scope": "full",
-        "id": "7b2a43fb-331e-412c-9392-266b2e123cd9-0",
-        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-00-at-15.6s.png",
-        "time": 15.6,
+        "id": "d23d1fae-26f1-4925-ad02-e5169e3b0f1e-0",
+        "image": "/home/user/Claude/videos/ai-marketing-promo/boards/stills/redo/frame-00-at-15.9s.png",
+        "time": 15.9,
         "metadata": {
           "width": 1080,
           "height": 1920,
@@ -845,10 +893,10 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1792002809697,
-        "contentHash": "26fb66059d232a9252eba467d09e733d0a02a6cde6ebc4613f54e953ae05fb66",
+        "createdAt": 1792002940656,
+        "contentHash": "6bb385c7f37833adf262f670cb4d8f0919d2726ab29787ef82aea2990a6e0944",
         "revision": null,
-        "inputFingerprint": "0ee9ff420f31203f055231c217fc73b29891b241f9a32938d788b3dd5e78607f",
+        "inputFingerprint": "8473055beb6a6fc90e750332f563c6dbb5676d0dffa604417113f1f9d150d728",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       }

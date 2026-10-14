@@ -76,8 +76,8 @@ avoid: ["generic slideshow", "tiny unreadable text", "bouncing captions", "heavy
 - **g1** — free_design
   - span_sec: [13.0, 16.231]
   - free_design: { dominant_system: "digital B-roll: the day's three outputs assemble as UI cards on the dark violet-glow ground, then the 4-hour promise lands", primitives: ["staggered card reveal", "check tick", "pill snap"], density_topology: "accumulate then hold" }
-  - anchors: [13.282, 13.769, 14.257, 14.768]
-  - copy: ["Poszt ✓", "AI-kép ✓", "Prezentáció ✓", "Tanuld meg a folyamatot", "4 óra alatt"] — three small UI cards (mini thumbnails drawn in CSS: a square social post, an image frame, a 16:9 slide) stack in on 13.282 / 13.769 / 14.257 each with a lime check; on the 14.257 surge the headline "Tanuld meg a folyamatot" + lime pill "4 óra alatt" lands below them; hold.
+  - anchors: [13.282, 13.526, 13.769, 14.013, 14.257, 14.768, 15.256]
+  - copy: ["Kampánytervezés ✓", "Tartalomnaptár ✓", "Posztok és hírlevelek ✓", "Kreatívok Canvával ✓", "Prezentáció ✓", "Tanuld meg a folyamatot", "4 óra alatt"] — three small UI cards (mini thumbnails drawn in CSS: a square social post, an image frame, a 16:9 slide) stack in on 13.282 / 13.769 / 14.257 each with a lime check; on the 14.257 surge the headline "Tanuld meg a folyamatot" + lime pill "4 óra alatt" lands below them; hold.
 
 ## Frame 5 — f5
 

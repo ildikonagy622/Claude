@@ -59,19 +59,19 @@
           position: absolute;
           left: 130px;
           width: 820px;
-          top: 470px;
+          top: 392px;
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 18px;
         }
         .f4_card {
           position: relative;
           box-sizing: border-box;
           width: 820px;
-          height: 150px;
+          height: 112px;
           display: flex;
           align-items: center;
-          gap: 34px;
+          gap: 28px;
           padding: 0 30px 0 26px;
           background: #1B162A;
           border: 1.5px solid rgba(139,92,246,0.28);
@@ -86,12 +86,13 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          transform: scale(0.82);
         }
         .f4_label {
           flex: 1 1 auto;
           font-family: "Inter Display", "Inter", sans-serif;
           font-weight: 600;
-          font-size: 56px;
+          font-size: 48px;
           line-height: 1;
           letter-spacing: -0.02em;
           color: #FFFFFF;
@@ -99,8 +100,8 @@
         }
         .f4_check {
           flex: 0 0 auto;
-          width: 72px;
-          height: 72px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           background: #DEFD86;
           color: #0C0C0E;
@@ -109,10 +110,22 @@
           justify-content: center;
           font-family: "Inter", sans-serif;
           font-weight: 600;
-          font-size: 40px;
+          font-size: 34px;
           line-height: 1;
           will-change: transform, opacity;
         }
+
+        /* Thumb: target (campaign planning) */
+        .f4_tgt { position: relative; width: 92px; height: 92px; border-radius: 50%; border: 9px solid #8B5CF6; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
+        .f4_tgt_mid { width: 52px; height: 52px; border-radius: 50%; border: 8px solid #B9A4FB; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
+        .f4_tgt_dot { width: 18px; height: 18px; border-radius: 50%; background: #DEFD86; }
+
+        /* Thumb: calendar */
+        .f4_cal { position: relative; width: 96px; height: 92px; border-radius: 12px; background: #2A2142; border: 1.5px solid rgba(185,164,251,0.35); box-sizing: border-box; overflow: hidden; }
+        .f4_cal_top { position: absolute; left: 0; right: 0; top: 0; height: 22px; background: #8B5CF6; }
+        .f4_cal_grid { position: absolute; left: 10px; right: 10px; top: 32px; bottom: 10px; display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(3, 1fr); gap: 5px; }
+        .f4_cal_grid i { display: block; border-radius: 3px; background: rgba(185,164,251,0.45); }
+        .f4_cal_grid i.on { background: #DEFD86; }
 
         /* Thumb 1: square social post */
         .f4_post {
@@ -217,25 +230,39 @@
           <div id="f4_cards">
             <div id="f4_card1" class="f4_card">
               <div class="f4_thumb">
+                <div class="f4_tgt"><div class="f4_tgt_mid"><div class="f4_tgt_dot"></div></div></div>
+              </div>
+              <div class="f4_label">Kampánytervezés</div>
+              <div id="f4_check1" class="f4_check">✓</div>
+            </div>
+            <div id="f4_card2" class="f4_card">
+              <div class="f4_thumb">
+                <div class="f4_cal"><div class="f4_cal_top"></div><div class="f4_cal_grid"><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i></div></div>
+              </div>
+              <div class="f4_label">Tartalomnaptár</div>
+              <div id="f4_check2" class="f4_check">✓</div>
+            </div>
+            <div id="f4_card3" class="f4_card">
+              <div class="f4_thumb">
                 <div class="f4_post">
                   <div class="f4_post_avatar"></div><div class="f4_post_name"></div>
                   <div class="f4_post_img"></div>
                   <div class="f4_post_head"></div><div class="f4_post_sub"></div>
                 </div>
               </div>
-              <div class="f4_label">Poszt</div>
-              <div id="f4_check1" class="f4_check">✓</div>
+              <div class="f4_label">Posztok és hírlevelek</div>
+              <div id="f4_check3" class="f4_check">✓</div>
             </div>
-            <div id="f4_card2" class="f4_card">
+            <div id="f4_card4" class="f4_card">
               <div class="f4_thumb">
                 <div class="f4_img">
                   <div class="f4_img_sun"></div><div class="f4_img_m1"></div><div class="f4_img_m2"></div>
                 </div>
               </div>
-              <div class="f4_label">AI-kép</div>
-              <div id="f4_check2" class="f4_check">✓</div>
+              <div class="f4_label">Kreatívok Canvával</div>
+              <div id="f4_check4" class="f4_check">✓</div>
             </div>
-            <div id="f4_card3" class="f4_card">
+            <div id="f4_card5" class="f4_card">
               <div class="f4_thumb">
                 <div class="f4_slide">
                   <div class="f4_slide_t"></div><div class="f4_slide_b1"></div><div class="f4_slide_b2"></div><div class="f4_slide_b3"></div>
@@ -243,7 +270,7 @@
                 </div>
               </div>
               <div class="f4_label">Prezentáció</div>
-              <div id="f4_check3" class="f4_check">✓</div>
+              <div id="f4_check5" class="f4_check">✓</div>
             </div>
           </div>
 
@@ -258,10 +285,13 @@
         (function () {
           const SPAN = 3.231;
           // Anchors, local = track − 13.0
-          const A = [0.282, 0.769, 1.257, 1.768];
+          // Cards on beats + off-beats 13.282 → 14.257; headline 14.768; pill 15.256.
+          const A = [0.282, 0.526, 0.769, 1.013, 1.257];
+          const HEAD = 1.768;
+          const PILL = 2.256;
 
-          const cards = ["#f4_card1", "#f4_card2", "#f4_card3"];
-          const checks = ["#f4_check1", "#f4_check2", "#f4_check3"];
+          const cards = ["#f4_card1", "#f4_card2", "#f4_card3", "#f4_card4", "#f4_card5"];
+          const checks = ["#f4_check1", "#f4_check2", "#f4_check3", "#f4_check4", "#f4_check5"];
 
           // Initial states before building the timeline (stable baselines).
           gsap.set(cards, { opacity: 0, y: 40 });
@@ -288,11 +318,11 @@
 
           // Surge (1.257): headline lands below the cards.
           tl.fromTo("#f4_head", { opacity: 0, y: 34 },
-            { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, A[2]);
+            { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, HEAD);
 
           // 1.768: lime pill snaps in (scale 0.9→1 + fade, no overshoot).
           tl.fromTo("#f4_pill", { opacity: 0, scale: 0.9 },
-            { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, A[3]);
+            { opacity: 1, scale: 1, duration: 0.2, ease: "power2.out" }, PILL);
 
           // Everything holds still from ~2.66s to SPAN.
 
