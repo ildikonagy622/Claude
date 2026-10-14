@@ -22,6 +22,7 @@ def icon_svg(name):
     raw = raw.replace('stroke-width="2"', 'stroke-width="1.3"')
     return re.sub(r"\s+", " ", raw)
 
+MUSIC = 0.042  # linear gain: music file is -10.5 LUFS, voice -16 LUFS -> bed ~ -38 LUFS
 LEAD = 0.06  # a card appears this much before its first spoken word
 MAX_HOLD = 2.2  # a card never lingers longer than this after its last line lands
 
@@ -244,6 +245,12 @@ captions = f"""<!doctype html>
 </html>
 """
 
+FADE_AT = round(DURATION - 2.5, 2)
+# The bed's markup lives in build/music_bed.html because the voiceover carve
+# (hyperframes-audio/scripts/carve.mjs) writes its EQ chain and duck lanes onto it.
+# Re-run the carve after changing the voice or the bed level.
+_bed = os.path.join(HERE, "music_bed.html")
+MUSIC_BED = open(_bed, encoding="utf-8").read().rstrip("\n") if os.path.exists(_bed) else ""
 index = f"""<!doctype html>
 <html lang="hu">
   <head>
@@ -321,6 +328,7 @@ index = f"""<!doctype html>
           playsinline
         ></video>
       </div>
+{MUSIC_BED}
       <div id="shade"></div>
       <div
         id="captions"
