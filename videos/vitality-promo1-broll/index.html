@@ -32,6 +32,21 @@
         height: 100%;
         object-fit: cover;
       }
+      #cam {
+        position: absolute;
+        inset: 0;
+        transform-origin: 20% 42%;
+      }
+      #glow {
+        position: absolute;
+        left: 90px;
+        top: 1260px;
+        width: 900px;
+        height: 560px;
+        opacity: 0;
+        pointer-events: none;
+        background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(167, 139, 250, 0.35) 0%, rgba(124, 92, 214, 0.12) 45%, rgba(50, 36, 87, 0) 75%);
+      }
       /* B-roll sits in the empty lower band of the type scenes and fades up into the
          purple, mirroring the promo's own top-of-frame footage treatment. */
       .band {
@@ -82,39 +97,21 @@
       data-height="1920"
       data-fps="60"
     >
-      <video
-        id="promo"
-        class="clip"
-        src="assets/video/promo.mp4"
-        data-has-audio="true"
-        data-start="0"
-        data-duration="51.75"
-        data-track-index="0"
-        data-volume="1"
-        playsinline
-      ></video>
-
-      <!-- "Ugyanúgy figyelsz magadra, de már nem ugyanaz az eredmény." -->
-      <div class="band" id="band-wardrobe">
-        <div class="kb" id="kb-wardrobe" data-layout-allow-overflow>
-          <video
-            id="broll-wardrobe"
-            class="clip broll"
-            src="assets/video/broll-wardrobe.mp4"
-            muted
-            data-start="8.6"
-            data-duration="4.4"
-            data-media-start="0.5"
-            data-track-index="1"
-            playsinline
-            style="object-position: 62% 50%"
-          ></video>
-        </div>
-        <div class="tint"></div>
-        <div class="shade"></div>
+      <div id="cam">
+        <video
+          id="promo"
+          class="clip"
+          src="assets/video/promo.mp4"
+          data-has-audio="true"
+          data-start="0"
+          data-duration="51.75"
+          data-track-index="0"
+          data-volume="1"
+          playsinline
+        ></video>
       </div>
 
-      <!-- "Negyven felett új tényezők befolyásolhatják: Energiaszint, Anyagcsere, Alvás, Közérzet" -->
+      <!-- "Ugyanúgy figyelsz magadra, de már nem ugyanaz az eredmény." -->
       <div class="band" id="band-yoga">
         <div class="kb" id="kb-yoga" data-layout-allow-overflow>
           <video
@@ -122,8 +119,8 @@
             class="clip broll"
             src="assets/video/broll-yoga.mp4"
             muted
-            data-start="24.0"
-            data-duration="7.4"
+            data-start="8.6"
+            data-duration="4.4"
             data-media-start="0"
             data-track-index="1"
             playsinline
@@ -134,43 +131,51 @@
         <div class="shade"></div>
       </div>
 
-      <!-- "Tarts velünk december 5." -->
-      <div class="band" id="band-red">
-        <div class="kb" id="kb-red" data-layout-allow-overflow>
+      <!-- "A válasz: Semmit. Csak a tested változik." -->
+      <div class="band" id="band-wardrobe">
+        <div class="kb" id="kb-wardrobe" data-layout-allow-overflow>
           <video
-            id="broll-red"
+            id="broll-wardrobe"
             class="clip broll"
-            src="assets/video/broll-red.mp4"
+            src="assets/video/broll-wardrobe.mp4"
             muted
-            data-start="47.4"
-            data-duration="4.35"
-            data-media-start="4.0"
+            data-start="15.85"
+            data-duration="3.25"
+            data-media-start="1.6"
             data-track-index="1"
             playsinline
-            style="object-position: 46% 40%"
+            style="object-position: 62% 50%"
           ></video>
         </div>
         <div class="tint"></div>
         <div class="shade"></div>
       </div>
+
+      <!-- "Negyven felett új tényezők…": no b-roll; a slow push-in and a drifting glow keep it alive. -->
+      <div id="glow"></div>
     </div>
 
     <script>
       const tl = gsap.timeline({ paused: true });
       const slots = [
-        { id: "wardrobe", start: 8.6, dur: 4.4 },
-        { id: "yoga", start: 24.0, dur: 7.4 },
-        { id: "red", start: 47.4, dur: 4.35, holdEnd: true },
+        { id: "yoga", start: 8.6, dur: 4.4 },
+        { id: "wardrobe", start: 15.85, dur: 3.25 },
       ];
-      slots.forEach(({ id, start, dur, holdEnd }) => {
+      slots.forEach(({ id, start, dur }) => {
         const band = "#band-" + id;
         const kb = "#kb-" + id;
-        tl.fromTo(band, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, start);
+        tl.fromTo(band, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, start);
         tl.fromTo(kb, { scale: 1.0 }, { scale: 1.06, duration: dur, ease: "none" }, start);
-        if (!holdEnd) {
-          tl.to(band, { opacity: 0, duration: 0.45, ease: "power2.in" }, start + dur - 0.5);
-        }
+        tl.to(band, { opacity: 0, duration: 0.4, ease: "power2.in" }, start + dur - 0.45);
       });
+
+      // 24.0–31.8 "Negyven felett": text stays fully clear; camera drifts in, glow breathes below.
+      const scene = { start: 24.0, end: 31.8 };
+      tl.fromTo("#cam", { scale: 1.0 }, { scale: 1.05, duration: scene.end - scene.start - 0.05, ease: "sine.inOut" }, scene.start);
+      tl.set("#cam", { scale: 1.0 }, scene.end);
+      tl.fromTo("#glow", { opacity: 0, x: -120, scale: 0.9 }, { opacity: 1, x: 120, scale: 1.1, duration: 3.9, ease: "sine.inOut" }, scene.start);
+      tl.to("#glow", { opacity: 0.55, x: -60, scale: 1.0, duration: 3.4, ease: "sine.inOut" }, scene.start + 3.9);
+      tl.to("#glow", { opacity: 0, duration: 0.45, ease: "power2.in" }, scene.end - 0.5);
       window.__timelines["main"] = tl;
     </script>
   </body>
