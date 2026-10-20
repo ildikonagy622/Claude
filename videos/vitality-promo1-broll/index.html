@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #322457;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #322457;
+      }
+      #promo {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* B-roll sits in the empty lower band of the type scenes and fades up into the
+         purple, mirroring the promo's own top-of-frame footage treatment. */
+      .band {
+        position: absolute;
+        left: 0;
+        top: 1180px;
+        width: 1080px;
+        height: 740px;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
+        mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
+      }
+      .kb {
+        position: absolute;
+        inset: 0;
+        transform-origin: 50% 60%;
+      }
+      .broll {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* Lavender grade so the clips read as part of the promo's palette. */
+      .tint {
+        position: absolute;
+        inset: 0;
+        background: #5b3fa0;
+        mix-blend-mode: color;
+        opacity: 0.55;
+      }
+      .shade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(50, 36, 87, 0.55) 0%, rgba(50, 36, 87, 0.15) 45%, rgba(40, 28, 72, 0.35) 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="51.75"
+      data-width="1080"
+      data-height="1920"
+      data-fps="60"
+    >
+      <video
+        id="promo"
+        class="clip"
+        src="assets/video/promo.mp4"
+        data-has-audio="true"
+        data-start="0"
+        data-duration="51.75"
+        data-track-index="0"
+        data-volume="1"
+        playsinline
+      ></video>
+
+      <!-- "Ugyanúgy figyelsz magadra, de már nem ugyanaz az eredmény." -->
+      <div class="band" id="band-wardrobe">
+        <div class="kb" id="kb-wardrobe" data-layout-allow-overflow>
+          <video
+            id="broll-wardrobe"
+            class="clip broll"
+            src="assets/video/broll-wardrobe.mp4"
+            muted
+            data-start="8.6"
+            data-duration="4.4"
+            data-media-start="0.5"
+            data-track-index="1"
+            playsinline
+            style="object-position: 62% 50%"
+          ></video>
+        </div>
+        <div class="tint"></div>
+        <div class="shade"></div>
+      </div>
+
+      <!-- "Negyven felett új tényezők befolyásolhatják: Energiaszint, Anyagcsere, Alvás, Közérzet" -->
+      <div class="band" id="band-yoga">
+        <div class="kb" id="kb-yoga" data-layout-allow-overflow>
+          <video
+            id="broll-yoga"
+            class="clip broll"
+            src="assets/video/broll-yoga.mp4"
+            muted
+            data-start="24.0"
+            data-duration="7.4"
+            data-media-start="0"
+            data-track-index="1"
+            playsinline
+            style="object-position: 50% 50%"
+          ></video>
+        </div>
+        <div class="tint"></div>
+        <div class="shade"></div>
+      </div>
+
+      <!-- "Tarts velünk december 5." -->
+      <div class="band" id="band-red">
+        <div class="kb" id="kb-red" data-layout-allow-overflow>
+          <video
+            id="broll-red"
+            class="clip broll"
+            src="assets/video/broll-red.mp4"
+            muted
+            data-start="47.4"
+            data-duration="4.35"
+            data-media-start="4.0"
+            data-track-index="1"
+            playsinline
+            style="object-position: 46% 40%"
+          ></video>
+        </div>
+        <div class="tint"></div>
+        <div class="shade"></div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const slots = [
+        { id: "wardrobe", start: 8.6, dur: 4.4 },
+        { id: "yoga", start: 24.0, dur: 7.4 },
+        { id: "red", start: 47.4, dur: 4.35, holdEnd: true },
+      ];
+      slots.forEach(({ id, start, dur, holdEnd }) => {
+        const band = "#band-" + id;
+        const kb = "#kb-" + id;
+        tl.fromTo(band, { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.out" }, start);
+        tl.fromTo(kb, { scale: 1.0 }, { scale: 1.06, duration: dur, ease: "none" }, start);
+        if (!holdEnd) {
+          tl.to(band, { opacity: 0, duration: 0.45, ease: "power2.in" }, start + dur - 0.5);
+        }
+      });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
