@@ -26,13 +26,13 @@
   </style>
   <div id="root" data-composition-id="results" data-width="1080" data-height="1920" data-layout-allow-overflow>
     <div id="results-s1" class="clip shot" data-start="0" data-duration="3.3" data-track-index="1" style="z-index:1">
-      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
-      <div class="card"><div class="cam" id="results-s1-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
-      <div class="tag" id="results-s1-tag"><span>Nano Banana Pro · Magnific · 2K</span></div>
+      <img class="bg" src="assets/img/ref_17_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="results-s1-cam" style="left:0.0px;top:-29.1px;width:760.0px;height:1018.3px"><img src="assets/img/ref_17.png" alt="" /></div></div>
+      <div class="tag" id="results-s1-tag"><span>Nano Banana Pro · 2K</span></div>
     </div>
     <div id="results-s2" class="clip shot" data-start="3.3" data-duration="3.5" data-track-index="1" style="z-index:2">
-      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
-      <div class="card"><div class="cam" id="results-s2-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="results-s2-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
       <div class="tag" id="results-s2-tag"><span>Nano Banana Pro · Magnific · 2K</span></div>
     </div>
 
@@ -41,7 +41,7 @@
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#results-s1-cam", { transformOrigin: "0 0", scale: 1.0, x: -0.0, y: 0.0 }, { scale: 1.05, x: -19.0, y: -25.5, duration: 3.3, ease: "none" }, 0);
     tl.fromTo("#results-s1-tag span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 0.06);
-    tl.fromTo("#results-s2-cam", { transformOrigin: "0 0", scale: 1.0, x: -0.0, y: 0.0 }, { scale: 1.05, x: -19.0, y: -24.6, duration: 3.5, ease: "none" }, 3.3);
+    tl.fromTo("#results-s2-cam", { transformOrigin: "0 0", scale: 1.0, x: -0.0, y: 0.0 }, { scale: 1.05, x: -19.0, y: -25.5, duration: 3.5, ease: "none" }, 3.3);
     tl.fromTo("#results-s2 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 3.3);
     tl.fromTo("#results-s2-tag span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 3.36);
     

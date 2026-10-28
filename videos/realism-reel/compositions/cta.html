@@ -16,29 +16,17 @@
   </style>
   <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
     <div class="vwrap" id="cta-v1-wrap" style="z-index:1">
-      <video id="cta-v1" class="clip" src="assets/video/broll.mp4" muted playsinline data-start="0" data-duration="5.1" data-media-start="26.0" data-track-index="1" style="left:-1000px"></video>
+      <video id="cta-v1" class="clip" src="assets/video/broll.mp4" muted playsinline data-start="0" data-duration="2.4" data-media-start="18.4" data-track-index="1" style="left:-1000px"></video>
     </div>
     <div class="vwrap" id="cta-v2-wrap" style="z-index:1">
-      <video id="cta-v2" class="clip" src="assets/video/broll.mp4" muted playsinline data-start="5.1" data-duration="2.8" data-media-start="18.4" data-track-index="1" style="left:-1000px"></video>
-    </div>
-    <div class="vwrap" id="cta-v3-wrap" style="z-index:1">
-      <video id="cta-v3" class="clip" src="assets/video/broll.mp4" muted playsinline data-start="7.9" data-duration="4.5" data-media-start="6.0" data-track-index="1" style="left:-1050px"></video>
+      <video id="cta-v2" class="clip" src="assets/video/broll.mp4" muted playsinline data-start="2.4" data-duration="5" data-media-start="26.0" data-track-index="1" style="left:-1000px"></video>
     </div>
     <div class="scrim" style="z-index:2"></div>
-    <div id="cta-t1" class="clip title" data-start="0" data-duration="1.92" data-track-index="2" style="top:1000px;z-index:3">
-      <span class="ln" style="font-size:120px"><span class="w" id="cta-a1">Kell a</span></span>
-      <span class="ln ac" style="font-size:120px"><span class="w" id="cta-a2">mester prompt?</span></span>
-    </div>
-    <div id="cta-t2" class="clip title" data-start="1.92" data-duration="3.18" data-track-index="2" style="top:900px;z-index:3">
-      <span class="ln" style="font-size:124px"><span class="w" id="cta-b1">Kommenteld:</span></span>
-      <span class="ln ac" style="font-size:300px;line-height:1"><span class="w" id="cta-b2">“AI”</span></span>
-      <span class="ln sm" style="margin-top:28px"><span class="w" id="cta-b3">és küldöm is!</span></span>
-    </div>
-    <div id="cta-t3" class="clip title" data-start="5.1" data-duration="2.34" data-track-index="2" style="top:1000px;z-index:3">
+    <div id="cta-t1" class="clip title" data-start="0" data-duration="2.36" data-track-index="2" style="top:1000px;z-index:3">
       <span class="ln" style="font-size:120px"><span class="w" id="cta-c1">Szeretnél jól</span></span>
       <span class="ln ac" style="font-size:120px"><span class="w" id="cta-c2">promptolni?</span></span>
     </div>
-    <div id="cta-t4" class="clip title" data-start="7.44" data-duration="4.96" data-track-index="2" style="top:860px;z-index:3">
+    <div id="cta-t2" class="clip title" data-start="2.36" data-duration="5.04" data-track-index="2" style="top:860px;z-index:3">
       <span class="ln" style="font-size:124px"><span class="w" id="cta-d1">Kommenteld:</span></span>
       <span class="ln ac" style="font-size:168px;line-height:1.05"><span class="w" id="cta-d2">“PROMPT”</span></span>
       <span class="ln sm" style="margin-top:14px;font-size:52px"><span class="w" id="cta-d3">→ ingyenes Promptolás Alapok kurzus</span></span>
@@ -46,22 +34,14 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#cta-v1-wrap", { scale: 1.1 }, { scale: 1.15, duration: 5.1, ease: "none" }, 0);
-    tl.fromTo("#cta-v2-wrap", { scale: 1.12 }, { scale: 1.16, duration: 2.8, ease: "none" }, 5.1);
-    tl.fromTo("#cta-v3-wrap", { scale: 1.0 }, { scale: 1.05, duration: 4.5, ease: "none" }, 7.9);
-    tl.fromTo("#cta-a1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 0.1);
-    tl.fromTo("#cta-a2", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 1.0);
-    tl.to("#cta-t1 .ln", { opacity: 0, filter: "blur(8px)", duration: 0.14, ease: "power2.in" }, 1.76);
-    tl.fromTo("#cta-b1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 1.96);
-    tl.fromTo("#cta-b2", { opacity: 0, scale: 2.2, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.26, ease: "expo.out" }, 2.66);
-    tl.fromTo("#cta-b3", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 3.3);
-    tl.to("#cta-t2 .ln", { opacity: 0, filter: "blur(8px)", duration: 0.14, ease: "power2.in" }, 4.94);
-    tl.fromTo("#cta-c1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 5.2);
-    tl.fromTo("#cta-c2", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 6.6);
-    tl.to("#cta-t3 .ln", { opacity: 0, filter: "blur(8px)", duration: 0.14, ease: "power2.in" }, 7.28);
-    tl.fromTo("#cta-d1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 7.5);
-    tl.fromTo("#cta-d2", { opacity: 0, scale: 2.2, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.26, ease: "expo.out" }, 8.18);
-    tl.fromTo("#cta-d3", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 9.6);
+    tl.fromTo("#cta-v1-wrap", { scale: 1.12 }, { scale: 1.16, duration: 2.4, ease: "none" }, 0);
+    tl.fromTo("#cta-v2-wrap", { scale: 1.1 }, { scale: 1.15, duration: 5, ease: "none" }, 2.4);
+    tl.fromTo("#cta-c1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 0.2);
+    tl.fromTo("#cta-c2", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 1.66);
+    tl.to("#cta-t1 .ln", { opacity: 0, filter: "blur(8px)", duration: 0.14, ease: "power2.in" }, 2.2);
+    tl.fromTo("#cta-d1", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 2.46);
+    tl.fromTo("#cta-d2", { opacity: 0, scale: 2.2, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.26, ease: "expo.out" }, 3.2);
+    tl.fromTo("#cta-d3", { opacity: 0, scale: 1.35, filter: "blur(8px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.2, ease: "expo.out" }, 4.68);
     window.__timelines["cta"] = tl;
   </script>
 </template>

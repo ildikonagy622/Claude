@@ -12,7 +12,10 @@ COMP = os.path.join(ROOT, "compositions")
 
 W, H = 1080, 1920
 CARD = dict(x=160, y=220, w=760, h=960)
-IMG = {"kovacs": (964, 1247), "oltozo": (1068, 1433)}
+IMG = {"oltozo": (1068, 1433)}
+for _n in ("11", "05", "13", "02", "16", "09", "00", "18", "17"):
+    IMG[f"ref_{_n}"] = (1024, 1372)
+FULL = (1433, 1920)  # hook photos, pre-scaled to the frame height
 # broll.mp4 is 1920x1080; shown full-bleed at 1920 px tall
 BROLL_W = round(1920 * 1920 / 1080)
 
@@ -43,10 +46,10 @@ SHOT_CSS = """
 """ % dict(CARD, bw=BROLL_W)
 
 
-def cam_geom(name, z, fx, fy):
-    """Cover the card with the image, scale by z, keep (fx, fy) as centred as the edges allow."""
-    iw, ih = IMG[name]
-    cw, ch = CARD["w"], CARD["h"]
+def cam_geom(name, z, fx, fy, frame=None):
+    """Cover the card (or the frame) with the image, scale by z, keep (fx, fy) as centred as the edges allow."""
+    iw, ih = IMG[name] if name in IMG else FULL
+    cw, ch = frame or (CARD["w"], CARD["h"])
     s = max(cw / iw, ch / ih)
     bw, bh = iw * s, ih * s
     offx, offy = (cw - bw) / 2, (ch - bh) / 2
@@ -88,6 +91,16 @@ def scene(cid, dur, shots, extra_css="", extra_html="", extra_js=""):
             if label:
                 sel = f"#{sid}-chip span" if s.get("chip") else f"#{sid}-tag span"
                 js.append(f'tl.fromTo("{sel}", {{ opacity: 0, y: 14 }}, {{ opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }}, {round(st + 0.06, 2)});')
+        elif s["kind"] == "full":  # full-bleed photo
+            g = cam_geom(s["img"], s.get("z", 1.0), s.get("fx", 0.5), s.get("fy", 0.5), frame=(W, H))
+            html.append(
+                f'''    <div id="{sid}" class="clip shot" data-start="{st}" data-duration="{du}" data-track-index="1" style="z-index:{z}">
+      <div class="cam" id="{sid}-cam" style="left:{g["left"]}px;top:{g["top"]}px;width:{g["w"]}px;height:{g["h"]}px"><img src="assets/img/{s["img"]}.jpg" alt="" /></div>
+      <div class="shade"></div>
+    </div>''')
+            js.append(
+                f'tl.fromTo("#{sid}-cam", {{ transformOrigin: "0 0", scale: {g["z"]}, x: {g["a"][0]}, y: {g["a"][1]} }}, '
+                f'{{ scale: {round(g["z"] * 1.05, 3)}, x: {g["b"][0]}, y: {g["b"][1]}, duration: {du}, ease: "none" }}, {st});')
         else:  # broll footage, full-bleed 9:16 window
             left = s.get("left", 900)
             sc = s.get("z", 1.0)
@@ -118,18 +131,18 @@ def scene(cid, dur, shots, extra_css="", extra_html="", extra_js=""):
         f.write(doc)
 
 
-# ---------- hook: 0 – 6.62 ----------
+# ---------- hook: 0 – 6.62, full-bleed photos, each used once in the film ----------
 scene("hook", 6.62, [
-    dict(kind="card", t=0, d=0.62, img="oltozo", z=1.0, fx=0.5, fy=0.5, pop=False),
-    dict(kind="card", t=0.62, d=0.56, img="kovacs", z=1.45, fx=0.72, fy=0.30),
-    dict(kind="broll", t=1.18, d=0.56, src=4.0, left=1100, z=1.0),
-    dict(kind="card", t=1.74, d=0.56, img="oltozo", z=1.9, fx=0.57, fy=0.31),
-    dict(kind="card", t=2.30, d=0.56, img="kovacs", z=1.5, fx=0.52, fy=0.86),
-    dict(kind="broll", t=2.86, d=0.56, src=9.0, left=1300, z=1.35),
-    dict(kind="card", t=3.42, d=1.08, img="kovacs", z=1.0),
-    dict(kind="card", t=4.50, d=0.60, img="oltozo", z=1.6, fx=0.55, fy=0.36),
-    dict(kind="broll", t=5.10, d=0.60, src=12.5, left=1150, z=1.0),
-    dict(kind="card", t=5.70, d=0.92, img="oltozo", z=1.0),
+    dict(kind="full", t=0, d=0.62, img="full_01", z=1.0, fx=0.5),
+    dict(kind="full", t=0.62, d=0.56, img="full_04", z=1.0, fx=0.5),
+    dict(kind="full", t=1.18, d=0.56, img="full_03", z=1.0, fx=0.45),
+    dict(kind="full", t=1.74, d=0.56, img="full_10", z=1.0, fx=0.35),
+    dict(kind="full", t=2.30, d=0.56, img="full_14", z=1.0, fx=0.45),
+    dict(kind="full", t=2.86, d=0.56, img="full_12", z=1.0, fx=0.42),
+    dict(kind="full", t=3.42, d=1.08, img="full_06", z=1.0, fx=0.45),
+    dict(kind="full", t=4.50, d=0.60, img="full_07", z=1.0, fx=0.55),
+    dict(kind="full", t=5.10, d=0.60, img="full_08", z=1.0, fx=0.55),
+    dict(kind="full", t=5.70, d=0.92, img="full_15", z=1.0, fx=0.5),
 ])
 
 # ---------- details: 33.00 – 45.00 (local) ----------
@@ -150,20 +163,20 @@ details_html = """    <div id="details-doc" class="clip shot" data-start="0" dat
     </div>"""
 details_js = 'tl.fromTo("#details-pcard", { opacity: 0, scale: 0.94, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 0.02);'
 scene("details", 12, [
-    dict(kind="card", t=1.92, d=1.40, img="kovacs", z=1.35, fx=0.70, fy=0.36, chip="uneven skin texture"),
-    dict(kind="card", t=3.32, d=1.10, img="oltozo", z=2.0, fx=0.56, fy=0.30, chip="visible pores"),
-    dict(kind="card", t=4.42, d=0.98, img="kovacs", z=1.45, fx=0.73, fy=0.21, chip="age spots"),
-    dict(kind="card", t=5.40, d=1.08, img="oltozo", z=1.6, fx=0.58, fy=0.33, chip="a few small blemishes"),
-    dict(kind="card", t=6.48, d=1.16, img="oltozo", z=1.8, fx=0.53, fy=0.33, chip="subtle redness on the cheeks"),
-    dict(kind="card", t=7.64, d=1.04, img="kovacs", z=1.5, fx=0.68, fy=0.27, chip="fine lines"),
-    dict(kind="card", t=8.68, d=1.88, img="kovacs", z=1.3, fx=0.62, fy=0.48, chip="faint discoloration"),
-    dict(kind="card", t=10.56, d=1.44, img="kovacs", z=1.4, fx=0.72, fy=0.42, chip="real facial hair"),
+    dict(kind="card", t=1.92, d=1.40, img="ref_11", z=1.25, fx=0.45, fy=0.25, chip="uneven skin texture"),
+    dict(kind="card", t=3.32, d=1.10, img="ref_05", z=1.2, fx=0.5, fy=0.35, chip="visible pores"),
+    dict(kind="card", t=4.42, d=0.98, img="ref_13", z=1.15, fx=0.55, fy=0.45, chip="age spots"),
+    dict(kind="card", t=5.40, d=1.08, img="ref_02", z=1.15, fx=0.6, fy=0.55, chip="a few small blemishes"),
+    dict(kind="card", t=6.48, d=1.16, img="ref_16", z=1.15, fx=0.45, fy=0.55, chip="subtle redness on the cheeks"),
+    dict(kind="card", t=7.64, d=1.04, img="ref_09", z=1.25, fx=0.4, fy=0.3, chip="fine lines"),
+    dict(kind="card", t=8.68, d=1.88, img="ref_00", z=1.0, chip="faint discoloration"),
+    dict(kind="card", t=10.56, d=1.44, img="ref_18", z=1.2, fx=0.62, fy=0.38, chip="real facial hair"),
 ], extra_css=details_css, extra_html=details_html, extra_js=details_js)
 
 # ---------- results: 45.00 – 51.80 (local) ----------
 scene("results", 6.8, [
-    dict(kind="card", t=0, d=3.3, img="oltozo", z=1.0, tag="Nano Banana Pro · Magnific · 2K", pop=False),
-    dict(kind="card", t=3.3, d=3.5, img="kovacs", z=1.0, tag="Nano Banana Pro · Magnific · 2K"),
+    dict(kind="card", t=0, d=3.3, img="ref_17", z=1.0, tag="Nano Banana Pro · 2K", pop=False),
+    dict(kind="card", t=3.3, d=3.5, img="oltozo", z=1.0, tag="Nano Banana Pro · Magnific · 2K"),
 ])
 
 # ---------- captions ----------
@@ -172,6 +185,8 @@ merged = []
 for w in words:
     s = w["start"]
     if 24.15 <= s < 27.7:  # dropped flub "De a szokásos ... messz..."
+        continue
+    if 63.0 <= s < 68.0:  # dropped "AI" call to action
         continue
     if w["text"].startswith("-") and merged:
         merged[-1]["text"] += w["text"]
@@ -184,7 +199,7 @@ for w in merged:
     w["text"] = FIX.get(w["text"].strip(), w["text"].strip())
     s = max(w["start"], 28.45) if w["start"] >= 27.7 else w["start"]
     e = w["end"]
-    off = 11.28 if w["start"] >= 27.7 else 7.10
+    off = 16.26 if w["start"] >= 68.0 else 11.28 if w["start"] >= 27.7 else 7.10
     w["s"], w["e"] = round(s - off, 3), round(e - off, 3)
 
 ACCENT = {"mesterségesnek?", "hibás,", "promptod.", "promptod", "Magnificet", "Nano", "Banana", "Pro-val.",
@@ -192,7 +207,7 @@ ACCENT = {"mesterségesnek?", "hibás,", "promptod.", "promptod", "Magnificet", 
           "ráncok,", "arcszőrzet.", "igazivá", "hihetővé,", "viaszos", "egyenetlen", "elszíneződések",
           "fényekkel,", "Higgsfielden", "Leonardo", "AI-on."}
 # big-title scenes carry their own words
-EXCL = [(6.62, 8.42), (29.8, 33.0), (51.8, 64.2)]
+EXCL = [(6.62, 8.42), (29.8, 33.0), (51.8, 59.2)]
 
 FUNC = {"a", "az", "egy", "hogy", "és", "de", "ami", "le", "is", "én", "akár", "vagy", "túl"}
 groups = []
