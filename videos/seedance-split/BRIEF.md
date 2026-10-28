@@ -43,3 +43,7 @@ Osztott képernyős összehasonlítás: felül az eredeti felvétel, alul a Seed
 - 9 s: dobás 4 ütem (forrás 1.95 s-tól), tányér 6 ütem, „Hamarosan…” 4 ütem, kövess be klip 2.2 s (a beszéd, 0.95 s-tól).
 - Sebességváltások 0.16 s-os átmenettel (siklanak); dobás 0.95× → 0.34× → 1.05×, tányér 2.2× → 1.35× → 0.6× → 2.55×.
 - Váltások mozgással: oldalra húzott elmosásos „whip” a dobásról a tányérra, a tányér nagyítása a „Hamarosan” kártyába, átzoomolás a kiszálló klipbe.
+
+## v7
+
+- Kiszálló klip 2.5 s-ra nyújtva; felirat a szavaira („Ha tetszett / a videó, / kövess be / minket!”), „+ Követés” gomb a „kövess be”-re, 8.54 s-nál kattintás hanggal „✓ Követed”-re vált. Videó 9.36 s.

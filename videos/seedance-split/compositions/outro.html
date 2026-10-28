@@ -1,17 +1,41 @@
 <template>
   <style>
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
     #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
     #outro-wrap { position: absolute; inset: 0; overflow: hidden; }
     #outro-v { position: absolute; top: 0; left: -1166px; width: 3413px; height: 1920px; }
+    .grp { position: absolute; left: 0; right: 0; top: 1262px; height: 110px; text-align: center; overflow: visible; }
+    .grp .in { display: inline-block; font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 86px; line-height: 1;
+      letter-spacing: -0.02em; color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,.8), 0 1px 3px rgba(0,0,0,.6); }
+    .grp .ac { color: var(--accent, #9570ff); }
+    .btn { position: absolute; left: 330px; top: 1392px; width: 420px; height: 100px; border-radius: 22px; background: var(--accent, #9570ff);
+      display: flex; align-items: center; justify-content: center; font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 44px; color: #0b0910;
+      box-shadow: 0 0 50px rgba(149,112,255,.6), 0 20px 50px rgba(0,0,0,.45); opacity: 0; }
+    .btn .done { position: absolute; inset: 0; border-radius: 22px; background: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; }
   </style>
   <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
     <div id="outro-wrap">
-      <video id="outro-v" class="clip" src="assets/video/koves_be.mp4" playsinline data-has-audio="true" data-start="0" data-duration="2.2" data-media-start="0.95" data-volume="1" data-track-index="1"></video>
+      <video id="outro-v" class="clip" src="assets/video/koves_be.mp4" playsinline data-has-audio="true" data-start="0" data-duration="2.5" data-media-start="0.95" data-volume="1" data-track-index="1"></video>
     </div>
+    <!-- captions, timed to her words (clip time minus the 0.95 s trim) -->
+    <div id="oc-1" class="clip grp" data-start="0.05" data-duration="0.64" data-track-index="2"><span class="in" id="oc-1-in">Ha tetszett</span></div>
+    <div id="oc-2" class="clip grp" data-start="0.69" data-duration="0.44" data-track-index="2"><span class="in" id="oc-2-in">a videó,</span></div>
+    <div id="oc-3" class="clip grp" data-start="1.13" data-duration="0.46" data-track-index="2"><span class="in ac" id="oc-3-in">kövess be</span></div>
+    <div id="oc-4" class="clip grp" data-start="1.59" data-duration="0.91" data-track-index="2"><span class="in" id="oc-4-in">minket!</span></div>
+    <div class="btn" id="outro-btn">+ Követés<div class="done" id="outro-done">✓ Követed</div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#outro-wrap", { scale: 1.14, filter: "blur(12px)" }, { scale: 1.0, filter: "blur(0px)", duration: 0.32, ease: "expo.out" }, 0);
+    ["#oc-1-in", "#oc-2-in", "#oc-3-in", "#oc-4-in"].forEach((sel, i) => {
+      tl.fromTo(sel, { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, [0.05, 0.69, 1.13, 1.59][i]);
+    });
+    // follow button arrives with "kövess be", gets pressed, turns into "Követed"
+    tl.fromTo("#outro-btn", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.25, ease: "back.out(1.8)" }, 1.13);
+    tl.to("#outro-btn", { scale: 0.9, duration: 0.07, ease: "power2.in" }, 1.68);
+    tl.to("#outro-btn", { scale: 1, duration: 0.25, ease: "back.out(2)" }, 1.75);
+    tl.to("#outro-done", { opacity: 1, duration: 0.1 }, 1.74);
     window.__timelines["outro"] = tl;
   </script>
 </template>
