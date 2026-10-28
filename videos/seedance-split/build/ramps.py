@@ -5,7 +5,7 @@ Each ramp is a list of (timeline seconds, rate) holds; rates change over XF seco
 Prints the lane JSON and how much source each ramp consumes (log interpolation, as the runtime does)."""
 import json, math
 
-XF = 0.08
+XF = 0.16  # long enough that speed changes glide instead of jump
 
 def lane(holds, total):
     pts = []
@@ -29,9 +29,9 @@ def consumed(pts):
     return s
 
 B = 0.49  # one beat at ~122 BPM
-cook = lane([(0, 1.2), (B, 0.3), (4 * B, 1.25)], 5 * B)
-plate = lane([(0, 1.8), (2 * B, 1.0), (4 * B, 0.5), (7 * B, 1.28)], 9 * B)
-for name, pts, start, avail in (("cook", cook, 1.6, 3.27), ("plate", plate, 0.0, 4.77)):
+cook = lane([(0, 0.95), (B, 0.34), (3 * B, 1.05)], 4 * B)
+plate = lane([(0, 2.2), (2 * B, 1.35), (3 * B, 0.6), (5 * B, 2.55)], 6 * B)
+for name, pts, start, avail in (("cook", cook, 1.95, 3.27), ("plate", plate, 0.0, 4.77)):
     c = consumed(pts)
     print(name, "dur", pts[-1]["t"], "consumes %.3f s -> source %.3f..%.3f (available up to %.2f)" % (c, start, start + c, avail))
     print(json.dumps({"version": 1, "lanes": [{"target": "rate", "points": pts}]}))
