@@ -27,3 +27,7 @@ Osztott képernyős összehasonlítás: felül az eredeti felvétel, alul a Seed
 
 - Kiemelő szín: `#9570FF` (lila) a magenta helyett.
 - Első 3 s sűrítve, felirat nélkül: 0–0.735 s előtte–utána villogás teljes képernyőn (otthon → étterem → otthon → étterem → kész étel) glitch- és ütéshanggal; utána az osztott kép (+0.735 s eltolással), az AI-fél előtűnése 1.47 s-nál, ütemre lüktetés 2.1 és 2.8 s-nál, ránagyítás a második feldobásnál (~3.6 s).
+
+## v4 (felhasználói kérés)
+
+- Az előtte–utána villogás kivéve; a főzéses párból csak egy serpenyődobás marad (forrás 1.6 s-tól, 0.77×, 0–2.125 s), utána rögtön a tányéros pár (2.125–7.005 s), majd a CTA (11.24 s-ig).
