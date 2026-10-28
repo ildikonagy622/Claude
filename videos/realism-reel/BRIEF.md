@@ -19,7 +19,7 @@ Felhasználói kérés: „ebből kérlek vágj egy ilyet” — a Drive-mappa `
 
 ## Felépítés (a referenciát követve)
 
-hook képmontázs (≈0.55 s vágások) → „Megmutatom, hogyan csinálom” nagy cím → 1. lépés Magnific felület → mester prompt → prompt-kártya szinkron kiemelésekkel → „Valóság réteg” cím → részletek képenként, angol prompt-címkével → eredmények → két CTA („AI”, „PROMPT”).
+hook: 10 referenciafotó teljes képernyőn (≈0.55 s vágások) → „Megmutatom, hogyan csinálom” nagy cím → 1. lépés Magnific felület → mester prompt → prompt-kártya szinkron kiemelésekkel → „Valóság réteg” cím → részletek képenként, angol prompt-címkével → eredmények → CTA: „Kommenteld: PROMPT”.
 
 ## Stílus
 
@@ -30,3 +30,8 @@ hook képmontázs (≈0.55 s vágások) → „Megmutatom, hogyan csinálom” n
 ## Szerkesztés
 
 `build/gen.py` generálja a hook / details / results jeleneteket és a feliratsávot (`build/words_src.json` a szószintű leirat); a többi jelenet kézzel írt.
+
+## v2 (felhasználói kérés)
+
+- A „Szeretnéd megkapni a mester promptot? Kommenteld, hogy AI…” rész kivágva; csak a „PROMPT” CTA maradt (59.2 s).
+- Referenciafotók: Drive `1vnsxTuteGabb8-lnryOBC0-00EWDfk9b`, 19 kép, mind felhasználva, ismétlés nélkül: 10 teljes képernyőn a hookban, 8 a valóság réteg részleteihez, 1 az eredményeknél (+ a Magnific-ből vágott öltözős kép).
