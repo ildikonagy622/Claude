@@ -1,0 +1,17 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    #outro-wrap { position: absolute; inset: 0; overflow: hidden; }
+    #outro-v { position: absolute; top: 0; left: -1166px; width: 3413px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="outro" data-width="1080" data-height="1920">
+    <div id="outro-wrap">
+      <video id="outro-v" class="clip" src="assets/video/koves_be.mp4" playsinline data-has-audio="true" data-start="0" data-duration="3.567" data-media-start="0" data-volume="1" data-track-index="1"></video>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#outro-wrap", { scale: 1.08 }, { scale: 1.0, duration: 0.5, ease: "expo.out" }, 0);
+    window.__timelines["outro"] = tl;
+  </script>
+</template>

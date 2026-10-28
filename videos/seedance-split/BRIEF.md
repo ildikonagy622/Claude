@@ -31,3 +31,9 @@ Osztott képernyős összehasonlítás: felül az eredeti felvétel, alul a Seed
 ## v4 (felhasználói kérés)
 
 - Az előtte–utána villogás kivéve; a főzéses párból csak egy serpenyődobás marad (forrás 1.6 s-tól, 0.77×, 0–2.125 s), utána rögtön a tányéros pár (2.125–7.005 s), majd a CTA (11.24 s-ig).
+
+## v5 (felhasználói kérés)
+
+- Zene: `arnaud136-afrobeat-disco-352032.mp3` (feltöltve), 0.975 s-tól, hogy az első ütés a 0. pillanatra essen (~122 BPM, 0.49 s ütem); a kiszálló klip alatt 0.22-re lehalkítva.
+- Villanások helyett sebességváltások: `build/ramps.py` adja a rate lane-eket, a felső és az alsó fél ugyanazt kapja (renderen mérve mindkét párnál 1.00 arány, 0 eltolás). Dobás: 1 ütem 1.2×, 3 ütem 0.3× lassítás, 1 ütem 1.25×. Tányér: 2 ütem 1.8×, 2 ütem 1×, 3 ütem 0.5× (a kamera felé tolás), 2 ütem 1.28×. A kamera a lassításokra ránagyít, gyorsításra visszaugrik.
+- Vége: „Hamarosan megmutatjuk, hogyan készült!” (6.86–9.31 s), majd a mappa `kövess be.mov` klipje saját hanggal (9.31–12.88 s).
