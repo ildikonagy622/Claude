@@ -1,0 +1,42 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    .bg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,9,16,.15) 0%, rgba(11,9,16,.35) 30%, rgba(11,9,16,.72) 55%, rgba(11,9,16,.8) 100%); }
+    .title { position: absolute; left: 0; right: 0; top: 720px; text-align: center; font-family: "Inter Tight", sans-serif; font-weight: 800;
+      color: #fff; letter-spacing: -0.04em; line-height: 0.92; text-shadow: 0 6px 40px rgba(0,0,0,.5); }
+    .title .ln { display: block; }
+    .title .ac { color: var(--accent, #ee4bff); }
+    .sub { position: absolute; left: 0; right: 0; top: 1060px; text-align: center; font-family: "Inter Tight", sans-serif; font-weight: 700;
+      font-size: 46px; color: rgba(255,255,255,.9); }
+    .btn { position: absolute; left: 340px; top: 1160px; width: 400px; height: 104px; border-radius: 22px; background: var(--accent, #ee4bff);
+      display: flex; align-items: center; justify-content: center; gap: 14px; font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 44px; color: #0b0910;
+      box-shadow: 0 0 50px rgba(238,75,255,.6), 0 20px 50px rgba(0,0,0,.4); }
+    .btn .done { position: absolute; inset: 0; border-radius: 22px; background: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+    <img class="bg" id="cta-bg" src="assets/img/cta_bg.jpg" alt="" />
+    <div class="scrim" id="cta-scrim"></div>
+    <div class="title" id="cta-t">
+      <span class="ln" id="cta-w1" style="font-size:150px">Tetszett?</span>
+      <span class="ln ac" id="cta-w2" style="font-size:170px">Kövess be!</span>
+    </div>
+    <div class="sub" id="cta-sub">Jön még több AI-trükk</div>
+    <div class="btn" id="cta-btn">+ Követés<div class="done" id="cta-done">✓ Követed</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cta-bg", { scale: 1.08 }, { scale: 1.0, duration: 3.8, ease: "power2.out" }, 0);
+    tl.fromTo("#cta-scrim", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 0);
+    tl.fromTo("#cta-w1", { opacity: 0, scale: 1.4, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.22, ease: "expo.out" }, 0.05);
+    tl.fromTo("#cta-w2", { opacity: 0, scale: 2, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.26, ease: "expo.out" }, 0.69);
+    tl.fromTo("#cta-sub", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power2.out" }, 1.38);
+    tl.fromTo("#cta-btn", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, 1.38);
+    tl.to("#cta-btn", { scale: 0.92, duration: 0.08, ease: "power2.in" }, 2.08);
+    tl.to("#cta-btn", { scale: 1, duration: 0.25, ease: "back.out(2)" }, 2.16);
+    tl.to("#cta-done", { opacity: 1, duration: 0.12 }, 2.12);
+    window.__timelines["cta"] = tl;
+  </script>
+</template>
