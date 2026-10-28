@@ -22,3 +22,8 @@ Osztott képernyős összehasonlítás: felül az eredeti felvétel, alul a Seed
 - CTA: „Kövess be, ha szeretnéd látni, hogyan készült!”
 - Szinkron: mozgáselemzés szerint mindkét pár valós időben 1:1 egyezik, ezért a felső és az alsó videó azonos időben, azonos sebességgel indul (főzés 0.77×, tányér 0.985×); az alsó a nyitásban takarva fut, és 0.735 s-nál tűnik elő. A renderen mérve: főzés 1.00 arány, 0 képkocka eltolás.
 - Felirat nélküli figyelemtartás: ránagyítás mindkét félen az előtűnéskor és a második feldobásnál (2.85 s), suhanással.
+
+## v3 (felhasználói kérés)
+
+- Kiemelő szín: `#9570FF` (lila) a magenta helyett.
+- Első 3 s sűrítve, felirat nélkül: 0–0.735 s előtte–utána villogás teljes képernyőn (otthon → étterem → otthon → étterem → kész étel) glitch- és ütéshanggal; utána az osztott kép (+0.735 s eltolással), az AI-fél előtűnése 1.47 s-nál, ütemre lüktetés 2.1 és 2.8 s-nál, ránagyítás a második feldobásnál (~3.6 s).
