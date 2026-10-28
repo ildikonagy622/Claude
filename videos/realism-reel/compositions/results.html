@@ -1,0 +1,50 @@
+<template>
+  <style>
+
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    .shot { position: absolute; inset: 0; overflow: hidden; }
+    .bg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .card { position: absolute; left: 160px; top: 220px; width: 760px; height: 960px;
+      border-radius: 36px; overflow: hidden; background: #000;
+      box-shadow: 0 40px 120px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.08); }
+    .cam { position: absolute; }
+    .cam img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+    .vwrap { position: absolute; inset: 0; overflow: hidden; }
+    .vwrap video { position: absolute; top: 0; height: 1920px; width: 3413px; }
+    .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,9,16,.35) 0%, rgba(11,9,16,0) 30%, rgba(11,9,16,0) 55%, rgba(11,9,16,.7) 100%); }
+    .chip { position: absolute; left: 0; right: 0; top: 1100px; text-align: center; }
+    .chip span { display: inline-block; font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 34px;
+      color: #0b0910; background: var(--accent, #ee4bff); padding: 10px 22px; border-radius: 12px; }
+    .tag { position: absolute; left: 0; right: 0; top: 1100px; text-align: center; }
+    .tag span { display: inline-block; font-family: "Inter Tight", sans-serif; font-weight: 700; font-size: 30px;
+      color: #fff; background: rgba(11,9,16,.72); padding: 10px 20px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18); letter-spacing: .02em; }
+
+  </style>
+  <div id="root" data-composition-id="results" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div id="results-s1" class="clip shot" data-start="0" data-duration="3.3" data-track-index="1" style="z-index:1">
+      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="results-s1-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
+      <div class="tag" id="results-s1-tag"><span>Nano Banana Pro · Magnific · 2K</span></div>
+    </div>
+    <div id="results-s2" class="clip shot" data-start="3.3" data-duration="3.5" data-track-index="1" style="z-index:2">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="results-s2-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="tag" id="results-s2-tag"><span>Nano Banana Pro · Magnific · 2K</span></div>
+    </div>
+
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#results-s1-cam", { transformOrigin: "0 0", scale: 1.0, x: -0.0, y: 0.0 }, { scale: 1.05, x: -19.0, y: -25.5, duration: 3.3, ease: "none" }, 0);
+    tl.fromTo("#results-s1-tag span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 0.06);
+    tl.fromTo("#results-s2-cam", { transformOrigin: "0 0", scale: 1.0, x: -0.0, y: 0.0 }, { scale: 1.05, x: -19.0, y: -24.6, duration: 3.5, ease: "none" }, 3.3);
+    tl.fromTo("#results-s2 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 3.3);
+    tl.fromTo("#results-s2-tag span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 3.36);
+    
+    window.__timelines["results"] = tl;
+  </script>
+</template>

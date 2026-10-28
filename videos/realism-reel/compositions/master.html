@@ -1,0 +1,50 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    .pgrid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 54px 54px; }
+    .glow { position: absolute; left: -200px; top: 300px; width: 1480px; height: 1200px; background: radial-gradient(closest-side, rgba(238,75,255,.16), rgba(238,75,255,0)); }
+    .pcard { position: absolute; left: 70px; width: 940px; border-radius: 34px; padding: 52px 52px 56px;
+      background: rgba(18,14,26,.94); border: 4px solid var(--accent, #ee4bff);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 30px 120px rgba(0,0,0,.6), 0 0 80px rgba(238,75,255,.22); }
+    .plabel { font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 34px; color: var(--accent, #ee4bff); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 26px; }
+    .ptext { font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 41px; line-height: 1.42; color: #f2eef8; }
+    .hl { background-image: linear-gradient(var(--accent, #ee4bff), var(--accent, #ee4bff)); background-repeat: no-repeat; background-size: 0% 100%;
+      -webkit-box-decoration-break: clone; box-decoration-break: clone; border-radius: 6px; padding: 0 4px; }
+    .panel { position: absolute; left: 40px; top: 290px; width: 1000px; height: 880px; border-radius: 30px; overflow: hidden; background: #111;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 40px 140px rgba(0,0,0,.7); }
+    .pcam { position: absolute; left: 0; top: 0; }
+    .chip { position: absolute; top: 190px; width: 290px; height: 72px; border-radius: 999px; background: rgba(24,20,32,.92);
+      border: 1px solid rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; gap: 14px;
+      font-family: "Inter Tight", sans-serif; font-weight: 700; font-size: 32px; color: #fff; }
+    .chip img { width: 44px; height: 44px; border-radius: 10px; }
+    .ring { position: absolute; border: 5px solid var(--accent, #ee4bff); border-radius: 14px; box-shadow: 0 0 30px rgba(238,75,255,.6); }
+
+  </style>
+  <div id="root" data-composition-id="master" data-width="1080" data-height="1920">
+    <div class="pgrid"></div><div class="glow"></div>
+    <div id="master-basic" class="clip" data-start="0" data-duration="2.0" data-track-index="1" style="position:absolute;inset:0">
+      <div class="pcard" id="master-bcard" style="top:520px;border-color:rgba(255,255,255,.25);box-shadow:0 30px 120px rgba(0,0,0,.6)">
+        <div class="plabel" style="color:rgba(255,255,255,.6)">Egyszerű prompt</div>
+        <div class="ptext" style="color:rgba(242,238,248,.75)">realistic portrait of a woman, 8k, ultra detailed, perfect skin</div>
+        <div id="master-strike" style="position:absolute;left:40px;right:40px;top:50%;height:8px;border-radius:4px;background:var(--accent,#ee4bff)"></div>
+      </div>
+    </div>
+    <div id="master-doc" class="clip" data-start="2.0" data-duration="1.7" data-track-index="1" style="position:absolute;inset:0">
+      <div class="panel" id="master-panel" style="left:70px;width:940px;height:900px;top:260px">
+        <img src="assets/img/doc_5.png" alt="" style="position:absolute;left:0;top:0;width:940px;height:1007px" />
+        <div class="ring" id="master-ring" style="left:18px;top:414px;width:652px;height:66px;opacity:0"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#master-bcard", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.35, ease: "expo.out" }, 0.02);
+    tl.fromTo("#master-strike", { transformOrigin: "0% 50%", scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 1.38);
+    tl.to("#master-bcard", { opacity: 0.35, duration: 0.3 }, 1.5);
+    tl.fromTo("#master-panel", { y: 160, opacity: 0, filter: "blur(12px)" }, { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, 2.0);
+    tl.fromTo("#master-ring", { opacity: 0, scale: 1.12 }, { opacity: 1, scale: 1, duration: 0.25, ease: "expo.out" }, 2.2);
+    window.__timelines["master"] = tl;
+  </script>
+</template>

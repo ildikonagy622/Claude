@@ -1,0 +1,111 @@
+<template>
+  <style>
+
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    .shot { position: absolute; inset: 0; overflow: hidden; }
+    .bg { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .card { position: absolute; left: 160px; top: 220px; width: 760px; height: 960px;
+      border-radius: 36px; overflow: hidden; background: #000;
+      box-shadow: 0 40px 120px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.08); }
+    .cam { position: absolute; }
+    .cam img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+    .vwrap { position: absolute; inset: 0; overflow: hidden; }
+    .vwrap video { position: absolute; top: 0; height: 1920px; width: 3413px; }
+    .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,9,16,.35) 0%, rgba(11,9,16,0) 30%, rgba(11,9,16,0) 55%, rgba(11,9,16,.7) 100%); }
+    .chip { position: absolute; left: 0; right: 0; top: 1100px; text-align: center; }
+    .chip span { display: inline-block; font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 34px;
+      color: #0b0910; background: var(--accent, #ee4bff); padding: 10px 22px; border-radius: 12px; }
+    .tag { position: absolute; left: 0; right: 0; top: 1100px; text-align: center; }
+    .tag span { display: inline-block; font-family: "Inter Tight", sans-serif; font-weight: 700; font-size: 30px;
+      color: #fff; background: rgba(11,9,16,.72); padding: 10px 20px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18); letter-spacing: .02em; }
+
+    .pcard { position: absolute; left: 70px; top: 300px; width: 940px; border-radius: 34px; padding: 52px 52px 56px;
+      background: rgba(18,14,26,.94); border: 4px solid var(--accent, #ee4bff);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 30px 120px rgba(0,0,0,.6), 0 0 80px rgba(238,75,255,.22); }
+    .pgrid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 54px 54px; }
+    .plabel { font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 34px; color: var(--accent, #ee4bff); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 26px; }
+    .ptext { font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 41px; line-height: 1.42; color: #f2eef8; }
+
+  </style>
+  <div id="root" data-composition-id="details" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div id="details-s1" class="clip shot" data-start="1.92" data-duration="1.4" data-track-index="1" style="z-index:1">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s1-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="chip" id="details-s1-chip"><span>uneven skin texture</span></div>
+    </div>
+    <div id="details-s2" class="clip shot" data-start="3.32" data-duration="1.1" data-track-index="1" style="z-index:2">
+      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s2-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
+      <div class="chip" id="details-s2-chip"><span>visible pores</span></div>
+    </div>
+    <div id="details-s3" class="clip shot" data-start="4.42" data-duration="0.98" data-track-index="1" style="z-index:3">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s3-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="chip" id="details-s3-chip"><span>age spots</span></div>
+    </div>
+    <div id="details-s4" class="clip shot" data-start="5.4" data-duration="1.08" data-track-index="1" style="z-index:4">
+      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s4-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
+      <div class="chip" id="details-s4-chip"><span>a few small blemishes</span></div>
+    </div>
+    <div id="details-s5" class="clip shot" data-start="6.48" data-duration="1.16" data-track-index="1" style="z-index:5">
+      <img class="bg" src="assets/img/oltozo_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s5-cam" style="left:0.0px;top:-29.9px;width:760.0px;height:1019.7px"><img src="assets/img/oltozo.png" alt="" /></div></div>
+      <div class="chip" id="details-s5-chip"><span>subtle redness on the cheeks</span></div>
+    </div>
+    <div id="details-s6" class="clip shot" data-start="7.64" data-duration="1.04" data-track-index="1" style="z-index:6">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s6-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="chip" id="details-s6-chip"><span>fine lines</span></div>
+    </div>
+    <div id="details-s7" class="clip shot" data-start="8.68" data-duration="1.88" data-track-index="1" style="z-index:7">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s7-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="chip" id="details-s7-chip"><span>faint discoloration</span></div>
+    </div>
+    <div id="details-s8" class="clip shot" data-start="10.56" data-duration="1.44" data-track-index="1" style="z-index:8">
+      <img class="bg" src="assets/img/kovacs_bg.jpg" alt="" />
+      <div class="card"><div class="cam" id="details-s8-cam" style="left:0.0px;top:-11.6px;width:760.0px;height:983.1px"><img src="assets/img/kovacs.png" alt="" /></div></div>
+      <div class="chip" id="details-s8-chip"><span>real facial hair</span></div>
+    </div>
+    <div id="details-doc" class="clip shot" data-start="0" data-duration="1.92" data-track-index="1" style="z-index:30">
+      <div class="pgrid"></div>
+      <div class="pcard" id="details-pcard">
+        <div class="plabel">3. Reality layer — valóság réteg</div>
+        <div class="ptext">uneven skin tone and texture, visible pores across the nose and cheeks, a few small blemishes, subtle redness on the cheeks, fine lines, faint discoloration, real facial hair catching the light</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#details-s1-cam", { transformOrigin: "0 0", scale: 1.35, x: -266.0, y: 11.6 }, { scale: 1.418, x: -317.3, y: -10.1, duration: 1.4, ease: "none" }, 1.92);
+    tl.fromTo("#details-s1-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 1.98);
+    tl.fromTo("#details-s2-cam", { transformOrigin: "0 0", scale: 2.0, x: -471.2, y: -102.0 }, { scale: 2.1, x: -513.8, y: -132.6, duration: 1.1, ease: "none" }, 3.32);
+    tl.fromTo("#details-s2 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 3.32);
+    tl.fromTo("#details-s2-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 3.38);
+    tl.fromTo("#details-s3-cam", { transformOrigin: "0 0", scale: 1.45, x: -342.0, y: 11.6 }, { scale: 1.522, x: -397.1, y: 11.6, duration: 0.98, ease: "none" }, 4.42);
+    tl.fromTo("#details-s3 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 4.42);
+    tl.fromTo("#details-s3-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 4.48);
+    tl.fromTo("#details-s4-cam", { transformOrigin: "0 0", scale: 1.6, x: -325.3, y: -28.6 }, { scale: 1.68, x: -360.5, y: -55.5, duration: 1.08, ease: "none" }, 5.4);
+    tl.fromTo("#details-s4 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 5.4);
+    tl.fromTo("#details-s4-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 5.46);
+    tl.fromTo("#details-s5-cam", { transformOrigin: "0 0", scale: 1.8, x: -345.0, y: -95.9 }, { scale: 1.89, x: -381.3, y: -126.1, duration: 1.16, ease: "none" }, 6.48);
+    tl.fromTo("#details-s5 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 6.48);
+    tl.fromTo("#details-s5-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 6.54);
+    tl.fromTo("#details-s6-cam", { transformOrigin: "0 0", scale: 1.5, x: -380.0, y: 11.6 }, { scale: 1.575, x: -434.0, y: 11.6, duration: 1.04, ease: "none" }, 7.64);
+    tl.fromTo("#details-s6 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 7.64);
+    tl.fromTo("#details-s6-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 7.7);
+    tl.fromTo("#details-s7-cam", { transformOrigin: "0 0", scale: 1.3, x: -228.0, y: -121.9 }, { scale: 1.365, x: -263.2, y: -152.6, duration: 1.88, ease: "none" }, 8.68);
+    tl.fromTo("#details-s7 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 8.68);
+    tl.fromTo("#details-s7-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 8.74);
+    tl.fromTo("#details-s8-cam", { transformOrigin: "0 0", scale: 1.4, x: -304.0, y: -86.5 }, { scale: 1.47, x: -357.2, y: -115.4, duration: 1.44, ease: "none" }, 10.56);
+    tl.fromTo("#details-s8 .card", { scale: 1.06 }, { scale: 1, duration: 0.22, ease: "expo.out" }, 10.56);
+    tl.fromTo("#details-s8-chip span", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.2, ease: "expo.out" }, 10.62);
+    tl.fromTo("#details-pcard", { opacity: 0, scale: 0.94, filter: "blur(10px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 0.02);
+    window.__timelines["details"] = tl;
+  </script>
+</template>

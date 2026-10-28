@@ -1,0 +1,51 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; }
+    .pgrid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 54px 54px; }
+    .glow { position: absolute; left: -200px; top: 300px; width: 1480px; height: 1200px; background: radial-gradient(closest-side, rgba(238,75,255,.16), rgba(238,75,255,0)); }
+    .pcard { position: absolute; left: 70px; width: 940px; border-radius: 34px; padding: 52px 52px 56px;
+      background: rgba(18,14,26,.94); border: 4px solid var(--accent, #ee4bff);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 30px 120px rgba(0,0,0,.6), 0 0 80px rgba(238,75,255,.22); }
+    .plabel { font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 34px; color: var(--accent, #ee4bff); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 26px; }
+    .ptext { font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 41px; line-height: 1.42; color: #f2eef8; }
+    .hl { background-image: linear-gradient(var(--accent, #ee4bff), var(--accent, #ee4bff)); background-repeat: no-repeat; background-size: 0% 100%;
+      -webkit-box-decoration-break: clone; box-decoration-break: clone; border-radius: 6px; padding: 0 4px; }
+    .panel { position: absolute; left: 40px; top: 290px; width: 1000px; height: 880px; border-radius: 30px; overflow: hidden; background: #111;
+      box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 40px 140px rgba(0,0,0,.7); }
+    .pcam { position: absolute; left: 0; top: 0; }
+    .chip { position: absolute; top: 190px; width: 290px; height: 72px; border-radius: 999px; background: rgba(24,20,32,.92);
+      border: 1px solid rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; gap: 14px;
+      font-family: "Inter Tight", sans-serif; font-weight: 700; font-size: 32px; color: #fff; }
+    .chip img { width: 44px; height: 44px; border-radius: 10px; }
+    .ring { position: absolute; border: 5px solid var(--accent, #ee4bff); border-radius: 14px; box-shadow: 0 0 30px rgba(238,75,255,.6); }
+
+  </style>
+  <div id="root" data-composition-id="step1" data-width="1080" data-height="1920">
+    <div class="pgrid"></div><div class="glow"></div>
+    <div class="panel" id="step1-panel">
+      <div class="pcam" id="step1-cam" style="width:1882px;height:996px">
+        <video id="step1-v" class="clip" src="assets/video/magnific.mp4" muted playsinline data-start="0" data-duration="8.68" data-media-start="1.6" data-track-index="1" style="position:absolute;left:0;top:0;width:1882px;height:996px"></video>
+        <div class="ring" id="step1-ring" style="left:130px;top:139px;width:372px;height:57px;opacity:0"></div>
+      </div>
+    </div>
+    <div class="chip" id="step1-c1" style="left:85px;opacity:0"><img src="assets/img/magnific-logo.png" alt="" />Magnific</div>
+    <div class="chip" id="step1-c2" style="left:395px;opacity:0">Higgsfield</div>
+    <div class="chip" id="step1-c3" style="left:705px;opacity:0">Leonardo AI</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#step1-panel", { x: 1100, filter: "blur(12px)" }, { x: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out" }, 0);
+    tl.fromTo("#step1-cam", { transformOrigin: "0 0", scale: 1, x: 0, y: 0 }, { scale: 1.7, x: -39, y: 0, duration: 0.6, ease: "power3.inOut" }, 1.2);
+    tl.fromTo("#step1-ring", { opacity: 0, scale: 1.15 }, { opacity: 1, scale: 1, duration: 0.25, ease: "expo.out" }, 1.6);
+    tl.to("#step1-ring", { opacity: 0, duration: 0.15 }, 2.85);
+    tl.to("#step1-cam", { scale: 1, x: 0, y: 0, duration: 0.6, ease: "power3.inOut" }, 2.8);
+    tl.fromTo("#step1-c1", { opacity: 0, x: 310, scale: 0.8 }, { opacity: 1, x: 310, scale: 1, duration: 0.25, ease: "back.out(1.8)" }, 2.88);
+    tl.to("#step1-cam", { scale: 1.25, x: -475, y: -175, duration: 0.8, ease: "power2.inOut" }, 4.0);
+    tl.to("#step1-c1", { x: 0, duration: 0.4, ease: "power3.inOut" }, 6.3);
+    tl.fromTo("#step1-c2", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.8)" }, 6.52);
+    tl.fromTo("#step1-c3", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(1.8)" }, 7.46);
+    window.__timelines["step1"] = tl;
+  </script>
+</template>
