@@ -1,0 +1,1014 @@
+{
+ "beats": [
+  {
+   "id": "q",
+   "start": 0.0,
+   "end": 2.47
+  },
+  {
+   "id": "four",
+   "start": 2.59,
+   "end": 7.26
+  },
+  {
+   "id": "today",
+   "start": 7.38,
+   "end": 10.18
+  },
+  {
+   "id": "two",
+   "start": 10.3,
+   "end": 14.9
+  },
+  {
+   "id": "sites",
+   "start": 15.02,
+   "end": 21.26
+  },
+  {
+   "id": "arena",
+   "start": 21.38,
+   "end": 22.92
+  },
+  {
+   "id": "board",
+   "start": 23.04,
+   "end": 30.6
+  },
+  {
+   "id": "opus",
+   "start": 30.72,
+   "end": 33.96
+  },
+  {
+   "id": "points",
+   "start": 34.08,
+   "end": 41.1
+  },
+  {
+   "id": "warn",
+   "start": 41.22,
+   "end": 50.82
+  },
+  {
+   "id": "aa",
+   "start": 50.94,
+   "end": 56.98
+  },
+  {
+   "id": "end",
+   "start": 57.1,
+   "end": 62.0
+  }
+ ],
+ "words": [
+  {
+   "text": "Felmerülhet",
+   "start": 0.02,
+   "end": 0.66,
+   "beat": "q"
+  },
+  {
+   "text": "benned",
+   "start": 0.66,
+   "end": 0.88,
+   "beat": "q"
+  },
+  {
+   "text": "a",
+   "start": 0.88,
+   "end": 1.0,
+   "beat": "q"
+  },
+  {
+   "text": "kérdés,",
+   "start": 1.0,
+   "end": 1.3,
+   "beat": "q"
+  },
+  {
+   "text": "hogy",
+   "start": 1.32,
+   "end": 1.46,
+   "beat": "q"
+  },
+  {
+   "text": "oké,",
+   "start": 1.46,
+   "end": 1.66,
+   "beat": "q"
+  },
+  {
+   "text": "de",
+   "start": 1.7,
+   "end": 1.72,
+   "beat": "q"
+  },
+  {
+   "text": "melyiket",
+   "start": 1.72,
+   "end": 2.04,
+   "beat": "q"
+  },
+  {
+   "text": "válaszd?",
+   "start": 2.04,
+   "end": 2.42,
+   "beat": "q"
+  },
+  {
+   "text": "A",
+   "start": 2.62,
+   "end": 2.8,
+   "beat": "four"
+  },
+  {
+   "text": "legsűrűbben",
+   "start": 2.8,
+   "end": 3.32,
+   "beat": "four"
+  },
+  {
+   "text": "használtak",
+   "start": 3.32,
+   "end": 3.84,
+   "beat": "four"
+  },
+  {
+   "text": "ezek",
+   "start": 3.84,
+   "end": 3.96,
+   "beat": "four"
+  },
+  {
+   "text": "a",
+   "start": 3.96,
+   "end": 4.1,
+   "beat": "four"
+  },
+  {
+   "text": "ChatGPT,",
+   "start": 4.1,
+   "end": 4.64,
+   "beat": "four"
+  },
+  {
+   "text": "Claude,",
+   "start": 4.84,
+   "end": 5.0,
+   "beat": "four"
+  },
+  {
+   "text": "a",
+   "start": 5.26,
+   "end": 5.42,
+   "beat": "four"
+  },
+  {
+   "text": "Gemini",
+   "start": 5.42,
+   "end": 5.8,
+   "beat": "four"
+  },
+  {
+   "text": "és",
+   "start": 5.8,
+   "end": 6.32,
+   "beat": "four"
+  },
+  {
+   "text": "a",
+   "start": 6.32,
+   "end": 6.4,
+   "beat": "four"
+  },
+  {
+   "text": "Perplexity,",
+   "start": 6.4,
+   "end": 7.08,
+   "beat": "four"
+  },
+  {
+   "text": "Ami",
+   "start": 7.4,
+   "end": 7.54,
+   "beat": "today"
+  },
+  {
+   "text": "ma",
+   "start": 7.54,
+   "end": 7.64,
+   "beat": "today"
+  },
+  {
+   "text": "a",
+   "start": 7.64,
+   "end": 7.72,
+   "beat": "today"
+  },
+  {
+   "text": "legjobb",
+   "start": 7.72,
+   "end": 7.96,
+   "beat": "today"
+  },
+  {
+   "text": "egy",
+   "start": 7.96,
+   "end": 8.08,
+   "beat": "today"
+  },
+  {
+   "text": "hónap",
+   "start": 8.08,
+   "end": 8.28,
+   "beat": "today"
+  },
+  {
+   "text": "múlva,",
+   "start": 8.28,
+   "end": 8.5,
+   "beat": "today"
+  },
+  {
+   "text": "mert",
+   "start": 8.54,
+   "end": 8.58,
+   "beat": "today"
+  },
+  {
+   "text": "könnyen",
+   "start": 8.58,
+   "end": 8.88,
+   "beat": "today"
+  },
+  {
+   "text": "lehet,",
+   "start": 8.88,
+   "end": 9.08,
+   "beat": "today"
+  },
+  {
+   "text": "hogy",
+   "start": 9.14,
+   "end": 9.18,
+   "beat": "today"
+  },
+  {
+   "text": "csak",
+   "start": 9.18,
+   "end": 9.32,
+   "beat": "today"
+  },
+  {
+   "text": "a",
+   "start": 9.32,
+   "end": 9.42,
+   "beat": "today"
+  },
+  {
+   "text": "második",
+   "start": 9.42,
+   "end": 9.88,
+   "beat": "today"
+  },
+  {
+   "text": "lesz,",
+   "start": 9.88,
+   "end": 10.18,
+   "beat": "today"
+  },
+  {
+   "text": "Legalább",
+   "start": 10.36,
+   "end": 10.78,
+   "beat": "two"
+  },
+  {
+   "text": "kettő",
+   "start": 10.78,
+   "end": 11.38,
+   "beat": "two"
+  },
+  {
+   "text": "ilyen",
+   "start": 11.38,
+   "end": 12.0,
+   "beat": "two"
+  },
+  {
+   "text": "nagynyelvi",
+   "start": 12.0,
+   "end": 12.46,
+   "beat": "two"
+  },
+  {
+   "text": "modellhez",
+   "start": 12.46,
+   "end": 13.04,
+   "beat": "two"
+  },
+  {
+   "text": "legyen",
+   "start": 13.04,
+   "end": 13.42,
+   "beat": "two"
+  },
+  {
+   "text": "céges",
+   "start": 13.42,
+   "end": 13.82,
+   "beat": "two"
+  },
+  {
+   "text": "előfizetésed.",
+   "start": 13.82,
+   "end": 14.82,
+   "beat": "two"
+  },
+  {
+   "text": "Van",
+   "start": 15.09,
+   "end": 15.61,
+   "beat": "sites"
+  },
+  {
+   "text": "két",
+   "start": 15.61,
+   "end": 16.09,
+   "beat": "sites"
+  },
+  {
+   "text": "ajánlott",
+   "start": 16.09,
+   "end": 17.49,
+   "beat": "sites"
+  },
+  {
+   "text": "oldal,",
+   "start": 17.49,
+   "end": 18.07,
+   "beat": "sites"
+  },
+  {
+   "text": "hogyha",
+   "start": 18.26,
+   "end": 18.42,
+   "beat": "sites"
+  },
+  {
+   "text": "egy",
+   "start": 18.42,
+   "end": 18.48,
+   "beat": "sites"
+  },
+  {
+   "text": "kicsit",
+   "start": 18.48,
+   "end": 18.76,
+   "beat": "sites"
+  },
+  {
+   "text": "jobban",
+   "start": 18.76,
+   "end": 19.0,
+   "beat": "sites"
+  },
+  {
+   "text": "belemerülnél,",
+   "start": 19.0,
+   "end": 19.58,
+   "beat": "sites"
+  },
+  {
+   "text": "hogy",
+   "start": 19.64,
+   "end": 19.72,
+   "beat": "sites"
+  },
+  {
+   "text": "éppen",
+   "start": 19.72,
+   "end": 20.0,
+   "beat": "sites"
+  },
+  {
+   "text": "melyiket",
+   "start": 20.0,
+   "end": 20.54,
+   "beat": "sites"
+  },
+  {
+   "text": "használd,",
+   "start": 20.54,
+   "end": 21.26,
+   "beat": "sites"
+  },
+  {
+   "text": "Az",
+   "start": 21.44,
+   "end": 21.56,
+   "beat": "arena"
+  },
+  {
+   "text": "egyik",
+   "start": 21.56,
+   "end": 21.78,
+   "beat": "arena"
+  },
+  {
+   "text": "az",
+   "start": 21.78,
+   "end": 21.9,
+   "beat": "arena"
+  },
+  {
+   "text": "Arena",
+   "start": 21.9,
+   "end": 22.22,
+   "beat": "arena"
+  },
+  {
+   "text": "oldala,",
+   "start": 22.22,
+   "end": 22.88,
+   "beat": "arena"
+  },
+  {
+   "text": "Egy",
+   "start": 23.08,
+   "end": 23.26,
+   "beat": "board"
+  },
+  {
+   "text": "ilyen",
+   "start": 23.26,
+   "end": 23.62,
+   "beat": "board"
+  },
+  {
+   "text": "leaderboard,",
+   "start": 23.62,
+   "end": 24.26,
+   "beat": "board"
+  },
+  {
+   "text": "ahol",
+   "start": 24.36,
+   "end": 24.52,
+   "beat": "board"
+  },
+  {
+   "text": "meg",
+   "start": 24.52,
+   "end": 24.68,
+   "beat": "board"
+  },
+  {
+   "text": "tudod",
+   "start": 24.68,
+   "end": 24.92,
+   "beat": "board"
+  },
+  {
+   "text": "nézni,",
+   "start": 24.92,
+   "end": 25.34,
+   "beat": "board"
+  },
+  {
+   "text": "hogy",
+   "start": 25.5,
+   "end": 25.7,
+   "beat": "board"
+  },
+  {
+   "text": "különböző",
+   "start": 25.7,
+   "end": 26.18,
+   "beat": "board"
+  },
+  {
+   "text": "feladatokra",
+   "start": 26.18,
+   "end": 26.88,
+   "beat": "board"
+  },
+  {
+   "text": "éppen",
+   "start": 26.88,
+   "end": 27.7,
+   "beat": "board"
+  },
+  {
+   "text": "melyik",
+   "start": 27.7,
+   "end": 28.16,
+   "beat": "board"
+  },
+  {
+   "text": "nagy",
+   "start": 28.16,
+   "end": 28.42,
+   "beat": "board"
+  },
+  {
+   "text": "nyelvi",
+   "start": 28.42,
+   "end": 28.7,
+   "beat": "board"
+  },
+  {
+   "text": "modell,",
+   "start": 28.7,
+   "end": 29.16,
+   "beat": "board"
+  },
+  {
+   "text": "hogyan",
+   "start": 29.26,
+   "end": 29.76,
+   "beat": "board"
+  },
+  {
+   "text": "van",
+   "start": 29.76,
+   "end": 29.92,
+   "beat": "board"
+  },
+  {
+   "text": "rangsorolódva,",
+   "start": 29.92,
+   "end": 30.6,
+   "beat": "board"
+  },
+  {
+   "text": "Mondjuk",
+   "start": 30.74,
+   "end": 30.84,
+   "beat": "opus"
+  },
+  {
+   "text": "szöveggenerálásban",
+   "start": 30.84,
+   "end": 31.66,
+   "beat": "opus"
+  },
+  {
+   "text": "Opus",
+   "start": 31.8,
+   "end": 32.06,
+   "beat": "opus"
+  },
+  {
+   "text": "4.6-ot",
+   "start": 32.06,
+   "end": 32.66,
+   "beat": "opus"
+  },
+  {
+   "text": "tartják",
+   "start": 32.66,
+   "end": 33.06,
+   "beat": "opus"
+  },
+  {
+   "text": "most",
+   "start": 33.06,
+   "end": 33.24,
+   "beat": "opus"
+  },
+  {
+   "text": "a",
+   "start": 33.24,
+   "end": 33.38,
+   "beat": "opus"
+  },
+  {
+   "text": "legjobbnak.",
+   "start": 33.38,
+   "end": 33.88,
+   "beat": "opus"
+  },
+  {
+   "text": "1504",
+   "start": 34.14,
+   "end": 34.82,
+   "beat": "points"
+  },
+  {
+   "text": "és",
+   "start": 34.82,
+   "end": 35.02,
+   "beat": "points"
+  },
+  {
+   "text": "1500",
+   "start": 35.02,
+   "end": 35.4,
+   "beat": "points"
+  },
+  {
+   "text": "pont,",
+   "start": 35.4,
+   "end": 36.3,
+   "beat": "points"
+  },
+  {
+   "text": "tehát",
+   "start": 36.54,
+   "end": 36.78,
+   "beat": "points"
+  },
+  {
+   "text": "mindössze",
+   "start": 36.78,
+   "end": 37.08,
+   "beat": "points"
+  },
+  {
+   "text": "négy",
+   "start": 37.08,
+   "end": 37.4,
+   "beat": "points"
+  },
+  {
+   "text": "pontnyi",
+   "start": 37.4,
+   "end": 37.78,
+   "beat": "points"
+  },
+  {
+   "text": "különbség",
+   "start": 37.78,
+   "end": 38.36,
+   "beat": "points"
+  },
+  {
+   "text": "van,",
+   "start": 38.36,
+   "end": 38.58,
+   "beat": "points"
+  },
+  {
+   "text": "mondjuk",
+   "start": 38.74,
+   "end": 39.18,
+   "beat": "points"
+  },
+  {
+   "text": "egy",
+   "start": 39.18,
+   "end": 39.28,
+   "beat": "points"
+  },
+  {
+   "text": "Claude",
+   "start": 39.28,
+   "end": 39.76,
+   "beat": "points"
+  },
+  {
+   "text": "meg",
+   "start": 39.76,
+   "end": 39.98,
+   "beat": "points"
+  },
+  {
+   "text": "a",
+   "start": 39.98,
+   "end": 40.26,
+   "beat": "points"
+  },
+  {
+   "text": "Gemini",
+   "start": 40.26,
+   "end": 40.62,
+   "beat": "points"
+  },
+  {
+   "text": "között.",
+   "start": 40.62,
+   "end": 41.02,
+   "beat": "points"
+  },
+  {
+   "text": "Szeretnélek",
+   "start": 41.24,
+   "end": 42.68,
+   "beat": "warn"
+  },
+  {
+   "text": "attól",
+   "start": 42.68,
+   "end": 42.92,
+   "beat": "warn"
+  },
+  {
+   "text": "óva inteni,",
+   "start": 42.92,
+   "end": 43.42,
+   "beat": "warn"
+  },
+  {
+   "text": "hogy",
+   "start": 43.5,
+   "end": 43.6,
+   "beat": "warn"
+  },
+  {
+   "text": "ide",
+   "start": 43.6,
+   "end": 43.76,
+   "beat": "warn"
+  },
+  {
+   "text": "feljössz,",
+   "start": 43.76,
+   "end": 44.16,
+   "beat": "warn"
+  },
+  {
+   "text": "látsz",
+   "start": 44.24,
+   "end": 44.44,
+   "beat": "warn"
+  },
+  {
+   "text": "valamit,",
+   "start": 44.44,
+   "end": 44.76,
+   "beat": "warn"
+  },
+  {
+   "text": "szöveggenerálásra",
+   "start": 44.82,
+   "end": 45.56,
+   "beat": "warn"
+  },
+  {
+   "text": "jobb",
+   "start": 45.56,
+   "end": 45.76,
+   "beat": "warn"
+  },
+  {
+   "text": "a",
+   "start": 45.76,
+   "end": 45.84,
+   "beat": "warn"
+  },
+  {
+   "text": "Claude,",
+   "start": 45.84,
+   "end": 46.02,
+   "beat": "warn"
+  },
+  {
+   "text": "és",
+   "start": 46.32,
+   "end": 46.58,
+   "beat": "warn"
+  },
+  {
+   "text": "akkor",
+   "start": 46.58,
+   "end": 46.72,
+   "beat": "warn"
+  },
+  {
+   "text": "gyorsan",
+   "start": 46.72,
+   "end": 47.1,
+   "beat": "warn"
+  },
+  {
+   "text": "lemondod",
+   "start": 47.1,
+   "end": 47.4,
+   "beat": "warn"
+  },
+  {
+   "text": "a",
+   "start": 47.4,
+   "end": 47.48,
+   "beat": "warn"
+  },
+  {
+   "text": "jelenlegi",
+   "start": 47.48,
+   "end": 47.86,
+   "beat": "warn"
+  },
+  {
+   "text": "előfizetést,",
+   "start": 47.86,
+   "end": 48.38,
+   "beat": "warn"
+  },
+  {
+   "text": "és",
+   "start": 48.42,
+   "end": 48.54,
+   "beat": "warn"
+  },
+  {
+   "text": "akkor",
+   "start": 48.54,
+   "end": 48.68,
+   "beat": "warn"
+  },
+  {
+   "text": "előfizetsz",
+   "start": 48.68,
+   "end": 49.18,
+   "beat": "warn"
+  },
+  {
+   "text": "a",
+   "start": 49.18,
+   "end": 49.26,
+   "beat": "warn"
+  },
+  {
+   "text": "Claude-ra.",
+   "start": 49.26,
+   "end": 49.6,
+   "beat": "warn"
+  },
+  {
+   "text": "Ki",
+   "start": 49.96,
+   "end": 50.1,
+   "beat": "warn"
+  },
+  {
+   "text": "lehet",
+   "start": 50.1,
+   "end": 50.3,
+   "beat": "warn"
+  },
+  {
+   "text": "próbálni,",
+   "start": 50.3,
+   "end": 50.78,
+   "beat": "warn"
+  },
+  {
+   "text": "Akkor",
+   "start": 50.96,
+   "end": 51.22,
+   "beat": "aa"
+  },
+  {
+   "text": "a",
+   "start": 51.22,
+   "end": 51.3,
+   "beat": "aa"
+  },
+  {
+   "text": "másik,",
+   "start": 51.3,
+   "end": 51.82,
+   "beat": "aa"
+  },
+  {
+   "text": "artificialanalysis.ai,",
+   "start": 51.88,
+   "end": 53.2,
+   "beat": "aa"
+  },
+  {
+   "text": "meg",
+   "start": 53.26,
+   "end": 53.4,
+   "beat": "aa"
+  },
+  {
+   "text": "tudod",
+   "start": 53.4,
+   "end": 53.7,
+   "beat": "aa"
+  },
+  {
+   "text": "nézni",
+   "start": 53.7,
+   "end": 54.14,
+   "beat": "aa"
+  },
+  {
+   "text": "gyorsaság",
+   "start": 54.14,
+   "end": 54.8,
+   "beat": "aa"
+  },
+  {
+   "text": "alapján,",
+   "start": 54.8,
+   "end": 55.38,
+   "beat": "aa"
+  },
+  {
+   "text": "árazás",
+   "start": 55.46,
+   "end": 56.38,
+   "beat": "aa"
+  },
+  {
+   "text": "alapján,",
+   "start": 56.38,
+   "end": 56.94,
+   "beat": "aa"
+  },
+  {
+   "text": "És",
+   "start": 57.12,
+   "end": 57.2,
+   "beat": "end"
+  },
+  {
+   "text": "nagyon",
+   "start": 57.2,
+   "end": 57.32,
+   "beat": "end"
+  },
+  {
+   "text": "fontos,",
+   "start": 57.32,
+   "end": 57.74,
+   "beat": "end"
+  },
+  {
+   "text": "hogy",
+   "start": 57.8,
+   "end": 57.88,
+   "beat": "end"
+  },
+  {
+   "text": "ne",
+   "start": 57.88,
+   "end": 58.04,
+   "beat": "end"
+  },
+  {
+   "text": "kötődj",
+   "start": 58.04,
+   "end": 58.4,
+   "beat": "end"
+  },
+  {
+   "text": "egy",
+   "start": 58.4,
+   "end": 58.66,
+   "beat": "end"
+  },
+  {
+   "text": "modellhez",
+   "start": 58.66,
+   "end": 59.22,
+   "beat": "end"
+  },
+  {
+   "text": "sem",
+   "start": 59.22,
+   "end": 59.4,
+   "beat": "end"
+  },
+  {
+   "text": "érzelmileg,",
+   "start": 59.4,
+   "end": 59.64,
+   "beat": "end"
+  },
+  {
+   "text": "folyamatosan",
+   "start": 60.22,
+   "end": 60.7,
+   "beat": "end"
+  },
+  {
+   "text": "tesztelj",
+   "start": 60.7,
+   "end": 61.04,
+   "beat": "end"
+  },
+  {
+   "text": "más",
+   "start": 61.04,
+   "end": 61.26,
+   "beat": "end"
+  },
+  {
+   "text": "modelleket",
+   "start": 61.26,
+   "end": 61.78,
+   "beat": "end"
+  },
+  {
+   "text": "is,",
+   "start": 61.78,
+   "end": 61.92,
+   "beat": "end"
+  }
+ ]
+}

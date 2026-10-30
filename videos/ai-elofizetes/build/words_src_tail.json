@@ -1,0 +1,8052 @@
+[
+{
+"text": "hogy",
+"start": 0.0,
+"end": 0.76
+},
+{
+"text": "nagyon",
+"start": 0.76,
+"end": 1.66
+},
+{
+"text": "jól",
+"start": 1.66,
+"end": 2.1
+},
+{
+"text": "leírd",
+"start": 2.1,
+"end": 2.48
+},
+{
+"text": "azt",
+"start": 2.48,
+"end": 2.62
+},
+{
+"text": "a",
+"start": 2.62,
+"end": 2.78
+},
+{
+"text": "kontextus,",
+"start": 2.78,
+"end": 3.38
+},
+{
+"text": "ami",
+"start": 3.52,
+"end": 3.62
+},
+{
+"text": "alapján",
+"start": 3.62,
+"end": 4.1
+},
+{
+"text": "te",
+"start": 4.1,
+"end": 4.32
+},
+{
+"text": "kikeresed",
+"start": 4.32,
+"end": 5.12
+},
+{
+"text": "a",
+"start": 5.12,
+"end": 5.22
+},
+{
+"text": "saját",
+"start": 5.22,
+"end": 5.6
+},
+{
+"text": "célszer",
+"start": 5.6,
+"end": 6.42
+},
+{
+"text": "számodat,",
+"start": 6.42,
+"end": 6.86
+},
+{
+"text": "vagy",
+"start": 6.9,
+"end": 6.98
+},
+{
+"text": "a",
+"start": 6.98,
+"end": 7.06
+},
+{
+"text": "munkatársak",
+"start": 7.06,
+"end": 7.6
+},
+{
+"text": "ezeket",
+"start": 7.6,
+"end": 8.0
+},
+{
+"text": "kikeresik.",
+"start": 8.0,
+"end": 9.26
+},
+{
+"text": "Úgyhogy",
+"start": 9.62,
+"end": 10.04
+},
+{
+"text": "ez",
+"start": 10.04,
+"end": 10.18
+},
+{
+"text": "is",
+"start": 10.18,
+"end": 10.3
+},
+{
+"text": "általában",
+"start": 10.3,
+"end": 10.74
+},
+{
+"text": "beszélgetés,",
+"start": 10.74,
+"end": 11.5
+},
+{
+"text": "mi",
+"start": 11.68,
+"end": 11.84
+},
+{
+"text": "alapvetően",
+"start": 11.84,
+"end": 12.48
+},
+{
+"text": "annak",
+"start": 12.48,
+"end": 12.74
+},
+{
+"text": "a",
+"start": 12.74,
+"end": 12.82
+},
+{
+"text": "hívei",
+"start": 12.82,
+"end": 13.2
+},
+{
+"text": "vagyunk",
+"start": 13.2,
+"end": 13.5
+},
+{
+"text": "itt",
+"start": 13.5,
+"end": 13.62
+},
+{
+"text": "az",
+"start": 13.62,
+"end": 13.76
+},
+{
+"text": "Amazing",
+"start": 13.76,
+"end": 14.04
+},
+{
+"text": "AI",
+"start": 14.04,
+"end": 14.36
+},
+{
+"text": "-nál,",
+"start": 14.36,
+"end": 14.62
+},
+{
+"text": "hogy",
+"start": 14.68,
+"end": 14.84
+},
+{
+"text": "nem",
+"start": 14.84,
+"end": 15.32
+},
+{
+"text": "egy",
+"start": 15.32,
+"end": 15.52
+},
+{
+"text": "promptból",
+"start": 15.52,
+"end": 16.06
+},
+{
+"text": "próbálunk",
+"start": 16.06,
+"end": 16.66
+},
+{
+"text": "meg",
+"start": 16.66,
+"end": 16.8
+},
+{
+"text": "megoldani",
+"start": 16.8,
+"end": 17.28
+},
+{
+"text": "valamit,",
+"start": 17.28,
+"end": 17.68
+},
+{
+"text": "mert",
+"start": 17.98,
+"end": 18.16
+},
+{
+"text": "legtöbbször",
+"start": 18.16,
+"end": 18.66
+},
+{
+"text": "nem",
+"start": 18.66,
+"end": 18.8
+},
+{
+"text": "fogunk",
+"start": 18.8,
+"end": 19.14
+},
+{
+"text": "tudni",
+"start": 19.14,
+"end": 19.44
+},
+{
+"text": "mindenre",
+"start": 19.44,
+"end": 19.82
+},
+{
+"text": "gondolni",
+"start": 19.82,
+"end": 20.28
+},
+{
+"text": "előre,",
+"start": 20.28,
+"end": 20.64
+},
+{
+"text": "ezek",
+"start": 20.9,
+"end": 21.24
+},
+{
+"text": "általában",
+"start": 21.24,
+"end": 21.72
+},
+{
+"text": "azért",
+"start": 21.72,
+"end": 21.98
+},
+{
+"text": "párbeszédek,",
+"start": 21.98,
+"end": 22.72
+},
+{
+"text": "és",
+"start": 22.84,
+"end": 23.14
+},
+{
+"text": "a",
+"start": 23.14,
+"end": 23.22
+},
+{
+"text": "jó",
+"start": 23.22,
+"end": 23.34
+},
+{
+"text": "hír,",
+"start": 23.34,
+"end": 23.52
+},
+{
+"text": "hogy",
+"start": 23.58,
+"end": 23.64
+},
+{
+"text": "a",
+"start": 23.64,
+"end": 23.72
+},
+{
+"text": "legtöbb,",
+"start": 23.72,
+"end": 24.2
+},
+{
+"text": "sőt,",
+"start": 24.54,
+"end": 24.82
+},
+{
+"text": "igazából",
+"start": 24.9,
+"end": 25.22
+},
+{
+"text": "szerintem",
+"start": 25.22,
+"end": 25.46
+},
+{
+"text": "az",
+"start": 25.46,
+"end": 26.06
+},
+{
+"text": "összes",
+"start": 26.06,
+"end": 26.38
+},
+{
+"text": "ilyen",
+"start": 26.38,
+"end": 26.54
+},
+{
+"text": "nagy",
+"start": 26.54,
+"end": 26.74
+},
+{
+"text": "nyelvi",
+"start": 26.74,
+"end": 26.94
+},
+{
+"text": "modell,",
+"start": 26.94,
+"end": 27.28
+},
+{
+"text": "amiket",
+"start": 27.34,
+"end": 27.68
+},
+{
+"text": "szoktunk",
+"start": 27.68,
+"end": 28.32
+},
+{
+"text": "használni,",
+"start": 28.32,
+"end": 28.82
+},
+{
+"text": "azok",
+"start": 28.82,
+"end": 29.3
+},
+{
+"text": "a",
+"start": 29.3,
+"end": 29.36
+},
+{
+"text": "mélykutatást",
+"start": 29.36,
+"end": 30.0
+},
+{
+"text": "már",
+"start": 30.0,
+"end": 30.18
+},
+{
+"text": "tudják,",
+"start": 30.18,
+"end": 30.64
+},
+{
+"text": "a",
+"start": 30.72,
+"end": 30.78
+},
+{
+"text": "CGPT",
+"start": 30.78,
+"end": 31.3
+},
+{
+"text": "is",
+"start": 31.3,
+"end": 31.44
+},
+{
+"text": "tud",
+"start": 31.44,
+"end": 31.6
+},
+{
+"text": "mélykutatni,",
+"start": 31.6,
+"end": 32.16
+},
+{
+"text": "Perplexity",
+"start": 32.28,
+"end": 32.74
+},
+{
+"text": "főleg,",
+"start": 32.74,
+"end": 33.24
+},
+{
+"text": "a",
+"start": 33.7,
+"end": 34.2
+},
+{
+"text": "Gemini",
+"start": 34.2,
+"end": 34.58
+},
+{
+"text": "is,",
+"start": 34.58,
+"end": 34.76
+},
+{
+"text": "és",
+"start": 34.82,
+"end": 34.9
+},
+{
+"text": "így",
+"start": 34.9,
+"end": 35.04
+},
+{
+"text": "tovább,",
+"start": 35.04,
+"end": 35.34
+},
+{
+"text": "tehát",
+"start": 35.66,
+"end": 35.8
+},
+{
+"text": "ezeket",
+"start": 35.8,
+"end": 36.18
+},
+{
+"text": "nagyon",
+"start": 36.18,
+"end": 36.44
+},
+{
+"text": "könnyen",
+"start": 36.44,
+"end": 36.78
+},
+{
+"text": "ki",
+"start": 36.78,
+"end": 36.9
+},
+{
+"text": "fogod",
+"start": 36.9,
+"end": 37.18
+},
+{
+"text": "tudni",
+"start": 37.18,
+"end": 37.42
+},
+{
+"text": "kutatni",
+"start": 37.42,
+"end": 37.82
+},
+{
+"text": "magadnak,",
+"start": 37.82,
+"end": 38.2
+},
+{
+"text": "ha",
+"start": 38.22,
+"end": 38.34
+},
+{
+"text": "megadod",
+"start": 38.34,
+"end": 38.64
+},
+{
+"text": "a",
+"start": 38.64,
+"end": 38.74
+},
+{
+"text": "szempontokat.",
+"start": 38.74,
+"end": 39.44
+},
+{
+"text": "És",
+"start": 40.48,
+"end": 40.78
+},
+{
+"text": "akkor",
+"start": 40.78,
+"end": 40.9
+},
+{
+"text": "itt",
+"start": 40.9,
+"end": 41.04
+},
+{
+"text": "érkeztünk",
+"start": 41.04,
+"end": 41.48
+},
+{
+"text": "el",
+"start": 41.48,
+"end": 41.6
+},
+{
+"text": "a",
+"start": 41.6,
+"end": 41.7
+},
+{
+"text": "negyedik",
+"start": 41.7,
+"end": 42.1
+},
+{
+"text": "szintre,",
+"start": 42.1,
+"end": 42.6
+},
+{
+"text": "ami",
+"start": 42.78,
+"end": 42.9
+},
+{
+"text": "gyakorlatilag",
+"start": 42.9,
+"end": 43.42
+},
+{
+"text": "már",
+"start": 43.42,
+"end": 43.56
+},
+{
+"text": "az",
+"start": 43.56,
+"end": 43.68
+},
+{
+"text": "önvezető",
+"start": 43.68,
+"end": 44.32
+},
+{
+"text": "gyár,",
+"start": 44.32,
+"end": 44.86
+},
+{
+"text": "itt",
+"start": 45.26,
+"end": 45.5
+},
+{
+"text": "vannak",
+"start": 45.5,
+"end": 45.74
+},
+{
+"text": "az",
+"start": 45.74,
+"end": 45.86
+},
+{
+"text": "automatizációk,",
+"start": 45.86,
+"end": 46.92
+},
+{
+"text": "amik",
+"start": 47.08,
+"end": 47.26
+},
+{
+"text": "akkor",
+"start": 47.26,
+"end": 47.42
+},
+{
+"text": "is",
+"start": 47.42,
+"end": 47.54
+},
+{
+"text": "dolgoznak,",
+"start": 47.54,
+"end": 47.9
+},
+{
+"text": "amikor",
+"start": 47.98,
+"end": 48.16
+},
+{
+"text": "mindenki",
+"start": 48.16,
+"end": 48.5
+},
+{
+"text": "más",
+"start": 48.5,
+"end": 48.76
+},
+{
+"text": "alszik",
+"start": 48.76,
+"end": 49.16
+},
+{
+"text": "a",
+"start": 49.16,
+"end": 49.24
+},
+{
+"text": "csapatodban,",
+"start": 49.24,
+"end": 49.78
+},
+{
+"text": "ehhez",
+"start": 49.92,
+"end": 50.1
+},
+{
+"text": "nem",
+"start": 50.1,
+"end": 50.26
+},
+{
+"text": "kell",
+"start": 50.26,
+"end": 50.48
+},
+{
+"text": "lesz,",
+"start": 50.48,
+"end": 50.72
+},
+{
+"text": "ehhez",
+"start": 50.78,
+"end": 50.96
+},
+{
+"text": "nem",
+"start": 50.96,
+"end": 51.1
+},
+{
+"text": "kell",
+"start": 51.1,
+"end": 51.26
+},
+{
+"text": "manuális",
+"start": 51.26,
+"end": 51.84
+},
+{
+"text": "belenyúlás,",
+"start": 51.84,
+"end": 52.8
+},
+{
+"text": "vagy",
+"start": 52.96,
+"end": 53.16
+},
+{
+"text": "egy",
+"start": 53.16,
+"end": 53.34
+},
+{
+"text": "részéhez",
+"start": 53.34,
+"end": 53.78
+},
+{
+"text": "nem",
+"start": 53.78,
+"end": 53.9
+},
+{
+"text": "kell",
+"start": 53.9,
+"end": 54.06
+},
+{
+"text": "manuális",
+"start": 54.06,
+"end": 54.5
+},
+{
+"text": "belenyúlás,",
+"start": 54.5,
+"end": 55.32
+},
+{
+"text": "ezekről",
+"start": 55.4,
+"end": 55.68
+},
+{
+"text": "is",
+"start": 55.68,
+"end": 55.78
+},
+{
+"text": "fogunk",
+"start": 55.78,
+"end": 55.98
+},
+{
+"text": "majd",
+"start": 55.98,
+"end": 56.1
+},
+{
+"text": "beszélni.",
+"start": 56.1,
+"end": 56.54
+},
+{
+"text": "Ugye",
+"start": 56.54,
+"end": 57.08
+},
+{
+"text": "itt",
+"start": 57.08,
+"end": 57.16
+},
+{
+"text": "akár",
+"start": 57.16,
+"end": 57.4
+},
+{
+"text": "teljes",
+"start": 57.4,
+"end": 57.72
+},
+{
+"text": "munkafolyamatokat",
+"start": 57.72,
+"end": 58.7
+},
+{
+"text": "is",
+"start": 58.7,
+"end": 58.84
+},
+{
+"text": "építhetsz",
+"start": 58.84,
+"end": 59.56
+},
+{
+"text": "vele.",
+"start": 59.56,
+"end": 59.74
+},
+{
+"text": "Tegyük",
+"start": 60.0,
+"end": 60.4
+},
+{
+"text": "fel",
+"start": 60.4,
+"end": 60.54
+},
+{
+"text": "azt,",
+"start": 60.54,
+"end": 60.78
+},
+{
+"text": "hogy",
+"start": 60.94,
+"end": 61.16
+},
+{
+"text": "jön",
+"start": 61.16,
+"end": 61.66
+},
+{
+"text": "egy",
+"start": 61.66,
+"end": 61.8
+},
+{
+"text": "új",
+"start": 61.8,
+"end": 61.98
+},
+{
+"text": "témakör,",
+"start": 61.98,
+"end": 62.56
+},
+{
+"text": "a",
+"start": 62.94,
+"end": 63.12
+},
+{
+"text": "témakört",
+"start": 63.12,
+"end": 63.6
+},
+{
+"text": "beírod",
+"start": 63.6,
+"end": 63.94
+},
+{
+"text": "mondjuk",
+"start": 63.94,
+"end": 64.14
+},
+{
+"text": "egy",
+"start": 64.14,
+"end": 64.26
+},
+{
+"text": "Custom",
+"start": 64.26,
+"end": 64.54
+},
+{
+"text": "GPT",
+"start": 64.54,
+"end": 65.1
+},
+{
+"text": "-be,",
+"start": 65.1,
+"end": 65.26
+},
+{
+"text": "legenerál",
+"start": 65.64,
+"end": 66.1
+},
+{
+"text": "neked",
+"start": 66.1,
+"end": 66.4
+},
+{
+"text": "az",
+"start": 66.4,
+"end": 66.62
+},
+{
+"text": "adott",
+"start": 66.62,
+"end": 66.82
+},
+{
+"text": "témakörhöz",
+"start": 66.82,
+"end": 67.76
+},
+{
+"text": "social",
+"start": 67.76,
+"end": 68.64
+},
+{
+"text": "media",
+"start": 68.64,
+"end": 68.98
+},
+{
+"text": "posznak",
+"start": 68.98,
+"end": 69.48
+},
+{
+"text": "szöveget,",
+"start": 69.48,
+"end": 70.12
+},
+{
+"text": "mondjuk",
+"start": 70.28,
+"end": 70.54
+},
+{
+"text": "egy",
+"start": 70.54,
+"end": 70.68
+},
+{
+"text": "ilyen",
+"start": 70.68,
+"end": 70.86
+},
+{
+"text": "galéria",
+"start": 70.86,
+"end": 71.22
+},
+{
+"text": "típusú",
+"start": 71.22,
+"end": 71.6
+},
+{
+"text": "szöveget,",
+"start": 71.6,
+"end": 71.96
+},
+{
+"text": "az",
+"start": 72.04,
+"end": 72.12
+},
+{
+"text": "rögtön",
+"start": 72.12,
+"end": 72.42
+},
+{
+"text": "átküldi",
+"start": 72.42,
+"end": 72.88
+},
+{
+"text": "egy",
+"start": 72.88,
+"end": 73.0
+},
+{
+"text": "kanva",
+"start": 73.0,
+"end": 73.26
+},
+{
+"text": "sablomba,",
+"start": 73.26,
+"end": 73.84
+},
+{
+"text": "és",
+"start": 73.98,
+"end": 74.54
+},
+{
+"text": "amikor",
+"start": 74.54,
+"end": 74.96
+},
+{
+"text": "az,",
+"start": 74.96,
+"end": 75.54
+},
+{
+"text": "aki",
+"start": 75.58,
+"end": 75.74
+},
+{
+"text": "a",
+"start": 75.74,
+"end": 75.8
+},
+{
+"text": "social",
+"start": 75.8,
+"end": 76.0
+},
+{
+"text": "media",
+"start": 76.0,
+"end": 76.3
+},
+{
+"text": "-re",
+"start": 76.3,
+"end": 76.4
+},
+{
+"text": "ezt",
+"start": 76.4,
+"end": 76.5
+},
+{
+"text": "kiposztolja,",
+"start": 76.5,
+"end": 77.1
+},
+{
+"text": "már",
+"start": 77.42,
+"end": 77.6
+},
+{
+"text": "ott",
+"start": 77.6,
+"end": 77.76
+},
+{
+"text": "van",
+"start": 77.76,
+"end": 77.96
+},
+{
+"text": "a",
+"start": 77.96,
+"end": 78.08
+},
+{
+"text": "legyártott",
+"start": 78.08,
+"end": 78.66
+},
+{
+"text": "kanva",
+"start": 78.66,
+"end": 79.88
+},
+{
+"text": "sztori,",
+"start": 79.88,
+"end": 80.28
+},
+{
+"text": "kicsit",
+"start": 80.42,
+"end": 80.74
+},
+{
+"text": "nyilván",
+"start": 80.74,
+"end": 81.0
+},
+{
+"text": "megnézi,",
+"start": 81.0,
+"end": 81.38
+},
+{
+"text": "személyre",
+"start": 81.48,
+"end": 81.82
+},
+{
+"text": "szabja,",
+"start": 81.82,
+"end": 82.12
+},
+{
+"text": "letölti,",
+"start": 82.3,
+"end": 82.68
+},
+{
+"text": "és",
+"start": 82.72,
+"end": 82.88
+},
+{
+"text": "már",
+"start": 82.88,
+"end": 83.06
+},
+{
+"text": "mehet",
+"start": 83.06,
+"end": 83.34
+},
+{
+"text": "is",
+"start": 83.34,
+"end": 83.48
+},
+{
+"text": "ki.",
+"start": 83.48,
+"end": 83.62
+},
+{
+"text": "Vagy",
+"start": 83.62,
+"end": 84.1
+},
+{
+"text": "akár",
+"start": 84.1,
+"end": 84.28
+},
+{
+"text": "ez",
+"start": 84.28,
+"end": 84.38
+},
+{
+"text": "automatizáltan",
+"start": 84.38,
+"end": 85.02
+},
+{
+"text": "is",
+"start": 85.02,
+"end": 85.12
+},
+{
+"text": "megtörténhet,",
+"start": 85.12,
+"end": 85.74
+},
+{
+"text": "nyilván",
+"start": 85.92,
+"end": 86.2
+},
+{
+"text": "itt",
+"start": 86.2,
+"end": 86.34
+},
+{
+"text": "vannak",
+"start": 86.34,
+"end": 86.56
+},
+{
+"text": "olyan",
+"start": 86.56,
+"end": 86.72
+},
+{
+"text": "különböző",
+"start": 86.72,
+"end": 87.12
+},
+{
+"text": "szabályrendszerek,",
+"start": 87.12,
+"end": 87.78
+},
+{
+"text": "amiket",
+"start": 87.88,
+"end": 88.12
+},
+{
+"text": "majd",
+"start": 88.12,
+"end": 88.3
+},
+{
+"text": "érdemes",
+"start": 88.3,
+"end": 88.66
+},
+{
+"text": "figyelembe",
+"start": 88.66,
+"end": 89.12
+},
+{
+"text": "venned,",
+"start": 89.12,
+"end": 89.48
+},
+{
+"text": "hogy",
+"start": 90.06,
+"end": 90.32
+},
+{
+"text": "mit",
+"start": 90.32,
+"end": 90.84
+},
+{
+"text": "engedsz",
+"start": 90.84,
+"end": 91.24
+},
+{
+"text": "ki",
+"start": 91.24,
+"end": 91.3
+},
+{
+"text": "automatikusan,",
+"start": 91.3,
+"end": 92.06
+},
+{
+"text": "és",
+"start": 92.12,
+"end": 92.38
+},
+{
+"text": "mit",
+"start": 92.38,
+"end": 92.6
+},
+{
+"text": "nem.",
+"start": 92.6,
+"end": 92.76
+},
+{
+"text": "Azért",
+"start": 93.04,
+"end": 93.38
+},
+{
+"text": "az",
+"start": 93.38,
+"end": 93.54
+},
+{
+"text": "embernek",
+"start": 93.54,
+"end": 94.08
+},
+{
+"text": "általában",
+"start": 94.08,
+"end": 94.76
+},
+{
+"text": "valahol",
+"start": 94.76,
+"end": 95.28
+},
+{
+"text": "kapcsolódnia",
+"start": 95.28,
+"end": 95.98
+},
+{
+"text": "kell",
+"start": 95.98,
+"end": 96.14
+},
+{
+"text": "a",
+"start": 96.14,
+"end": 96.3
+},
+{
+"text": "folyamatban,",
+"start": 96.3,
+"end": 96.76
+},
+{
+"text": "de",
+"start": 97.16,
+"end": 97.3
+},
+{
+"text": "erről",
+"start": 97.3,
+"end": 97.48
+},
+{
+"text": "is",
+"start": 97.48,
+"end": 97.6
+},
+{
+"text": "lesz",
+"start": 97.6,
+"end": 97.82
+},
+{
+"text": "most",
+"start": 97.82,
+"end": 98.0
+},
+{
+"text": "még",
+"start": 98.0,
+"end": 98.2
+},
+{
+"text": "szó",
+"start": 98.2,
+"end": 98.44
+},
+{
+"text": "itt",
+"start": 98.44,
+"end": 98.56
+},
+{
+"text": "az",
+"start": 98.56,
+"end": 98.68
+},
+{
+"text": "első",
+"start": 98.68,
+"end": 99.06
+},
+{
+"text": "modulban.",
+"start": 99.06,
+"end": 99.7
+},
+{
+"text": "Ugye",
+"start": 101.08,
+"end": 101.26
+},
+{
+"text": "az",
+"start": 101.26,
+"end": 101.34
+},
+{
+"text": "általában",
+"start": 101.34,
+"end": 101.62
+},
+{
+"text": "rendszereket",
+"start": 101.62,
+"end": 102.16
+},
+{
+"text": "köt",
+"start": 102.16,
+"end": 102.32
+},
+{
+"text": "össze",
+"start": 102.32,
+"end": 102.56
+},
+{
+"text": "különböző",
+"start": 102.56,
+"end": 102.98
+},
+{
+"text": "szoftvereket,",
+"start": 102.98,
+"end": 103.44
+},
+{
+"text": "mondjuk",
+"start": 103.62,
+"end": 103.8
+},
+{
+"text": "e",
+"start": 103.8,
+"end": 103.98
+},
+{
+"text": "-mailt,",
+"start": 103.98,
+"end": 104.4
+},
+{
+"text": "e",
+"start": 104.4,
+"end": 105.32
+},
+{
+"text": "-mailből",
+"start": 105.32,
+"end": 105.76
+},
+{
+"text": "mondjuk",
+"start": 105.76,
+"end": 106.1
+},
+{
+"text": "valamit",
+"start": 106.1,
+"end": 106.48
+},
+{
+"text": "elemeztet",
+"start": 106.48,
+"end": 107.06
+},
+{
+"text": "az",
+"start": 107.06,
+"end": 107.46
+},
+{
+"text": "AI",
+"start": 107.46,
+"end": 107.7
+},
+{
+"text": "-jal,",
+"start": 107.7,
+"end": 108.02
+},
+{
+"text": "amiből",
+"start": 108.16,
+"end": 108.58
+},
+{
+"text": "utána",
+"start": 108.58,
+"end": 108.9
+},
+{
+"text": "mondjuk",
+"start": 108.9,
+"end": 109.22
+},
+{
+"text": "legeneráltat",
+"start": 109.22,
+"end": 109.86
+},
+{
+"text": "a",
+"start": 109.86,
+"end": 109.98
+},
+{
+"text": "CRM",
+"start": 109.98,
+"end": 110.36
+},
+{
+"text": "-ben",
+"start": 110.36,
+"end": 110.48
+},
+{
+"text": "egy",
+"start": 110.48,
+"end": 111.18
+},
+{
+"text": "feladatot,",
+"start": 111.18,
+"end": 111.8
+},
+{
+"text": "és",
+"start": 111.94,
+"end": 111.98
+},
+{
+"text": "így",
+"start": 111.98,
+"end": 112.12
+},
+{
+"text": "tovább,",
+"start": 112.12,
+"end": 112.32
+},
+{
+"text": "tehát",
+"start": 112.42,
+"end": 112.42
+},
+{
+"text": "nagyon",
+"start": 112.42,
+"end": 112.6
+},
+{
+"text": "-nagyon",
+"start": 112.6,
+"end": 112.82
+},
+{
+"text": "sok",
+"start": 112.82,
+"end": 113.06
+},
+{
+"text": "rétűek",
+"start": 113.06,
+"end": 113.48
+},
+{
+"text": "lehetnek",
+"start": 113.48,
+"end": 113.88
+},
+{
+"text": "ezek.",
+"start": 113.88,
+"end": 114.14
+},
+{
+"text": "Sőt,",
+"start": 114.8,
+"end": 115.44
+},
+{
+"text": "gyakorlatilag",
+"start": 115.52,
+"end": 115.9
+},
+{
+"text": "saját",
+"start": 115.9,
+"end": 116.28
+},
+{
+"text": "szoftvert",
+"start": 116.28,
+"end": 116.74
+},
+{
+"text": "is",
+"start": 116.74,
+"end": 116.92
+},
+{
+"text": "tudsz",
+"start": 116.92,
+"end": 117.18
+},
+{
+"text": "már",
+"start": 117.18,
+"end": 117.4
+},
+{
+"text": "különböző",
+"start": 117.4,
+"end": 117.98
+},
+{
+"text": "low",
+"start": 117.98,
+"end": 118.22
+},
+{
+"text": "-code",
+"start": 118.22,
+"end": 118.38
+},
+{
+"text": "-no",
+"start": 118.38,
+"end": 118.52
+},
+{
+"text": "-code",
+"start": 118.52,
+"end": 118.86
+},
+{
+"text": "megoldásokkal",
+"start": 119.62,
+"end": 120.26
+},
+{
+"text": "készíteni,",
+"start": 120.26,
+"end": 120.84
+},
+{
+"text": "mint",
+"start": 120.86,
+"end": 120.96
+},
+{
+"text": "például",
+"start": 120.96,
+"end": 121.24
+},
+{
+"text": "a",
+"start": 121.24,
+"end": 121.34
+},
+{
+"text": "Loveable,",
+"start": 121.34,
+"end": 121.7
+},
+{
+"text": "de",
+"start": 121.7,
+"end": 122.4
+},
+{
+"text": "a",
+"start": 122.4,
+"end": 122.5
+},
+{
+"text": "Make",
+"start": 122.5,
+"end": 122.74
+},
+{
+"text": "kapcsoló",
+"start": 122.74,
+"end": 123.32
+},
+{
+"text": "tartozik",
+"start": 123.32,
+"end": 124.12
+},
+{
+"text": "ide",
+"start": 124.12,
+"end": 124.32
+},
+{
+"text": "az",
+"start": 124.32,
+"end": 124.5
+},
+{
+"text": "Appier,",
+"start": 124.5,
+"end": 124.94
+},
+{
+"text": "Loveable",
+"start": 125.06,
+"end": 125.56
+},
+{
+"text": "és",
+"start": 125.56,
+"end": 125.84
+},
+{
+"text": "mondjuk",
+"start": 125.84,
+"end": 126.14
+},
+{
+"text": "az",
+"start": 126.14,
+"end": 126.62
+},
+{
+"text": "N8",
+"start": 126.62,
+"end": 126.92
+},
+{
+"text": "-en,",
+"start": 126.92,
+"end": 127.08
+},
+{
+"text": "ezekkel",
+"start": 127.22,
+"end": 127.78
+},
+{
+"text": "nagyon",
+"start": 127.78,
+"end": 127.98
+},
+{
+"text": "jó",
+"start": 127.98,
+"end": 128.16
+},
+{
+"text": "automatizációkat",
+"start": 128.16,
+"end": 129.3
+},
+{
+"text": "fogsz",
+"start": 129.3,
+"end": 129.58
+},
+{
+"text": "tudni",
+"start": 129.58,
+"end": 129.88
+},
+{
+"text": "építeni.",
+"start": 129.88,
+"end": 130.78
+},
+{
+"text": "És",
+"start": 131.54,
+"end": 132.02
+},
+{
+"text": "ezeknek",
+"start": 132.02,
+"end": 132.3
+},
+{
+"text": "az",
+"start": 132.3,
+"end": 132.4
+},
+{
+"text": "automatizációknak",
+"start": 132.4,
+"end": 133.4
+},
+{
+"text": "is",
+"start": 133.4,
+"end": 133.6
+},
+{
+"text": "az",
+"start": 133.6,
+"end": 134.24
+},
+{
+"text": "egyik",
+"start": 134.24,
+"end": 134.48
+},
+{
+"text": "magja",
+"start": 134.48,
+"end": 134.74
+},
+{
+"text": "általában",
+"start": 134.74,
+"end": 135.3
+},
+{
+"text": "valamilyen",
+"start": 135.3,
+"end": 135.92
+},
+{
+"text": "nagynyelvi",
+"start": 135.92,
+"end": 136.96
+},
+{
+"text": "modell.",
+"start": 136.96,
+"end": 137.42
+},
+{
+"text": "Ugye",
+"start": 137.58,
+"end": 137.98
+},
+{
+"text": "a",
+"start": 137.98,
+"end": 138.16
+},
+{
+"text": "legsűrűbben",
+"start": 138.16,
+"end": 138.68
+},
+{
+"text": "használtak",
+"start": 138.68,
+"end": 139.2
+},
+{
+"text": "ezek",
+"start": 139.2,
+"end": 139.32
+},
+{
+"text": "a",
+"start": 139.32,
+"end": 139.46
+},
+{
+"text": "Chagy,",
+"start": 139.46,
+"end": 139.74
+},
+{
+"text": "PT,",
+"start": 139.88,
+"end": 140.0
+},
+{
+"text": "Cloud,",
+"start": 140.2,
+"end": 140.36
+},
+{
+"text": "a",
+"start": 140.62,
+"end": 140.78
+},
+{
+"text": "Gemini",
+"start": 140.78,
+"end": 141.16
+},
+{
+"text": "és",
+"start": 141.16,
+"end": 141.68
+},
+{
+"text": "a",
+"start": 141.68,
+"end": 141.76
+},
+{
+"text": "Perplexity,",
+"start": 141.76,
+"end": 142.44
+},
+{
+"text": "és",
+"start": 142.64,
+"end": 142.94
+},
+{
+"text": "ezeknek",
+"start": 142.94,
+"end": 143.18
+},
+{
+"text": "is",
+"start": 143.18,
+"end": 143.32
+},
+{
+"text": "amúgy",
+"start": 143.32,
+"end": 143.5
+},
+{
+"text": "felmerülhet",
+"start": 143.5,
+"end": 144.14
+},
+{
+"text": "benned",
+"start": 144.14,
+"end": 144.36
+},
+{
+"text": "a",
+"start": 144.36,
+"end": 144.48
+},
+{
+"text": "kérdés,",
+"start": 144.48,
+"end": 144.78
+},
+{
+"text": "hogy",
+"start": 144.8,
+"end": 144.94
+},
+{
+"text": "oké,",
+"start": 144.94,
+"end": 145.14
+},
+{
+"text": "de",
+"start": 145.18,
+"end": 145.2
+},
+{
+"text": "melyiket",
+"start": 145.2,
+"end": 145.52
+},
+{
+"text": "válasz.",
+"start": 145.52,
+"end": 145.9
+},
+{
+"text": "Nem",
+"start": 146.02,
+"end": 146.16
+},
+{
+"text": "feltétlenül",
+"start": 146.16,
+"end": 146.56
+},
+{
+"text": "csak",
+"start": 146.56,
+"end": 146.7
+},
+{
+"text": "itt",
+"start": 146.7,
+"end": 146.82
+},
+{
+"text": "az",
+"start": 146.82,
+"end": 146.96
+},
+{
+"text": "automatizációk",
+"start": 146.96,
+"end": 148.02
+},
+{
+"text": "kapcsán,",
+"start": 148.02,
+"end": 148.78
+},
+{
+"text": "hanem",
+"start": 149.02,
+"end": 149.22
+},
+{
+"text": "úgy",
+"start": 149.22,
+"end": 149.32
+},
+{
+"text": "általánosságban",
+"start": 149.32,
+"end": 150.26
+},
+{
+"text": "is,",
+"start": 150.26,
+"end": 150.36
+},
+{
+"text": "és",
+"start": 150.36,
+"end": 150.42
+},
+{
+"text": "hogyha",
+"start": 150.42,
+"end": 150.56
+},
+{
+"text": "egy",
+"start": 150.56,
+"end": 150.66
+},
+{
+"text": "ad",
+"start": 150.66,
+"end": 150.8
+},
+{
+"text": "-hoc",
+"start": 150.8,
+"end": 150.9
+},
+{
+"text": "problémát",
+"start": 150.9,
+"end": 151.42
+},
+{
+"text": "akarsz",
+"start": 151.42,
+"end": 151.76
+},
+{
+"text": "megoldani,",
+"start": 151.76,
+"end": 152.24
+},
+{
+"text": "mint",
+"start": 152.34,
+"end": 152.86
+},
+{
+"text": "egy",
+"start": 152.86,
+"end": 153.18
+},
+{
+"text": "digitális",
+"start": 153.18,
+"end": 153.74
+},
+{
+"text": "vájci",
+"start": 153.74,
+"end": 154.02
+},
+{
+"text": "bicskával,",
+"start": 154.02,
+"end": 154.5
+},
+{
+"text": "akkor",
+"start": 154.62,
+"end": 154.76
+},
+{
+"text": "melyiket",
+"start": 154.76,
+"end": 155.14
+},
+{
+"text": "választ,",
+"start": 155.14,
+"end": 155.56
+},
+{
+"text": "hogyha",
+"start": 155.86,
+"end": 156.26
+},
+{
+"text": "a",
+"start": 156.26,
+"end": 156.42
+},
+{
+"text": "céges",
+"start": 156.42,
+"end": 156.76
+},
+{
+"text": "agynak",
+"start": 156.76,
+"end": 157.14
+},
+{
+"text": "használnád,",
+"start": 157.14,
+"end": 157.66
+},
+{
+"text": "akkor",
+"start": 157.82,
+"end": 158.0
+},
+{
+"text": "melyiket",
+"start": 158.0,
+"end": 158.38
+},
+{
+"text": "választ,",
+"start": 158.38,
+"end": 158.72
+},
+{
+"text": "és",
+"start": 158.78,
+"end": 158.9
+},
+{
+"text": "így",
+"start": 158.9,
+"end": 159.04
+},
+{
+"text": "tovább.",
+"start": 159.04,
+"end": 159.32
+},
+{
+"text": "És",
+"start": 159.9,
+"end": 160.08
+},
+{
+"text": "ahelyett,",
+"start": 160.08,
+"end": 160.64
+},
+{
+"text": "hogy",
+"start": 160.68,
+"end": 160.78
+},
+{
+"text": "én",
+"start": 160.78,
+"end": 160.88
+},
+{
+"text": "itt",
+"start": 160.88,
+"end": 161.02
+},
+{
+"text": "elmondanám,",
+"start": 161.02,
+"end": 161.82
+},
+{
+"text": "hogy",
+"start": 162.02,
+"end": 162.16
+},
+{
+"text": "konkrétan",
+"start": 162.16,
+"end": 162.7
+},
+{
+"text": "melyik",
+"start": 162.7,
+"end": 163.02
+},
+{
+"text": "inkább",
+"start": 163.02,
+"end": 163.42
+},
+{
+"text": "alapelveket",
+"start": 163.42,
+"end": 164.12
+},
+{
+"text": "fogok",
+"start": 164.12,
+"end": 164.44
+},
+{
+"text": "mondani,",
+"start": 164.44,
+"end": 164.8
+},
+{
+"text": "egész",
+"start": 164.86,
+"end": 165.12
+},
+{
+"text": "egyszerűen",
+"start": 165.12,
+"end": 165.4
+},
+{
+"text": "azért,",
+"start": 165.4,
+"end": 165.78
+},
+{
+"text": "mert",
+"start": 165.92,
+"end": 166.64
+},
+{
+"text": "amit",
+"start": 166.64,
+"end": 167.34
+},
+{
+"text": "most",
+"start": 167.34,
+"end": 167.5
+},
+{
+"text": "én",
+"start": 167.5,
+"end": 167.6
+},
+{
+"text": "elmondok,",
+"start": 167.6,
+"end": 168.1
+},
+{
+"text": "és",
+"start": 168.22,
+"end": 168.3
+},
+{
+"text": "mire",
+"start": 168.3,
+"end": 168.46
+},
+{
+"text": "te",
+"start": 168.46,
+"end": 168.58
+},
+{
+"text": "mondjuk",
+"start": 168.58,
+"end": 168.8
+},
+{
+"text": "megnézed",
+"start": 168.8,
+"end": 169.1
+},
+{
+"text": "a",
+"start": 169.1,
+"end": 169.24
+},
+{
+"text": "videót,",
+"start": 169.24,
+"end": 169.52
+},
+{
+"text": "lehet,",
+"start": 169.64,
+"end": 169.76
+},
+{
+"text": "hogy",
+"start": 169.78,
+"end": 169.86
+},
+{
+"text": "már",
+"start": 169.86,
+"end": 169.94
+},
+{
+"text": "az",
+"start": 169.94,
+"end": 170.02
+},
+{
+"text": "nem",
+"start": 170.02,
+"end": 170.14
+},
+{
+"text": "igaz,",
+"start": 170.14,
+"end": 170.4
+},
+{
+"text": "mert",
+"start": 170.6,
+"end": 170.74
+},
+{
+"text": "ezek",
+"start": 170.74,
+"end": 170.92
+},
+{
+"text": "annyira",
+"start": 170.92,
+"end": 171.24
+},
+{
+"text": "gyorsan",
+"start": 171.24,
+"end": 171.64
+},
+{
+"text": "változnak,",
+"start": 171.64,
+"end": 172.14
+},
+{
+"text": "annyira",
+"start": 172.24,
+"end": 172.44
+},
+{
+"text": "gyorsan",
+"start": 172.44,
+"end": 172.78
+},
+{
+"text": "változik",
+"start": 172.78,
+"end": 173.26
+},
+{
+"text": "az,",
+"start": 173.26,
+"end": 173.44
+},
+{
+"text": "hogy",
+"start": 173.78,
+"end": 173.92
+},
+{
+"text": "éppen",
+"start": 173.92,
+"end": 174.26
+},
+{
+"text": "melyik,",
+"start": 174.26,
+"end": 175.02
+},
+{
+"text": "melyik",
+"start": 175.06,
+"end": 175.3
+},
+{
+"text": "típusú",
+"start": 175.3,
+"end": 175.68
+},
+{
+"text": "feladatra",
+"start": 175.68,
+"end": 176.24
+},
+{
+"text": "a",
+"start": 176.24,
+"end": 176.66
+},
+{
+"text": "legideálisabb.",
+"start": 176.66,
+"end": 177.44
+},
+{
+"text": "Ugye,",
+"start": 177.44,
+"end": 177.98
+},
+{
+"text": "ami",
+"start": 178.0,
+"end": 178.14
+},
+{
+"text": "ma",
+"start": 178.14,
+"end": 178.24
+},
+{
+"text": "a",
+"start": 178.24,
+"end": 178.32
+},
+{
+"text": "legjobb",
+"start": 178.32,
+"end": 178.56
+},
+{
+"text": "egy",
+"start": 178.56,
+"end": 178.68
+},
+{
+"text": "hónap",
+"start": 178.68,
+"end": 178.88
+},
+{
+"text": "múlva,",
+"start": 178.88,
+"end": 179.1
+},
+{
+"text": "mert",
+"start": 179.14,
+"end": 179.18
+},
+{
+"text": "könnyen",
+"start": 179.18,
+"end": 179.48
+},
+{
+"text": "lehet,",
+"start": 179.48,
+"end": 179.68
+},
+{
+"text": "hogy",
+"start": 179.74,
+"end": 179.78
+},
+{
+"text": "csak",
+"start": 179.78,
+"end": 179.92
+},
+{
+"text": "a",
+"start": 179.92,
+"end": 180.02
+},
+{
+"text": "második",
+"start": 180.02,
+"end": 180.48
+},
+{
+"text": "lesz,",
+"start": 180.48,
+"end": 180.78
+},
+{
+"text": "és",
+"start": 180.86,
+"end": 181.28
+},
+{
+"text": "ez",
+"start": 181.28,
+"end": 181.52
+},
+{
+"text": "nagyon",
+"start": 181.52,
+"end": 181.7
+},
+{
+"text": "fontos,",
+"start": 181.7,
+"end": 182.12
+},
+{
+"text": "hogy",
+"start": 182.16,
+"end": 182.26
+},
+{
+"text": "nem",
+"start": 182.26,
+"end": 182.42
+},
+{
+"text": "mindenkinek",
+"start": 182.42,
+"end": 183.0
+},
+{
+"text": "ugyanaz",
+"start": 183.0,
+"end": 183.48
+},
+{
+"text": "számít",
+"start": 183.48,
+"end": 184.0
+},
+{
+"text": "a",
+"start": 184.0,
+"end": 184.2
+},
+{
+"text": "legjobbnak,",
+"start": 184.2,
+"end": 184.68
+},
+{
+"text": "ugyan",
+"start": 184.76,
+"end": 184.86
+},
+{
+"text": "nagyon",
+"start": 184.86,
+"end": 185.02
+},
+{
+"text": "fontos,",
+"start": 185.02,
+"end": 185.36
+},
+{
+"text": "hogy",
+"start": 185.4,
+"end": 185.5
+},
+{
+"text": "mire",
+"start": 185.5,
+"end": 185.7
+},
+{
+"text": "használod,",
+"start": 185.7,
+"end": 186.34
+},
+{
+"text": "milyen",
+"start": 186.64,
+"end": 186.94
+},
+{
+"text": "környezetben",
+"start": 186.94,
+"end": 187.48
+},
+{
+"text": "és",
+"start": 187.48,
+"end": 187.62
+},
+{
+"text": "milyen",
+"start": 187.62,
+"end": 187.84
+},
+{
+"text": "egyéb",
+"start": 187.84,
+"end": 188.12
+},
+{
+"text": "szoftverekkel.",
+"start": 188.12,
+"end": 188.92
+},
+{
+"text": "Hogyha",
+"start": 189.36,
+"end": 189.6
+},
+{
+"text": "például",
+"start": 189.6,
+"end": 190.06
+},
+{
+"text": "Google",
+"start": 190.06,
+"end": 190.32
+},
+{
+"text": "-ös",
+"start": 190.32,
+"end": 190.54
+},
+{
+"text": "okoszisztémában",
+"start": 190.54,
+"end": 191.4
+},
+{
+"text": "van",
+"start": 191.4,
+"end": 191.52
+},
+{
+"text": "a",
+"start": 191.52,
+"end": 191.64
+},
+{
+"text": "cég,",
+"start": 191.64,
+"end": 191.84
+},
+{
+"text": "mi",
+"start": 191.88,
+"end": 191.94
+},
+{
+"text": "például",
+"start": 191.94,
+"end": 192.18
+},
+{
+"text": "abban",
+"start": 192.18,
+"end": 192.46
+},
+{
+"text": "vagyunk,",
+"start": 192.46,
+"end": 192.86
+},
+{
+"text": "Google",
+"start": 192.98,
+"end": 193.2
+},
+{
+"text": "Workspace",
+"start": 193.2,
+"end": 193.76
+},
+{
+"text": "-t",
+"start": 193.76,
+"end": 193.88
+},
+{
+"text": "használunk,",
+"start": 193.88,
+"end": 194.44
+},
+{
+"text": "nekünk",
+"start": 194.78,
+"end": 195.04
+},
+{
+"text": "a",
+"start": 195.04,
+"end": 195.16
+},
+{
+"text": "Gemini",
+"start": 195.16,
+"end": 195.5
+},
+{
+"text": "az",
+"start": 195.5,
+"end": 195.64
+},
+{
+"text": "egy",
+"start": 195.64,
+"end": 195.78
+},
+{
+"text": "zseniális",
+"start": 195.78,
+"end": 196.38
+},
+{
+"text": "választás,",
+"start": 196.38,
+"end": 197.1
+},
+{
+"text": "mi",
+"start": 197.7,
+"end": 198.06
+},
+{
+"text": "gyakorlatilag",
+"start": 198.06,
+"end": 198.58
+},
+{
+"text": "többféle",
+"start": 198.58,
+"end": 199.96
+},
+{
+"text": "feladatot",
+"start": 199.96,
+"end": 200.4
+},
+{
+"text": "sokkal",
+"start": 200.4,
+"end": 200.66
+},
+{
+"text": "könnyebben",
+"start": 200.66,
+"end": 200.98
+},
+{
+"text": "és",
+"start": 200.98,
+"end": 201.08
+},
+{
+"text": "gyorsabban",
+"start": 201.08,
+"end": 201.66
+},
+{
+"text": "meg",
+"start": 201.66,
+"end": 201.86
+},
+{
+"text": "tudunk",
+"start": 201.86,
+"end": 202.06
+},
+{
+"text": "csinálni,",
+"start": 202.06,
+"end": 202.44
+},
+{
+"text": "mint",
+"start": 202.44,
+"end": 202.56
+},
+{
+"text": "hogyha",
+"start": 202.56,
+"end": 202.76
+},
+{
+"text": "mondjuk",
+"start": 202.76,
+"end": 202.92
+},
+{
+"text": "chat",
+"start": 202.92,
+"end": 203.1
+},
+{
+"text": "GPT",
+"start": 203.1,
+"end": 203.58
+},
+{
+"text": "-vel",
+"start": 203.58,
+"end": 203.76
+},
+{
+"text": "kötnénk",
+"start": 203.76,
+"end": 204.36
+},
+{
+"text": "mindent",
+"start": 204.36,
+"end": 205.36
+},
+{
+"text": "össze,",
+"start": 205.36,
+"end": 205.74
+},
+{
+"text": "és",
+"start": 205.94,
+"end": 206.48
+},
+{
+"text": "itt",
+"start": 206.48,
+"end": 206.8
+},
+{
+"text": "ugye",
+"start": 206.8,
+"end": 206.96
+},
+{
+"text": "natív",
+"start": 206.96,
+"end": 207.3
+},
+{
+"text": "módon",
+"start": 207.3,
+"end": 207.58
+},
+{
+"text": "ez",
+"start": 207.58,
+"end": 207.72
+},
+{
+"text": "működik.",
+"start": 207.72,
+"end": 208.22
+},
+{
+"text": "De",
+"start": 208.28,
+"end": 208.34
+},
+{
+"text": "például,",
+"start": 208.34,
+"end": 208.94
+},
+{
+"text": "hogyha",
+"start": 209.06,
+"end": 209.54
+},
+{
+"text": "mondjuk",
+"start": 209.54,
+"end": 209.74
+},
+{
+"text": "azt",
+"start": 209.74,
+"end": 209.88
+},
+{
+"text": "nézzük,",
+"start": 209.88,
+"end": 210.12
+},
+{
+"text": "hogy",
+"start": 210.12,
+"end": 210.2
+},
+{
+"text": "milyen",
+"start": 210.2,
+"end": 210.36
+},
+{
+"text": "típusú",
+"start": 210.36,
+"end": 210.7
+},
+{
+"text": "a",
+"start": 210.7,
+"end": 210.8
+},
+{
+"text": "feladat,",
+"start": 210.8,
+"end": 211.18
+},
+{
+"text": "egy",
+"start": 211.38,
+"end": 211.5
+},
+{
+"text": "szövegírónak",
+"start": 211.5,
+"end": 212.24
+},
+{
+"text": "lehet,",
+"start": 212.24,
+"end": 212.44
+},
+{
+"text": "hogy",
+"start": 212.46,
+"end": 212.54
+},
+{
+"text": "teljesen",
+"start": 212.54,
+"end": 212.94
+},
+{
+"text": "más",
+"start": 212.94,
+"end": 213.16
+},
+{
+"text": "lesz",
+"start": 213.16,
+"end": 213.46
+},
+{
+"text": "jó,",
+"start": 213.46,
+"end": 213.66
+},
+{
+"text": "mint",
+"start": 213.78,
+"end": 213.92
+},
+{
+"text": "mondjuk",
+"start": 213.92,
+"end": 214.18
+},
+{
+"text": "neked",
+"start": 214.18,
+"end": 214.6
+},
+{
+"text": "vezetőként,",
+"start": 214.6,
+"end": 217.06
+},
+{
+"text": "mondjuk",
+"start": 217.24,
+"end": 217.48
+},
+{
+"text": "egy",
+"start": 217.48,
+"end": 217.6
+},
+{
+"text": "üzleti",
+"start": 217.6,
+"end": 218.0
+},
+{
+"text": "tervnek",
+"start": 218.0,
+"end": 218.38
+},
+{
+"text": "a",
+"start": 218.38,
+"end": 218.56
+},
+{
+"text": "létrehozására",
+"start": 218.56,
+"end": 219.36
+},
+{
+"text": "és",
+"start": 219.36,
+"end": 219.5
+},
+{
+"text": "validálására.",
+"start": 219.5,
+"end": 220.44
+},
+{
+"text": "Te",
+"start": 220.66,
+"end": 220.84
+},
+{
+"text": "lehet,",
+"start": 220.84,
+"end": 221.04
+},
+{
+"text": "hogy",
+"start": 221.1,
+"end": 221.12
+},
+{
+"text": "a",
+"start": 221.12,
+"end": 221.18
+},
+{
+"text": "chat",
+"start": 221.18,
+"end": 221.3
+},
+{
+"text": "GPT",
+"start": 221.3,
+"end": 221.64
+},
+{
+"text": "-t",
+"start": 221.64,
+"end": 221.7
+},
+{
+"text": "fogod",
+"start": 221.7,
+"end": 222.02
+},
+{
+"text": "használni,",
+"start": 222.02,
+"end": 222.56
+},
+{
+"text": "a",
+"start": 222.7,
+"end": 222.92
+},
+{
+"text": "szövegírót",
+"start": 222.92,
+"end": 223.44
+},
+{
+"text": "pedig",
+"start": 223.44,
+"end": 223.64
+},
+{
+"text": "lehet,",
+"start": 223.64,
+"end": 223.82
+},
+{
+"text": "hogy",
+"start": 223.84,
+"end": 223.9
+},
+{
+"text": "a",
+"start": 223.9,
+"end": 224.0
+},
+{
+"text": "cloud",
+"start": 224.0,
+"end": 224.22
+},
+{
+"text": "-ot",
+"start": 224.22,
+"end": 224.34
+},
+{
+"text": "fogja",
+"start": 224.34,
+"end": 224.64
+},
+{
+"text": "használni.",
+"start": 224.64,
+"end": 225.12
+},
+{
+"text": "Tehát",
+"start": 225.36,
+"end": 225.52
+},
+{
+"text": "ugye",
+"start": 225.52,
+"end": 225.64
+},
+{
+"text": "ez",
+"start": 225.64,
+"end": 225.76
+},
+{
+"text": "azért",
+"start": 225.76,
+"end": 225.94
+},
+{
+"text": "attól",
+"start": 225.94,
+"end": 226.26
+},
+{
+"text": "is",
+"start": 226.26,
+"end": 226.36
+},
+{
+"text": "függ,",
+"start": 226.36,
+"end": 226.6
+},
+{
+"text": "hogy",
+"start": 226.7,
+"end": 226.82
+},
+{
+"text": "ki",
+"start": 226.82,
+"end": 226.96
+},
+{
+"text": "mire",
+"start": 226.96,
+"end": 227.16
+},
+{
+"text": "használja.",
+"start": 227.16,
+"end": 227.7
+},
+{
+"text": "Van",
+"start": 227.7,
+"end": 228.48
+},
+{
+"text": "egy",
+"start": 228.48,
+"end": 228.58
+},
+{
+"text": "olyan",
+"start": 228.58,
+"end": 228.76
+},
+{
+"text": "alapelv,",
+"start": 228.76,
+"end": 229.36
+},
+{
+"text": "amit",
+"start": 229.5,
+"end": 229.72
+},
+{
+"text": "én",
+"start": 229.72,
+"end": 229.94
+},
+{
+"text": "szeretek",
+"start": 229.94,
+"end": 230.8
+},
+{
+"text": "mindig",
+"start": 230.8,
+"end": 231.12
+},
+{
+"text": "elmondani,",
+"start": 231.12,
+"end": 231.72
+},
+{
+"text": "az",
+"start": 231.72,
+"end": 231.88
+},
+{
+"text": "az,",
+"start": 231.88,
+"end": 232.1
+},
+{
+"text": "hogy",
+"start": 232.94,
+"end": 233.26
+},
+{
+"text": "legalább",
+"start": 233.26,
+"end": 233.68
+},
+{
+"text": "kettő",
+"start": 233.68,
+"end": 234.28
+},
+{
+"text": "ilyen",
+"start": 234.28,
+"end": 234.9
+},
+{
+"text": "nagynyelvi",
+"start": 234.9,
+"end": 235.36
+},
+{
+"text": "modellhez",
+"start": 235.36,
+"end": 235.94
+},
+{
+"text": "legyen",
+"start": 235.94,
+"end": 236.32
+},
+{
+"text": "céges",
+"start": 236.32,
+"end": 236.72
+},
+{
+"text": "előfizetésed.",
+"start": 236.72,
+"end": 237.72
+},
+{
+"text": "Egész",
+"start": 237.96,
+"end": 238.36
+},
+{
+"text": "egyszerűen",
+"start": 238.36,
+"end": 238.62
+},
+{
+"text": "pont",
+"start": 238.62,
+"end": 238.88
+},
+{
+"text": "ezért,",
+"start": 238.88,
+"end": 239.32
+},
+{
+"text": "mert",
+"start": 239.54,
+"end": 239.68
+},
+{
+"text": "nagyon",
+"start": 239.68,
+"end": 239.96
+},
+{
+"text": "gyorsan",
+"start": 239.96,
+"end": 240.36
+},
+{
+"text": "változnak,",
+"start": 240.36,
+"end": 240.9
+},
+{
+"text": "nagyon",
+"start": 241.02,
+"end": 241.14
+},
+{
+"text": "gyorsan",
+"start": 241.14,
+"end": 241.46
+},
+{
+"text": "nem",
+"start": 241.46,
+"end": 241.58
+},
+{
+"text": "csak",
+"start": 241.58,
+"end": 241.7
+},
+{
+"text": "a",
+"start": 241.7,
+"end": 242.28
+},
+{
+"text": "saját",
+"start": 242.28,
+"end": 242.74
+},
+{
+"text": "tudásuk",
+"start": 242.74,
+"end": 243.3
+},
+{
+"text": "növekszik,",
+"start": 243.3,
+"end": 243.86
+},
+{
+"text": "hanem",
+"start": 243.94,
+"end": 244.06
+},
+{
+"text": "nagyon",
+"start": 244.06,
+"end": 244.24
+},
+{
+"text": "gyorsan",
+"start": 244.24,
+"end": 244.52
+},
+{
+"text": "az",
+"start": 244.52,
+"end": 244.66
+},
+{
+"text": "egymáshoz",
+"start": 244.66,
+"end": 245.18
+},
+{
+"text": "viszonyított",
+"start": 245.18,
+"end": 245.64
+},
+{
+"text": "pozíciójuk",
+"start": 245.64,
+"end": 246.34
+},
+{
+"text": "is",
+"start": 246.34,
+"end": 246.46
+},
+{
+"text": "változik.",
+"start": 246.46,
+"end": 247.02
+},
+{
+"text": "Ezért,",
+"start": 247.22,
+"end": 247.86
+},
+{
+"text": "hogyha",
+"start": 247.94,
+"end": 248.08
+},
+{
+"text": "te",
+"start": 248.08,
+"end": 248.14
+},
+{
+"text": "lehorgonyozol",
+"start": 248.14,
+"end": 249.2
+},
+{
+"text": "egy",
+"start": 249.2,
+"end": 249.54
+},
+{
+"text": "nagynyelvi",
+"start": 249.54,
+"end": 250.06
+},
+{
+"text": "modellnél,",
+"start": 250.06,
+"end": 250.62
+},
+{
+"text": "akkor",
+"start": 250.88,
+"end": 251.2
+},
+{
+"text": "lehet,",
+"start": 251.2,
+"end": 251.54
+},
+{
+"text": "hogy",
+"start": 251.58,
+"end": 251.66
+},
+{
+"text": "egy",
+"start": 251.66,
+"end": 251.78
+},
+{
+"text": "idő",
+"start": 251.78,
+"end": 251.92
+},
+{
+"text": "után",
+"start": 251.92,
+"end": 252.32
+},
+{
+"text": "az",
+"start": 252.32,
+"end": 252.72
+},
+{
+"text": "már",
+"start": 252.72,
+"end": 252.84
+},
+{
+"text": "nem",
+"start": 252.84,
+"end": 252.98
+},
+{
+"text": "az",
+"start": 252.98,
+"end": 253.12
+},
+{
+"text": "ideális",
+"start": 253.12,
+"end": 253.62
+},
+{
+"text": "eredményeket",
+"start": 253.62,
+"end": 254.3
+},
+{
+"text": "fogja",
+"start": 254.3,
+"end": 254.54
+},
+{
+"text": "neked",
+"start": 254.54,
+"end": 254.74
+},
+{
+"text": "szállítani,",
+"start": 254.74,
+"end": 255.26
+},
+{
+"text": "úgyhogy",
+"start": 255.26,
+"end": 256.1
+},
+{
+"text": "mi",
+"start": 256.1,
+"end": 256.32
+},
+{
+"text": "nekünk",
+"start": 256.32,
+"end": 256.72
+},
+{
+"text": "mindig",
+"start": 256.72,
+"end": 256.96
+},
+{
+"text": "több",
+"start": 256.96,
+"end": 257.2
+},
+{
+"text": "előfizetésünk",
+"start": 257.2,
+"end": 257.9
+},
+{
+"text": "van,",
+"start": 257.9,
+"end": 258.0
+},
+{
+"text": "és",
+"start": 258.06,
+"end": 258.14
+},
+{
+"text": "én",
+"start": 258.14,
+"end": 258.26
+},
+{
+"text": "másoknak",
+"start": 258.26,
+"end": 258.6
+},
+{
+"text": "is",
+"start": 258.6,
+"end": 258.74
+},
+{
+"text": "azt",
+"start": 258.74,
+"end": 258.9
+},
+{
+"text": "javaslom,",
+"start": 258.9,
+"end": 259.3
+},
+{
+"text": "ezek",
+"start": 259.62,
+"end": 259.82
+},
+{
+"text": "nem",
+"start": 259.82,
+"end": 259.96
+},
+{
+"text": "olyan",
+"start": 259.96,
+"end": 260.22
+},
+{
+"text": "óriási",
+"start": 260.22,
+"end": 260.74
+},
+{
+"text": "nagy",
+"start": 260.74,
+"end": 260.92
+},
+{
+"text": "összegek,",
+"start": 260.92,
+"end": 261.46
+},
+{
+"text": "hogy",
+"start": 261.98,
+"end": 262.2
+},
+{
+"text": "ne",
+"start": 262.2,
+"end": 262.84
+},
+{
+"text": "férne",
+"start": 262.84,
+"end": 263.44
+},
+{
+"text": "bele",
+"start": 263.44,
+"end": 263.64
+},
+{
+"text": "rá,",
+"start": 263.64,
+"end": 263.86
+},
+{
+"text": "deásul,",
+"start": 263.98,
+"end": 264.28
+},
+{
+"text": "hogyha",
+"start": 264.32,
+"end": 264.48
+},
+{
+"text": "jól",
+"start": 264.48,
+"end": 264.64
+},
+{
+"text": "használd,",
+"start": 264.64,
+"end": 265.02
+},
+{
+"text": "akkor",
+"start": 265.06,
+"end": 265.22
+},
+{
+"text": "ez",
+"start": 265.22,
+"end": 265.36
+},
+{
+"text": "rengeteg",
+"start": 265.36,
+"end": 265.84
+},
+{
+"text": "költséget",
+"start": 265.84,
+"end": 266.4
+},
+{
+"text": "fognak",
+"start": 266.4,
+"end": 266.66
+},
+{
+"text": "egy",
+"start": 266.66,
+"end": 266.76
+},
+{
+"text": "spórony,",
+"start": 266.76,
+"end": 267.16
+},
+{
+"text": "tehát",
+"start": 267.18,
+"end": 267.34
+},
+{
+"text": "igazából",
+"start": 267.34,
+"end": 267.76
+},
+{
+"text": "egy",
+"start": 267.76,
+"end": 267.92
+},
+{
+"text": "befektetés",
+"start": 267.92,
+"end": 268.96
+},
+{
+"text": "lesz.",
+"start": 268.96,
+"end": 269.28
+},
+{
+"text": "És",
+"start": 269.86,
+"end": 269.94
+},
+{
+"text": "nagyon",
+"start": 269.94,
+"end": 270.06
+},
+{
+"text": "fontos,",
+"start": 270.06,
+"end": 270.48
+},
+{
+"text": "hogy",
+"start": 270.54,
+"end": 270.62
+},
+{
+"text": "ne",
+"start": 270.62,
+"end": 270.78
+},
+{
+"text": "kötődj",
+"start": 270.78,
+"end": 271.14
+},
+{
+"text": "egy",
+"start": 271.14,
+"end": 271.4
+},
+{
+"text": "modellhez",
+"start": 271.4,
+"end": 271.96
+},
+{
+"text": "sem",
+"start": 271.96,
+"end": 272.14
+},
+{
+"text": "érzelmileg,",
+"start": 272.14,
+"end": 272.38
+},
+{
+"text": "folyamatosan",
+"start": 272.96,
+"end": 273.44
+},
+{
+"text": "tesztelj",
+"start": 273.44,
+"end": 273.78
+},
+{
+"text": "más",
+"start": 273.78,
+"end": 274.0
+},
+{
+"text": "modelleket",
+"start": 274.0,
+"end": 274.52
+},
+{
+"text": "is,",
+"start": 274.52,
+"end": 274.66
+},
+{
+"text": "ugye",
+"start": 275.08,
+"end": 275.22
+},
+{
+"text": "ahogy",
+"start": 275.22,
+"end": 275.46
+},
+{
+"text": "a",
+"start": 275.46,
+"end": 275.56
+},
+{
+"text": "csapatot",
+"start": 275.56,
+"end": 275.92
+},
+{
+"text": "tagja",
+"start": 275.92,
+"end": 276.24
+},
+{
+"text": "is.",
+"start": 276.24,
+"end": 276.48
+},
+{
+"text": "Tehát",
+"start": 276.78,
+"end": 276.92
+},
+{
+"text": "ezekre,",
+"start": 276.92,
+"end": 277.34
+},
+{
+"text": "vagy",
+"start": 277.5,
+"end": 277.74
+},
+{
+"text": "erre",
+"start": 277.74,
+"end": 277.96
+},
+{
+"text": "őket",
+"start": 277.96,
+"end": 278.48
+},
+{
+"text": "is",
+"start": 278.48,
+"end": 278.66
+},
+{
+"text": "bíztasd.",
+"start": 278.66,
+"end": 279.18
+},
+{
+"text": "Nálunk",
+"start": 279.18,
+"end": 279.72
+},
+{
+"text": "például",
+"start": 279.72,
+"end": 280.02
+},
+{
+"text": "a",
+"start": 280.02,
+"end": 280.14
+},
+{
+"text": "szövegírónk",
+"start": 280.14,
+"end": 280.9
+},
+{
+"text": "mindig",
+"start": 280.9,
+"end": 282.04
+},
+{
+"text": "mondja",
+"start": 282.04,
+"end": 282.4
+},
+{
+"text": "először",
+"start": 282.4,
+"end": 283.12
+},
+{
+"text": "a",
+"start": 283.12,
+"end": 283.22
+},
+{
+"text": "CGPT",
+"start": 283.22,
+"end": 283.78
+},
+{
+"text": "-vel",
+"start": 283.78,
+"end": 284.02
+},
+{
+"text": "dolgozott",
+"start": 284.02,
+"end": 284.52
+},
+{
+"text": "a",
+"start": 284.52,
+"end": 284.6
+},
+{
+"text": "legjobban,",
+"start": 284.6,
+"end": 284.94
+},
+{
+"text": "akkor",
+"start": 285.04,
+"end": 285.12
+},
+{
+"text": "azt",
+"start": 285.12,
+"end": 285.28
+},
+{
+"text": "használta",
+"start": 285.28,
+"end": 285.7
+},
+{
+"text": "pár",
+"start": 285.7,
+"end": 286.0
+},
+{
+"text": "hónapig,",
+"start": 286.0,
+"end": 286.44
+},
+{
+"text": "akkor",
+"start": 286.66,
+"end": 286.92
+},
+{
+"text": "utána",
+"start": 286.92,
+"end": 287.24
+},
+{
+"text": "rájött,",
+"start": 287.24,
+"end": 287.56
+},
+{
+"text": "hogy",
+"start": 287.6,
+"end": 287.66
+},
+{
+"text": "a",
+"start": 287.66,
+"end": 287.76
+},
+{
+"text": "Claude",
+"start": 287.76,
+"end": 288.04
+},
+{
+"text": "sokkal",
+"start": 288.04,
+"end": 288.58
+},
+{
+"text": "emberibb,",
+"start": 288.58,
+"end": 289.1
+},
+{
+"text": "sokkal",
+"start": 289.16,
+"end": 289.48
+},
+{
+"text": "jobb",
+"start": 289.48,
+"end": 289.6
+},
+{
+"text": "szövegeket",
+"start": 289.6,
+"end": 290.1
+},
+{
+"text": "ad,",
+"start": 290.1,
+"end": 290.26
+},
+{
+"text": "utána",
+"start": 290.38,
+"end": 290.54
+},
+{
+"text": "átállt",
+"start": 290.54,
+"end": 290.98
+},
+{
+"text": "arra,",
+"start": 290.98,
+"end": 291.3
+},
+{
+"text": "akkor",
+"start": 291.58,
+"end": 291.88
+},
+{
+"text": "az",
+"start": 291.88,
+"end": 292.06
+},
+{
+"text": "volt",
+"start": 292.06,
+"end": 292.26
+},
+{
+"text": "utána",
+"start": 292.26,
+"end": 292.62
+},
+{
+"text": "sok",
+"start": 292.62,
+"end": 292.84
+},
+{
+"text": "hónapig",
+"start": 292.84,
+"end": 293.26
+},
+{
+"text": "a",
+"start": 293.26,
+"end": 293.36
+},
+{
+"text": "nyerő,",
+"start": 293.36,
+"end": 293.58
+},
+{
+"text": "most",
+"start": 293.76,
+"end": 294.12
+},
+{
+"text": "ő",
+"start": 294.12,
+"end": 294.28
+},
+{
+"text": "például",
+"start": 294.28,
+"end": 294.6
+},
+{
+"text": "a",
+"start": 294.6,
+"end": 294.76
+},
+{
+"text": "Gemini",
+"start": 294.76,
+"end": 295.08
+},
+{
+"text": "-vel",
+"start": 295.08,
+"end": 295.32
+},
+{
+"text": "készíti",
+"start": 295.32,
+"end": 296.62
+},
+{
+"text": "a",
+"start": 296.62,
+"end": 296.84
+},
+{
+"text": "szövegeket,",
+"start": 296.84,
+"end": 297.3
+},
+{
+"text": "mert",
+"start": 297.38,
+"end": 297.44
+},
+{
+"text": "most",
+"start": 297.44,
+"end": 297.62
+},
+{
+"text": "meg",
+"start": 297.62,
+"end": 297.74
+},
+{
+"text": "az",
+"start": 297.74,
+"end": 297.96
+},
+{
+"text": "a",
+"start": 297.96,
+"end": 298.1
+},
+{
+"text": "legjobb.",
+"start": 298.1,
+"end": 298.78
+},
+{
+"text": "De",
+"start": 298.9,
+"end": 299.36
+},
+{
+"text": "olyan",
+"start": 299.36,
+"end": 299.76
+},
+{
+"text": "is",
+"start": 299.76,
+"end": 299.86
+},
+{
+"text": "van,",
+"start": 299.86,
+"end": 299.94
+},
+{
+"text": "amikor",
+"start": 300.0,
+"end": 300.1
+},
+{
+"text": "ezeket",
+"start": 300.1,
+"end": 300.36
+},
+{
+"text": "kombinálja,",
+"start": 300.36,
+"end": 301.0
+},
+{
+"text": "hogy",
+"start": 301.28,
+"end": 301.4
+},
+{
+"text": "például",
+"start": 301.4,
+"end": 302.06
+},
+{
+"text": "a",
+"start": 302.06,
+"end": 302.62
+},
+{
+"text": "vázata",
+"start": 302.62,
+"end": 303.14
+},
+{
+"text": "felépítés",
+"start": 303.14,
+"end": 303.76
+},
+{
+"text": "legeneráltatja",
+"start": 303.76,
+"end": 304.48
+},
+{
+"text": "a",
+"start": 304.48,
+"end": 304.6
+},
+{
+"text": "CGPT",
+"start": 304.6,
+"end": 305.26
+},
+{
+"text": "-vel,",
+"start": 305.26,
+"end": 305.5
+},
+{
+"text": "magát",
+"start": 305.5,
+"end": 306.44
+},
+{
+"text": "a",
+"start": 306.44,
+"end": 307.0
+},
+{
+"text": "szöveget",
+"start": 307.0,
+"end": 307.86
+},
+{
+"text": "megíratja",
+"start": 307.86,
+"end": 308.5
+},
+{
+"text": "mondjuk",
+"start": 308.5,
+"end": 308.94
+},
+{
+"text": "Gemini",
+"start": 308.94,
+"end": 309.32
+},
+{
+"text": "-vel,",
+"start": 309.32,
+"end": 309.5
+},
+{
+"text": "és",
+"start": 309.62,
+"end": 309.68
+},
+{
+"text": "mondjuk",
+"start": 309.68,
+"end": 309.84
+},
+{
+"text": "a",
+"start": 309.84,
+"end": 309.94
+},
+{
+"text": "Claude",
+"start": 309.94,
+"end": 310.26
+},
+{
+"text": "-dal",
+"start": 310.26,
+"end": 310.46
+},
+{
+"text": "a",
+"start": 310.46,
+"end": 311.02
+},
+{
+"text": "címsorokat",
+"start": 311.02,
+"end": 311.68
+},
+{
+"text": "átiratja",
+"start": 311.68,
+"end": 312.54
+},
+{
+"text": "egy",
+"start": 312.54,
+"end": 312.66
+},
+{
+"text": "kicsit",
+"start": 312.66,
+"end": 312.94
+},
+{
+"text": "ilyen",
+"start": 312.94,
+"end": 313.54
+},
+{
+"text": "jobb",
+"start": 313.54,
+"end": 314.36
+},
+{
+"text": "címsorokra.",
+"start": 314.36,
+"end": 314.92
+},
+{
+"text": "Tehát",
+"start": 315.06,
+"end": 315.3
+},
+{
+"text": "ezeket",
+"start": 315.3,
+"end": 315.6
+},
+{
+"text": "azért",
+"start": 315.6,
+"end": 315.8
+},
+{
+"text": "vegyesen",
+"start": 315.8,
+"end": 316.16
+},
+{
+"text": "is",
+"start": 316.16,
+"end": 316.32
+},
+{
+"text": "lehet",
+"start": 316.32,
+"end": 316.54
+},
+{
+"text": "használni,",
+"start": 316.54,
+"end": 316.98
+},
+{
+"text": "én",
+"start": 317.1,
+"end": 317.28
+},
+{
+"text": "is",
+"start": 317.28,
+"end": 317.48
+},
+{
+"text": "nagyon",
+"start": 317.48,
+"end": 318.08
+},
+{
+"text": "sokat",
+"start": 318.08,
+"end": 318.64
+},
+{
+"text": "vegyesen",
+"start": 318.64,
+"end": 319.48
+},
+{
+"text": "használok,",
+"start": 319.48,
+"end": 320.08
+},
+{
+"text": "tehát",
+"start": 320.16,
+"end": 320.26
+},
+{
+"text": "más",
+"start": 320.26,
+"end": 320.48
+},
+{
+"text": "-más",
+"start": 320.48,
+"end": 320.66
+},
+{
+"text": "feladatra",
+"start": 320.66,
+"end": 321.1
+},
+{
+"text": "mást",
+"start": 321.1,
+"end": 321.44
+},
+{
+"text": "fogok,",
+"start": 321.44,
+"end": 321.74
+},
+{
+"text": "de",
+"start": 321.9,
+"end": 322.06
+},
+{
+"text": "ezeket",
+"start": 322.06,
+"end": 322.32
+},
+{
+"text": "majd",
+"start": 322.32,
+"end": 322.48
+},
+{
+"text": "úgyis",
+"start": 322.48,
+"end": 322.68
+},
+{
+"text": "látjátok",
+"start": 322.68,
+"end": 323.16
+},
+{
+"text": "a",
+"start": 323.16,
+"end": 323.26
+},
+{
+"text": "videóban,",
+"start": 323.26,
+"end": 323.74
+},
+{
+"text": "mert",
+"start": 324.16,
+"end": 324.3
+},
+{
+"text": "be",
+"start": 324.3,
+"end": 324.42
+},
+{
+"text": "fogom",
+"start": 324.42,
+"end": 324.66
+},
+{
+"text": "mutatni",
+"start": 324.66,
+"end": 325.02
+},
+{
+"text": "én",
+"start": 325.02,
+"end": 325.1
+},
+{
+"text": "is,",
+"start": 325.1,
+"end": 325.2
+},
+{
+"text": "hogy",
+"start": 325.22,
+"end": 325.32
+},
+{
+"text": "nem",
+"start": 325.32,
+"end": 325.52
+},
+{
+"text": "egyhez",
+"start": 325.52,
+"end": 326.0
+},
+{
+"text": "kötődöm,",
+"start": 326.0,
+"end": 326.46
+},
+{
+"text": "és",
+"start": 326.54,
+"end": 326.6
+},
+{
+"text": "nem",
+"start": 326.6,
+"end": 326.74
+},
+{
+"text": "egyet",
+"start": 326.74,
+"end": 327.02
+},
+{
+"text": "használok.",
+"start": 327.02,
+"end": 327.62
+},
+{
+"text": "És",
+"start": 328.62,
+"end": 329.18
+},
+{
+"text": "nagyon",
+"start": 329.18,
+"end": 329.48
+},
+{
+"text": "fontos",
+"start": 329.48,
+"end": 329.88
+},
+{
+"text": "még,",
+"start": 329.88,
+"end": 330.04
+},
+{
+"text": "hogy",
+"start": 330.12,
+"end": 330.24
+},
+{
+"text": "céges",
+"start": 330.24,
+"end": 330.66
+},
+{
+"text": "használatra",
+"start": 330.66,
+"end": 331.24
+},
+{
+"text": "mindenképpen",
+"start": 331.24,
+"end": 331.98
+},
+{
+"text": "előfizetéssel",
+"start": 331.98,
+"end": 332.94
+},
+{
+"text": "használd.",
+"start": 332.94,
+"end": 333.54
+},
+{
+"text": "Ugye",
+"start": 333.54,
+"end": 334.24
+},
+{
+"text": "amikor",
+"start": 334.24,
+"end": 334.46
+},
+{
+"text": "céges",
+"start": 334.46,
+"end": 334.8
+},
+{
+"text": "használatban",
+"start": 334.8,
+"end": 335.8
+},
+{
+"text": "vagy,",
+"start": 335.8,
+"end": 336.12
+},
+{
+"text": "akkor",
+"start": 336.24,
+"end": 336.46
+},
+{
+"text": "ott",
+"start": 336.46,
+"end": 336.62
+},
+{
+"text": "vannak",
+"start": 336.62,
+"end": 336.98
+},
+{
+"text": "érzékeny",
+"start": 336.98,
+"end": 337.5
+},
+{
+"text": "adatok,",
+"start": 337.5,
+"end": 337.76
+},
+{
+"text": "vagy",
+"start": 337.82,
+"end": 337.9
+},
+{
+"text": "hát",
+"start": 337.9,
+"end": 338.0
+},
+{
+"text": "lehetnek",
+"start": 338.0,
+"end": 338.4
+},
+{
+"text": "érzékeny",
+"start": 338.4,
+"end": 338.92
+},
+{
+"text": "adatok,",
+"start": 338.92,
+"end": 339.2
+},
+{
+"text": "hogyha",
+"start": 339.26,
+"end": 339.42
+},
+{
+"text": "nem",
+"start": 339.42,
+"end": 339.54
+},
+{
+"text": "ilyen",
+"start": 339.54,
+"end": 339.68
+},
+{
+"text": "általánosságban",
+"start": 339.68,
+"end": 340.58
+},
+{
+"text": "beszélgetsz",
+"start": 340.58,
+"end": 341.5
+},
+{
+"text": "ezekkel",
+"start": 341.5,
+"end": 341.86
+},
+{
+"text": "a",
+"start": 341.86,
+"end": 341.94
+},
+{
+"text": "nagy",
+"start": 341.94,
+"end": 342.12
+},
+{
+"text": "nyelvi",
+"start": 342.12,
+"end": 342.3
+},
+{
+"text": "modellekkel,",
+"start": 342.3,
+"end": 342.96
+},
+{
+"text": "és",
+"start": 343.14,
+"end": 343.44
+},
+{
+"text": "imád,",
+"start": 343.44,
+"end": 343.58
+},
+{
+"text": "hogyha",
+"start": 343.62,
+"end": 343.76
+},
+{
+"text": "jól",
+"start": 343.76,
+"end": 343.9
+},
+{
+"text": "akarod",
+"start": 343.9,
+"end": 344.14
+},
+{
+"text": "használni,",
+"start": 344.14,
+"end": 344.54
+},
+{
+"text": "akkor",
+"start": 344.64,
+"end": 344.7
+},
+{
+"text": "nem",
+"start": 344.7,
+"end": 344.86
+},
+{
+"text": "általánosságban",
+"start": 344.86,
+"end": 345.5
+},
+{
+"text": "beszélgetsz",
+"start": 345.5,
+"end": 346.02
+},
+{
+"text": "velük.",
+"start": 346.02,
+"end": 346.28
+},
+{
+"text": "És",
+"start": 346.86,
+"end": 347.36
+},
+{
+"text": "pontosan",
+"start": 347.36,
+"end": 347.86
+},
+{
+"text": "emiatt",
+"start": 347.86,
+"end": 348.24
+},
+{
+"text": "fontos",
+"start": 348.24,
+"end": 348.8
+},
+{
+"text": "az,",
+"start": 348.8,
+"end": 349.0
+},
+{
+"text": "hogy",
+"start": 349.14,
+"end": 349.36
+},
+{
+"text": "legyen",
+"start": 349.36,
+"end": 349.82
+},
+{
+"text": "előfizetésed,",
+"start": 349.82,
+"end": 350.76
+},
+{
+"text": "mert",
+"start": 351.12,
+"end": 351.3
+},
+{
+"text": "ott",
+"start": 351.3,
+"end": 351.4
+},
+{
+"text": "az",
+"start": 351.4,
+"end": 351.54
+},
+{
+"text": "adatvédelem",
+"start": 351.54,
+"end": 352.18
+},
+{
+"text": "az",
+"start": 352.18,
+"end": 352.38
+},
+{
+"text": "sokkal",
+"start": 352.38,
+"end": 352.76
+},
+{
+"text": "jobb,",
+"start": 352.76,
+"end": 352.92
+},
+{
+"text": "erre",
+"start": 352.96,
+"end": 353.12
+},
+{
+"text": "a",
+"start": 353.12,
+"end": 353.52
+},
+{
+"text": "következő",
+"start": 353.52,
+"end": 353.98
+},
+{
+"text": "videóban",
+"start": 353.98,
+"end": 354.46
+},
+{
+"text": "lesz",
+"start": 354.46,
+"end": 354.8
+},
+{
+"text": "majd",
+"start": 354.8,
+"end": 355.08
+},
+{
+"text": "szó,",
+"start": 355.08,
+"end": 355.28
+},
+{
+"text": "amikor",
+"start": 355.64,
+"end": 355.98
+},
+{
+"text": "így",
+"start": 355.98,
+"end": 356.08
+},
+{
+"text": "az",
+"start": 356.08,
+"end": 356.16
+},
+{
+"text": "adatbiztonságról",
+"start": 356.16,
+"end": 357.26
+},
+{
+"text": "beszélünk.",
+"start": 357.26,
+"end": 358.22
+},
+{
+"text": "Most",
+"start": 358.44,
+"end": 358.7
+},
+{
+"text": "csak",
+"start": 358.7,
+"end": 358.88
+},
+{
+"text": "elég",
+"start": 358.88,
+"end": 359.2
+},
+{
+"text": "ennyi,",
+"start": 359.2,
+"end": 359.48
+},
+{
+"text": "hogy",
+"start": 359.58,
+"end": 359.74
+},
+{
+"text": "én",
+"start": 359.74,
+"end": 360.74
+},
+{
+"text": "nagyon",
+"start": 360.74,
+"end": 361.26
+},
+{
+"text": "javaslom",
+"start": 361.26,
+"end": 361.78
+},
+{
+"text": "azt,",
+"start": 361.78,
+"end": 362.02
+},
+{
+"text": "se",
+"start": 363.54,
+"end": 363.68
+},
+{
+"text": "használd.",
+"start": 363.68,
+"end": 364.2
+},
+{
+"text": "Ráadásul",
+"start": 364.52,
+"end": 364.96
+},
+{
+"text": "most",
+"start": 364.96,
+"end": 365.1
+},
+{
+"text": "még",
+"start": 365.1,
+"end": 365.22
+},
+{
+"text": "itt",
+"start": 365.22,
+"end": 365.34
+},
+{
+"text": "a",
+"start": 365.34,
+"end": 365.42
+},
+{
+"text": "biztonságon",
+"start": 365.42,
+"end": 366.08
+},
+{
+"text": "túl",
+"start": 366.08,
+"end": 366.44
+},
+{
+"text": "nagyon",
+"start": 366.44,
+"end": 366.92
+},
+{
+"text": "sok",
+"start": 366.92,
+"end": 367.1
+},
+{
+"text": "olyan",
+"start": 367.1,
+"end": 367.36
+},
+{
+"text": "plusz",
+"start": 367.36,
+"end": 367.64
+},
+{
+"text": "funkciót,",
+"start": 367.64,
+"end": 368.22
+},
+{
+"text": "és",
+"start": 368.32,
+"end": 368.36
+},
+{
+"text": "nagyon",
+"start": 368.36,
+"end": 368.5
+},
+{
+"text": "sok",
+"start": 368.5,
+"end": 368.74
+},
+{
+"text": "plusz",
+"start": 368.74,
+"end": 368.98
+},
+{
+"text": "olyan",
+"start": 368.98,
+"end": 369.16
+},
+{
+"text": "keretet",
+"start": 369.16,
+"end": 369.58
+},
+{
+"text": "fogsz",
+"start": 369.58,
+"end": 369.84
+},
+{
+"text": "kapni,",
+"start": 369.84,
+"end": 370.2
+},
+{
+"text": "ami",
+"start": 371.6,
+"end": 372.04
+},
+{
+"text": "igazából",
+"start": 372.04,
+"end": 372.48
+},
+{
+"text": "neked",
+"start": 372.48,
+"end": 372.68
+},
+{
+"text": "meg",
+"start": 372.68,
+"end": 372.86
+},
+{
+"text": "fog",
+"start": 372.86,
+"end": 372.98
+},
+{
+"text": "térülni.",
+"start": 372.98,
+"end": 373.5
+},
+{
+"text": "Tehát",
+"start": 373.6,
+"end": 373.68
+},
+{
+"text": "annál",
+"start": 373.68,
+"end": 373.9
+},
+{
+"text": "nincs",
+"start": 373.9,
+"end": 374.12
+},
+{
+"text": "idegesítő,",
+"start": 374.12,
+"end": 374.7
+},
+{
+"text": "mint",
+"start": 374.78,
+"end": 374.86
+},
+{
+"text": "amikor",
+"start": 374.86,
+"end": 375.18
+},
+{
+"text": "benne",
+"start": 375.18,
+"end": 375.42
+},
+{
+"text": "vagy",
+"start": 375.42,
+"end": 375.52
+},
+{
+"text": "a",
+"start": 375.52,
+"end": 375.64
+},
+{
+"text": "flow",
+"start": 375.64,
+"end": 375.84
+},
+{
+"text": "-ba.",
+"start": 375.84,
+"end": 376.02
+},
+{
+"text": "Ugye",
+"start": 376.54,
+"end": 376.7
+},
+{
+"text": "elkaptad",
+"start": 376.7,
+"end": 377.18
+},
+{
+"text": "te",
+"start": 377.18,
+"end": 377.34
+},
+{
+"text": "is,",
+"start": 377.34,
+"end": 377.62
+},
+{
+"text": "meg",
+"start": 377.8,
+"end": 377.92
+},
+{
+"text": "a",
+"start": 377.92,
+"end": 378.34
+},
+{
+"text": "nagy",
+"start": 378.34,
+"end": 378.72
+},
+{
+"text": "nyelvi",
+"start": 378.72,
+"end": 378.92
+},
+{
+"text": "modell",
+"start": 378.92,
+"end": 379.24
+},
+{
+"text": "is",
+"start": 379.24,
+"end": 379.4
+},
+{
+"text": "a",
+"start": 379.4,
+"end": 379.66
+},
+{
+"text": "ritmust,",
+"start": 379.66,
+"end": 380.16
+},
+{
+"text": "meg",
+"start": 380.3,
+"end": 380.44
+},
+{
+"text": "tényleg",
+"start": 380.44,
+"end": 381.46
+},
+{
+"text": "olyan",
+"start": 381.46,
+"end": 381.66
+},
+{
+"text": "válaszok",
+"start": 381.66,
+"end": 382.08
+},
+{
+"text": "jönnek,",
+"start": 382.08,
+"end": 382.32
+},
+{
+"text": "amikkel",
+"start": 382.38,
+"end": 382.64
+},
+{
+"text": "tudsz",
+"start": 382.64,
+"end": 382.88
+},
+{
+"text": "használni,",
+"start": 382.88,
+"end": 383.24
+},
+{
+"text": "és",
+"start": 383.3,
+"end": 383.36
+},
+{
+"text": "akkor",
+"start": 383.36,
+"end": 383.48
+},
+{
+"text": "egyszer",
+"start": 383.48,
+"end": 383.7
+},
+{
+"text": "csak",
+"start": 383.7,
+"end": 383.92
+},
+{
+"text": "kiírja,",
+"start": 383.92,
+"end": 384.22
+},
+{
+"text": "hogy",
+"start": 384.28,
+"end": 384.34
+},
+{
+"text": "hoppá,",
+"start": 384.34,
+"end": 384.64
+},
+{
+"text": "elfogyott",
+"start": 385.04,
+"end": 385.46
+},
+{
+"text": "a",
+"start": 385.46,
+"end": 385.58
+},
+{
+"text": "limited,",
+"start": 385.58,
+"end": 385.86
+},
+{
+"text": "és",
+"start": 386.22,
+"end": 386.44
+},
+{
+"text": "majd",
+"start": 386.44,
+"end": 386.64
+},
+{
+"text": "próbáld",
+"start": 386.64,
+"end": 387.1
+},
+{
+"text": "újra,",
+"start": 387.1,
+"end": 387.32
+},
+{
+"text": "nem",
+"start": 387.34,
+"end": 387.46
+},
+{
+"text": "tudom,",
+"start": 387.46,
+"end": 387.66
+},
+{
+"text": "48",
+"start": 387.72,
+"end": 388.08
+},
+{
+"text": "óra",
+"start": 388.08,
+"end": 388.5
+},
+{
+"text": "múlva,",
+"start": 388.5,
+"end": 388.84
+},
+{
+"text": "és",
+"start": 389.0,
+"end": 389.66
+},
+{
+"text": "akkor",
+"start": 389.66,
+"end": 389.8
+},
+{
+"text": "addig",
+"start": 389.8,
+"end": 390.08
+},
+{
+"text": "itt",
+"start": 390.08,
+"end": 390.18
+},
+{
+"text": "van",
+"start": 390.18,
+"end": 390.3
+},
+{
+"text": "a",
+"start": 390.3,
+"end": 390.4
+},
+{
+"text": "butább",
+"start": 390.4,
+"end": 390.72
+},
+{
+"text": "modell,",
+"start": 390.72,
+"end": 391.02
+},
+{
+"text": "akkor",
+"start": 391.12,
+"end": 391.18
+},
+{
+"text": "folytasd",
+"start": 391.18,
+"end": 391.7
+},
+{
+"text": "ezzel.",
+"start": 391.7,
+"end": 392.02
+},
+{
+"text": "Az",
+"start": 393.54,
+"end": 394.04
+},
+{
+"text": "azért",
+"start": 394.04,
+"end": 394.28
+},
+{
+"text": "érezhető",
+"start": 394.28,
+"end": 394.84
+},
+{
+"text": "előnye",
+"start": 394.84,
+"end": 395.18
+},
+{
+"text": "van",
+"start": 395.18,
+"end": 395.3
+},
+{
+"text": "ezeknek",
+"start": 395.3,
+"end": 395.62
+},
+{
+"text": "az",
+"start": 395.62,
+"end": 395.76
+},
+{
+"text": "előfizetéseknek,",
+"start": 395.76,
+"end": 396.7
+},
+{
+"text": "és",
+"start": 397.8,
+"end": 398.32
+},
+{
+"text": "van",
+"start": 398.32,
+"end": 398.84
+},
+{
+"text": "két",
+"start": 398.84,
+"end": 399.32
+},
+{
+"text": "ajánlott",
+"start": 399.32,
+"end": 400.72
+},
+{
+"text": "oldal,",
+"start": 400.72,
+"end": 401.3
+},
+{
+"text": "amit",
+"start": 401.5,
+"end": 401.78
+},
+{
+"text": "én",
+"start": 401.78,
+"end": 401.92
+},
+{
+"text": "javaslok",
+"start": 401.92,
+"end": 402.36
+},
+{
+"text": "neked,",
+"start": 402.36,
+"end": 402.58
+},
+{
+"text": "hogyha",
+"start": 402.7,
+"end": 402.86
+},
+{
+"text": "egy",
+"start": 402.86,
+"end": 402.92
+},
+{
+"text": "kisitebben",
+"start": 402.92,
+"end": 403.2
+},
+{
+"text": "jobban",
+"start": 403.2,
+"end": 403.44
+},
+{
+"text": "belemerülnél,",
+"start": 403.44,
+"end": 404.02
+},
+{
+"text": "hogy",
+"start": 404.08,
+"end": 404.16
+},
+{
+"text": "éppen",
+"start": 404.16,
+"end": 404.44
+},
+{
+"text": "melyiket",
+"start": 404.44,
+"end": 404.98
+},
+{
+"text": "használd,",
+"start": 404.98,
+"end": 405.74
+},
+{
+"text": "úgyhogy",
+"start": 405.82,
+"end": 405.98
+},
+{
+"text": "ezt",
+"start": 405.98,
+"end": 406.08
+},
+{
+"text": "mindjárt",
+"start": 406.08,
+"end": 406.38
+},
+{
+"text": "meg",
+"start": 406.38,
+"end": 406.52
+},
+{
+"text": "is",
+"start": 406.52,
+"end": 406.64
+},
+{
+"text": "mutatom.",
+"start": 406.64,
+"end": 407.04
+},
+{
+"text": "Az",
+"start": 407.14,
+"end": 407.26
+},
+{
+"text": "egyik",
+"start": 407.26,
+"end": 407.48
+},
+{
+"text": "az",
+"start": 407.48,
+"end": 407.6
+},
+{
+"text": "Arena",
+"start": 407.6,
+"end": 407.92
+},
+{
+"text": "oldala,",
+"start": 407.92,
+"end": 408.58
+},
+{
+"text": "ezeket",
+"start": 408.72,
+"end": 409.0
+},
+{
+"text": "a",
+"start": 409.0,
+"end": 409.06
+},
+{
+"text": "linkeket",
+"start": 409.06,
+"end": 409.42
+},
+{
+"text": "ugyanúgy",
+"start": 409.42,
+"end": 409.68
+},
+{
+"text": "meg",
+"start": 409.68,
+"end": 409.82
+},
+{
+"text": "fogod",
+"start": 409.82,
+"end": 410.08
+},
+{
+"text": "találni",
+"start": 410.08,
+"end": 410.42
+},
+{
+"text": "a",
+"start": 410.42,
+"end": 410.52
+},
+{
+"text": "show",
+"start": 410.52,
+"end": 410.72
+},
+{
+"text": "notes",
+"start": 410.72,
+"end": 410.88
+},
+{
+"text": "-ba,",
+"start": 410.88,
+"end": 411.02
+},
+{
+"text": "gyakorlatilag",
+"start": 411.6,
+"end": 412.12
+},
+{
+"text": "egy",
+"start": 412.12,
+"end": 412.3
+},
+{
+"text": "ilyen",
+"start": 412.3,
+"end": 412.66
+},
+{
+"text": "leaderboard,",
+"start": 412.66,
+"end": 413.3
+},
+{
+"text": "ahol",
+"start": 413.4,
+"end": 413.56
+},
+{
+"text": "meg",
+"start": 413.56,
+"end": 413.72
+},
+{
+"text": "tudod",
+"start": 413.72,
+"end": 413.96
+},
+{
+"text": "nézni,",
+"start": 413.96,
+"end": 414.38
+},
+{
+"text": "hogy",
+"start": 414.54,
+"end": 414.74
+},
+{
+"text": "különböző",
+"start": 414.74,
+"end": 415.22
+},
+{
+"text": "feladatokra",
+"start": 415.22,
+"end": 415.92
+},
+{
+"text": "éppen",
+"start": 415.92,
+"end": 416.74
+},
+{
+"text": "melyik",
+"start": 416.74,
+"end": 417.2
+},
+{
+"text": "nagy",
+"start": 417.2,
+"end": 417.46
+},
+{
+"text": "nyelvi",
+"start": 417.46,
+"end": 417.74
+},
+{
+"text": "modell,",
+"start": 417.74,
+"end": 418.2
+},
+{
+"text": "hogyan",
+"start": 418.3,
+"end": 418.8
+},
+{
+"text": "van",
+"start": 418.8,
+"end": 418.96
+},
+{
+"text": "rangsorolódva,",
+"start": 418.96,
+"end": 419.68
+},
+{
+"text": "gyakorlatilag",
+"start": 419.68,
+"end": 420.26
+},
+{
+"text": "itt",
+"start": 420.26,
+"end": 420.36
+},
+{
+"text": "felhasználók",
+"start": 420.36,
+"end": 421.46
+},
+{
+"text": "értékelik,",
+"start": 421.46,
+"end": 423.3
+},
+{
+"text": "és",
+"start": 424.0,
+"end": 424.48
+},
+{
+"text": "akkor",
+"start": 424.48,
+"end": 424.64
+},
+{
+"text": "kapnak",
+"start": 424.64,
+"end": 425.18
+},
+{
+"text": "egy",
+"start": 425.18,
+"end": 425.32
+},
+{
+"text": "ilyen",
+"start": 425.32,
+"end": 425.48
+},
+{
+"text": "pontszámot,",
+"start": 425.48,
+"end": 426.06
+},
+{
+"text": "és",
+"start": 426.14,
+"end": 426.2
+},
+{
+"text": "a",
+"start": 426.2,
+"end": 426.28
+},
+{
+"text": "szerint",
+"start": 426.28,
+"end": 426.64
+},
+{
+"text": "vannak",
+"start": 426.64,
+"end": 427.06
+},
+{
+"text": "ezek",
+"start": 427.06,
+"end": 427.24
+},
+{
+"text": "sorba",
+"start": 427.24,
+"end": 427.56
+},
+{
+"text": "rendezve,",
+"start": 427.56,
+"end": 428.04
+},
+{
+"text": "ott",
+"start": 428.26,
+"end": 428.4
+},
+{
+"text": "van",
+"start": 428.4,
+"end": 428.52
+},
+{
+"text": "az",
+"start": 428.52,
+"end": 428.64
+},
+{
+"text": "is,",
+"start": 428.64,
+"end": 428.76
+},
+{
+"text": "hogy",
+"start": 428.82,
+"end": 428.92
+},
+{
+"text": "mikor",
+"start": 428.92,
+"end": 429.24
+},
+{
+"text": "volt",
+"start": 429.24,
+"end": 429.46
+},
+{
+"text": "utoljára",
+"start": 429.46,
+"end": 430.0
+},
+{
+"text": "frissítve,",
+"start": 430.0,
+"end": 430.74
+},
+{
+"text": "kódolásban",
+"start": 431.24,
+"end": 431.72
+},
+{
+"text": "például",
+"start": 431.72,
+"end": 432.08
+},
+{
+"text": "két",
+"start": 432.08,
+"end": 432.4
+},
+{
+"text": "nappal",
+"start": 432.4,
+"end": 432.7
+},
+{
+"text": "ezelőtt,",
+"start": 432.7,
+"end": 433.14
+},
+{
+"text": "de",
+"start": 433.48,
+"end": 433.66
+},
+{
+"text": "a",
+"start": 433.66,
+"end": 433.96
+},
+{
+"text": "szöveggenerálásban",
+"start": 433.96,
+"end": 434.94
+},
+{
+"text": "például",
+"start": 434.94,
+"end": 435.36
+},
+{
+"text": "húsz",
+"start": 435.36,
+"end": 435.66
+},
+{
+"text": "órával",
+"start": 435.66,
+"end": 435.96
+},
+{
+"text": "ezelőtt,",
+"start": 435.96,
+"end": 436.38
+},
+{
+"text": "és",
+"start": 436.54,
+"end": 436.82
+},
+{
+"text": "akkor",
+"start": 436.82,
+"end": 436.96
+},
+{
+"text": "itt",
+"start": 436.96,
+"end": 437.12
+},
+{
+"text": "van,",
+"start": 437.12,
+"end": 437.32
+},
+{
+"text": "hogy",
+"start": 437.4,
+"end": 437.5
+},
+{
+"text": "mondjuk",
+"start": 437.5,
+"end": 437.6
+},
+{
+"text": "szöveggenerálásban",
+"start": 437.6,
+"end": 438.42
+},
+{
+"text": "a",
+"start": 438.42,
+"end": 438.56
+},
+{
+"text": "Cloud",
+"start": 438.56,
+"end": 438.76
+},
+{
+"text": "4",
+"start": 438.76,
+"end": 439.16
+},
+{
+"text": ".6",
+"start": 439.16,
+"end": 439.58
+},
+{
+"text": "-ot,",
+"start": 439.58,
+"end": 439.7
+},
+{
+"text": "Opus",
+"start": 439.72,
+"end": 439.98
+},
+{
+"text": "4",
+"start": 439.98,
+"end": 440.12
+},
+{
+"text": ".6",
+"start": 440.12,
+"end": 440.48
+},
+{
+"text": "-ot",
+"start": 440.48,
+"end": 440.58
+},
+{
+"text": "tartják",
+"start": 440.58,
+"end": 440.98
+},
+{
+"text": "most",
+"start": 440.98,
+"end": 441.16
+},
+{
+"text": "a",
+"start": 441.16,
+"end": 441.3
+},
+{
+"text": "legjobbnak.",
+"start": 441.3,
+"end": 441.8
+},
+{
+"text": "Kódolásban",
+"start": 442.32,
+"end": 442.8
+},
+{
+"text": "is",
+"start": 442.8,
+"end": 442.94
+},
+{
+"text": "amúgy",
+"start": 442.94,
+"end": 443.18
+},
+{
+"text": "a",
+"start": 443.18,
+"end": 443.28
+},
+{
+"text": "Cloudban,",
+"start": 443.28,
+"end": 443.78
+},
+{
+"text": "most",
+"start": 443.86,
+"end": 444.1
+},
+{
+"text": "éppen",
+"start": 444.1,
+"end": 444.4
+},
+{
+"text": "elől,",
+"start": 444.4,
+"end": 444.78
+},
+{
+"text": "textban",
+"start": 445.62,
+"end": 446.1
+},
+{
+"text": "azért",
+"start": 446.1,
+"end": 446.3
+},
+{
+"text": "itt",
+"start": 446.3,
+"end": 446.44
+},
+{
+"text": "van",
+"start": 446.44,
+"end": 446.58
+},
+{
+"text": "a",
+"start": 446.58,
+"end": 446.66
+},
+{
+"text": "Gemini",
+"start": 446.66,
+"end": 447.02
+},
+{
+"text": "is,",
+"start": 447.02,
+"end": 447.18
+},
+{
+"text": "harmadik",
+"start": 447.28,
+"end": 447.6
+},
+{
+"text": "helyen",
+"start": 447.6,
+"end": 447.9
+},
+{
+"text": "nekünk",
+"start": 447.9,
+"end": 448.2
+},
+{
+"text": "jelleg",
+"start": 448.2,
+"end": 448.54
+},
+{
+"text": "amúgy",
+"start": 448.54,
+"end": 448.76
+},
+{
+"text": "az",
+"start": 448.76,
+"end": 448.92
+},
+{
+"text": "vált",
+"start": 448.92,
+"end": 449.14
+},
+{
+"text": "be",
+"start": 449.14,
+"end": 449.24
+},
+{
+"text": "a",
+"start": 449.24,
+"end": 449.32
+},
+{
+"text": "legjobban,",
+"start": 449.32,
+"end": 449.82
+},
+{
+"text": "de",
+"start": 449.82,
+"end": 450.56
+},
+{
+"text": "Vision,",
+"start": 450.56,
+"end": 450.86
+},
+{
+"text": "tehát",
+"start": 451.12,
+"end": 451.24
+},
+{
+"text": "amikor",
+"start": 451.24,
+"end": 451.54
+},
+{
+"text": "egy",
+"start": 451.54,
+"end": 451.66
+},
+{
+"text": "ilyen",
+"start": 451.66,
+"end": 451.76
+},
+{
+"text": "kreatív",
+"start": 451.76,
+"end": 452.18
+},
+{
+"text": "dolgokat",
+"start": 452.18,
+"end": 452.64
+},
+{
+"text": "kell,",
+"start": 452.64,
+"end": 452.92
+},
+{
+"text": "vagy",
+"start": 453.14,
+"end": 453.34
+},
+{
+"text": "text",
+"start": 453.34,
+"end": 453.88
+},
+{
+"text": "to",
+"start": 453.88,
+"end": 454.06
+},
+{
+"text": "image,",
+"start": 454.06,
+"end": 454.42
+},
+{
+"text": "tehát",
+"start": 454.58,
+"end": 454.76
+},
+{
+"text": "szöveget",
+"start": 454.76,
+"end": 455.22
+},
+{
+"text": "mondjuk",
+"start": 455.22,
+"end": 455.48
+},
+{
+"text": "képpé",
+"start": 455.48,
+"end": 455.94
+},
+{
+"text": "generálni,",
+"start": 455.94,
+"end": 456.66
+},
+{
+"text": "ott",
+"start": 456.76,
+"end": 456.86
+},
+{
+"text": "megint",
+"start": 456.86,
+"end": 457.12
+},
+{
+"text": "mások",
+"start": 457.12,
+"end": 457.54
+},
+{
+"text": "vannak",
+"start": 457.54,
+"end": 457.88
+},
+{
+"text": "elől,",
+"start": 457.88,
+"end": 458.26
+},
+{
+"text": "keresésben",
+"start": 459.1,
+"end": 459.68
+},
+{
+"text": "melyikek",
+"start": 459.68,
+"end": 460.18
+},
+{
+"text": "vannak",
+"start": 460.18,
+"end": 460.56
+},
+{
+"text": "elől,",
+"start": 460.56,
+"end": 460.94
+},
+{
+"text": "vagy",
+"start": 461.1,
+"end": 461.42
+},
+{
+"text": "képszerkesztésben,",
+"start": 461.42,
+"end": 462.68
+},
+{
+"text": "és",
+"start": 462.8,
+"end": 462.86
+},
+{
+"text": "így",
+"start": 462.86,
+"end": 463.0
+},
+{
+"text": "tovább.",
+"start": 463.0,
+"end": 463.28
+},
+{
+"text": "Tehát",
+"start": 463.28,
+"end": 463.66
+},
+{
+"text": "érdemes",
+"start": 463.66,
+"end": 464.04
+},
+{
+"text": "egyszer",
+"start": 464.04,
+"end": 464.96
+},
+{
+"text": "-egyszer",
+"start": 464.96,
+"end": 465.22
+},
+{
+"text": "ránézni",
+"start": 465.22,
+"end": 465.62
+},
+{
+"text": "erre",
+"start": 465.62,
+"end": 465.76
+},
+{
+"text": "az",
+"start": 465.76,
+"end": 465.9
+},
+{
+"text": "oldalra,",
+"start": 465.9,
+"end": 466.34
+},
+{
+"text": "nem",
+"start": 466.6,
+"end": 466.8
+},
+{
+"text": "feltétlen",
+"start": 466.8,
+"end": 467.3
+},
+{
+"text": "mondom",
+"start": 467.3,
+"end": 467.62
+},
+{
+"text": "azt,",
+"start": 467.62,
+"end": 467.84
+},
+{
+"text": "hogy",
+"start": 467.96,
+"end": 468.12
+},
+{
+"text": "ezt",
+"start": 468.12,
+"end": 468.3
+},
+{
+"text": "ándon",
+"start": 468.3,
+"end": 468.62
+},
+{
+"text": "bújni",
+"start": 468.62,
+"end": 468.88
+},
+{
+"text": "kell,",
+"start": 468.88,
+"end": 469.1
+},
+{
+"text": "és",
+"start": 469.4,
+"end": 469.48
+},
+{
+"text": "főleg",
+"start": 469.48,
+"end": 469.86
+},
+{
+"text": "szeretnélek",
+"start": 469.86,
+"end": 471.3
+},
+{
+"text": "attól",
+"start": 471.3,
+"end": 471.54
+},
+{
+"text": "óváintani,",
+"start": 471.54,
+"end": 472.04
+},
+{
+"text": "hogy",
+"start": 472.12,
+"end": 472.22
+},
+{
+"text": "ide",
+"start": 472.22,
+"end": 472.38
+},
+{
+"text": "feljössz,",
+"start": 472.38,
+"end": 472.78
+},
+{
+"text": "látsz",
+"start": 472.86,
+"end": 473.06
+},
+{
+"text": "valamit,",
+"start": 473.06,
+"end": 473.38
+},
+{
+"text": "hogy",
+"start": 473.42,
+"end": 473.48
+},
+{
+"text": "nem",
+"start": 473.48,
+"end": 473.6
+},
+{
+"text": "tudom,",
+"start": 473.6,
+"end": 473.76
+},
+{
+"text": "szöveggenerálásra",
+"start": 473.84,
+"end": 474.58
+},
+{
+"text": "jobb",
+"start": 474.58,
+"end": 474.78
+},
+{
+"text": "a",
+"start": 474.78,
+"end": 474.86
+},
+{
+"text": "Cloud,",
+"start": 474.86,
+"end": 475.04
+},
+{
+"text": "és",
+"start": 475.34,
+"end": 475.6
+},
+{
+"text": "akkor",
+"start": 475.6,
+"end": 475.74
+},
+{
+"text": "gyorsan",
+"start": 475.74,
+"end": 476.12
+},
+{
+"text": "lemondod",
+"start": 476.12,
+"end": 476.42
+},
+{
+"text": "a",
+"start": 476.42,
+"end": 476.5
+},
+{
+"text": "jelenlegi",
+"start": 476.5,
+"end": 476.88
+},
+{
+"text": "előfizetést,",
+"start": 476.88,
+"end": 477.4
+},
+{
+"text": "és",
+"start": 477.44,
+"end": 477.56
+},
+{
+"text": "akkor",
+"start": 477.56,
+"end": 477.7
+},
+{
+"text": "előfizetsz",
+"start": 477.7,
+"end": 478.2
+},
+{
+"text": "a",
+"start": 478.2,
+"end": 478.28
+},
+{
+"text": "Cloud",
+"start": 478.28,
+"end": 478.48
+},
+{
+"text": "-ra.",
+"start": 478.48,
+"end": 478.62
+},
+{
+"text": "Ki",
+"start": 478.98,
+"end": 479.12
+},
+{
+"text": "lehet",
+"start": 479.12,
+"end": 479.32
+},
+{
+"text": "próbálni,",
+"start": 479.32,
+"end": 479.8
+},
+{
+"text": "ezek",
+"start": 479.86,
+"end": 480.02
+},
+{
+"text": "tényleg",
+"start": 480.02,
+"end": 480.3
+},
+{
+"text": "gyorsan",
+"start": 480.3,
+"end": 480.66
+},
+{
+"text": "változnak.",
+"start": 480.66,
+"end": 481.18
+},
+{
+"text": "Itt",
+"start": 481.5,
+"end": 481.68
+},
+{
+"text": "amúgy",
+"start": 481.68,
+"end": 481.78
+},
+{
+"text": "látszik",
+"start": 481.78,
+"end": 482.08
+},
+{
+"text": "a",
+"start": 482.08,
+"end": 482.16
+},
+{
+"text": "pontszámok,",
+"start": 482.16,
+"end": 482.68
+},
+{
+"text": "ahogy",
+"start": 482.68,
+"end": 482.8
+},
+{
+"text": "nincsenek",
+"start": 482.8,
+"end": 483.22
+},
+{
+"text": "olyan",
+"start": 483.22,
+"end": 483.42
+},
+{
+"text": "túl",
+"start": 483.42,
+"end": 483.7
+},
+{
+"text": "nagy",
+"start": 483.7,
+"end": 483.86
+},
+{
+"text": "különbségek,",
+"start": 483.86,
+"end": 484.64
+},
+{
+"text": "szóval",
+"start": 485.02,
+"end": 485.26
+},
+{
+"text": "oké,",
+"start": 485.26,
+"end": 485.5
+},
+{
+"text": "hogy",
+"start": 485.52,
+"end": 485.58
+},
+{
+"text": "most",
+"start": 485.58,
+"end": 485.72
+},
+{
+"text": "ez",
+"start": 485.72,
+"end": 485.84
+},
+{
+"text": "itt",
+"start": 485.84,
+"end": 486.02
+},
+{
+"text": "első,",
+"start": 486.02,
+"end": 486.54
+},
+{
+"text": "de",
+"start": 486.54,
+"end": 486.7
+},
+{
+"text": "például",
+"start": 486.7,
+"end": 486.94
+},
+{
+"text": "négy",
+"start": 486.94,
+"end": 487.3
+},
+{
+"text": "ponttal,",
+"start": 487.3,
+"end": 487.76
+},
+{
+"text": "ugye",
+"start": 487.92,
+"end": 488.14
+},
+{
+"text": "1504",
+"start": 488.14,
+"end": 488.82
+},
+{
+"text": "és",
+"start": 488.82,
+"end": 489.02
+},
+{
+"text": "1500",
+"start": 489.02,
+"end": 489.4
+},
+{
+"text": "pont,",
+"start": 489.4,
+"end": 490.3
+},
+{
+"text": "tehát",
+"start": 490.54,
+"end": 490.78
+},
+{
+"text": "mindössze",
+"start": 490.78,
+"end": 491.08
+},
+{
+"text": "négy",
+"start": 491.08,
+"end": 491.4
+},
+{
+"text": "pontnyi",
+"start": 491.4,
+"end": 491.78
+},
+{
+"text": "különbség",
+"start": 491.78,
+"end": 492.36
+},
+{
+"text": "van,",
+"start": 492.36,
+"end": 492.58
+},
+{
+"text": "mondjuk",
+"start": 492.74,
+"end": 493.18
+},
+{
+"text": "egy",
+"start": 493.18,
+"end": 493.28
+},
+{
+"text": "Cloud",
+"start": 493.28,
+"end": 493.54
+},
+{
+"text": "-nél,",
+"start": 493.54,
+"end": 493.76
+},
+{
+"text": "meg",
+"start": 493.76,
+"end": 493.98
+},
+{
+"text": "a",
+"start": 493.98,
+"end": 494.26
+},
+{
+"text": "Gemini",
+"start": 494.26,
+"end": 494.62
+},
+{
+"text": "között.",
+"start": 494.62,
+"end": 495.02
+},
+{
+"text": "Akkor",
+"start": 495.2,
+"end": 495.46
+},
+{
+"text": "a",
+"start": 495.46,
+"end": 495.54
+},
+{
+"text": "másik,",
+"start": 495.54,
+"end": 496.06
+},
+{
+"text": "artificialanalysis",
+"start": 498.0,
+"end": 498.66
+},
+{
+"text": ".ai,",
+"start": 498.66,
+"end": 499.32
+},
+{
+"text": "itt",
+"start": 499.52,
+"end": 500.08
+},
+{
+"text": "mindenféle",
+"start": 500.08,
+"end": 500.68
+},
+{
+"text": "ilyen",
+"start": 500.68,
+"end": 501.08
+},
+{
+"text": "színes",
+"start": 501.08,
+"end": 501.98
+},
+{
+"text": "-szagos",
+"start": 501.98,
+"end": 502.42
+},
+{
+"text": "grafikonok",
+"start": 502.42,
+"end": 503.64
+},
+{
+"text": "vannak,",
+"start": 503.64,
+"end": 504.1
+},
+{
+"text": "meg",
+"start": 504.2,
+"end": 504.34
+},
+{
+"text": "tudod",
+"start": 504.34,
+"end": 504.64
+},
+{
+"text": "nézni",
+"start": 504.64,
+"end": 505.08
+},
+{
+"text": "gyorsaság",
+"start": 505.08,
+"end": 505.74
+},
+{
+"text": "alapján,",
+"start": 505.74,
+"end": 506.32
+},
+{
+"text": "price,",
+"start": 506.8,
+"end": 507.02
+},
+{
+"text": "tehát",
+"start": 507.16,
+"end": 507.28
+},
+{
+"text": "árazás",
+"start": 507.28,
+"end": 508.2
+},
+{
+"text": "alapján,",
+"start": 508.2,
+"end": 508.76
+},
+{
+"text": "hogy",
+"start": 509.16,
+"end": 509.3
+},
+{
+"text": "mondjuk",
+"start": 509.3,
+"end": 509.6
+},
+{
+"text": "melyik",
+"start": 509.6,
+"end": 510.06
+},
+{
+"text": "nagynyelvi",
+"start": 510.06,
+"end": 510.56
+},
+{
+"text": "modellnek",
+"start": 510.56,
+"end": 510.96
+},
+{
+"text": "a",
+"start": 510.96,
+"end": 511.08
+},
+{
+"text": "használata",
+"start": 511.08,
+"end": 511.58
+},
+{
+"text": "mennyibe",
+"start": 511.58,
+"end": 511.92
+},
+{
+"text": "kerül,",
+"start": 511.92,
+"end": 512.28
+},
+{
+"text": "vagy",
+"start": 512.36,
+"end": 512.46
+},
+{
+"text": "hogyha",
+"start": 512.46,
+"end": 512.68
+},
+{
+"text": "mondjuk",
+"start": 512.68,
+"end": 512.9
+},
+{
+"text": "te",
+"start": 512.9,
+"end": 513.02
+},
+{
+"text": "a",
+"start": 513.02,
+"end": 513.16
+},
+{
+"text": "pink",
+"start": 513.16,
+"end": 513.28
+},
+{
+"text": "keresztül",
+"start": 513.28,
+"end": 513.76
+},
+{
+"text": "szeretnéd",
+"start": 513.76,
+"end": 514.32
+},
+{
+"text": "használni,",
+"start": 514.32,
+"end": 515.28
+},
+{
+"text": "és",
+"start": 515.44,
+"end": 515.56
+},
+{
+"text": "használatalapú",
+"start": 515.56,
+"end": 516.86
+},
+{
+"text": "díjazás",
+"start": 516.86,
+"end": 517.38
+},
+{
+"text": "van,",
+"start": 517.38,
+"end": 517.52
+},
+{
+"text": "akkor",
+"start": 517.62,
+"end": 517.72
+},
+{
+"text": "melyikkel",
+"start": 517.72,
+"end": 518.22
+},
+{
+"text": "hogyan",
+"start": 518.22,
+"end": 518.54
+},
+{
+"text": "jössz",
+"start": 518.54,
+"end": 518.8
+},
+{
+"text": "ki",
+"start": 518.8,
+"end": 518.92
+},
+{
+"text": "jól,",
+"start": 518.92,
+"end": 519.16
+},
+{
+"text": "és",
+"start": 519.3,
+"end": 519.78
+},
+{
+"text": "itt",
+"start": 519.78,
+"end": 519.9
+},
+{
+"text": "vannak",
+"start": 519.9,
+"end": 520.2
+},
+{
+"text": "ilyen",
+"start": 520.2,
+"end": 520.38
+},
+{
+"text": "különböző",
+"start": 520.38,
+"end": 520.9
+},
+{
+"text": "összehasonlítások.",
+"start": 520.9,
+"end": 521.92
+},
+{
+"text": "Ezekből",
+"start": 522.12,
+"end": 522.56
+},
+{
+"text": "most",
+"start": 522.56,
+"end": 522.68
+},
+{
+"text": "nagyon",
+"start": 522.68,
+"end": 522.82
+},
+{
+"text": "részletesen",
+"start": 522.82,
+"end": 523.32
+},
+{
+"text": "nem",
+"start": 523.32,
+"end": 523.52
+},
+{
+"text": "megyek",
+"start": 523.52,
+"end": 523.82
+},
+{
+"text": "bele,",
+"start": 523.82,
+"end": 524.04
+},
+{
+"text": "itt",
+"start": 524.4,
+"end": 524.48
+},
+{
+"text": "látod,",
+"start": 524.48,
+"end": 524.78
+},
+{
+"text": "hogy",
+"start": 524.82,
+"end": 524.88
+},
+{
+"text": "millióféle",
+"start": 524.88,
+"end": 525.52
+},
+{
+"text": "az",
+"start": 525.52,
+"end": 526.14
+},
+{
+"text": "AI",
+"start": 526.14,
+"end": 526.62
+},
+{
+"text": "-nak",
+"start": 526.62,
+"end": 526.8
+},
+{
+"text": "az",
+"start": 526.8,
+"end": 526.98
+},
+{
+"text": "intelligencia",
+"start": 526.98,
+"end": 527.74
+},
+{
+"text": "szintjé",
+"start": 527.74,
+"end": 528.28
+},
+{
+"text": "szintjei",
+"start": 528.28,
+"end": 529.06
+},
+{
+"text": "össze",
+"start": 529.06,
+"end": 529.32
+},
+{
+"text": "vannak",
+"start": 529.32,
+"end": 529.66
+},
+{
+"text": "hasonlítva,",
+"start": 529.66,
+"end": 530.46
+},
+{
+"text": "itt",
+"start": 530.84,
+"end": 530.96
+},
+{
+"text": "is",
+"start": 530.96,
+"end": 531.06
+},
+{
+"text": "különböző",
+"start": 531.06,
+"end": 531.52
+},
+{
+"text": "kategóriákban",
+"start": 531.52,
+"end": 532.42
+},
+{
+"text": "vannak",
+"start": 532.42,
+"end": 532.72
+},
+{
+"text": "különböző",
+"start": 532.72,
+"end": 533.24
+},
+{
+"text": "ilyen",
+"start": 533.24,
+"end": 533.38
+},
+{
+"text": "leaderboardok,",
+"start": 533.38,
+"end": 534.04
+},
+{
+"text": "és",
+"start": 534.22,
+"end": 534.22
+},
+{
+"text": "így",
+"start": 534.22,
+"end": 534.36
+},
+{
+"text": "tovább,",
+"start": 534.36,
+"end": 534.48
+},
+{
+"text": "tehát",
+"start": 534.58,
+"end": 534.66
+},
+{
+"text": "rengeteg",
+"start": 534.66,
+"end": 535.1
+},
+{
+"text": "féle",
+"start": 535.1,
+"end": 535.38
+},
+{
+"text": "van,",
+"start": 535.38,
+"end": 535.54
+},
+{
+"text": "illetve",
+"start": 535.84,
+"end": 536.32
+},
+{
+"text": "ami",
+"start": 536.32,
+"end": 536.44
+},
+{
+"text": "még",
+"start": 536.44,
+"end": 536.64
+},
+{
+"text": "érdekes,",
+"start": 536.64,
+"end": 537.2
+},
+{
+"text": "hogyha",
+"start": 537.76,
+"end": 537.9
+},
+{
+"text": "rámegyünk",
+"start": 537.9,
+"end": 538.32
+},
+{
+"text": "erre",
+"start": 538.32,
+"end": 538.52
+},
+{
+"text": "az",
+"start": 538.52,
+"end": 538.7
+},
+{
+"text": "arénára,",
+"start": 538.7,
+"end": 539.2
+},
+{
+"text": "mondjuk",
+"start": 539.28,
+"end": 539.44
+},
+{
+"text": "legyen",
+"start": 539.44,
+"end": 539.8
+},
+{
+"text": "videó",
+"start": 539.8,
+"end": 540.4
+},
+{
+"text": "aréna,",
+"start": 540.4,
+"end": 540.82
+},
+{
+"text": "akkor",
+"start": 544.32,
+"end": 544.38
+},
+{
+"text": "gyakorlatilag",
+"start": 544.38,
+"end": 544.92
+},
+{
+"text": "te",
+"start": 544.92,
+"end": 545.08
+},
+{
+"text": "is",
+"start": 545.08,
+"end": 545.28
+},
+{
+"text": "szavazhatsz,",
+"start": 545.28,
+"end": 546.1
+},
+{
+"text": "gyakorlatilag",
+"start": 546.12,
+"end": 546.66
+},
+{
+"text": "így",
+"start": 546.66,
+"end": 547.02
+},
+{
+"text": "jönnek",
+"start": 547.02,
+"end": 547.38
+},
+{
+"text": "ki",
+"start": 547.38,
+"end": 547.48
+},
+{
+"text": "ezek",
+"start": 547.48,
+"end": 547.7
+},
+{
+"text": "az",
+"start": 547.7,
+"end": 547.84
+},
+{
+"text": "eredmények,",
+"start": 547.84,
+"end": 548.44
+},
+{
+"text": "hogy",
+"start": 548.7,
+"end": 548.88
+},
+{
+"text": "a",
+"start": 548.88,
+"end": 548.98
+},
+{
+"text": "felhasználók",
+"start": 548.98,
+"end": 549.86
+},
+{
+"text": "szavaznak,",
+"start": 549.86,
+"end": 550.4
+},
+{
+"text": "és",
+"start": 550.5,
+"end": 550.56
+},
+{
+"text": "akkor",
+"start": 550.56,
+"end": 550.74
+},
+{
+"text": "oké,",
+"start": 550.74,
+"end": 551.0
+},
+{
+"text": "melyik",
+"start": 551.08,
+"end": 551.42
+},
+{
+"text": "legenerált",
+"start": 551.96,
+"end": 552.38
+},
+{
+"text": "videó",
+"start": 552.38,
+"end": 552.66
+},
+{
+"text": "tetszik",
+"start": 552.66,
+"end": 553.02
+},
+{
+"text": "neked",
+"start": 553.02,
+"end": 553.2
+},
+{
+"text": "a",
+"start": 553.2,
+"end": 553.34
+},
+{
+"text": "jobban,",
+"start": 553.34,
+"end": 553.74
+},
+{
+"text": "mondjuk",
+"start": 554.06,
+"end": 554.42
+},
+{
+"text": "nekem",
+"start": 554.42,
+"end": 554.66
+},
+{
+"text": "ez,",
+"start": 554.66,
+"end": 554.8
+},
+{
+"text": "és",
+"start": 554.88,
+"end": 554.96
+},
+{
+"text": "akkor",
+"start": 554.96,
+"end": 555.14
+},
+{
+"text": "bejelöltem.",
+"start": 555.14,
+"end": 555.86
+},
+{
+"text": "Akkor",
+"start": 556.28,
+"end": 556.52
+},
+{
+"text": "kidobja",
+"start": 556.52,
+"end": 556.9
+},
+{
+"text": "a",
+"start": 556.9,
+"end": 557.0
+},
+{
+"text": "következőt,",
+"start": 557.0,
+"end": 557.6
+},
+{
+"text": "és",
+"start": 557.66,
+"end": 557.72
+},
+{
+"text": "akkor",
+"start": 557.72,
+"end": 557.88
+},
+{
+"text": "ott",
+"start": 557.88,
+"end": 558.08
+},
+{
+"text": "is",
+"start": 558.08,
+"end": 558.22
+},
+{
+"text": "értékelsz,",
+"start": 558.22,
+"end": 558.88
+},
+{
+"text": "nyilván",
+"start": 558.96,
+"end": 559.1
+},
+{
+"text": "valamennyi",
+"start": 559.1,
+"end": 559.52
+},
+{
+"text": "ideig",
+"start": 559.52,
+"end": 559.74
+},
+{
+"text": "meg",
+"start": 559.74,
+"end": 559.94
+},
+{
+"text": "kell",
+"start": 559.94,
+"end": 560.06
+},
+{
+"text": "nézned,",
+"start": 560.06,
+"end": 560.52
+},
+{
+"text": "nekem",
+"start": 560.86,
+"end": 561.04
+},
+{
+"text": "a",
+"start": 561.04,
+"end": 561.14
+},
+{
+"text": "jobb",
+"start": 561.14,
+"end": 561.32
+},
+{
+"text": "oldali,",
+"start": 561.32,
+"end": 561.64
+},
+{
+"text": "és",
+"start": 562.14,
+"end": 562.56
+},
+{
+"text": "akkor",
+"start": 562.56,
+"end": 562.7
+},
+{
+"text": "megyünk",
+"start": 562.7,
+"end": 563.04
+},
+{
+"text": "a",
+"start": 563.04,
+"end": 563.24
+},
+{
+"text": "következőre,",
+"start": 563.24,
+"end": 564.04
+},
+{
+"text": "itt",
+"start": 564.56,
+"end": 564.68
+},
+{
+"text": "is",
+"start": 564.68,
+"end": 564.78
+},
+{
+"text": "az",
+"start": 564.78,
+"end": 564.9
+},
+{
+"text": "egyiknek",
+"start": 564.9,
+"end": 565.2
+},
+{
+"text": "egy",
+"start": 565.2,
+"end": 565.34
+},
+{
+"text": "dinamikusabb",
+"start": 565.34,
+"end": 565.94
+},
+{
+"text": "mozgás",
+"start": 565.94,
+"end": 566.42
+},
+{
+"text": "van,",
+"start": 566.42,
+"end": 566.6
+},
+{
+"text": "a",
+"start": 566.6,
+"end": 566.76
+},
+{
+"text": "másiknál",
+"start": 566.76,
+"end": 567.24
+},
+{
+"text": "kevésbé,",
+"start": 567.24,
+"end": 567.8
+},
+{
+"text": "inkább",
+"start": 568.4,
+"end": 568.88
+},
+{
+"text": "ugyanolyan",
+"start": 568.88,
+"end": 569.36
+},
+{
+"text": "szavazok",
+"start": 569.36,
+"end": 569.86
+},
+{
+"text": "mondjuk",
+"start": 569.86,
+"end": 570.04
+},
+{
+"text": "a",
+"start": 570.04,
+"end": 570.12
+},
+{
+"text": "jobb",
+"start": 570.12,
+"end": 570.26
+},
+{
+"text": "oldalére,",
+"start": 570.26,
+"end": 570.58
+},
+{
+"text": "és",
+"start": 570.72,
+"end": 570.8
+},
+{
+"text": "így",
+"start": 570.8,
+"end": 570.94
+},
+{
+"text": "tovább,",
+"start": 570.94,
+"end": 571.12
+},
+{
+"text": "tehát",
+"start": 571.22,
+"end": 571.26
+},
+{
+"text": "ezeket",
+"start": 571.26,
+"end": 571.6
+},
+{
+"text": "így",
+"start": 571.6,
+"end": 571.7
+},
+{
+"text": "el",
+"start": 571.7,
+"end": 571.88
+},
+{
+"text": "lehet",
+"start": 571.88,
+"end": 572.04
+},
+{
+"text": "játszani",
+"start": 572.04,
+"end": 572.42
+},
+{
+"text": "vele",
+"start": 572.42,
+"end": 572.62
+},
+{
+"text": "a",
+"start": 572.62,
+"end": 572.7
+},
+{
+"text": "végtelenségig,",
+"start": 572.7,
+"end": 573.5
+},
+{
+"text": "és",
+"start": 573.84,
+"end": 574.08
+},
+{
+"text": "gyakorlatilag",
+"start": 574.08,
+"end": 574.72
+},
+{
+"text": "itt",
+"start": 574.72,
+"end": 574.92
+},
+{
+"text": "anonim",
+"start": 574.92,
+"end": 575.26
+},
+{
+"text": "módon,",
+"start": 575.26,
+"end": 575.54
+},
+{
+"text": "tehát",
+"start": 575.62,
+"end": 575.7
+},
+{
+"text": "nem",
+"start": 575.7,
+"end": 575.82
+},
+{
+"text": "tudod,",
+"start": 575.82,
+"end": 576.04
+},
+{
+"text": "hogy",
+"start": 576.06,
+"end": 576.16
+},
+{
+"text": "melyikkel",
+"start": 576.16,
+"end": 577.06
+},
+{
+"text": "készült,",
+"start": 577.06,
+"end": 577.64
+},
+{
+"text": "és",
+"start": 577.74,
+"end": 578.28
+},
+{
+"text": "így",
+"start": 578.28,
+"end": 578.66
+},
+{
+"text": "készülnek",
+"start": 578.66,
+"end": 579.2
+},
+{
+"text": "ezeknek",
+"start": 579.8,
+"end": 580.28
+},
+{
+"text": "a",
+"start": 580.28,
+"end": 580.4
+},
+{
+"text": "teszteknek",
+"start": 580.4,
+"end": 580.82
+},
+{
+"text": "a",
+"start": 580.82,
+"end": 580.94
+},
+{
+"text": "nagy",
+"start": 580.94,
+"end": 581.12
+},
+{
+"text": "része",
+"start": 581.12,
+"end": 581.44
+},
+{
+"text": "is.",
+"start": 581.44,
+"end": 581.64
+},
+{
+"text": "Úgyhogy",
+"start": 582.54,
+"end": 582.68
+},
+{
+"text": "én",
+"start": 582.68,
+"end": 582.76
+},
+{
+"text": "köszönöm",
+"start": 582.76,
+"end": 583.08
+},
+{
+"text": "a",
+"start": 583.08,
+"end": 583.26
+},
+{
+"text": "figyelmed,",
+"start": 583.26,
+"end": 583.94
+},
+{
+"text": "ez",
+"start": 584.14,
+"end": 584.38
+},
+{
+"text": "volt",
+"start": 584.38,
+"end": 584.7
+},
+{
+"text": "az",
+"start": 584.7,
+"end": 585.42
+},
+{
+"text": "ilyen",
+"start": 585.42,
+"end": 585.6
+},
+{
+"text": "kis",
+"start": 585.6,
+"end": 585.88
+},
+{
+"text": "alapozó",
+"start": 585.88,
+"end": 586.44
+},
+{
+"text": "videó,",
+"start": 586.44,
+"end": 586.88
+},
+{
+"text": "ahol",
+"start": 587.3,
+"end": 587.44
+},
+{
+"text": "lefektettük",
+"start": 587.44,
+"end": 588.04
+},
+{
+"text": "azt,",
+"start": 588.04,
+"end": 588.28
+},
+{
+"text": "hogy",
+"start": 588.4,
+"end": 588.56
+},
+{
+"text": "melyik",
+"start": 588.56,
+"end": 588.86
+},
+{
+"text": "négy",
+"start": 588.86,
+"end": 589.12
+},
+{
+"text": "szinten",
+"start": 589.12,
+"end": 589.46
+},
+{
+"text": "érdemes",
+"start": 589.46,
+"end": 589.86
+},
+{
+"text": "gondolkozni,",
+"start": 589.86,
+"end": 590.52
+},
+{
+"text": "amikor",
+"start": 590.58,
+"end": 590.82
+},
+{
+"text": "a",
+"start": 590.82,
+"end": 590.94
+},
+{
+"text": "vezetői",
+"start": 590.94,
+"end": 591.38
+},
+{
+"text": "AI",
+"start": 591.38,
+"end": 591.6
+},
+{
+"text": "stackeret",
+"start": 591.6,
+"end": 592.12
+},
+{
+"text": "összerakod,",
+"start": 592.12,
+"end": 592.62
+},
+{
+"text": "nem",
+"start": 592.66,
+"end": 592.74
+},
+{
+"text": "csak",
+"start": 592.74,
+"end": 592.82
+},
+{
+"text": "a",
+"start": 592.82,
+"end": 592.92
+},
+{
+"text": "sajátodat,",
+"start": 592.92,
+"end": 593.46
+},
+{
+"text": "hanem",
+"start": 593.46,
+"end": 594.24
+},
+{
+"text": "ugye",
+"start": 594.24,
+"end": 594.54
+},
+{
+"text": "itt",
+"start": 594.54,
+"end": 594.72
+},
+{
+"text": "azért",
+"start": 594.72,
+"end": 594.98
+},
+{
+"text": "mi",
+"start": 594.98,
+"end": 595.1
+},
+{
+"text": "céges",
+"start": 595.1,
+"end": 595.46
+},
+{
+"text": "szinten",
+"start": 595.46,
+"end": 595.86
+},
+{
+"text": "gondolkozunk,",
+"start": 595.86,
+"end": 596.46
+},
+{
+"text": "ez",
+"start": 596.52,
+"end": 596.6
+},
+{
+"text": "a",
+"start": 596.6,
+"end": 596.68
+},
+{
+"text": "későbbi",
+"start": 596.68,
+"end": 597.06
+},
+{
+"text": "videókban",
+"start": 597.06,
+"end": 597.48
+},
+{
+"text": "is",
+"start": 597.48,
+"end": 597.6
+},
+{
+"text": "le",
+"start": 597.6,
+"end": 597.72
+},
+{
+"text": "fog",
+"start": 597.72,
+"end": 597.86
+},
+{
+"text": "jönni,",
+"start": 597.86,
+"end": 598.18
+},
+{
+"text": "úgyhogy",
+"start": 598.76,
+"end": 599.22
+},
+{
+"text": "köszönöm",
+"start": 599.22,
+"end": 599.6
+},
+{
+"text": "a",
+"start": 599.6,
+"end": 599.66
+},
+{
+"text": "figyelmed,",
+"start": 599.66,
+"end": 599.98
+},
+{
+"text": "és",
+"start": 600.04,
+"end": 600.1
+},
+{
+"text": "találkozunk",
+"start": 600.1,
+"end": 600.6
+},
+{
+"text": "a",
+"start": 600.6,
+"end": 600.7
+},
+{
+"text": "következő",
+"start": 600.7,
+"end": 601.18
+},
+{
+"text": "részben.",
+"start": 601.18,
+"end": 601.52
+}
+]

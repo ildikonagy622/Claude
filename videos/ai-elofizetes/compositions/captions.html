@@ -1,0 +1,185 @@
+<template>
+  <style>
+
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .grp { position: absolute; left: 0; right: 0; top: 1236px; height: 100px; text-align: center; overflow: visible; }
+    .in { display: inline-block; font-family: "Inter Tight", sans-serif; font-weight: 800; font-size: 70px; line-height: 1; letter-spacing: -0.02em;
+      color: #fff; padding: 12px 26px 16px; border-radius: 20px; background: rgba(11,9,16,.72); }
+    .in .ac { color: var(--accent, #9570ff); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920" data-layout-allow-caption-zone>
+    <div id="cap-1" class="clip grp" data-start="0.1" data-duration="0.52" data-track-index="0"><div class="in" id="cap-1-in"><span>Felmerülhet</span></div></div>
+    <div id="cap-2" class="clip grp" data-start="0.62" data-duration="0.66" data-track-index="0"><div class="in" id="cap-2-in"><span>benned</span> <span>a</span> <span>kérdés</span></div></div>
+    <div id="cap-3" class="clip grp" data-start="1.28" data-duration="0.38" data-track-index="0"><div class="in" id="cap-3-in"><span>hogy</span> <span>oké</span></div></div>
+    <div id="cap-4" class="clip grp" data-start="1.66" data-duration="0.34" data-track-index="0"><div class="in" id="cap-4-in"><span>de</span> <span>melyiket</span></div></div>
+    <div id="cap-5" class="clip grp" data-start="2.0" data-duration="0.58" data-track-index="0"><div class="in" id="cap-5-in"><span class="ac">válaszd?</span></div></div>
+    <div id="cap-6" class="clip grp" data-start="2.58" data-duration="0.7" data-track-index="0"><div class="in" id="cap-6-in"><span>A</span> <span>legsűrűbben</span></div></div>
+    <div id="cap-7" class="clip grp" data-start="3.28" data-duration="0.78" data-track-index="0"><div class="in" id="cap-7-in"><span>használtak</span> <span>ezek</span> <span>a</span></div></div>
+    <div id="cap-8" class="clip grp" data-start="4.06" data-duration="0.74" data-track-index="0"><div class="in" id="cap-8-in"><span class="ac">ChatGPT</span></div></div>
+    <div id="cap-9" class="clip grp" data-start="4.8" data-duration="0.42" data-track-index="0"><div class="in" id="cap-9-in"><span class="ac">Claude</span></div></div>
+    <div id="cap-10" class="clip grp" data-start="5.22" data-duration="1.14" data-track-index="0"><div class="in" id="cap-10-in"><span>a</span> <span class="ac">Gemini</span> <span>és</span> <span>a</span></div></div>
+    <div id="cap-11" class="clip grp" data-start="6.36" data-duration="1.0" data-track-index="0"><div class="in" id="cap-11-in"><span class="ac">Perplexity</span></div></div>
+    <div id="cap-12" class="clip grp" data-start="7.36" data-duration="0.56" data-track-index="0"><div class="in" id="cap-12-in"><span>Ami</span> <span>ma</span> <span>a</span> <span class="ac">legjobb</span></div></div>
+    <div id="cap-13" class="clip grp" data-start="7.92" data-duration="0.58" data-track-index="0"><div class="in" id="cap-13-in"><span>egy</span> <span>hónap</span> <span>múlva</span></div></div>
+    <div id="cap-14" class="clip grp" data-start="8.5" data-duration="0.34" data-track-index="0"><div class="in" id="cap-14-in"><span>mert</span> <span>könnyen</span></div></div>
+    <div id="cap-15" class="clip grp" data-start="8.84" data-duration="0.26" data-track-index="0"><div class="in" id="cap-15-in"><span>lehet</span></div></div>
+    <div id="cap-16" class="clip grp" data-start="9.1" data-duration="0.74" data-track-index="0"><div class="in" id="cap-16-in"><span>hogy</span> <span>csak</span> <span>a</span> <span class="ac">második</span></div></div>
+    <div id="cap-17" class="clip grp" data-start="9.84" data-duration="0.48" data-track-index="0"><div class="in" id="cap-17-in"><span>lesz</span></div></div>
+    <div id="cap-18" class="clip grp" data-start="10.32" data-duration="1.02" data-track-index="0"><div class="in" id="cap-18-in"><span>Legalább</span> <span class="ac">kettő</span></div></div>
+    <div id="cap-19" class="clip grp" data-start="11.34" data-duration="1.08" data-track-index="0"><div class="in" id="cap-19-in"><span>ilyen</span> <span>nagynyelvi</span></div></div>
+    <div id="cap-20" class="clip grp" data-start="12.42" data-duration="0.96" data-track-index="0"><div class="in" id="cap-20-in"><span>modellhez</span> <span>legyen</span></div></div>
+    <div id="cap-21" class="clip grp" data-start="13.38" data-duration="0.4" data-track-index="0"><div class="in" id="cap-21-in"><span class="ac">céges</span></div></div>
+    <div id="cap-22" class="clip grp" data-start="13.78" data-duration="1.27" data-track-index="0"><div class="in" id="cap-22-in"><span class="ac">előfizetésed</span></div></div>
+    <div id="cap-23" class="clip grp" data-start="15.05" data-duration="2.4" data-track-index="0"><div class="in" id="cap-23-in"><span>Van</span> <span class="ac">két</span> <span>ajánlott</span></div></div>
+    <div id="cap-24" class="clip grp" data-start="17.45" data-duration="0.77" data-track-index="0"><div class="in" id="cap-24-in"><span>oldal</span></div></div>
+    <div id="cap-25" class="clip grp" data-start="18.22" data-duration="0.5" data-track-index="0"><div class="in" id="cap-25-in"><span>hogyha</span> <span>egy</span> <span>kicsit</span></div></div>
+    <div id="cap-26" class="clip grp" data-start="18.72" data-duration="0.24" data-track-index="0"><div class="in" id="cap-26-in"><span>jobban</span></div></div>
+    <div id="cap-27" class="clip grp" data-start="18.96" data-duration="0.64" data-track-index="0"><div class="in" id="cap-27-in"><span>belemerülnél</span></div></div>
+    <div id="cap-28" class="clip grp" data-start="19.6" data-duration="0.36" data-track-index="0"><div class="in" id="cap-28-in"><span>hogy</span> <span>éppen</span></div></div>
+    <div id="cap-29" class="clip grp" data-start="19.96" data-duration="0.54" data-track-index="0"><div class="in" id="cap-29-in"><span>melyiket</span></div></div>
+    <div id="cap-30" class="clip grp" data-start="20.5" data-duration="0.9" data-track-index="0"><div class="in" id="cap-30-in"><span>használd</span></div></div>
+    <div id="cap-31" class="clip grp" data-start="21.4" data-duration="0.78" data-track-index="0"><div class="in" id="cap-31-in"><span>Az</span> <span>egyik</span> <span>az</span> <span class="ac">Arena</span></div></div>
+    <div id="cap-32" class="clip grp" data-start="22.18" data-duration="0.86" data-track-index="0"><div class="in" id="cap-32-in"><span>oldala</span></div></div>
+    <div id="cap-33" class="clip grp" data-start="23.04" data-duration="1.28" data-track-index="0"><div class="in" id="cap-33-in"><span>Egy</span> <span>ilyen</span> <span class="ac">leaderboard</span></div></div>
+    <div id="cap-34" class="clip grp" data-start="24.32" data-duration="0.56" data-track-index="0"><div class="in" id="cap-34-in"><span>ahol</span> <span>meg</span> <span>tudod</span></div></div>
+    <div id="cap-35" class="clip grp" data-start="24.88" data-duration="0.58" data-track-index="0"><div class="in" id="cap-35-in"><span>nézni</span></div></div>
+    <div id="cap-36" class="clip grp" data-start="25.46" data-duration="0.68" data-track-index="0"><div class="in" id="cap-36-in"><span>hogy</span> <span>különböző</span></div></div>
+    <div id="cap-37" class="clip grp" data-start="26.14" data-duration="0.7" data-track-index="0"><div class="in" id="cap-37-in"><span class="ac">feladatokra</span></div></div>
+    <div id="cap-38" class="clip grp" data-start="26.84" data-duration="1.28" data-track-index="0"><div class="in" id="cap-38-in"><span>éppen</span> <span>melyik</span></div></div>
+    <div id="cap-39" class="clip grp" data-start="28.12" data-duration="0.54" data-track-index="0"><div class="in" id="cap-39-in"><span>nagy</span> <span>nyelvi</span></div></div>
+    <div id="cap-40" class="clip grp" data-start="28.66" data-duration="0.56" data-track-index="0"><div class="in" id="cap-40-in"><span>modell</span></div></div>
+    <div id="cap-41" class="clip grp" data-start="29.22" data-duration="0.66" data-track-index="0"><div class="in" id="cap-41-in"><span>hogyan</span> <span>van</span></div></div>
+    <div id="cap-42" class="clip grp" data-start="29.88" data-duration="0.82" data-track-index="0"><div class="in" id="cap-42-in"><span>rangsorolódva</span></div></div>
+    <div id="cap-43" class="clip grp" data-start="30.7" data-duration="0.1" data-track-index="0"><div class="in" id="cap-43-in"><span>Mondjuk</span></div></div>
+    <div id="cap-44" class="clip grp" data-start="30.8" data-duration="0.96" data-track-index="0"><div class="in" id="cap-44-in"><span>szöveggenerálásban</span></div></div>
+    <div id="cap-45" class="clip grp" data-start="31.76" data-duration="0.86" data-track-index="0"><div class="in" id="cap-45-in"><span class="ac">Opus</span> <span class="ac">4.6-ot</span></div></div>
+    <div id="cap-46" class="clip grp" data-start="32.62" data-duration="0.72" data-track-index="0"><div class="in" id="cap-46-in"><span>tartják</span> <span>most</span> <span>a</span></div></div>
+    <div id="cap-47" class="clip grp" data-start="33.34" data-duration="0.76" data-track-index="0"><div class="in" id="cap-47-in"><span class="ac">legjobbnak</span></div></div>
+    <div id="cap-48" class="clip grp" data-start="34.1" data-duration="1.26" data-track-index="0"><div class="in" id="cap-48-in"><span class="ac">1504</span> <span>és</span> <span class="ac">1500</span></div></div>
+    <div id="cap-49" class="clip grp" data-start="35.36" data-duration="1.14" data-track-index="0"><div class="in" id="cap-49-in"><span>pont</span></div></div>
+    <div id="cap-50" class="clip grp" data-start="36.5" data-duration="0.54" data-track-index="0"><div class="in" id="cap-50-in"><span>tehát</span> <span>mindössze</span></div></div>
+    <div id="cap-51" class="clip grp" data-start="37.04" data-duration="0.7" data-track-index="0"><div class="in" id="cap-51-in"><span class="ac">négy</span> <span class="ac">pontnyi</span></div></div>
+    <div id="cap-52" class="clip grp" data-start="37.74" data-duration="0.96" data-track-index="0"><div class="in" id="cap-52-in"><span>különbség</span> <span>van</span></div></div>
+    <div id="cap-53" class="clip grp" data-start="38.7" data-duration="1.02" data-track-index="0"><div class="in" id="cap-53-in"><span>mondjuk</span> <span>egy</span> <span class="ac">Claude</span></div></div>
+    <div id="cap-54" class="clip grp" data-start="39.72" data-duration="0.86" data-track-index="0"><div class="in" id="cap-54-in"><span>meg</span> <span>a</span> <span class="ac">Gemini</span></div></div>
+    <div id="cap-55" class="clip grp" data-start="40.58" data-duration="0.62" data-track-index="0"><div class="in" id="cap-55-in"><span>között</span></div></div>
+    <div id="cap-56" class="clip grp" data-start="41.2" data-duration="1.44" data-track-index="0"><div class="in" id="cap-56-in"><span>Szeretnélek</span></div></div>
+    <div id="cap-57" class="clip grp" data-start="42.64" data-duration="0.24" data-track-index="0"><div class="in" id="cap-57-in"><span>attól</span></div></div>
+    <div id="cap-58" class="clip grp" data-start="42.88" data-duration="0.58" data-track-index="0"><div class="in" id="cap-58-in"><span>óva inteni</span></div></div>
+    <div id="cap-59" class="clip grp" data-start="43.46" data-duration="0.74" data-track-index="0"><div class="in" id="cap-59-in"><span>hogy</span> <span>ide</span> <span>feljössz</span></div></div>
+    <div id="cap-60" class="clip grp" data-start="44.2" data-duration="0.58" data-track-index="0"><div class="in" id="cap-60-in"><span>látsz</span> <span>valamit</span></div></div>
+    <div id="cap-61" class="clip grp" data-start="44.78" data-duration="0.74" data-track-index="0"><div class="in" id="cap-61-in"><span>szöveggenerálásra</span></div></div>
+    <div id="cap-62" class="clip grp" data-start="45.52" data-duration="0.76" data-track-index="0"><div class="in" id="cap-62-in"><span>jobb</span> <span>a</span> <span class="ac">Claude</span></div></div>
+    <div id="cap-63" class="clip grp" data-start="46.28" data-duration="0.78" data-track-index="0"><div class="in" id="cap-63-in"><span>és</span> <span>akkor</span> <span>gyorsan</span></div></div>
+    <div id="cap-64" class="clip grp" data-start="47.06" data-duration="0.76" data-track-index="0"><div class="in" id="cap-64-in"><span class="ac">lemondod</span> <span>a</span> <span>jelenlegi</span></div></div>
+    <div id="cap-65" class="clip grp" data-start="47.82" data-duration="0.56" data-track-index="0"><div class="in" id="cap-65-in"><span>előfizetést</span></div></div>
+    <div id="cap-66" class="clip grp" data-start="48.38" data-duration="0.76" data-track-index="0"><div class="in" id="cap-66-in"><span>és</span> <span>akkor</span> <span>előfizetsz</span></div></div>
+    <div id="cap-67" class="clip grp" data-start="49.14" data-duration="0.78" data-track-index="0"><div class="in" id="cap-67-in"><span>a</span> <span class="ac">Claude-ra</span></div></div>
+    <div id="cap-68" class="clip grp" data-start="49.92" data-duration="0.34" data-track-index="0"><div class="in" id="cap-68-in"><span>Ki</span> <span>lehet</span></div></div>
+    <div id="cap-69" class="clip grp" data-start="50.26" data-duration="0.66" data-track-index="0"><div class="in" id="cap-69-in"><span class="ac">próbálni</span></div></div>
+    <div id="cap-70" class="clip grp" data-start="50.92" data-duration="0.92" data-track-index="0"><div class="in" id="cap-70-in"><span>Akkor</span> <span>a</span> <span>másik</span></div></div>
+    <div id="cap-71" class="clip grp" data-start="51.84" data-duration="1.38" data-track-index="0"><div class="in" id="cap-71-in"><span class="ac">artificialanalysis.ai</span></div></div>
+    <div id="cap-72" class="clip grp" data-start="53.22" data-duration="0.88" data-track-index="0"><div class="in" id="cap-72-in"><span>meg</span> <span>tudod</span> <span>nézni</span></div></div>
+    <div id="cap-73" class="clip grp" data-start="54.1" data-duration="0.66" data-track-index="0"><div class="in" id="cap-73-in"><span class="ac">gyorsaság</span></div></div>
+    <div id="cap-74" class="clip grp" data-start="54.76" data-duration="0.66" data-track-index="0"><div class="in" id="cap-74-in"><span>alapján</span></div></div>
+    <div id="cap-75" class="clip grp" data-start="55.42" data-duration="1.66" data-track-index="0"><div class="in" id="cap-75-in"><span class="ac">árazás</span> <span>alapján</span></div></div>
+    <div id="cap-76" class="clip grp" data-start="57.08" data-duration="0.2" data-track-index="0"><div class="in" id="cap-76-in"><span>És</span> <span>nagyon</span></div></div>
+    <div id="cap-77" class="clip grp" data-start="57.28" data-duration="0.48" data-track-index="0"><div class="in" id="cap-77-in"><span>fontos</span></div></div>
+    <div id="cap-78" class="clip grp" data-start="57.76" data-duration="0.6" data-track-index="0"><div class="in" id="cap-78-in"><span>hogy</span> <span>ne</span> <span class="ac">kötődj</span></div></div>
+    <div id="cap-79" class="clip grp" data-start="58.36" data-duration="0.82" data-track-index="0"><div class="in" id="cap-79-in"><span>egy</span> <span>modellhez</span></div></div>
+    <div id="cap-80" class="clip grp" data-start="59.18" data-duration="0.86" data-track-index="0"><div class="in" id="cap-80-in"><span>sem</span> <span>érzelmileg</span></div></div>
+    <div id="cap-81" class="clip grp" data-start="60.18" data-duration="0.48" data-track-index="0"><div class="in" id="cap-81-in"><span>folyamatosan</span></div></div>
+    <div id="cap-82" class="clip grp" data-start="60.66" data-duration="0.56" data-track-index="0"><div class="in" id="cap-82-in"><span class="ac">tesztelj</span> <span>más</span></div></div>
+    <div id="cap-83" class="clip grp" data-start="61.22" data-duration="1.1" data-track-index="0"><div class="in" id="cap-83-in"><span>modelleket</span> <span>is</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cap-1-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 0.1);
+    tl.fromTo("#cap-2-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 0.62);
+    tl.fromTo("#cap-3-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 1.28);
+    tl.fromTo("#cap-4-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 1.66);
+    tl.fromTo("#cap-5-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 2.0);
+    tl.fromTo("#cap-6-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 2.58);
+    tl.fromTo("#cap-7-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 3.28);
+    tl.fromTo("#cap-8-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 4.06);
+    tl.fromTo("#cap-9-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 4.8);
+    tl.fromTo("#cap-10-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 5.22);
+    tl.fromTo("#cap-11-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 6.36);
+    tl.fromTo("#cap-12-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 7.36);
+    tl.fromTo("#cap-13-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 7.92);
+    tl.fromTo("#cap-14-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 8.5);
+    tl.fromTo("#cap-15-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 8.84);
+    tl.fromTo("#cap-16-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 9.1);
+    tl.fromTo("#cap-17-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 9.84);
+    tl.fromTo("#cap-18-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 10.32);
+    tl.fromTo("#cap-19-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 11.34);
+    tl.fromTo("#cap-20-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 12.42);
+    tl.fromTo("#cap-21-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 13.38);
+    tl.fromTo("#cap-22-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 13.78);
+    tl.fromTo("#cap-23-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 15.05);
+    tl.fromTo("#cap-24-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 17.45);
+    tl.fromTo("#cap-25-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 18.22);
+    tl.fromTo("#cap-26-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 18.72);
+    tl.fromTo("#cap-27-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 18.96);
+    tl.fromTo("#cap-28-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 19.6);
+    tl.fromTo("#cap-29-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 19.96);
+    tl.fromTo("#cap-30-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 20.5);
+    tl.fromTo("#cap-31-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 21.4);
+    tl.fromTo("#cap-32-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 22.18);
+    tl.fromTo("#cap-33-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 23.04);
+    tl.fromTo("#cap-34-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 24.32);
+    tl.fromTo("#cap-35-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 24.88);
+    tl.fromTo("#cap-36-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 25.46);
+    tl.fromTo("#cap-37-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 26.14);
+    tl.fromTo("#cap-38-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 26.84);
+    tl.fromTo("#cap-39-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 28.12);
+    tl.fromTo("#cap-40-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 28.66);
+    tl.fromTo("#cap-41-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 29.22);
+    tl.fromTo("#cap-42-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 29.88);
+    tl.fromTo("#cap-43-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 30.7);
+    tl.fromTo("#cap-44-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 30.8);
+    tl.fromTo("#cap-45-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 31.76);
+    tl.fromTo("#cap-46-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 32.62);
+    tl.fromTo("#cap-47-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 33.34);
+    tl.fromTo("#cap-48-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 34.1);
+    tl.fromTo("#cap-49-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 35.36);
+    tl.fromTo("#cap-50-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 36.5);
+    tl.fromTo("#cap-51-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 37.04);
+    tl.fromTo("#cap-52-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 37.74);
+    tl.fromTo("#cap-53-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 38.7);
+    tl.fromTo("#cap-54-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 39.72);
+    tl.fromTo("#cap-55-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 40.58);
+    tl.fromTo("#cap-56-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 41.2);
+    tl.fromTo("#cap-57-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 42.64);
+    tl.fromTo("#cap-58-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 42.88);
+    tl.fromTo("#cap-59-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 43.46);
+    tl.fromTo("#cap-60-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 44.2);
+    tl.fromTo("#cap-61-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 44.78);
+    tl.fromTo("#cap-62-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 45.52);
+    tl.fromTo("#cap-63-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 46.28);
+    tl.fromTo("#cap-64-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 47.06);
+    tl.fromTo("#cap-65-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 47.82);
+    tl.fromTo("#cap-66-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 48.38);
+    tl.fromTo("#cap-67-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 49.14);
+    tl.fromTo("#cap-68-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 49.92);
+    tl.fromTo("#cap-69-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 50.26);
+    tl.fromTo("#cap-70-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 50.92);
+    tl.fromTo("#cap-71-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 51.84);
+    tl.fromTo("#cap-72-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 53.22);
+    tl.fromTo("#cap-73-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 54.1);
+    tl.fromTo("#cap-74-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 54.76);
+    tl.fromTo("#cap-75-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 55.42);
+    tl.fromTo("#cap-76-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 57.08);
+    tl.fromTo("#cap-77-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 57.28);
+    tl.fromTo("#cap-78-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 57.76);
+    tl.fromTo("#cap-79-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 58.36);
+    tl.fromTo("#cap-80-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 59.18);
+    tl.fromTo("#cap-81-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 60.18);
+    tl.fromTo("#cap-82-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 60.66);
+    tl.fromTo("#cap-83-in", { opacity: 0, scale: 0.86 }, { opacity: 1, scale: 1, duration: 0.12, ease: "back.out(2.2)" }, 61.22);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>
