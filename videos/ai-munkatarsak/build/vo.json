@@ -1,0 +1,982 @@
+{
+ "beats": [
+  {
+   "id": "hook",
+   "start": 0.0,
+   "end": 3.98
+  },
+  {
+   "id": "forget",
+   "start": 4.1,
+   "end": 8.78
+  },
+  {
+   "id": "trained",
+   "start": 8.9,
+   "end": 19.04
+  },
+  {
+   "id": "clone",
+   "start": 19.16,
+   "end": 22.26
+  },
+  {
+   "id": "auditor",
+   "start": 22.38,
+   "end": 34.5
+  },
+  {
+   "id": "eu",
+   "start": 34.62,
+   "end": 43.3
+  },
+  {
+   "id": "nohal",
+   "start": 43.42,
+   "end": 48.11
+  },
+  {
+   "id": "pages",
+   "start": 48.23,
+   "end": 56.95
+  }
+ ],
+ "words": [
+  {
+   "text": "Ezek",
+   "start": 0.0,
+   "end": 0.82,
+   "beat": "hook"
+  },
+  {
+   "text": "olyanok,",
+   "start": 0.82,
+   "end": 1.34,
+   "beat": "hook"
+  },
+  {
+   "text": "mint",
+   "start": 1.38,
+   "end": 1.5,
+   "beat": "hook"
+  },
+  {
+   "text": "a",
+   "start": 1.5,
+   "end": 1.74,
+   "beat": "hook"
+  },
+  {
+   "text": "zseniális,",
+   "start": 1.74,
+   "end": 2.36,
+   "beat": "hook"
+  },
+  {
+   "text": "de",
+   "start": 2.44,
+   "end": 2.46,
+   "beat": "hook"
+  },
+  {
+   "text": "feledékeny",
+   "start": 2.46,
+   "end": 3.24,
+   "beat": "hook"
+  },
+  {
+   "text": "gyakornokok.",
+   "start": 3.24,
+   "end": 3.98,
+   "beat": "hook"
+  },
+  {
+   "text": "Okos,",
+   "start": 4.14,
+   "end": 4.54,
+   "beat": "forget"
+  },
+  {
+   "text": "de",
+   "start": 4.86,
+   "end": 5.04,
+   "beat": "forget"
+  },
+  {
+   "text": "majdnem",
+   "start": 5.04,
+   "end": 5.4,
+   "beat": "forget"
+  },
+  {
+   "text": "mindent",
+   "start": 5.4,
+   "end": 5.62,
+   "beat": "forget"
+  },
+  {
+   "text": "elfelejt,",
+   "start": 5.62,
+   "end": 6.34,
+   "beat": "forget"
+  },
+  {
+   "text": "mint",
+   "start": 6.4,
+   "end": 6.46,
+   "beat": "forget"
+  },
+  {
+   "text": "kilépsz",
+   "start": 6.46,
+   "end": 6.78,
+   "beat": "forget"
+  },
+  {
+   "text": "az",
+   "start": 6.78,
+   "end": 6.86,
+   "beat": "forget"
+  },
+  {
+   "text": "ajtón,",
+   "start": 6.86,
+   "end": 7.22,
+   "beat": "forget"
+  },
+  {
+   "text": "és",
+   "start": 7.32,
+   "end": 7.38,
+   "beat": "forget"
+  },
+  {
+   "text": "mindig",
+   "start": 7.38,
+   "end": 7.68,
+   "beat": "forget"
+  },
+  {
+   "text": "újra",
+   "start": 7.68,
+   "end": 7.9,
+   "beat": "forget"
+  },
+  {
+   "text": "be",
+   "start": 7.9,
+   "end": 8.04,
+   "beat": "forget"
+  },
+  {
+   "text": "kell",
+   "start": 8.04,
+   "end": 8.18,
+   "beat": "forget"
+  },
+  {
+   "text": "tanítanod.",
+   "start": 8.18,
+   "end": 8.78,
+   "beat": "forget"
+  },
+  {
+   "text": "A",
+   "start": 8.9,
+   "end": 9.12,
+   "beat": "trained"
+  },
+  {
+   "text": "Custom",
+   "start": 9.12,
+   "end": 9.44,
+   "beat": "trained"
+  },
+  {
+   "text": "GPT-k,",
+   "start": 9.44,
+   "end": 9.9,
+   "beat": "trained"
+  },
+  {
+   "text": "Gemek,",
+   "start": 9.9,
+   "end": 10.22,
+   "beat": "trained"
+  },
+  {
+   "text": "Projektek:",
+   "start": 10.22,
+   "end": 10.7,
+   "beat": "trained"
+  },
+  {
+   "text": "ezek",
+   "start": 10.7,
+   "end": 10.9,
+   "beat": "trained"
+  },
+  {
+   "text": "a",
+   "start": 10.9,
+   "end": 11.02,
+   "beat": "trained"
+  },
+  {
+   "text": "betanított",
+   "start": 11.02,
+   "end": 11.54,
+   "beat": "trained"
+  },
+  {
+   "text": "munkatársak,",
+   "start": 11.54,
+   "end": 12.32,
+   "beat": "trained"
+  },
+  {
+   "text": "egyszer",
+   "start": 12.44,
+   "end": 12.72,
+   "beat": "trained"
+  },
+  {
+   "text": "megkapta",
+   "start": 12.72,
+   "end": 13.08,
+   "beat": "trained"
+  },
+  {
+   "text": "gyakorlatilag",
+   "start": 13.08,
+   "end": 13.56,
+   "beat": "trained"
+  },
+  {
+   "text": "a",
+   "start": 13.56,
+   "end": 13.66,
+   "beat": "trained"
+  },
+  {
+   "text": "munkaköri",
+   "start": 13.66,
+   "end": 14.0,
+   "beat": "trained"
+  },
+  {
+   "text": "leírását,",
+   "start": 14.0,
+   "end": 14.62,
+   "beat": "trained"
+  },
+  {
+   "text": "ismeri",
+   "start": 15.04,
+   "end": 15.3,
+   "beat": "trained"
+  },
+  {
+   "text": "a",
+   "start": 15.3,
+   "end": 15.4,
+   "beat": "trained"
+  },
+  {
+   "text": "szabályokat,",
+   "start": 15.4,
+   "end": 15.88,
+   "beat": "trained"
+  },
+  {
+   "text": "a",
+   "start": 15.96,
+   "end": 16.0,
+   "beat": "trained"
+  },
+  {
+   "text": "stílust,",
+   "start": 16.0,
+   "end": 16.42,
+   "beat": "trained"
+  },
+  {
+   "text": "és",
+   "start": 16.56,
+   "end": 16.94,
+   "beat": "trained"
+  },
+  {
+   "text": "újra",
+   "start": 16.94,
+   "end": 17.3,
+   "beat": "trained"
+  },
+  {
+   "text": "brifelés",
+   "start": 17.3,
+   "end": 17.76,
+   "beat": "trained"
+  },
+  {
+   "text": "nélkül",
+   "start": 17.76,
+   "end": 18.12,
+   "beat": "trained"
+  },
+  {
+   "text": "is",
+   "start": 18.12,
+   "end": 18.22,
+   "beat": "trained"
+  },
+  {
+   "text": "teszi",
+   "start": 18.22,
+   "end": 18.52,
+   "beat": "trained"
+  },
+  {
+   "text": "a",
+   "start": 18.52,
+   "end": 18.62,
+   "beat": "trained"
+  },
+  {
+   "text": "dolgát,",
+   "start": 18.62,
+   "end": 19.04,
+   "beat": "trained"
+  },
+  {
+   "text": "Digitális",
+   "start": 19.16,
+   "end": 19.88,
+   "beat": "clone"
+  },
+  {
+   "text": "klónok,",
+   "start": 19.88,
+   "end": 20.36,
+   "beat": "clone"
+  },
+  {
+   "text": "amik",
+   "start": 20.46,
+   "end": 20.62,
+   "beat": "clone"
+  },
+  {
+   "text": "emlékeznek",
+   "start": 20.62,
+   "end": 21.28,
+   "beat": "clone"
+  },
+  {
+   "text": "a",
+   "start": 21.28,
+   "end": 21.58,
+   "beat": "clone"
+  },
+  {
+   "text": "szabályaidra.",
+   "start": 21.58,
+   "end": 22.26,
+   "beat": "clone"
+  },
+  {
+   "text": "Illetve",
+   "start": 22.38,
+   "end": 22.54,
+   "beat": "auditor"
+  },
+  {
+   "text": "ott",
+   "start": 22.54,
+   "end": 22.72,
+   "beat": "auditor"
+  },
+  {
+   "text": "van",
+   "start": 22.72,
+   "end": 22.82,
+   "beat": "auditor"
+  },
+  {
+   "text": "a",
+   "start": 22.82,
+   "end": 22.9,
+   "beat": "auditor"
+  },
+  {
+   "text": "Notebook",
+   "start": 22.9,
+   "end": 23.12,
+   "beat": "auditor"
+  },
+  {
+   "text": "LM,",
+   "start": 23.12,
+   "end": 23.46,
+   "beat": "auditor"
+  },
+  {
+   "text": "ami",
+   "start": 23.7,
+   "end": 23.92,
+   "beat": "auditor"
+  },
+  {
+   "text": "olyan,",
+   "start": 23.92,
+   "end": 24.12,
+   "beat": "auditor"
+  },
+  {
+   "text": "mintha",
+   "start": 24.14,
+   "end": 24.34,
+   "beat": "auditor"
+  },
+  {
+   "text": "a",
+   "start": 24.34,
+   "end": 24.48,
+   "beat": "auditor"
+  },
+  {
+   "text": "szigorú",
+   "start": 24.48,
+   "end": 24.8,
+   "beat": "auditor"
+  },
+  {
+   "text": "belső",
+   "start": 24.8,
+   "end": 25.24,
+   "beat": "auditor"
+  },
+  {
+   "text": "ellenőr",
+   "start": 25.24,
+   "end": 25.74,
+   "beat": "auditor"
+  },
+  {
+   "text": "lenne,",
+   "start": 25.74,
+   "end": 26.02,
+   "beat": "auditor"
+  },
+  {
+   "text": "akit",
+   "start": 26.3,
+   "end": 26.6,
+   "beat": "auditor"
+  },
+  {
+   "text": "bezártunk",
+   "start": 26.6,
+   "end": 27.12,
+   "beat": "auditor"
+  },
+  {
+   "text": "egy",
+   "start": 27.12,
+   "end": 27.26,
+   "beat": "auditor"
+  },
+  {
+   "text": "szobába",
+   "start": 27.26,
+   "end": 27.7,
+   "beat": "auditor"
+  },
+  {
+   "text": "a",
+   "start": 27.7,
+   "end": 28.08,
+   "beat": "auditor"
+  },
+  {
+   "text": "dokumentumokkal,",
+   "start": 28.08,
+   "end": 29.14,
+   "beat": "auditor"
+  },
+  {
+   "text": "és",
+   "start": 29.54,
+   "end": 29.78,
+   "beat": "auditor"
+  },
+  {
+   "text": "nem",
+   "start": 29.78,
+   "end": 29.94,
+   "beat": "auditor"
+  },
+  {
+   "text": "használhatja",
+   "start": 29.94,
+   "end": 30.52,
+   "beat": "auditor"
+  },
+  {
+   "text": "a",
+   "start": 30.52,
+   "end": 30.66,
+   "beat": "auditor"
+  },
+  {
+   "text": "fantáziát,",
+   "start": 30.66,
+   "end": 31.3,
+   "beat": "auditor"
+  },
+  {
+   "text": "csak",
+   "start": 31.44,
+   "end": 31.66,
+   "beat": "auditor"
+  },
+  {
+   "text": "a",
+   "start": 31.66,
+   "end": 31.9,
+   "beat": "auditor"
+  },
+  {
+   "text": "tényeket",
+   "start": 31.9,
+   "end": 32.34,
+   "beat": "auditor"
+  },
+  {
+   "text": "gyűjti",
+   "start": 32.34,
+   "end": 32.66,
+   "beat": "auditor"
+  },
+  {
+   "text": "ki",
+   "start": 32.66,
+   "end": 32.86,
+   "beat": "auditor"
+  },
+  {
+   "text": "hivatkozással",
+   "start": 32.86,
+   "end": 34.02,
+   "beat": "auditor"
+  },
+  {
+   "text": "együtt.",
+   "start": 34.02,
+   "end": 34.5,
+   "beat": "auditor"
+  },
+  {
+   "text": "Tételezzük",
+   "start": 34.62,
+   "end": 35.1,
+   "beat": "eu"
+  },
+  {
+   "text": "fel,",
+   "start": 35.1,
+   "end": 35.2,
+   "beat": "eu"
+  },
+  {
+   "text": "hogy",
+   "start": 35.22,
+   "end": 35.3,
+   "beat": "eu"
+  },
+  {
+   "text": "van",
+   "start": 35.3,
+   "end": 35.4,
+   "beat": "eu"
+  },
+  {
+   "text": "mondjuk",
+   "start": 35.4,
+   "end": 35.62,
+   "beat": "eu"
+  },
+  {
+   "text": "egy",
+   "start": 35.62,
+   "end": 35.72,
+   "beat": "eu"
+  },
+  {
+   "text": "300",
+   "start": 35.72,
+   "end": 36.04,
+   "beat": "eu"
+  },
+  {
+   "text": "oldalas",
+   "start": 36.04,
+   "end": 36.66,
+   "beat": "eu"
+  },
+  {
+   "text": "EU-s",
+   "start": 36.66,
+   "end": 36.98,
+   "beat": "eu"
+  },
+  {
+   "text": "pályázat,",
+   "start": 36.98,
+   "end": 37.54,
+   "beat": "eu"
+  },
+  {
+   "text": "amin",
+   "start": 37.54,
+   "end": 37.92,
+   "beat": "eu"
+  },
+  {
+   "text": "indulnátok,",
+   "start": 37.92,
+   "end": 38.56,
+   "beat": "eu"
+  },
+  {
+   "text": "feltöltöd",
+   "start": 38.74,
+   "end": 39.1,
+   "beat": "eu"
+  },
+  {
+   "text": "a",
+   "start": 39.1,
+   "end": 39.2,
+   "beat": "eu"
+  },
+  {
+   "text": "Notebook",
+   "start": 39.2,
+   "end": 39.42,
+   "beat": "eu"
+  },
+  {
+   "text": "LM-be,",
+   "start": 39.42,
+   "end": 39.8,
+   "beat": "eu"
+  },
+  {
+   "text": "és",
+   "start": 39.86,
+   "end": 39.96,
+   "beat": "eu"
+  },
+  {
+   "text": "megkérdezed",
+   "start": 39.96,
+   "end": 40.46,
+   "beat": "eu"
+  },
+  {
+   "text": "tőle,",
+   "start": 40.46,
+   "end": 40.7,
+   "beat": "eu"
+  },
+  {
+   "text": "hogy",
+   "start": 40.76,
+   "end": 40.92,
+   "beat": "eu"
+  },
+  {
+   "text": "oké,",
+   "start": 40.92,
+   "end": 41.58,
+   "beat": "eu"
+  },
+  {
+   "text": "ezen",
+   "start": 41.68,
+   "end": 41.84,
+   "beat": "eu"
+  },
+  {
+   "text": "indulnánk,",
+   "start": 41.84,
+   "end": 42.3,
+   "beat": "eu"
+  },
+  {
+   "text": "mik",
+   "start": 42.38,
+   "end": 42.4,
+   "beat": "eu"
+  },
+  {
+   "text": "a",
+   "start": 42.4,
+   "end": 42.5,
+   "beat": "eu"
+  },
+  {
+   "text": "kizáró",
+   "start": 42.5,
+   "end": 42.9,
+   "beat": "eu"
+  },
+  {
+   "text": "okok,",
+   "start": 42.9,
+   "end": 43.3,
+   "beat": "eu"
+  },
+  {
+   "text": "Ne",
+   "start": 43.43,
+   "end": 43.55,
+   "beat": "nohal"
+  },
+  {
+   "text": "például",
+   "start": 43.55,
+   "end": 43.87,
+   "beat": "nohal"
+  },
+  {
+   "text": "egy",
+   "start": 43.87,
+   "end": 44.01,
+   "beat": "nohal"
+  },
+  {
+   "text": "ChatGPT-t,",
+   "start": 44.01,
+   "end": 44.61,
+   "beat": "nohal"
+  },
+  {
+   "text": "mert",
+   "start": 44.61,
+   "end": 45.29,
+   "beat": "nohal"
+  },
+  {
+   "text": "ez",
+   "start": 45.29,
+   "end": 45.43,
+   "beat": "nohal"
+  },
+  {
+   "text": "nem",
+   "start": 45.43,
+   "end": 45.57,
+   "beat": "nohal"
+  },
+  {
+   "text": "hallucinál,",
+   "start": 45.57,
+   "end": 46.17,
+   "beat": "nohal"
+  },
+  {
+   "text": "mert",
+   "start": 46.27,
+   "end": 46.43,
+   "beat": "nohal"
+  },
+  {
+   "text": "csak",
+   "start": 46.43,
+   "end": 46.61,
+   "beat": "nohal"
+  },
+  {
+   "text": "a",
+   "start": 46.61,
+   "end": 46.75,
+   "beat": "nohal"
+  },
+  {
+   "text": "forrásból",
+   "start": 46.75,
+   "end": 47.43,
+   "beat": "nohal"
+  },
+  {
+   "text": "dolgozik.",
+   "start": 47.43,
+   "end": 48.11,
+   "beat": "nohal"
+  },
+  {
+   "text": "És",
+   "start": 48.23,
+   "end": 48.51,
+   "beat": "pages"
+  },
+  {
+   "text": "amúgy",
+   "start": 48.51,
+   "end": 48.67,
+   "beat": "pages"
+  },
+  {
+   "text": "belinkeli,",
+   "start": 48.67,
+   "end": 49.25,
+   "beat": "pages"
+  },
+  {
+   "text": "hogy",
+   "start": 49.59,
+   "end": 49.71,
+   "beat": "pages"
+  },
+  {
+   "text": "mondjuk",
+   "start": 49.71,
+   "end": 49.97,
+   "beat": "pages"
+  },
+  {
+   "text": "a",
+   "start": 49.97,
+   "end": 50.07,
+   "beat": "pages"
+  },
+  {
+   "text": "dokumentumnak",
+   "start": 50.07,
+   "end": 50.81,
+   "beat": "pages"
+  },
+  {
+   "text": "a",
+   "start": 50.81,
+   "end": 50.97,
+   "beat": "pages"
+  },
+  {
+   "text": "75.,",
+   "start": 50.97,
+   "end": 51.73,
+   "beat": "pages"
+  },
+  {
+   "text": "meg",
+   "start": 51.81,
+   "end": 51.89,
+   "beat": "pages"
+  },
+  {
+   "text": "a",
+   "start": 51.89,
+   "end": 51.97,
+   "beat": "pages"
+  },
+  {
+   "text": "78. oldalán.",
+   "start": 51.97,
+   "end": 52.85,
+   "beat": "pages"
+  },
+  {
+   "text": "tehát",
+   "start": 52.85,
+   "end": 52.93,
+   "beat": "pages"
+  },
+  {
+   "text": "ott",
+   "start": 52.93,
+   "end": 53.03,
+   "beat": "pages"
+  },
+  {
+   "text": "rá",
+   "start": 53.03,
+   "end": 53.19,
+   "beat": "pages"
+  },
+  {
+   "text": "is",
+   "start": 53.19,
+   "end": 53.31,
+   "beat": "pages"
+  },
+  {
+   "text": "tudsz",
+   "start": 53.31,
+   "end": 53.51,
+   "beat": "pages"
+  },
+  {
+   "text": "kattintani,",
+   "start": 53.51,
+   "end": 54.01,
+   "beat": "pages"
+  },
+  {
+   "text": "és",
+   "start": 54.07,
+   "end": 54.13,
+   "beat": "pages"
+  },
+  {
+   "text": "le",
+   "start": 54.13,
+   "end": 54.27,
+   "beat": "pages"
+  },
+  {
+   "text": "tudod",
+   "start": 54.27,
+   "end": 54.47,
+   "beat": "pages"
+  },
+  {
+   "text": "ellenőrizni,",
+   "start": 54.47,
+   "end": 55.21,
+   "beat": "pages"
+  },
+  {
+   "text": "hogy",
+   "start": 55.53,
+   "end": 55.67,
+   "beat": "pages"
+  },
+  {
+   "text": "az",
+   "start": 55.67,
+   "end": 55.79,
+   "beat": "pages"
+  },
+  {
+   "text": "valóban",
+   "start": 55.79,
+   "end": 56.27,
+   "beat": "pages"
+  },
+  {
+   "text": "úgy",
+   "start": 56.27,
+   "end": 56.69,
+   "beat": "pages"
+  },
+  {
+   "text": "van-e.",
+   "start": 56.69,
+   "end": 56.95,
+   "beat": "pages"
+  }
+ ]
+}

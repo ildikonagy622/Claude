@@ -1,0 +1,63 @@
+<template>
+  <style>
+
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; font-family: "Inter Tight", sans-serif; color: #fff; }
+    .glow { position: absolute; left: -300px; top: 200px; width: 1680px; height: 1400px;
+      background: radial-gradient(closest-side, rgba(149,112,255,.28), rgba(149,112,255,0)); }
+    .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 60px 60px; }
+    .h { position: absolute; left: 60px; right: 60px; text-align: center; font-weight: 800; letter-spacing: -0.035em; line-height: .95; }
+    .ac { color: var(--accent, #9570ff); }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; height: 64px; padding: 0 26px; border-radius: 999px;
+      background: rgba(149,112,255,.16); border: 2px solid var(--accent, #9570ff); font-weight: 800; font-size: 32px; letter-spacing: .06em;
+      text-transform: uppercase; color: #fff; }
+    .card { position: absolute; border-radius: 30px; background: rgba(22,18,34,.92); border: 2px solid rgba(149,112,255,.35);
+      box-shadow: 0 30px 90px rgba(0,0,0,.55); }
+    .panel { position: absolute; left: 40px; width: 1000px; border-radius: 26px; overflow: hidden; background: #fff;
+      box-shadow: 0 0 0 3px rgba(149,112,255,.55), 0 40px 120px rgba(0,0,0,.7); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 54px; background: #ece9f5; display: flex; align-items: center; gap: 10px; padding: 0 20px; }
+    .bar i { width: 14px; height: 14px; border-radius: 50%; background: #c9c3dc; display: block; }
+    .bar span { margin-left: 14px; flex: 1; height: 34px; border-radius: 17px; background: #fff; color: #4a4560; font-size: 28px; font-weight: 700;
+      display: flex; align-items: center; padding: 0 18px; letter-spacing: 0; }
+    .ring { position: absolute; border: 6px solid var(--accent, #9570ff); border-radius: 18px; box-shadow: 0 0 0 4000px rgba(11,9,16,0), 0 0 40px rgba(149,112,255,.8); }
+    .tag { position: absolute; height: 66px; padding: 0 26px; border-radius: 18px; background: var(--accent, #9570ff); color: #0b0910;
+      font-weight: 800; font-size: 34px; display: flex; align-items: center; white-space: nowrap; box-shadow: 0 16px 40px rgba(0,0,0,.45); }
+    svg.arrow { position: absolute; overflow: visible; }
+    svg.arrow path { fill: none; stroke: var(--accent, #9570ff); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+    .pg { position: absolute; width: 420px; height: 540px; border-radius: 30px; background: #d9d2ee; box-shadow: 0 10px 30px rgba(0,0,0,.4); }
+
+  </style>
+  <div id="root" data-composition-id="eu" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div class="glow"></div><div class="grid"></div>
+    <div class="h" id="eu-t" style="top:300px;font-size:92px">Példa: <span class="ac">EU-s pályázat</span></div>
+    <div class="pg" id="eu-p0" style="left:300px;top:540px"></div><div class="pg" id="eu-p1" style="left:310px;top:528px"></div><div class="pg" id="eu-p2" style="left:320px;top:516px"></div><div class="pg" id="eu-p3" style="left:330px;top:504px"></div><div class="pg" id="eu-p4" style="left:340px;top:492px"></div><div class="pg" id="eu-p5" style="left:350px;top:480px"></div>
+    <div class="card" id="eu-doc" style="left:240px;top:480px;width:420px;height:540px;background:#f4f1fb;border:0;padding:44px">
+      <div style="color:#0b0910;font-size:40px;font-weight:800">EU pályázati kiírás</div>
+      <div style="margin-top:20px;height:18px;border-radius:9px;background:#d9d2ee;width:90%"></div>
+      <div style="margin-top:14px;height:18px;border-radius:9px;background:#d9d2ee;width:80%"></div>
+      <div style="margin-top:14px;height:18px;border-radius:9px;background:#d9d2ee;width:86%"></div>
+      <div style="position:absolute;left:44px;bottom:40px;color:#0b0910;font-weight:800;font-size:110px;line-height:1;font-variant-numeric:tabular-nums"><span id="eu-n">0</span><span style="font-size:44px"> oldal</span></div>
+    </div>
+    <div class="card" id="eu-nb" style="left:720px;top:620px;width:260px;height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:3px solid #9570ff;opacity:0">
+      <div style="font-size:84px">📓</div><div style="font-size:34px;font-weight:800">NotebookLM</div></div>
+    <svg class="arrow" id="eu-a" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920"><path id="eu-a-line" d="M670,750 Q691,750 712,750" pathLength="1" /><path id="eu-a-head" d="M682,766 L712,750 L682,734" /></svg>
+    <div class="card" id="eu-q" style="left:150px;top:1060px;width:780px;height:120px;border-radius:60px;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:800;background:var(--accent,#9570ff);color:#0b0910;border:0;opacity:0">„Mik a kizáró okok?”</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#eu-t", { opacity: 0, filter: "blur(10px)", scale: 1.08 }, { opacity: 1, filter: "blur(0px)", scale: 1, duration: 0.2, ease: "expo.out" }, 0.020);
+    tl.fromTo(["#eu-p5", "#eu-p4", "#eu-p3", "#eu-p2", "#eu-p1", "#eu-p0", "#eu-doc"], { opacity: 0, y: -260 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(1.4)", stagger: 0.06 }, 0.660);
+    tl.fromTo("#eu-n", { innerText: 0 }, { innerText: 300, snap: { innerText: 1 }, duration: 1.2, ease: "expo.out" }, 1.160);
+    tl.fromTo("#eu-nb", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 4.180);
+    tl.fromTo("#eu-a-line", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.25, ease: "power2.out" }, 4.280);
+    tl.fromTo("#eu-a-head", { opacity: 0 }, { opacity: 1, duration: 0.08 }, 4.470);
+    tl.to(["#eu-doc", "#eu-p0", "#eu-p1", "#eu-p2", "#eu-p3", "#eu-p4", "#eu-p5"], { x: 420, scale: 0.4, opacity: 0, duration: 0.45, ease: "power3.in", stagger: 0.03 }, 4.580);
+    tl.to("#eu-nb", { x: -280, scale: 1.4, duration: 0.5, ease: "power3.inOut" }, 4.880);
+    tl.fromTo("#eu-q", { opacity: 0, y: 60, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: "back.out(1.8)" }, 5.400);
+    tl.to(["#eu-t", "#eu-nb", "#eu-q"], { opacity: 0, y: -60, filter: "blur(10px)", duration: 0.18, ease: "power3.in" }, 8.600);
+    window.__timelines["eu"] = tl;
+  </script>
+</template>

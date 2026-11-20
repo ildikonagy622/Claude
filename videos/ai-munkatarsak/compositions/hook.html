@@ -1,0 +1,59 @@
+<template>
+  <style>
+
+    @font-face { font-family: "Inter Tight"; font-weight: 700; src: url("assets/fonts/InterTight-700.ttf"); }
+    @font-face { font-family: "Inter Tight"; font-weight: 800; src: url("assets/fonts/InterTight-800.ttf"); }
+
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0910; font-family: "Inter Tight", sans-serif; color: #fff; }
+    .glow { position: absolute; left: -300px; top: 200px; width: 1680px; height: 1400px;
+      background: radial-gradient(closest-side, rgba(149,112,255,.28), rgba(149,112,255,0)); }
+    .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 60px 60px; }
+    .h { position: absolute; left: 60px; right: 60px; text-align: center; font-weight: 800; letter-spacing: -0.035em; line-height: .95; }
+    .ac { color: var(--accent, #9570ff); }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; height: 64px; padding: 0 26px; border-radius: 999px;
+      background: rgba(149,112,255,.16); border: 2px solid var(--accent, #9570ff); font-weight: 800; font-size: 32px; letter-spacing: .06em;
+      text-transform: uppercase; color: #fff; }
+    .card { position: absolute; border-radius: 30px; background: rgba(22,18,34,.92); border: 2px solid rgba(149,112,255,.35);
+      box-shadow: 0 30px 90px rgba(0,0,0,.55); }
+    .panel { position: absolute; left: 40px; width: 1000px; border-radius: 26px; overflow: hidden; background: #fff;
+      box-shadow: 0 0 0 3px rgba(149,112,255,.55), 0 40px 120px rgba(0,0,0,.7); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 54px; background: #ece9f5; display: flex; align-items: center; gap: 10px; padding: 0 20px; }
+    .bar i { width: 14px; height: 14px; border-radius: 50%; background: #c9c3dc; display: block; }
+    .bar span { margin-left: 14px; flex: 1; height: 34px; border-radius: 17px; background: #fff; color: #4a4560; font-size: 28px; font-weight: 700;
+      display: flex; align-items: center; padding: 0 18px; letter-spacing: 0; }
+    .ring { position: absolute; border: 6px solid var(--accent, #9570ff); border-radius: 18px; box-shadow: 0 0 0 4000px rgba(11,9,16,0), 0 0 40px rgba(149,112,255,.8); }
+    .tag { position: absolute; height: 66px; padding: 0 26px; border-radius: 18px; background: var(--accent, #9570ff); color: #0b0910;
+      font-weight: 800; font-size: 34px; display: flex; align-items: center; white-space: nowrap; box-shadow: 0 16px 40px rgba(0,0,0,.45); }
+    svg.arrow { position: absolute; overflow: visible; }
+    svg.arrow path { fill: none; stroke: var(--accent, #9570ff); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+    #hk-t .ac { display: inline-block; }
+
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-layout-allow-overflow>
+    <div class="glow"></div><div class="grid"></div>
+    <div class="h" id="hk-t" style="top:290px;font-size:112px">Az AI-od egy<br /><span class="ac">feledékeny</span><br />gyakornok?</div>
+    <div class="card" id="hk-c" style="left:150px;top:720px;width:780px;height:420px;padding:44px 60px">
+      <div style="display:flex;gap:18px">
+        <img src="assets/img/logo_chatgpt.png" alt="" style="width:86px;height:86px;border-radius:20px;object-fit:cover" />
+        <img src="assets/img/logo_gemini.png" alt="" style="width:86px;height:86px;border-radius:20px;object-fit:cover" />
+        <img src="assets/img/logo_claude.png" alt="" style="width:86px;height:86px;border-radius:20px;object-fit:cover" />
+      </div>
+      <div style="margin-top:40px;font-size:40px;font-weight:800;display:flex;justify-content:space-between"><span>Memória</span><span><span id="hk-pct" style="font-variant-numeric:tabular-nums">100</span>%</span></div>
+      <div style="margin-top:18px;height:56px;border-radius:28px;background:rgba(255,255,255,.08);overflow:hidden">
+        <div id="hk-bar" style="height:100%;width:100%;border-radius:28px;background:var(--accent,#9570ff)"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hk-t", { scale: 1.1 }, { scale: 1, duration: 0.5, ease: "expo.out" }, 0);
+    tl.fromTo("#hk-c", { y: 60 }, { y: 0, duration: 0.5, ease: "expo.out" }, 0);
+    tl.fromTo("#hk-bar", { scaleX: 1, transformOrigin: "0% 50%" }, { scaleX: 0.04, duration: 1.1, ease: "power2.in" }, 2.460);
+    tl.fromTo("#hk-pct", { innerText: 100 }, { innerText: 4, snap: { innerText: 1 }, duration: 1.1, ease: "power2.in" }, 2.460);
+    tl.to("#hk-bar", { backgroundColor: "#ff5a6e", duration: 0.3 }, 3.160);
+    tl.to("#hk-c", { x: -14, duration: 0.05, yoyo: true, repeat: 5, ease: "none" }, 3.560);
+    tl.to(["#hk-t", "#hk-c"], { opacity: 0, y: -80, filter: "blur(10px)", duration: 0.18, ease: "power3.in" }, 3.840);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
